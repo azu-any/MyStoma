@@ -7,7 +7,7 @@ Descriptions of the video collections that the app presents.
 
 import SwiftUI
 
-let listSteps = [Steps.first, Steps.second, Steps.third, Steps.fourth, Steps.fifth, Steps.sixth, Steps.seventh, Steps.eighth, Steps.ninth]
+let colostomySteps = [Steps.first, Steps.second, Steps.third, Steps.fourth, Steps.fifth, Steps.sixth, Steps.seventh, Steps.eighth, Steps.ninth]
 
 /// Descriptions of the video collections that the app presents.
 enum Steps: Int, Equatable, Hashable, Identifiable, CaseIterable {
