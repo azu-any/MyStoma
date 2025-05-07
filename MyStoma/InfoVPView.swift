@@ -12,20 +12,7 @@ import RealityKitContent
 struct InfoVPView: View {
 
     var body: some View {
-        
-        /*TabView {
-            BagRemovalVPView()
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
-            
-            BagRemovalVPView()
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
-            
-        }
-        .tabViewStyle(.page(indexDisplayMode: .never))*/
+
         VStack {
             
             HStack {

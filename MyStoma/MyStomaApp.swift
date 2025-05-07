@@ -22,6 +22,7 @@ struct MyStomaApp: App {
         .windowResizability(.contentSize)
         
         
+        
         // Model
         WindowGroup(id: Windows.model.id) {
             ModelVPView()
@@ -36,7 +37,7 @@ struct MyStomaApp: App {
             InfoVPView()
                 .environment(appModel)
         }
-        .defaultSize(width: 1, height: 1, depth: 0.5, in: .meters)
+        .defaultSize(width: 1, height: 0.5, depth: 0.5, in: .meters)
         .windowStyle(.volumetric)
         
         
