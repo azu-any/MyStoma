@@ -10,18 +10,19 @@ import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
+    
+    @Environment(\.openWindow) private var openWindow
 
     var body: some View {
         VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
-            Text("MyStoma")
-
-            ToggleImmersiveSpaceButton()
+            Image("Logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200)
+            
+            ToggleColostomyButton()
         }
-        .padding()
+        
     }
 }
 
