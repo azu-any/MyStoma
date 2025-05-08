@@ -1,0 +1,39 @@
+{
+    "name": "Colostomy",
+    "scene": "ImmersiveSpace",
+    "steps": [
+        {
+            "id": 1,
+            "name": "Removing the pouch",
+            "dialogues": [
+                "Let's start with the first step: bag removal.",
+                "First, let's go over all the materials you'll need: your new bag, cleaning wipes, and a disposal bag.",
+                "To remove your current bag, stretch your skin with one hand and gently peel the plaque from top to bottom.",
+                "This helps reduce discomfort and protects your skin from overstretching.",
+                "Many people wonder what the best way to remove the adhesive plaque from their skin is.",
+                "Let's see if you can answer this question...",
+                "Exactly!",
+                "Using a spray remover or an adhesive wipe is much gentler on the skin.",
+                "These products dissolve the adhesive, making it easier to remove without causing trauma to the skin.",
+                "Pulling directly can damage the skin and cause pain or irritation.",
+                "A spray remover dissolves the adhesive gently, protecting the skin.",
+                "It's a small measure that can make a big difference in your daily comfort."
+            ],
+            "question": "What is best to use to make plaque removal easier?",
+            "answers": ["A spray remover or an adhesive wipe", "Pulling the plaque directly with your hands"],
+            "timeQuestion": 5,
+        },
+        {
+            "id": 2,
+            "name": "Cleaning the stoma",
+            "dialogues": [
+                "Now that we have removed the pouch, it is time to clean the stoma and the skin around it.",
+                "The stoma is bright red and may bleed a little while you clean it, don't worry, this is normal!",
+                "Cleaning is a crucial step to prevent skin irritation. Remember that the stoma does not have any nerve endings, so you will not feel pain when touching it, but it is still important to be gentle. Let's see if you know what is the best method for cleaning..."
+            ],
+            "question": "What is best to clean the skin around the stoma?",
+            "answers": ["Only warm water or saline", "Scented or antibacterial soaps"],
+            "timeQuestion": 5,
+        },
+    ]
+}

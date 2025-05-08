@@ -13,9 +13,11 @@ struct ToggleColostomyButton: View {
 
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
+    @Environment(\.openWindow) private var openWindow
 
     var body: some View {
         Button {
+            
             Task { @MainActor in
                 switch appModel.immersiveSpaceState {
                     case .open:
@@ -48,6 +50,9 @@ struct ToggleColostomyButton: View {
                         break
                 }
             }
+            
+            openWindow.callAsFunction(id: Windows.info.id)
+            
         } label: {
             Text(appModel.immersiveSpaceState == .open ? "Hide Colostomy Tutorial" : "Show Colostomy Tutorial")
         }

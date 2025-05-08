@@ -11,7 +11,63 @@ import RealityKitContent
 
 struct ContentView: View {
     
-    @Environment(\.openWindow) private var openWindow
+    @State private var isSelected: Bool = false
+    
+    
+    var body: some View {
+        
+        VStack(spacing: 30) {
+            
+            if !isSelected  {
+                
+                VStack (spacing: 30) {
+                    
+                    Button {
+                        isSelected = true
+                    } label: {
+                        Text("Colostomy")
+                    }
+                    
+                    Button {
+                        
+                    } label: {
+                        
+                        HStack {
+                            Image(systemName: "lock.fill")
+                            Text("Ileostomy")
+                        }
+                    }
+                    .disabled(true)
+                    
+                    Button {
+                        
+                    } label: {
+                        
+                        HStack {
+                            Image(systemName: "lock.fill")
+                            Text("Urostomy")
+                        }
+                    }
+                    .disabled(true)
+
+                    
+                    //ToggleColostomyButton()
+
+                }
+                .padding(.vertical, 50)
+            } else {
+                InfoVPView()
+            }
+        }
+        .ornament(attachmentAnchor: .scene(.top)) {
+            OrnamentView()
+        }
+        
+    }
+}
+
+
+struct OrnamentView: View {
 
     var body: some View {
         VStack {
@@ -19,9 +75,12 @@ struct ContentView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200)
-            
-            ToggleColostomyButton()
+                .foregroundStyle(.white, .white, .white)
+                .padding()
+                .padding(.bottom, -5)
         }
+        .padding(.horizontal)
+        .glassBackgroundEffect()
         
     }
 }
