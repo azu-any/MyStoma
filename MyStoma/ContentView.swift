@@ -19,23 +19,42 @@ struct ContentView: View {
         VStack(spacing: 30) {
             
             if !isSelected  {
-                Button {
-                    isSelected = true
-                } label: {
-                    Text("Colostomy")
-                }
                 
-                Button {
+                VStack (spacing: 30) {
                     
-                } label: {
-                    
-                    HStack {
-                        Image(systemName: "lock.fill")
-                        Text("Ileostomy")
+                    Button {
+                        isSelected = true
+                    } label: {
+                        Text("Colostomy")
                     }
+                    
+                    Button {
+                        
+                    } label: {
+                        
+                        HStack {
+                            Image(systemName: "lock.fill")
+                            Text("Ileostomy")
+                        }
+                    }
+                    .disabled(true)
+                    
+                    Button {
+                        
+                    } label: {
+                        
+                        HStack {
+                            Image(systemName: "lock.fill")
+                            Text("Urostomy")
+                        }
+                    }
+                    .disabled(true)
+
+                    
+                    //ToggleColostomyButton()
+
                 }
-                
-                ToggleColostomyButton()
+                .padding(.vertical, 50)
             } else {
                 InfoVPView()
             }
@@ -56,8 +75,11 @@ struct OrnamentView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200)
+                .foregroundStyle(.white, .white, .white)
+                .padding()
+                .padding(.bottom, -5)
         }
-        .padding()
+        .padding(.horizontal)
         .glassBackgroundEffect()
         
     }

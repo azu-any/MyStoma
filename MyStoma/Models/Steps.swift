@@ -49,6 +49,26 @@ enum Steps: Int, Equatable, Hashable, Identifiable, CaseIterable {
         }
     }
     
+    var dialogues: [String] {
+        switch self {
+        case .first: ["Let's start with the first step: bag removal.",
+                      "First, let's go over all the materials you'll need: your new bag, cleaning wipes, and a disposal bag.",
+                      "To remove your current bag, stretch your skin with one hand and gently peel the plaque from top to bottom.",
+                      "This helps reduce discomfort and protects your skin from overstretching.",
+                      "Many people wonder what the best way to remove the adhesive plaque from their skin is.",
+                      "Let's see if you can answer this question..."]
+        case .second: ["Only warm water or saline", "Scented or antibacterial soaps"]
+        case .third: ["29–30 mm, to leave a minimal margin", "25 mm, so it grips better and prevents leakage"]
+        case .fourth: ["Modeling paste or barrier ring", "No aid, it sticks anyway "]
+        case .fifth: ["At least 1-2 minutes", "No time, it sticks on its own"]
+        case .sixth: ["Every 3-5 days or as directed by a professional", "Several times a day, as soon as it feels uncomfortable"]
+        case .seventh: ["Check the fit and decide whether to replace it", "Spray perfume on the pouch"]
+        case .eighth: ["Contact the stoma nurse", "Ignore it, it's normal"]
+        case .ninth: ["Before and after each procedure", "Only at the end"]
+        }
+    }
+    
+    
     var question: String {
         switch self {
         case .first: "What is best to use to make plaque removal easier?"
@@ -77,17 +97,72 @@ enum Steps: Int, Equatable, Hashable, Identifiable, CaseIterable {
         }
     }
     
-    var explanation: String {
+    var explanation: [String] {
         switch self {
-        case .first: "Pulling directly can damage the skin and cause pain or irritation. A spray remover dissolves the adhesive gently, protecting the skin."
-        case .second: "Soaps contain substances that can leave residue and irritate the skin or reduce the adhesion of the plaque. Warm water is sufficient for effective and gentle cleaning."
-        case .third: "People often think a tighter fit is safer. But cutting the hole too small can compress the stoma, causing ulcers or circulation issues. The adhesive should adhere as closely to the skin as possible, leaving only 1-2 mm of tolerance. A hole that is too large leaves the skin exposed to waste, causing irritation."
-        case .fourth: "The paste or ring fills in folds and depressions, ensuring a better hold and preventing leaks."
-        case .fifth: "Applying pressure helps activate the adhesive and ensures better adhesion to the skin."
-        case .sixth: "Changing too often can irritate the skin. It is important to follow a regular schedule, also considering the type of bag and the patient's needs."
-        case .seventh: "Perfume can irritate your skin and mask a serious problem. An unusual odor may indicate a leak or the need to change it."
-        case .eighth: "The peristomal skin should be monitored. Signs of irritation can worsen without timely intervention."
-        case .ninth: "Proper hand hygiene is essential to prevent infections and ensure patient safety."
+        case .first: ["Exactly!",
+                      "Using a spray remover or an adhesive wipe is much gentler on the skin.",
+                      "These products dissolve the adhesive, making it easier to remove without causing trauma to the skin.",
+                      "Pulling directly can damage the skin and cause pain or irritation.",
+                      "A spray remover dissolves the adhesive gently, protecting the skin.",
+                      "It's a small measure that can make a big difference in your daily comfort."
+        ]
+        case .second: ["Great!",
+                       "Warm water or saline is all you need. Warm water is sufficient for effective and gentle cleaning.",
+                       "Soaps, especially scented or antibacterial soaps, can leave residue on the skin that interferes with the adhesion of the plate and can cause irritation.",
+                       "A practical tip: use soft gauze or non-abrasive tissues for cleaning.",
+                       "Pat gently instead of scrubbing, and be sure to dry the skin thoroughly before applying the new plate.",
+                       "Dry skin ensures better adhesion of the system."
+        ]
+        case .third: ["You answered correctly!",
+                      "If your stoma measures 28 mm, the hole in the baseplate should be 29–30 mm, leaving only a small margin of 1–2 mm around the stoma.",
+                      "It is a common misconception that a smaller hole will prevent leakage, but in reality it can damage the stoma, causing ulcers or circulatory problems.",
+                      "On the other hand, a hole that is too large will leave too much skin exposed to secretions, causing irritation.",
+                      "Remember that accurate measurement is key to optimal comfort and to preventing skin problems.",
+                      "If you have difficulty measuring your stoma yourself, do not hesitate to ask a family member for help or contact your stoma care nurse."
+        ]
+        case .fourth: ["That's right!",
+                       "Modeling paste or barrier ring are invaluable tools for creating a uniform surface.",
+                       "These products fill in irregularities in the skin, creating a smooth base for the plate to adhere to and preventing leaks.",
+                       "Modeling paste is applied directly to folds or depressions and should be left to dry for a few minutes before applying the plate.", 
+                       "The barrier ring, on the other hand, can be modeled with your fingers to perfectly fit the shape of your stoma.",
+                       "A tip: if you use modeling paste, slightly moisten your fingers with water to prevent the paste from sticking to your hands during application."
+        ]
+        case .fifth: ["Perfect!",
+                      "Maintaining pressure on the plate for at least 1-2 minutes is essential to activate the adhesive and ensure an optimal hold.",
+                      "The warmth of your hand helps the adhesive to blend better with the skin.",
+                      "An extra tip: gently massage from the inside out of the plate, following a circular motion.",
+                      "This helps eliminate any air bubbles and further improves adhesion.",
+                      "Don't be afraid to press firmly, the system is designed to withstand this pressure."
+        ]
+        case .sixth: ["That's right!",
+                      "Most systems can stay in place for 3-5 days.",
+                      "Changing the system too frequently can irritate the skin, while waiting too long can cause leaks and irritation due to degradation of the adhesive.",
+                      "Learn to recognize the signs that a change is needed: an itchy feeling under the plate, visible deterioration of the adhesive at the edges, or the feeling that the system is about to fall off.",
+                      "Every person is different, so over time you will find your own rhythm.",
+                      "Keep a journal in the early days to identify your own pattern, noting when the system is changed and if there have been any leaks or problems."]
+        case .seventh: ["Exactly!",
+                        "If you notice an unusual odor, the first thing to do is check that the system is well sealed.",
+                        "An odor could indicate a leak or the need to change the pouch.",
+                        "Never use perfume directly on the pouch or the skin around the stoma.",
+                        "This can irritate the skin and mask a more serious problem that needs attention.",
+                        "There are stoma deodorants that can be put in the pouch.",
+                        "Also, some foods can affect the smell of stool, such as garlic, onion, some cheeses, or spices.",
+                        "Tracking your diet can help you identify which foods may be causing stronger odors."]
+        case .eighth: ["Great answer!",
+                       "Never ignore signs such as redness, itching, or pain around the stoma.",
+                       "These could be signs of dermatitis, material allergies, or a fungal infection.",
+                       "Always contact your stoma nurse if you notice these changes.",
+                       "Skin complications, if treated early, are usually easy to resolve.",
+                       "But if ignored, they can get worse and require more intensive treatment.",
+                       "Take a photo of the problem areas before contacting the nurse.",
+                       "This can help better assess the situation, especially if you can't get to the office right away."]
+        case .ninth: ["Great!",
+                      "Thoroughly washing your hands both before and after each procedure is essential.",
+                      "Before the procedure, washing prevents the introduction of bacteria into the peristomal area.",
+                      "After the procedure, it prevents the spread of bacteria to other body parts or surfaces.",
+                      "Use warm water and soap, rubbing for at least 20 seconds.",
+                      "If you don't have access to soap and water, an alcohol-based hand sanitizer is an acceptable alternative.",
+                      "Also remember to keep your nails short and clean when caring for your stoma, to further reduce the risk of scratching or infection."]
         }
     }
 }
