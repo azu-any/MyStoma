@@ -18,12 +18,14 @@ let dialogues: [String] = [
 struct InfoVPView: View {
     
     @State private var index: Int = 0
+    @StateObject var viewModel = OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
     
     @Environment(AppModel.self) private var appModel
 
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
-    @Environment(\.openWindow) private var openWindow
+    
+    @State var showDialogue: Bool = true
 
     var body: some View {
 
@@ -39,9 +41,33 @@ struct InfoVPView: View {
                     .font(.title)
             }
             
-            DialogueView()
+            if showDialogue {
+                
+                let dialogue = $viewModel.ostomy.steps[0].dialogues[index]
+                
+                DialogueView(dialogue: dialogue.wrappedValue, dialogueIndex: $index)
+                
+                HStack {
+                    Spacer()
+                    Button {
+                        index = decreaseIndex(currentIndex: index)
+                    } label: {
+                        Image(systemName: "chevron.left")
+                    }
+                    .buttonStyle(.plain)
+                    
+                    Button {
+                        index = increaseIndex(currentIndex: index, count: viewModel.ostomy.steps[0].dialogues.count)
+                    } label: {
+                        Image(systemName: "chevron.right")
+                    }
+                    .buttonStyle(.plain)
+
+                }
+            } else {
+                QuestionVPView(index: index)
+            }
             
-            //QuestionVPView(index: index)
         }
         .frame(width: 500)
         .padding(50)
@@ -81,47 +107,6 @@ struct InfoVPView: View {
         }
     }
 }
-
-
-struct DialogueView: View {
-    
-    @State private var dialogueIndex: Int = 0
-    
-    var body: some View {
-        
-        VStack {
-            HStack {
-                Image("Nurse")
-                    .resizable()
-                    .scaledToFit()
-                    .clipShape(Circle())
-                    .frame(width: 100, height: 100)
-                
-                TypingTextView(fullText: dialogues[dialogueIndex], trigger: dialogueIndex)
-                    .frame(width: 400, height: 200)
-            }
-            
-            HStack {
-                Spacer()
-                Button {
-                    dialogueIndex = decreaseIndex(currentIndex: dialogueIndex)
-                } label: {
-                    Image(systemName: "chevron.left")
-                }
-                .buttonStyle(.plain)
-                
-                Button {
-                    dialogueIndex = increaseIndex(currentIndex: dialogueIndex, count: dialogues.count)
-                } label: {
-                    Image(systemName: "chevron.right")
-                }
-                .buttonStyle(.plain)
-
-            }
-        }
-    }
-}
-
 
 func increaseIndex(currentIndex: Int, count: Int) -> Int {
     var index = currentIndex

@@ -7,7 +7,7 @@ Descriptions of the video collections that the app presents.
 
 import SwiftUI
 
-final class Step: Codable, Identifiable {
+struct Step: Codable, Identifiable {
     var id: Int
     var name: String
     var dialogues: [String]

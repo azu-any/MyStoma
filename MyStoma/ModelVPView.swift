@@ -19,6 +19,6 @@ struct ModelVPView: View {
 }
 
 #Preview(windowStyle: .automatic) {
-    BagRemovalVPView()
+    ModelVPView()
         .environment(AppModel())
 }
