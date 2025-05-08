@@ -40,14 +40,6 @@ struct MyStomaApp: App {
         .defaultSize(width: 1, height: 0.5, depth: 0.5, in: .meters)
         .windowStyle(.volumetric)
         
-        
-        // Materials
-        WindowGroup(id: Windows.materials.id) {
-            MaterialsVPView()
-                .environment(appModel)
-        }
-        .defaultSize(width: 1, height: 1, depth: 0.5, in: .meters)
-        .windowStyle(.volumetric)
 
 
         ImmersiveSpace(id: appModel.immersiveSpaceID) {

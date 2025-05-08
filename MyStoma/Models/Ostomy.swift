@@ -7,8 +7,7 @@ Descriptions of the video collections that the app presents.
 
 import SwiftUI
 
-final class Ostomy: Identifiable {
-    var id = UUID()
+struct Ostomy: Codable {
     var name: String
     var steps: [Step]
     var scene: String
@@ -19,3 +18,19 @@ final class Ostomy: Identifiable {
         self.scene = scene
     }
 }
+
+
+let defaultOstomy = Ostomy(
+    name: "Default Ostomy",
+    steps: [
+        Step(
+            id: 1,
+            name: "Welcome Step",
+            dialogues: ["Welcome to the tutorial."],
+            question: "Are you ready to begin?",
+            answers: ["Yes", "No"],
+            timeQuestion: 1
+        )
+    ],
+    scene: "DefaultScene"
+)

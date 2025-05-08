@@ -23,7 +23,7 @@ struct ColostomyVPView: View {
 
         TabView(selection: $selectedTab) {
             Tab(Tabs.watchNow.name, systemImage: Tabs.watchNow.symbol, value: .watchNow) {
-                BagRemovalVPView()
+                InfoVPView()
             }
             /*.customizationID(Tabs.watchNow.customizationID)
             // Disable customization behavior on the watchNow tab to ensure that the tab remains visible.
