@@ -21,6 +21,7 @@ struct ColostomySecondView: View {
     var translationGesture: some Gesture {
         /// The gesture to move an entity.
         DragGesture()
+            #if VisionOS
             .targetedToAnyEntity()
             .onChanged({ value in
                 /// The entity that the drag gesture targets.
@@ -34,33 +35,6 @@ struct ColostomySecondView: View {
                 let movement = value.convert(value.translation3D, from: .global, to: .scene)
                 
                 draggedEntity.position = (initialPosition ?? .zero) + movement
-                
-                let currentPosition = draggedEntity.position(relativeTo: nil)
-
-                if draggedEntity.name == "stomabag" {
-                    
-                    let distance = simd_distance(currentPosition, stomaTargetPosition)
-                    
-                    if distance > 0.1 {
-                        if let stoma = draggedEntity.parent?.findEntity(named: "stoma") {
-                            stoma.isEnabled = true
-                        }
-                    } else {
-                        if let stoma = draggedEntity.parent?.findEntity(named: "stoma") {
-                            stoma.isEnabled = false
-                        }
-                    }
-                }
-                
-                else if draggedEntity.name == "bottle" {
-                    if simd_distance(currentPosition, stomaTargetPosition) < 0.2  {
-                        
-                        draggedEntity.isEnabled = false
-                        
-                        /*draggedEntity.playAnimation(AnimationResource, transitionDuration: TimeInterval, startsPaused: Bool)*/
-                        
-                    }
-                }
                 
                 if let initialRotation = initialRotation {
                     draggedEntity.transform.rotation = initialRotation
@@ -100,23 +74,8 @@ struct ColostomySecondView: View {
                     }
                 }
                 
-                else if draggedEntity.name == "bottle" {
-                    if isObjectNearTableSurface(itemPosition: draggedEntity.position) {
-                        
-                        draggedEntity.position = bottleTargetPosition
-                        
-                        rotateEntity(draggedEntity, xDegrees: 0, yDegrees: 0)
-                    }
-                    
-                    else if simd_distance(currentPosition, stomaTargetPosition) < threshold  {
-                        
-                        draggedEntity.isEnabled = false
-                        
-                        /*draggedEntity.playAnimation(AnimationResource, transitionDuration: TimeInterval, startsPaused: Bool)*/
-                        
-                    }
-                }
             })
+        #endif
     }
     
     
@@ -169,25 +128,6 @@ struct ColostomySecondView: View {
                 ))
                 
                 
-                // Stoma bag
-                let bag = try await ModelEntity(named: "stomabag")
-                bag.name = "stomabag"
-                bag.position = stomaTargetPosition
-                bag.transform.scale = [0.2, 0.2, 0.2]
-                rotateEntity(bag, xDegrees: -96, yDegrees: -16)
-                
-                // Collision shape
-                bag.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: bag.model!.mesh)])
-                
-                bag.components.set(PhysicsBodyComponent(
-                    massProperties: .default,
-                    material: .default,
-                    mode: .dynamic
-                ))
-                bag.physicsBody?.isAffectedByGravity = false
-                bag.components.set(InputTargetComponent())
-                
-                
                 // Clean bag
                 let cleanBag = try await ModelEntity(named: "stomabag")
                 cleanBag.name = "cleanStomabag"
@@ -207,30 +147,13 @@ struct ColostomySecondView: View {
                 cleanBag.components.set(InputTargetComponent())
                 
                 
-                // Bottle
-                let bottle = try await ModelEntity(named: "Bottle")
-                bottle.name = "bottle"
-                bottle.position = bottleTargetPosition
-                bottle.transform.scale = [0.04, 0.04, 0.04]
-                
-                // Collision shape
-                bottle.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: bottle.model!.mesh)])
-                
-                bottle.components.set(PhysicsBodyComponent(
-                    massProperties: .default,
-                    material: .default,
-                    mode: .dynamic,
-                ))
-                bottle.physicsBody?.isAffectedByGravity = false
-                bottle.components.set(InputTargetComponent())
                 
                 
                 // Add models
                 content.add(body)
                 content.add(table)
-                content.add(bag)
                 content.add(cleanBag)
-                content.add(bottle)
+
             } catch {
                 print("Failed to load model: \(error)")
             }
@@ -242,7 +165,10 @@ struct ColostomySecondView: View {
     }
 }
 
+#if VisionOS
 #Preview(immersionStyle: .full) {
     ColostomyFirstView()
         .environment(AppModel())
 }
+#endif
+

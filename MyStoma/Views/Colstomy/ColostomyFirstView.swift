@@ -22,7 +22,9 @@ struct ColostomyFirstView: View {
     /// The gesture checks whether there is a root component and adjusts the postion of the entity.
     var translationGesture: some Gesture {
         /// The gesture to move an entity.
+       
         DragGesture()
+#if VisionOS
             .targetedToAnyEntity()
             .onChanged({ value in
                 /// The entity that the drag gesture targets.
@@ -137,7 +139,9 @@ struct ColostomyFirstView: View {
                         
                     }
                 }
-            })
+
+        })
+    #endif
     }
     
     
@@ -290,7 +294,7 @@ struct ColostomyFirstView: View {
     }
 }
 
-#Preview(immersionStyle: .full) {
+#Preview() {
     ColostomyFirstView()
         .environment(AppModel())
 }

@@ -16,9 +16,11 @@ struct InfoVPView: View {
     
     @Environment(AppModel.self) private var appModel
 
+    #if VisionOS
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
-    
+    #endif
+
     @State var showDialogue: Bool = true
     @State var isDone: Bool = false
 
@@ -80,6 +82,7 @@ struct InfoVPView: View {
                     viewModel.isDone = false
                     viewModel.spaceID = ColostomySpaces[viewModel.currentStepIndex].id
                     
+                    #if VisionOS
                     Task { @MainActor in                        appModel.immersiveSpaceState = .inTransition
                         await dismissImmersiveSpace()
                         
@@ -95,6 +98,7 @@ struct InfoVPView: View {
                             appModel.immersiveSpaceState = .closed
                         }
                     }
+                    #endif
                     
                 } label: {
                     Text("Continue")
@@ -106,6 +110,7 @@ struct InfoVPView: View {
         .frame(width: 500)
         .padding(50)
         .onAppear {
+            #if VisionOS
             Task { @MainActor in
                 appModel.immersiveSpaceState = .inTransition
                 switch await openImmersiveSpace(id: viewModel.spaceID) {
@@ -118,21 +123,26 @@ struct InfoVPView: View {
                 @unknown default:
                     appModel.immersiveSpaceState = .closed
                 }
-                
             }
+        #endif
+
         }
         .onDisappear {
+            #if VisionOS
             Task { @MainActor in                        appModel.immersiveSpaceState = .inTransition
                 await dismissImmersiveSpace()
             }
+            #endif
         }
     }
 }
 
-
+#if VisionOS
 #Preview(windowStyle: .automatic) {
     InfoVPView()
         .environment(AppModel())
         .environmentObject(OstomyViewModel(ostomy: defaultOstomy))
-    }
+}
+#endif
+
 

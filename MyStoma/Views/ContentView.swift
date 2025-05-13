@@ -12,6 +12,7 @@ import RealityKitContent
 struct ContentView: View {
     
     @EnvironmentObject var viewModel: OstomyViewModel
+    @StateObject private var router = NavigationRouter()
 
     @State private var isSelected: Bool = false
     
@@ -63,10 +64,9 @@ struct ContentView: View {
         }
         #endif
         
-        #if iOS
-        VStack {
-            Text("Hi")
-        }
+        #if os(iOS)
+        MenuView()
+            .environmentObject(NavigationRouter())
         #endif
     }
 }
@@ -98,12 +98,11 @@ struct OrnamentView: View {
             .buttonStyle(.plain)
         }
         .padding(.horizontal)
-        .glassBackgroundEffect()
         
     }
 }
 
-#Preview(windowStyle: .automatic) {
+#Preview() {
     ContentView()
         .environment(AppModel())
 }

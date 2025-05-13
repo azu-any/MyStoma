@@ -15,7 +15,7 @@ struct DialogueView: View {
         
         VStack {
             HStack {
-                Image("Nurse")
+                Image("NurseLeft")
                     .resizable()
                     .scaledToFit()
                     .clipShape(Circle())

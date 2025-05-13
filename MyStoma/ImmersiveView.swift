@@ -20,6 +20,7 @@ struct ImmersiveView: View {
     var translationGesture: some Gesture {
         /// The gesture to move an entity.
         DragGesture()
+        #if VisionOS
             .targetedToAnyEntity()
             .onChanged({ value in
                 /// The entity that the drag gesture targets.
@@ -119,6 +120,8 @@ struct ImmersiveView: View {
                     }
                 }
             })
+        #endif
+
     }
     
     
@@ -268,7 +271,10 @@ struct ImmersiveView: View {
     }
 }
 
+#if VisionOS
 #Preview(immersionStyle: .mixed) {
     ImmersiveView()
         .environment(AppModel())
 }
+#endif
+
