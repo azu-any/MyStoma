@@ -49,10 +49,6 @@ struct ContentView: View {
                         }
                     }
                     .disabled(true)
-
-                    
-                    //ToggleColostomyButton()
-
                 }
                 .padding(.vertical, 50)
             } else {
