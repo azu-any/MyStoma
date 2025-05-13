@@ -15,33 +15,17 @@ struct MyStomaApp: App {
     var body: some Scene {
         
         // Menu
-        WindowGroup(id: Windows.menu.id) {
+        WindowGroup() {
             ContentView()
                 .environment(appModel)
         }
-        .windowResizability(.contentSize)
-        
-        
-        
-        // Model
-        WindowGroup(id: Windows.model.id) {
-            ModelVPView()
-                .environment(appModel)
-        }
-        .defaultSize(width: 1, height: 1, depth: 0.5, in: .meters)
-        .windowStyle(.volumetric)
-        
-        
-        // Info
-        WindowGroup(id: Windows.info.id) {
-            InfoVPView()
-                .environment(appModel)
-        }
-        .defaultSize(width: 1, height: 0.5, depth: 0.5, in: .meters)
-        .windowStyle(.volumetric)
-        
+        #if os(visionOS)
+        .defaultSize(width: 650, height: 500)
+        #endif
+        //.windowResizability(.contentSize)
+        //.defaultSize()
 
-
+        #if os(visionOS)
         ImmersiveSpace(id: appModel.immersiveSpaceID) {
             ImmersiveView()
                 .environment(appModel)
@@ -53,5 +37,6 @@ struct MyStomaApp: App {
                 }
         }
         .immersionStyle(selection: .constant(.mixed), in: .mixed)
+        #endif
      }
 }

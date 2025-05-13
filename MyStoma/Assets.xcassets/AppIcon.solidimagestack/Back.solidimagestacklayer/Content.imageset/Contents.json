@@ -1,6 +1,15 @@
 {
   "images" : [
     {
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "visionos icon.png",
       "idiom" : "vision",
       "scale" : "2x"
     }
