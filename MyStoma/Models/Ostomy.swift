@@ -19,6 +19,20 @@ struct Ostomy: Codable {
     }
 }
 
+enum ColostomySpace {
+    case first
+    case second
+    
+    var id: String {
+        switch self {
+        case .first: "ColostomyFirstSpace"
+        case .second: "ColostomySecondSpace"
+        }
+    }
+}
+
+
+let  ColostomySpaces = [ColostomySpace.first, ColostomySpace.second]
 
 let defaultOstomy = Ostomy(
     name: "Default Ostomy",

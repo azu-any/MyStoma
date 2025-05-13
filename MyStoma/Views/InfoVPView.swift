@@ -12,9 +12,7 @@ import RealityKitContent
 
 struct InfoVPView: View {
     
-    @State private var index: Int = 0
-    @State private var dialogueIndex: Int = 0
-    @StateObject var viewModel = OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
+    @EnvironmentObject var viewModel: OstomyViewModel
     
     @Environment(AppModel.self) private var appModel
 
@@ -22,64 +20,86 @@ struct InfoVPView: View {
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
     
     @State var showDialogue: Bool = true
+    @State var isDone: Bool = false
 
     var body: some View {
 
         VStack(alignment: .center, spacing: 25) {
             
             HStack {
-                Text("Step \(index+1): \(viewModel.ostomy.steps[index].name)")
+                Text("Step \(viewModel.currentStepIndex + 1): \(viewModel.ostomy.steps[viewModel.currentStepIndex].name)")
                     .font(.title)
 
                 Spacer()
                 
-                Text("\(index+1)/\(viewModel.ostomy.steps.count)")
+                Text("\(viewModel.currentStepIndex + 1)/\(viewModel.ostomy.steps.count)")
                     .font(.title)
             }
             
             if showDialogue {
                 
-                let dialogue = $viewModel.ostomy.steps[index].dialogues[dialogueIndex]
+                let dialogue = $viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex]
                 
-                DialogueView(dialogue: dialogue.wrappedValue, dialogueIndex: $dialogueIndex)
+                DialogueView(dialogue: dialogue.wrappedValue, dialogueIndex: $viewModel.currentDialogueIndex)
                 
                 HStack {
                     Spacer()
                     Button {
-                        dialogueIndex -= 1
+                        viewModel.currentDialogueIndex -= 1
                     } label: {
                         Image(systemName: "chevron.left")
                     }
                     .buttonStyle(.plain)
-                    .disabled(!canGoBack(index: dialogueIndex))
+                    .disabled(!canGoBack(index: viewModel.currentDialogueIndex))
                     
                     
                     Button {
-                        if viewModel.ostomy.steps[index].timeQuestion == dialogueIndex {
+                        if viewModel.ostomy.steps[viewModel.currentStepIndex].timeQuestion == viewModel.currentDialogueIndex {
                             showDialogue.toggle()
                         }
-                        dialogueIndex += 1
+                        viewModel.currentDialogueIndex += 1
                     } label: {
                         Image(systemName: "chevron.right")
                     }
                     .buttonStyle(.plain)
-                    .disabled(!canGoForward(index: dialogueIndex, count: viewModel.ostomy.steps[index].dialogues.count))
-
+                    .disabled(!canGoForward(index: viewModel.currentDialogueIndex, count: viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count))
+                    
+                    
                 }
             } else {
-                QuestionVPView(question: viewModel.ostomy.steps[index].question, answers: viewModel.ostomy.steps[index].answers,
+                QuestionVPView(question: viewModel.ostomy.steps[viewModel.currentStepIndex].question, answers: viewModel.ostomy.steps[viewModel.currentStepIndex].answers,
                     showDialogue: $showDialogue
                 )
             }
             
-            if dialogueIndex == viewModel.ostomy.steps[index].dialogues.count - 1 && index < viewModel.ostomy.steps.count - 1 {
+            if viewModel.currentDialogueIndex == viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count - 1 && viewModel.currentStepIndex < viewModel.ostomy.steps.count - 1 {
                 
                 Button {
-                    index += 1
-                    dialogueIndex = 0
+                    viewModel.currentStepIndex += 1
+                    viewModel.currentDialogueIndex = 0
+                    viewModel.isDone = false
+                    viewModel.spaceID = ColostomySpaces[viewModel.currentStepIndex].id
+                    
+                    Task { @MainActor in                        appModel.immersiveSpaceState = .inTransition
+                        await dismissImmersiveSpace()
+                        
+                        appModel.immersiveSpaceState = .inTransition
+                        switch await openImmersiveSpace(id: viewModel.spaceID) {
+                        case .opened:
+                            break
+                            
+                        case .userCancelled, .error:
+                            fallthrough
+                            
+                        @unknown default:
+                            appModel.immersiveSpaceState = .closed
+                        }
+                    }
+                    
                 } label: {
                     Text("Continue")
                 }
+                .disabled(!viewModel.isDone)
             }
             
         }
@@ -87,36 +107,23 @@ struct InfoVPView: View {
         .padding(50)
         .onAppear {
             Task { @MainActor in
-                switch appModel.immersiveSpaceState {
-                    case .open:
-                        appModel.immersiveSpaceState = .inTransition
-                        await dismissImmersiveSpace()
-                        // Don't set immersiveSpaceState to .closed because there
-                        // are multiple paths to ImmersiveView.onDisappear().
-                        // Only set .closed in ImmersiveView.onDisappear().
-
-                    case .closed:
-                        appModel.immersiveSpaceState = .inTransition
-                        switch await openImmersiveSpace(id: appModel.immersiveSpaceID) {
-                            case .opened:
-                                // Don't set immersiveSpaceState to .open because there
-                                // may be multiple paths to ImmersiveView.onAppear().
-                                // Only set .open in ImmersiveView.onAppear().
-                                break
-
-                            case .userCancelled, .error:
-                                // On error, we need to mark the immersive space
-                                // as closed because it failed to open.
-                                fallthrough
-                            @unknown default:
-                                // On unknown response, assume space did not open.
-                                appModel.immersiveSpaceState = .closed
-                        }
-
-                    case .inTransition:
-                        // This case should not ever happen because button is disabled for this case.
-                        break
+                appModel.immersiveSpaceState = .inTransition
+                switch await openImmersiveSpace(id: viewModel.spaceID) {
+                case .opened:
+                    break
+                    
+                case .userCancelled, .error:
+                    fallthrough
+                    
+                @unknown default:
+                    appModel.immersiveSpaceState = .closed
                 }
+                
+            }
+        }
+        .onDisappear {
+            Task { @MainActor in                        appModel.immersiveSpaceState = .inTransition
+                await dismissImmersiveSpace()
             }
         }
     }
@@ -126,5 +133,6 @@ struct InfoVPView: View {
 #Preview(windowStyle: .automatic) {
     InfoVPView()
         .environment(AppModel())
+        .environmentObject(OstomyViewModel(ostomy: defaultOstomy))
     }
 

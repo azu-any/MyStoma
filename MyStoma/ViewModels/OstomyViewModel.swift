@@ -12,6 +12,10 @@ class OstomyViewModel: ObservableObject {
     @Published var ostomy: Ostomy
     @Published var currentStepIndex: Int = 0
     @Published var currentDialogueIndex: Int = 0
+    
+    @Published var isPractice: Bool = false
+    @Published var isDone: Bool = false
+    @Published var spaceID: String = ColostomySpace.first.id
 
     init(ostomy: Ostomy) {
         self.ostomy = ostomy

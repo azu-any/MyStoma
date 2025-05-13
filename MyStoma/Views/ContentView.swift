@@ -11,6 +11,8 @@ import RealityKitContent
 
 struct ContentView: View {
     
+    @EnvironmentObject var viewModel: OstomyViewModel
+
     @State private var isSelected: Bool = false
     
     var body: some View {
@@ -53,6 +55,7 @@ struct ContentView: View {
                 .padding(.vertical, 50)
             } else {
                 InfoVPView()
+                    .environmentObject(viewModel)
             }
         }
         .ornament(attachmentAnchor: .scene(.top)) {

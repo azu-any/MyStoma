@@ -10,11 +10,12 @@ import RealityKit
 import RealityKitContent
 import simd
 
-struct ImmersiveView: View {
+struct ColostomySecondView: View {
     
+    @EnvironmentObject var viewModel: OstomyViewModel
+
     @State var initialPosition: SIMD3<Float>? = nil
     @State var initialRotation: simd_quatf? = nil
-    
     
     /// The gesture checks whether there is a root component and adjusts the postion of the entity.
     var translationGesture: some Gesture {
@@ -47,8 +48,17 @@ struct ImmersiveView: View {
                     } else {
                         if let stoma = draggedEntity.parent?.findEntity(named: "stoma") {
                             stoma.isEnabled = false
-                            
                         }
+                    }
+                }
+                
+                else if draggedEntity.name == "bottle" {
+                    if simd_distance(currentPosition, stomaTargetPosition) < 0.2  {
+                        
+                        draggedEntity.isEnabled = false
+                        
+                        /*draggedEntity.playAnimation(AnimationResource, transitionDuration: TimeInterval, startsPaused: Bool)*/
+                        
                     }
                 }
                 
@@ -71,25 +81,13 @@ struct ImmersiveView: View {
                     angularVelocity: .zero
                 ))
                 
-                // Only apply snapping to "stomabag"
                 if draggedEntity.name == "stomabag" {
 
-                    print("stoma")
-                    let distance = simd_distance(currentPosition, stomaTargetPosition)
-                    if  distance < threshold {
+                    if simd_distance(currentPosition, stomaTargetPosition) < threshold {
                         draggedEntity.position = stomaTargetPosition
                         if let stoma = draggedEntity.parent?.findEntity(named: "stoma") {
                             stoma.isEnabled = false
                         }
-                    }
-                }
-                
-                else if draggedEntity.name == "wasteBag" {
-                    if isObjectNearTableSurface(itemPosition: draggedEntity.position) {
-                        
-                        draggedEntity.position = wasteBagTargetPosition
-                        
-                        rotateEntity(draggedEntity, xDegrees: 0, yDegrees: 0)
                     }
                 }
                 
@@ -209,29 +207,6 @@ struct ImmersiveView: View {
                 cleanBag.components.set(InputTargetComponent())
                 
                 
-                // Waste bag
-                let wasteBag = try await ModelEntity(named: "WasteBag")
-                wasteBag.name = "wasteBag"
-                wasteBag.position = wasteBagTargetPosition
-                wasteBag.transform.scale = [0.1, 0.1, 0.1]
-                
-                // Collision shape
-                wasteBag.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: wasteBag.model!.mesh)])
-                
-                wasteBag.components.set(PhysicsBodyComponent(
-                    massProperties: .default,
-                    material: .default,
-                    mode: .dynamic,
-                ))
-                wasteBag.physicsBody?.isAffectedByGravity = false
-                wasteBag.components.set(PhysicsMotionComponent(
-                    linearVelocity: .zero,
-                    angularVelocity: .zero
-                ))
-
-                wasteBag.components.set(InputTargetComponent())
-                
-                
                 // Bottle
                 let bottle = try await ModelEntity(named: "Bottle")
                 bottle.name = "bottle"
@@ -256,7 +231,6 @@ struct ImmersiveView: View {
                 content.add(bag)
                 content.add(cleanBag)
                 content.add(bottle)
-                content.add(wasteBag)
             } catch {
                 print("Failed to load model: \(error)")
             }
@@ -268,7 +242,7 @@ struct ImmersiveView: View {
     }
 }
 
-#Preview(immersionStyle: .mixed) {
-    ImmersiveView()
+#Preview(immersionStyle: .full) {
+    ColostomyFirstView()
         .environment(AppModel())
 }

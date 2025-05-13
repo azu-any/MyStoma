@@ -7,7 +7,7 @@
             "name": "Removing the pouch",
             "dialogues": [
                 "Let's start with the first step: bag removal.",
-                "First, let's go over all the materials you'll need: your new bag, cleaning wipes, and a disposal bag.",
+                "First, let's go over all the materials you'll need: your new bag, cleaning wipes or adhesive remover, and a disposal bag.",
                 "To remove your current bag, stretch your skin with one hand and gently peel the plaque from top to bottom.",
                 "This helps reduce discomfort and protects your skin from overstretching.",
                 "Many people wonder what the best way to remove the adhesive plaque from their skin is.",
@@ -17,7 +17,10 @@
                 "These products dissolve the adhesive, making it easier to remove without causing trauma to the skin.",
                 "Pulling directly can damage the skin and cause pain or irritation.",
                 "A spray remover dissolves the adhesive gently, protecting the skin.",
-                "It's a small measure that can make a big difference in your daily comfort."
+                "It's a small measure that can make a big difference in your daily comfort.",
+                "Let's practice!",
+                "Grab the spray and drag it to the stoma bag attached to the body.",
+                "Next, remove the stoma bag and put in the waste bag"
             ],
             "question": "What is best to use to make plaque removal easier?",
             "answers": ["A spray remover or an adhesive wipe", "Pulling the plaque directly with your hands"],
