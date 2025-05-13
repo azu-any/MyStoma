@@ -7,10 +7,10 @@
 
 def Xform "Root"
 {
-    reorder nameChildren = ["Sphere_Left", "Sphere_Right", "GridMaterial"]
+    reorder nameChildren = ["GridMaterial", "Human_Anatomy_Male_Torso", "body", "Timeline", "table", "bag"]
     def "GridMaterial" (
         active = true
-        prepend references = @Materials/GridMaterial.usda@
+        references = @Materials/GridMaterial.usda@
     )
     {
         float3 xformOp:scale = (1, 1, 1)
@@ -34,28 +34,45 @@ def Xform "Root"
     def "body" (
         active = true
         customData = {
-            float3 rotationEulerHint = (-1.5707963, 0, 0)
+            float3 rotationEulerHint = (-1.5707965, -0.5235988, 0)
         }
-        prepend references = @body.usdz@
+        references = @body.usdz@
     )
     {
-        quatf xformOp:orient = (0.70710677, -0.7071067, 0, 0)
+        quatf xformOp:orient = (0.68301266, -0.6830127, -0.1830127, -0.18301271)
         float3 xformOp:scale = (0.9, 0.9, 0.9)
-        float3 xformOp:translate = (0.8, 0, -1.5)
+        float3 xformOp:translate = (1, 0, -1.5)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
 
-    def "Over_Bed_table" (
+    def RealityKitTimeline "Timeline"
+    {
+        def RealityKitTrack "Track"
+        {
+        }
+    }
+
+    def "table" (
         active = true
         customData = {
-            float3 rotationEulerHint = (0, 2.268928, 0)
+            float3 rotationEulerHint = (0, 1.5707963, 0)
         }
-        prepend references = @Over_Bed-table.usdz@
+        references = @table.usdz@
     )
     {
-        quatf xformOp:orient = (0.42261818, 0, 0.9063078, 0)
-        float3 xformOp:scale = (0.01, 0.01, 0.01)
-        float3 xformOp:translate = (-0.8, 0, -1.5)
+        quatf xformOp:orient = (0.70710677, 0, 0.7071067, 0)
+        float3 xformOp:scale = (0.009, 0.009, 0.009)
+        float3 xformOp:translate = (0, 0, -1.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "bag" (
+        active = true
+        references = @bag.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.001, 0.001, 0.001)
+        float3 xformOp:translate = (1, 0.8, -1.2)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
 }

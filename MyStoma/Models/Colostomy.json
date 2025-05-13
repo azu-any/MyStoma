@@ -31,7 +31,7 @@
                 "The stoma is bright red and may bleed a little while you clean it, don't worry, this is normal!",
                 "Cleaning is a crucial step to prevent skin irritation.",
                 "Remember that the stoma does not have any nerve endings, so you will not feel pain when touching it, but it is still important to be gentle.",
-                "Let's see if you know what is the best method for cleaning..."
+                "Let's see if you know what is the best method for cleaning...",
                 "Great!",
                 "Warm water or saline is all you need.",
                 "Soaps, especially scented or antibacterial soaps, can leave residue on the skin that interferes with the adhesion of the plate and can cause irritation.",
@@ -51,7 +51,7 @@
                 "Your stoma can change in size over time, especially in the first few weeks after surgery, so it is important to measure it regularly.",
                 "To measure your stoma, use a measuring guide, often provided in stoma kits.",
                 "Place the guide over your stoma and find the hole that best matches your stoma size.",
-                "Let's talk about how big the hole in the adhesive baseplate should be..."
+                "Let's talk about how big the hole in the adhesive baseplate should be...",
                 "You answered correctly!",
                 "If your stoma measures 28 mm, the hole in the baseplate should be 29–30 mm, leaving only a small margin of 1–2 mm around the stoma.",
                 "It is a common misconception that a smaller hole will prevent leakage, but in reality it can damage the stoma, causing ulcers or circulatory problems.",
@@ -70,7 +70,7 @@
                 "Protection of the peristomal skin is essential to prevent irritation and ensure good adhesion of the system.",
                 "The skin around the stoma must remain healthy to avoid pain and complications.",
                 "If the area around the stoma has irregularities, such as scars, folds or depressions, leaks may occur that cause skin irritation.",
-                "Let's see what to do in these cases..."
+                "Let's see what to do in these cases...",
                 "That's right!",
                 "Modeling paste or barrier ring are invaluable tools for creating a uniform surface.",
                 "These products fill in irregularities in the skin, creating a smooth base for the plate to adhere to and preventing leaks.",
@@ -89,7 +89,7 @@
                 "Now we are ready to apply the new plate.",
                 "This step requires precision and patience, but you will see that with practice it will become easier and easier.",
                 "Remove the protective film from the adhesive plate. Center the plate hole around the stoma and apply the plate to the skin, starting from the bottom up to avoid the formation of folds.",
-                "There is a little trick to ensure good adhesion. Let's see if you know it..."
+                "There is a little trick to ensure good adhesion. Let's see if you know it...",
                 "Perfect!",
                 "Maintaining pressure on the plate for at least 1-2 minutes is essential to activate the adhesive and ensure an optimal hold.",
                 "The warmth of your hand helps the adhesive to blend better with the skin.",
@@ -98,7 +98,7 @@
                 "Don't be afraid to press firmly, the system is designed to withstand this pressure."
             ],
             "question": "How long should you hold the plate down for good adhesion?",
-            "answers": ["At least 1-2 minutes", "No time, it sticks on its own"]
+            "answers": ["At least 1-2 minutes", "No time, it sticks on its own"],
             "timeQuestion": 4,
         },
         {
@@ -107,7 +107,7 @@
             "dialogues": [
                 "An important aspect of stoma care is knowing how often to change the system.",
                 "There is no hard and fast rule that works for everyone, but there are some general guidelines.",
-                "Let's see if you know what the recommended frequency is for changing the bag/system..."
+                "Let's see if you know what the recommended frequency is for changing the bag/system...",
                 "That's right!",
                 "Most systems can stay in place for 3-5 days.",
                 "Changing the system too frequently can irritate the skin, while waiting too long can cause leaks and irritation due to degradation of the adhesive.",
@@ -125,7 +125,7 @@
             "dialogues": [
                 "Odor is a common concern for stoma patients.",
                 "It is important to know that modern pouching systems have activated carbon filters that effectively neutralize odors when they are working properly.",
-                "But what if you notice an unpleasant odor? Let's see if you know what to do..."
+                "But what if you notice an unpleasant odor? Let's see if you know what to do...",
                 "Exactly!",
                 "If you notice an unusual odor, the first thing to do is check that the system is well sealed.",
                 "An odor could indicate a leak or the need to change the pouch.",
@@ -145,7 +145,7 @@
             "dialogues": [
                 "Knowing how to recognize signs of potential complications is essential to effective stoma management.",
                 "The peristomal skin should appear healthy, similar to the skin on the rest of the abdomen",
-                "If you notice changes in the skin around your stoma, what should you do?"
+                "If you notice changes in the skin around your stoma, what should you do?",
                 "Great answer!",
                 "Never ignore signs such as redness, itching, or pain around the stoma.",
                 "These could be signs of dermatitis, material allergies, or a fungal infection.",
@@ -165,7 +165,7 @@
             "dialogues": [
                 "Last but not least is hand hygiene.",
                 "Proper hygiene is essential to prevent infection and ensure your safety while caring for your stoma.",
-                "When do you think you should wash your hands during the procedure?"
+                "When do you think you should wash your hands during the procedure?",
                 "Great!",
                 "Thoroughly washing your hands both before and after each procedure is essential.",
                 "Before the procedure, washing prevents the introduction of bacteria into the peristomal area.",
