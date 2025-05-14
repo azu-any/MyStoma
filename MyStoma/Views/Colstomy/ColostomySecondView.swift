@@ -20,7 +20,7 @@ struct ColostomySecondView: View {
     var translationGesture: some Gesture {
         /// The gesture to move an entity.
         DragGesture()
-            #if VisionOS
+            #if os(visionOS)
             .targetedToAnyEntity()
             .onChanged({ value in
                 /// The entity that the drag gesture targets.
@@ -164,7 +164,7 @@ struct ColostomySecondView: View {
     }
 }
 
-#if VisionOS
+#if os(visionOS)
 #Preview(immersionStyle: .full) {
     ColostomyFirstView()
         .environment(AppModel())

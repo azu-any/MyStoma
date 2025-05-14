@@ -39,6 +39,7 @@ struct ColostomyView: View {
     
     
     var body: some View {
+        #if os(iPadOS)
         ZStack {
             VStack {
                 //Spacer()
@@ -89,15 +90,16 @@ struct ColostomyView: View {
                 .padding()
             }
         }
-        .overlay(
+        .overlay(alignment: .topTrailing) {
             ChatBotOverlay(steps: colostomySteps)
                 .environmentObject(viewModel)
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .padding(.bottom, 200)
-                .padding(.trailing, 16), alignment: .leading
-        )
+                .padding(.trailing, 16)
+        }
         .padding()
         .navigationTitle("Colostomy")
+        #endif
     }
 }
 
