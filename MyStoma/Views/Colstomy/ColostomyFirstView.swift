@@ -7,7 +7,6 @@
 
 import SwiftUI
 import RealityKit
-import RealityKitContent
 import simd
 
 struct ColostomyFirstView: View {
@@ -24,7 +23,7 @@ struct ColostomyFirstView: View {
         /// The gesture to move an entity.
        
         DragGesture()
-#if VisionOS
+        #if VisionOS
             .targetedToAnyEntity()
             .onChanged({ value in
                 /// The entity that the drag gesture targets.
