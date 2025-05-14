@@ -38,35 +38,8 @@ struct InfoVPView: View {
             }
             
             if showDialogue {
+                DialogueView(showDialogue: $showDialogue)
                 
-                let dialogue = $viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex]
-                
-                DialogueView(dialogue: dialogue.wrappedValue, dialogueIndex: $viewModel.currentDialogueIndex)
-                
-                HStack {
-                    Spacer()
-                    Button {
-                        viewModel.currentDialogueIndex -= 1
-                    } label: {
-                        Image(systemName: "chevron.left")
-                    }
-                    .buttonStyle(.plain)
-                    .disabled(!canGoBack(index: viewModel.currentDialogueIndex))
-                    
-                    
-                    Button {
-                        if viewModel.ostomy.steps[viewModel.currentStepIndex].timeQuestion == viewModel.currentDialogueIndex {
-                            showDialogue.toggle()
-                        }
-                        viewModel.currentDialogueIndex += 1
-                    } label: {
-                        Image(systemName: "chevron.right")
-                    }
-                    .buttonStyle(.plain)
-                    .disabled(!canGoForward(index: viewModel.currentDialogueIndex, count: viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count))
-                    
-                    
-                }
             } else {
                 QuestionVPView(question: viewModel.ostomy.steps[viewModel.currentStepIndex].question, answers: viewModel.ostomy.steps[viewModel.currentStepIndex].answers,
                     showDialogue: $showDialogue

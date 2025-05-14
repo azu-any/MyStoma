@@ -11,10 +11,11 @@ struct ChatBotOverlay: View {
         VStack(alignment: .trailing) {
             HStack(alignment: .center, spacing: 16) {
                 
-                Spacer()
-                        
                 VStack(alignment: .trailing) {
-                    Text(steps[currentStep])
+                    let dialogue = viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex]
+                    
+                    Text(dialogue)
+                        .multilineTextAlignment(.leading)
                         .padding()
                         .background(Color.bluePrimary.opacity(0.2))
                         .cornerRadius(20)
@@ -23,24 +24,37 @@ struct ChatBotOverlay: View {
                         .transition(.slide)
                     
                 
-                    Button {
-                        if currentStep < steps.count - 1 {
-                            currentStep += 1
+                    HStack {
+                        Spacer()
+                        Button {
+                            viewModel.currentDialogueIndex -= 1
+                        } label: {
+                            Image(systemName: "chevron.left")
                         }
-                    } label: {
-                        Text("Next")
-                            .font(.system(size: 17, weight: .bold))
-                            .foregroundColor(.blue)
-                            .padding(.top, 4)
+                        .buttonStyle(.plain)
+                        .disabled(!canGoBack(index: viewModel.currentDialogueIndex))
+                        
+                        
+                        Button {
+                            if viewModel.ostomy.steps[viewModel.currentStepIndex].timeQuestion == viewModel.currentDialogueIndex {
+                                //showDialogue.toggle()
+                            }
+                            viewModel.currentDialogueIndex += 1
+                        } label: {
+                            Image(systemName: "chevron.right")
+                        }
+                        .buttonStyle(.plain)
+                        .disabled(!canGoForward(index: viewModel.currentDialogueIndex, count: viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count))
                     }
-                
+                    .padding(.trailing)
+                    
                 }
                 
                 Image("NurseRight")
                     .resizable()
                     .frame(width: 60, height: 60)
                     .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                    .overlay(Circle().stroke(Color.white, lineWidth: 2))
                     .shadow(radius: 4)
                 
                 
@@ -53,4 +67,6 @@ struct ChatBotOverlay: View {
 
 #Preview {
     ColostomyView()
+        .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
+        )
 }

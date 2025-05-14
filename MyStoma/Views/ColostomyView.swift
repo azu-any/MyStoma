@@ -39,7 +39,7 @@ struct ColostomyView: View {
     
     
     var body: some View {
-        #if os(iPadOS)
+        #if os(iOS)
         ZStack {
             VStack {
                 //Spacer()

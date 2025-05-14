@@ -18,18 +18,24 @@ struct TypingTextView: View {
     @State private var timer: Timer?
         
     var body: some View {
-        Text(displayedText)
-            .multilineTextAlignment(.leading)
-            .onChange(of: trigger) {
-                startTyping()
+        VStack(alignment: .leading) {
+            HStack {
+                Text(displayedText)
+                    .multilineTextAlignment(.leading)
+                    .frame(maxHeight: 100, alignment: .topLeading)
+                    .onChange(of: trigger) {
+                        startTyping()
+                    }
+                    .onAppear {
+                        startTyping()
+                        
+                    }
+                    .onDisappear {
+                        timer?.invalidate()
+                    }
+                Spacer()
             }
-            .onAppear {
-                startTyping()
-                
-            }
-            .onDisappear {
-                timer?.invalidate()
-            }
+        }
     }
     
     func startTyping() {
