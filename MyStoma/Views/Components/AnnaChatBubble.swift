@@ -8,35 +8,46 @@ struct ChatBotOverlay: View {
     let steps: [String]
     
     var body: some View {
-        VStack {
+        VStack(alignment: .trailing) {
             HStack(alignment: .center, spacing: 16) {
-                VStack(alignment: .leading) {
+                
+                Spacer()
+                        
+                VStack(alignment: .trailing) {
                     Text(steps[currentStep])
-                        .padding(10)
-                        .background(Color.white.opacity(0.9))
+                        .padding()
+                        .background(Color.bluePrimary.opacity(0.2))
                         .cornerRadius(20)
+                        .frame(maxWidth: 400)
                         .font(.body)
                         .transition(.slide)
-                    Button(action: {
+                    
+                
+                    Button {
                         if currentStep < steps.count - 1 {
                             currentStep += 1
                         }
-                    }, label: {
+                    } label: {
                         Text("Next")
                             .font(.system(size: 17, weight: .bold))
                             .foregroundColor(.blue)
                             .padding(.top, 4)
-                    })
+                    }
+                
                 }
+                
                 Image("NurseRight")
                     .resizable()
                     .frame(width: 60, height: 60)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 4))
                     .shadow(radius: 4)
+                
+                
             }
-            .padding()
         }
+        .frame(maxWidth: 500)
+        .padding()
     }
 }
 
