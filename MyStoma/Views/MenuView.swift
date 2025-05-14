@@ -4,9 +4,6 @@ struct MenuView: View {
     @EnvironmentObject var router: NavigationRouter
     @State private var toggleRotation = false
 
-    let images = ["StomaBag", "StomaBag2", "StomaBag3"]
-    let rotations: [Double] = [-45, -35, 0, 35, 45]
-
     var body: some View {
         NavigationStack(path: $router.path) {
             VStack {
@@ -14,18 +11,19 @@ struct MenuView: View {
                     Button("", systemImage: "gearshape.fill") {
                         print("Settings")
                     }
-                    .padding([.horizontal, .top])
+                    .padding()
                     .font(.system(size: 50, weight: .regular, design: .default))
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.blueSecond)
 
                     Spacer()
                 }
 
-                Image("StomaDida")
+                Image("Logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: 900)
-                    .padding(.bottom, 20)
+                    .frame(maxWidth: 800)
+                    .padding(.top, -60)
+                    .padding(.bottom, 10)
 
                 Button {
                     router.path.append(.play)
@@ -38,7 +36,7 @@ struct MenuView: View {
                     }
                 }
                 .padding()
-                .font(.system(size: 40, weight: .regular, design: .default))
+                .font(.system(size: 50, weight: .regular, design: .default))
                 .foregroundColor(.bluePrimary)
                 .frame(width: 350)
                 .background(Color.white)
@@ -48,7 +46,8 @@ struct MenuView: View {
                         .fill(.clear)
                         .stroke(Color.blueSecond, lineWidth: 4)
                 }
-                .padding()
+                .padding(.leading, -300)
+                .padding(.top, 30)
 
                 Button {
                     router.path.append(.tools)
@@ -61,7 +60,7 @@ struct MenuView: View {
                     }
                 }
                 .padding()
-                .font(.system(size: 40, weight: .regular, design: .default))
+                .font(.system(size: 50, weight: .regular, design: .default))
                 .foregroundColor(.bluePrimary)
                 .frame(width: 350)
                 .background(Color.white)
@@ -71,27 +70,42 @@ struct MenuView: View {
                         .fill(.clear)
                         .stroke(Color.blueSecond, lineWidth: 4)
                 }
-                .padding()
+                .padding(.top, 30)
+                .padding(.leading, -300)
 
                 Spacer()
 
-                InfiniteCarouselView()
+                CarruselView()
+
             }
             .padding()
-            .background(Color.bluePrimary)
+            .background(Color.white)
             .onAppear {
                 Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
                     toggleRotation.toggle()
                 }
             }
             .overlay {
-                Image("NurseRight")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: 400, maxHeight: 300)
-                    .padding()
-                    .offset(x: 450, y: 65)
+                ZStack {
+                    Circle()
+                        .fill(Color.bluePrimary)
+                        .frame(width: 250, height: 250)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.blueSecond, lineWidth: 4)
+                        )
+                        .shadow(radius: 12) // Sombra opcional
+
+                    Image("NurseRight")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(0)
+                        .frame(width: 250, height: 250)
+                        .clipShape(Circle())
+                }
+                .offset(x: 200, y: 27)
             }
+
             .navigationDestination(for: Route.self) { route in
                 router.destination(for: route)
             }
@@ -101,6 +115,5 @@ struct MenuView: View {
 }
 
 #Preview {
-    MenuView()
-        .environmentObject(NavigationRouter())
+    MenuView().environmentObject(NavigationRouter())
 }
