@@ -26,7 +26,7 @@ struct ColostomyView: View {
         DragGesture()
             .targetedToAnyEntity()
             .onChanged { value in
-                let entity = value.entity
+                // let entity = value.entity
                 
                 // Convert 2D drag translation to 3D movement
                 /*let movement = value.convert(CGVector(dx: value.value.translation.width,
