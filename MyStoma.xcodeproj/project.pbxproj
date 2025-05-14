@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7375D2C02DC0EE4B00E2E9DD /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 7375D2BF2DC0EE4B00E2E9DD /* RealityKitContent */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7375D2D32DC0EE5400E2E9DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -18,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		7375D2BA2DC0EE4B00E2E9DD /* MyStoma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStoma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7375D2BE2DC0EE4B00E2E9DD /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		7375D2D22DC0EE5400E2E9DD /* MyStomaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyStomaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7375D2C02DC0EE4B00E2E9DD /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +93,7 @@
 		7375D2BD2DC0EE4B00E2E9DD /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				7375D2BE2DC0EE4B00E2E9DD /* RealityKitContent */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 			);
 			name = MyStoma;
 			packageProductDependencies = (
+				7375D2BF2DC0EE4B00E2E9DD /* RealityKitContent */,
 			);
 			productName = MyStoma;
 			productReference = 7375D2BA2DC0EE4B00E2E9DD /* MyStoma.app */;
@@ -229,7 +237,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SAM2A296M4;
+				DEVELOPMENT_TEAM = JH6SG45AXG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -260,7 +268,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SAM2A296M4;
+				DEVELOPMENT_TEAM = JH6SG45AXG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -475,6 +483,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7375D2BF2DC0EE4B00E2E9DD /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7375D2B22DC0EE4B00E2E9DD /* Project object */;
 }
