@@ -44,7 +44,7 @@ struct ColostomyFirstView: View {
                     
                     let distance = simd_distance(currentPosition, stomaTargetPosition)
                     
-                    if distance > 0.1 {
+                    if distance > 0.02 {
                         if let stoma = draggedEntity.parent?.findEntity(named: "stoma") {
                             stoma.isEnabled = true
                         }
@@ -196,9 +196,9 @@ struct ColostomyFirstView: View {
                 // Stoma bag
                 let bag = try await ModelEntity(named: "stomabag")
                 bag.name = "stomabag"
-                bag.position = [0.9, 0, -1.5]// stomaTargetPosition
-                bag.transform.scale = [1, 1, 1]
-                rotateEntity(bag, xDegrees: -93, yDegrees: 60, zDegrees: 1)
+                bag.position = stomaTargetPosition
+                bag.transform.scale = [0.2, 0.2, 0.2]
+                rotateEntity(bag, xDegrees: -96, yDegrees: -16)
                 
                 // Collision shape
                 bag.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: bag.model!.mesh)])
@@ -218,7 +218,7 @@ struct ColostomyFirstView: View {
                 let cleanBag = try await ModelEntity(named: "stomabag")
                 cleanBag.name = "cleanStomabag"
                 cleanBag.position = cleanBagPosition
-                cleanBag.transform.scale = [1, 1, 1]
+                cleanBag.transform.scale = [0.2, 0.2, 0.2]
                 rotateEntity(cleanBag, xDegrees: -90, yDegrees: 0)
                 
                 // Collision shape

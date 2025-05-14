@@ -73,8 +73,6 @@ struct ImmersiveView: View {
                 
                 // Only apply snapping to "stomabag"
                 if draggedEntity.name == "stomabag" {
-
-                    print("stoma")
                     let distance = simd_distance(currentPosition, stomaTargetPosition)
                     if  distance < threshold {
                         draggedEntity.position = stomaTargetPosition

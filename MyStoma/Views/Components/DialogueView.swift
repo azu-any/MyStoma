@@ -8,12 +8,12 @@ import SwiftUI
 
 struct DialogueView: View {
     
-    var dialogue: String
-    @Binding var dialogueIndex: Int
+    @Binding var showDialogue: Bool
+    @EnvironmentObject var viewModel: OstomyViewModel
     
     var body: some View {
         
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 Image("NurseLeft")
                     .resizable()
@@ -21,9 +21,39 @@ struct DialogueView: View {
                     .clipShape(Circle())
                     .frame(width: 100, height: 100)
                 
-                TypingTextView(fullText: dialogue, trigger: dialogueIndex)
-                    .frame(width: 400, height: 200, alignment: .leading)
+                let dialogue = viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex]
+                
+                //Text(dialogue)
+                    //.multilineTextAlignment(.leading)
+                TypingTextView(fullText: dialogue, trigger: viewModel.currentDialogueIndex)
+                    .frame(width: 400, height: 100)
+                    .padding(.top, 40)
             }
+            
+            HStack {
+                Spacer()
+                Button {
+                    viewModel.currentDialogueIndex -= 1
+                } label: {
+                    Image(systemName: "chevron.left")
+                }
+                .buttonStyle(.plain)
+                .disabled(!canGoBack(index: viewModel.currentDialogueIndex))
+                
+                
+                Button {
+                    if viewModel.ostomy.steps[viewModel.currentStepIndex].timeQuestion == viewModel.currentDialogueIndex {
+                        showDialogue.toggle()
+                    }
+                    viewModel.currentDialogueIndex += 1
+                } label: {
+                    Image(systemName: "chevron.right")
+                }
+                .buttonStyle(.plain)
+                .disabled(!canGoForward(index: viewModel.currentDialogueIndex, count: viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count))
+            }
+            
+
             
         }
     }

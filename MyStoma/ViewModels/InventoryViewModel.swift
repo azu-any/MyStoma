@@ -10,8 +10,8 @@ import Foundation
 class InventoryViewModel: ObservableObject {
     
     @Published var items: [InventoryItem] = [
-        InventoryItem(name: "Colostomy Bag", imageName: "StomaBag"),
-        InventoryItem(name: "Colostomy Bag", imageName: "StomaBag"),
         InventoryItem(name: "Colostomy Bag", imageName: "StomaBag")
+        /*InventoryItem(name: "Colostomy Bag", imageName: "StomaBag"),
+        InventoryItem(name: "Colostomy Bag", imageName: "StomaBag")*/
     ]
 }

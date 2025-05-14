@@ -60,6 +60,7 @@ struct ContentView: View {
         }
         .ornament(attachmentAnchor: .scene(.top)) {
             OrnamentView(isSelected: $isSelected)
+                .glassBackgroundEffect()
         }
         #endif
         

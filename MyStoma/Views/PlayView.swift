@@ -10,7 +10,8 @@ struct PlayView: View {
 
             HStack(spacing: 50) {
                 Button {
-                    selectedItem = .init(title: "Colostomy", description: "")
+                    //selectedItem = .init(title: "Colostomy", description: "")
+                    router.path.append(.colostomy)
                 } label: {
                     Text("Colostomy")
                         .font(.title)
@@ -36,11 +37,6 @@ struct PlayView: View {
                 .frame(width: 450, height: 450)
                 .buttonStyle(InfoButtonStyle(color: .secondary.opacity(0.9)))
             }
-            .onChange(of: selectedItem, initial: false) {
-                if selectedItem != nil {
-                    router.path.append(.colostomy)
-                }
-            }
         }
         .navigationTitle("Make your selection")
     }
@@ -49,5 +45,5 @@ struct PlayView: View {
 #Preview {
     PlayView()
         .environmentObject(NavigationRouter())
-        .environmentObject(OstomyViewModel(ostomy: defaultOstomy))
-}
+        .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
+        )}

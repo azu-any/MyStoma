@@ -20,20 +20,6 @@ func isObjectNearTableSurface(itemPosition: SIMD3<Float>) -> Bool {
 }
 
 
-/*func rotateEntity(_ entity: Entity, xDegrees: Float, yDegrees: Float) {
-    let xRadians = xDegrees * (.pi / 180)
-    let yRadians = yDegrees * (.pi / 180)
-
-    let xRotation = simd_quatf(angle: xRadians, axis: [1, 0, 0])
-    let yRotation = simd_quatf(angle: yRadians, axis: [0, 1, 0])
-
-    // Combine the rotations (Y then X — order matters!)
-    let combinedRotation = yRotation * xRotation
-
-    entity.transform.rotation = combinedRotation
-}*/
-
-
 func rotateEntity(_ entity: Entity, xDegrees: Float, yDegrees: Float, zDegrees: Float = 0) {
     let xRadians = xDegrees * (.pi / 180)
     let yRadians = yDegrees * (.pi / 180)

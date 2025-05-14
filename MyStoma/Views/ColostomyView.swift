@@ -7,64 +7,56 @@ import RealityKit
 
 struct ColostomyView: View {
     
-    @State var initialPosition: SIMD3<Float>? = nil
-    @State var initialRotation: simd_quatf? = nil
-    
+    @State private var modelEntity: Entity? = nil
+    @State private var currentAngle: Float = 0.0
+        
     @ObservedObject private var viewModel = InventoryViewModel()
-    
-    
-    let colostomySteps = [
-        "Step 1: Wash your hands thoroughly.",
-        "Step 2: Gather all necessary supplies.",
-        "Step 3: Gently remove the used pouch.",
-        "Step 4: Clean the stoma and surrounding skin.",
-        "Step 5: Apply a new pouch securely.",
-        "Step 6: Dispose of used materials and wash hands again."
-    ]
+    @EnvironmentObject var ostomyViewModel: OstomyViewModel
     
     var translationGesture: some Gesture {
         DragGesture()
-            .targetedToAnyEntity()
             .onChanged { value in
-                // let entity = value.entity
-                
-                // Convert 2D drag translation to 3D movement
-                /*let movement = value.convert(CGVector(dx: value.value.translation.width,
-                                                      dy: value.value.translation.height), from: .local, to: .scene)
+                // Convert drag to horizontal angle
+                let delta = Float(value.translation.width)
+                let angle = currentAngle + delta * 0.01  // Sensitivity
 
-                // Apply the movement to the entity
-                entity.position += SIMD3<Float>(Float(movement.x), 0, Float(movement.y))*/
+                if let model = modelEntity {
+                    model.transform.rotation = simd_quatf(angle: angle, axis: [0, 1, 0])
+                }
+            }
+            .onEnded { value in
+                // Store the final angle
+                currentAngle += Float(value.translation.width) * 0.01
             }
     }
     
     
     var body: some View {
-        #if os(iPadOS)
+        #if os(iOS)
         ZStack {
             VStack {
-                //Spacer()
-                
-                /*Image("Union")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: 300, maxHeight: 300)*/
-                
-                
+                Spacer()
                 
                 RealityView { content in
                     content.camera = .virtual
                     
                     if let body = try? await ModelEntity(named: "StomaBody") {
                         
+                       // body.position = [0, -1.2, 1.3]
                         body.components.set(InputTargetComponent())
                         
-                        body.position = [0, -1.2, 1.3]
-                        content.add(body)
+                        let wrapper = Entity()
+                        wrapper.setPosition([0, -1.2, 1.3], relativeTo: nil)
+                        wrapper.addChild(body)
+                        modelEntity = wrapper
+
+                        content.add(wrapper)
                     }
                 }
-                .gesture(DragGesture())
+                .frame(width: 600)
+                .gesture(translationGesture)
                 
-                //Spacer()
+                Spacer()
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 16) {
@@ -91,12 +83,11 @@ struct ColostomyView: View {
             }
         }
         .overlay(alignment: .topTrailing) {
-            ChatBotOverlay(steps: colostomySteps)
-                .environmentObject(viewModel)
-                .frame(maxWidth: .infinity, alignment: .trailing)
-                .padding(.bottom, 200)
-                .padding(.trailing, 16)
+            ChatBotOverlay()
+                .environmentObject(ostomyViewModel)
+                .frame(maxWidth: 500, maxHeight: 500,alignment: .topTrailing)
         }
+        .allowsHitTesting(true)
         .padding()
         .navigationTitle("Colostomy")
         #endif
@@ -106,5 +97,8 @@ struct ColostomyView: View {
 #Preview {
     NavigationStack {
         ColostomyView()
+            .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
+            )
+
     }
 }
