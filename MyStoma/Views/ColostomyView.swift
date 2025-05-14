@@ -25,70 +25,30 @@ struct ColostomyView: View {
     var translationGesture: some Gesture {
         DragGesture()
             .targetedToAnyEntity()
-            .onChanged({ value in
-                /// The entity that the drag gesture targets.
-                let draggedEntity = value.entity
+            .onChanged { value in
+                let entity = value.entity
+                
+                // Convert 2D drag translation to 3D movement
+                /*let movement = value.convert(CGVector(dx: value.value.translation.width,
+                                                      dy: value.value.translation.height), from: .local, to: .scene)
 
-                if initialPosition == nil {
-                    initialPosition = draggedEntity.position
-                    initialRotation = draggedEntity.transform.rotation
-                }
-
-                /*let movement = value.convert(value.translation3D, from: .global, to: .scene)
-                
-                draggedEntity.position = (initialPosition ?? .zero) + movement
-                
-                if let initialRotation = initialRotation {
-                    draggedEntity.transform.rotation = initialRotation
-                }*/
-
-            })
-            .onEnded({ value in
-                
-                let draggedEntity = value.entity
-                let currentPosition = draggedEntity.position(relativeTo: nil)
-                
-                // Reset the `initialPosition` back to `nil` when the gesture ends.
-                initialPosition = nil
-                initialRotation = nil
-                
-                draggedEntity.components.set(PhysicsMotionComponent(
-                    linearVelocity: .zero,
-                    angularVelocity: .zero
-                ))
-                
-                if draggedEntity.name == "stomabag" {
-
-                    if simd_distance(currentPosition, stomaTargetPosition) < threshold {
-                        draggedEntity.position = stomaTargetPosition
-                        if let stoma = draggedEntity.parent?.findEntity(named: "stoma") {
-                            stoma.isEnabled = false
-                        }
-                    }
-                }
-                
-                else if draggedEntity.name == "cleanStomabag" {
-                    if isObjectNearTableSurface(itemPosition: draggedEntity.position) {
-                        
-                        draggedEntity.position = cleanBagPosition
-                        
-                        rotateEntity(draggedEntity, xDegrees: 0, yDegrees: 0)
-                    }
-                }
-                
-            })
+                // Apply the movement to the entity
+                entity.position += SIMD3<Float>(Float(movement.x), 0, Float(movement.y))*/
+            }
     }
     
     
     var body: some View {
         ZStack {
             VStack {
-                Spacer()
+                //Spacer()
                 
                 /*Image("Union")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: 300, maxHeight: 300)*/
+                
+                
                 
                 RealityView { content in
                     content.camera = .virtual
@@ -96,12 +56,14 @@ struct ColostomyView: View {
                     if let body = try? await ModelEntity(named: "StomaBody") {
                         
                         body.components.set(InputTargetComponent())
+                        
+                        body.position = [0, -1.2, 1.3]
                         content.add(body)
                     }
                 }
                 .gesture(DragGesture())
                 
-                Spacer()
+                //Spacer()
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 16) {
@@ -140,5 +102,7 @@ struct ColostomyView: View {
 }
 
 #Preview {
-    ColostomyView()
+    NavigationStack {
+        ColostomyView()
+    }
 }
