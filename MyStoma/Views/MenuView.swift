@@ -14,7 +14,7 @@ struct MenuView: View {
                     Button("", systemImage: "gearshape.fill") {
                         print("Settings")
                     }
-                    .padding()
+                    .padding([.horizontal, .top])
                     .font(.system(size: 50, weight: .regular, design: .default))
                     .foregroundColor(Color.white)
 
@@ -24,8 +24,8 @@ struct MenuView: View {
                 Image("StomaDida")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: 1000)
-                    .padding(.bottom, 50)
+                    .frame(maxWidth: 900)
+                    .padding(.bottom, 20)
 
                 Button {
                     router.path.append(.play)
@@ -38,7 +38,7 @@ struct MenuView: View {
                     }
                 }
                 .padding()
-                .font(.system(size: 50, weight: .regular, design: .default))
+                .font(.system(size: 40, weight: .regular, design: .default))
                 .foregroundColor(.bluePrimary)
                 .frame(width: 350)
                 .background(Color.white)
@@ -61,7 +61,7 @@ struct MenuView: View {
                     }
                 }
                 .padding()
-                .font(.system(size: 50, weight: .regular, design: .default))
+                .font(.system(size: 40, weight: .regular, design: .default))
                 .foregroundColor(.bluePrimary)
                 .frame(width: 350)
                 .background(Color.white)

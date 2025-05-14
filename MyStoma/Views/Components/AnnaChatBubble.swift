@@ -1,8 +1,12 @@
 import SwiftUI
 
 struct ChatBotOverlay: View {
+    
+    @EnvironmentObject var viewModel: OstomyViewModel
     @State private var currentStep: Int = 0
+    
     let steps: [String]
+    
     var body: some View {
         VStack {
             HStack(alignment: .center, spacing: 16) {

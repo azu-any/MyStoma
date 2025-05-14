@@ -7,7 +7,6 @@
 
 import SwiftUI
 import RealityKit
-import RealityKitContent
 
 struct ContentView: View {
     
@@ -67,6 +66,7 @@ struct ContentView: View {
         #if os(iOS)
         MenuView()
             .environmentObject(NavigationRouter())
+            .environmentObject(viewModel)
         #endif
     }
 }
