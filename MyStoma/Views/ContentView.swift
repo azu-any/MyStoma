@@ -67,6 +67,7 @@ struct ContentView: View {
         #if os(iOS)
         MenuView()
             .environmentObject(NavigationRouter())
+            .environmentObject(viewModel)
         #endif
     }
 }
