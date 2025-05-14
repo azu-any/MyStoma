@@ -5,27 +5,36 @@ struct ChatBotOverlay: View {
     @EnvironmentObject var viewModel: OstomyViewModel
     @State private var currentStep: Int = 0
     
-    let steps: [String]
     
     var body: some View {
         VStack(alignment: .trailing) {
-            HStack(alignment: .center, spacing: 16) {
+            HStack(alignment: .top, spacing: 20) {
                 
                 VStack(alignment: .trailing) {
-                    let dialogue = viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex]
+                    //let dialogue = viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex]
                     
-                    Text(dialogue)
+                    Text(viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex])
+                    //TypingTextView(fullText: dialogue, trigger: viewModel.currentDialogueIndex)
                         .multilineTextAlignment(.leading)
                         .padding()
                         .background(Color.bluePrimary.opacity(0.2))
                         .cornerRadius(20)
-                        .frame(maxWidth: 400)
+                        .frame(maxWidth: 400, alignment: .trailing)
                         .font(.body)
                         .transition(.slide)
-                    
+                                        
+                }
                 
+                
+                VStack {
+                    Image("NurseRight")
+                        .resizable()
+                        .frame(width: 60, height: 60)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.white, lineWidth: 2))
+                        .shadow(radius: 4)
+                    
                     HStack {
-                        Spacer()
                         Button {
                             viewModel.currentDialogueIndex -= 1
                         } label: {
@@ -46,17 +55,9 @@ struct ChatBotOverlay: View {
                         .buttonStyle(.plain)
                         .disabled(!canGoForward(index: viewModel.currentDialogueIndex, count: viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count))
                     }
-                    .padding(.trailing)
+                    .padding()
                     
                 }
-                
-                Image("NurseRight")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 2))
-                    .shadow(radius: 4)
-                
                 
             }
         }
