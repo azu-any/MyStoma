@@ -9,15 +9,19 @@ import SwiftUI
 import RealityKit
 import simd
 
-struct ImmersiveView: View {
+struct ColostomyFirstView: View {
     
+    @EnvironmentObject var viewModel: OstomyViewModel
+
     @State var initialPosition: SIMD3<Float>? = nil
     @State var initialRotation: simd_quatf? = nil
-    
+    @State var wasteBagEntity: Entity? = nil
+    @State var stomabagEntity: Entity? = nil
     
     /// The gesture checks whether there is a root component and adjusts the postion of the entity.
     var translationGesture: some Gesture {
         /// The gesture to move an entity.
+       
         DragGesture()
         #if os(visionOS)
             .targetedToAnyEntity()
@@ -40,15 +44,29 @@ struct ImmersiveView: View {
                     
                     let distance = simd_distance(currentPosition, stomaTargetPosition)
                     
-                    if distance > 0.1 {
+                    if distance > 0.02 {
                         if let stoma = draggedEntity.parent?.findEntity(named: "stoma") {
                             stoma.isEnabled = true
                         }
                     } else {
                         if let stoma = draggedEntity.parent?.findEntity(named: "stoma") {
                             stoma.isEnabled = false
-                            
                         }
+                    }
+                    
+                    if simd_distance(currentPosition, wasteBagEntity!.position) < 0.25 {
+                        draggedEntity.isEnabled = false
+                        viewModel.isDone = true
+                    }
+                }
+                
+                else if draggedEntity.name == "bottle" {
+                    if simd_distance(currentPosition, stomaTargetPosition) < 0.2  {
+                        
+                        draggedEntity.isEnabled = false
+                        
+                        /*draggedEntity.playAnimation(AnimationResource, transitionDuration: TimeInterval, startsPaused: Bool)*/
+                        
                     }
                 }
                 
@@ -71,14 +89,15 @@ struct ImmersiveView: View {
                     angularVelocity: .zero
                 ))
                 
-                // Only apply snapping to "stomabag"
                 if draggedEntity.name == "stomabag" {
-                    let distance = simd_distance(currentPosition, stomaTargetPosition)
-                    if  distance < threshold {
+                    if simd_distance(currentPosition, stomaTargetPosition) < threshold {
                         draggedEntity.position = stomaTargetPosition
                         if let stoma = draggedEntity.parent?.findEntity(named: "stoma") {
                             stoma.isEnabled = false
                         }
+                    } else if simd_distance(currentPosition, wasteBagEntity!.position) < 0.25 {
+                        draggedEntity.isEnabled = false
+                        viewModel.isDone = true
                     }
                 }
                 
@@ -112,13 +131,16 @@ struct ImmersiveView: View {
                         
                         draggedEntity.isEnabled = false
                         
+                        if let bag = stomabagEntity {
+                            bag.components.set(InputTargetComponent())
+                        }
                         /*draggedEntity.playAnimation(AnimationResource, transitionDuration: TimeInterval, startsPaused: Bool)*/
                         
                     }
                 }
-            })
-        #endif
 
+        })
+    #endif
     }
     
     
@@ -187,7 +209,9 @@ struct ImmersiveView: View {
                     mode: .dynamic
                 ))
                 bag.physicsBody?.isAffectedByGravity = false
-                bag.components.set(InputTargetComponent())
+                
+                stomabagEntity = bag
+                //bag.components.set(InputTargetComponent())
                 
                 
                 // Clean bag
@@ -195,7 +219,7 @@ struct ImmersiveView: View {
                 cleanBag.name = "cleanStomabag"
                 cleanBag.position = cleanBagPosition
                 cleanBag.transform.scale = [0.2, 0.2, 0.2]
-                rotateEntity(cleanBag, xDegrees: -90, yDegrees: 180)
+                rotateEntity(cleanBag, xDegrees: -90, yDegrees: 0)
                 
                 // Collision shape
                 cleanBag.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: cleanBag.model!.mesh)])
@@ -230,6 +254,7 @@ struct ImmersiveView: View {
                 ))
 
                 wasteBag.components.set(InputTargetComponent())
+                wasteBagEntity = wasteBag
                 
                 
                 // Bottle
@@ -270,8 +295,7 @@ struct ImmersiveView: View {
 
 #if os(visionOS)
 #Preview(immersionStyle: .mixed) {
-    ImmersiveView()
+    ColostomyFirstView()
         .environment(AppModel())
 }
 #endif
-

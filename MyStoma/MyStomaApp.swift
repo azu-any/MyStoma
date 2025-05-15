@@ -11,6 +11,7 @@ import SwiftUI
 struct MyStomaApp: App {
 
     @State private var appModel = AppModel()
+    @StateObject var viewModel = OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
 
     var body: some Scene {
         
@@ -18,17 +19,33 @@ struct MyStomaApp: App {
         WindowGroup() {
             ContentView()
                 .environment(appModel)
+                .environmentObject(viewModel)
+
         }
         #if os(visionOS)
         .defaultSize(width: 650, height: 500)
         #endif
-        //.windowResizability(.contentSize)
-        //.defaultSize()
 
         #if os(visionOS)
-        ImmersiveSpace(id: appModel.immersiveSpaceID) {
-            ImmersiveView()
+        ImmersiveSpace(id: ColostomySpace.first.id) {
+            ColostomyFirstView()
                 .environment(appModel)
+                .environmentObject(viewModel)
+                .onAppear {
+                    appModel.immersiveSpaceState = .open
+                }
+                .onDisappear {
+                    appModel.immersiveSpaceState = .closed
+                }
+        }
+        .immersionStyle(selection: .constant(.mixed), in: .mixed)
+        #endif
+        
+        #if os(visionOS)
+        ImmersiveSpace(id: ColostomySpace.second.id) {
+            ColostomySecondView()
+                .environment(appModel)
+                .environmentObject(viewModel)
                 .onAppear {
                     appModel.immersiveSpaceState = .open
                 }

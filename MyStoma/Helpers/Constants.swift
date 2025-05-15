@@ -9,7 +9,9 @@ import Foundation
 import simd
 
 let stomaTargetPosition = SIMD3<Float>(0.96, 1.025, -1.32)
-let wasteBagTargetPosition = SIMD3<Float>(0, 0.803, -1.45)
+let wasteBagTargetPosition = SIMD3<Float>(0, 0.8, -1.5)
+let bottleTargetPosition = SIMD3<Float>(-0.3, 0.8, -1.5)
+let cleanBagPosition = SIMD3<Float>(0.25, 0, -1.6)
 
 
 let tablePosition = SIMD3<Float>(0, 0, -1.50)
