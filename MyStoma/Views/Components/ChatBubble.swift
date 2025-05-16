@@ -17,11 +17,17 @@ struct ChatBotOverlay: View {
                     //TypingTextView(fullText: dialogue, trigger: viewModel.currentDialogueIndex)
                         .multilineTextAlignment(.leading)
                         .padding()
-                        .background(Color.bluePrimary.opacity(0.2))
+                        .background(RoundedRectangle(cornerRadius: 20)
+                            .fill(Color.gray.opacity(0.1))
+                            .shadow(radius: 5)
+                            )
                         .cornerRadius(20)
-                        .frame(maxWidth: 400, alignment: .trailing)
+                        .frame(maxWidth: 280, alignment: .trailing)
                         .font(.body)
                         .transition(.slide)
+
+                        
+
                                         
                 }
                 
