@@ -12,6 +12,7 @@ struct MyStomaApp: App {
 
     @State private var appModel = AppModel()
     @StateObject var viewModel = OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
+    @StateObject var router = NavigationRouter()
 
     var body: some Scene {
         

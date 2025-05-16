@@ -11,7 +11,8 @@ import RealityKit
 struct ContentView: View {
     
     @EnvironmentObject var viewModel: OstomyViewModel
-    @StateObject private var router = NavigationRouter()
+    //@StateObject private var router = NavigationRouter()
+    @EnvironmentObject private var router: NavigationRouter
 
     @State private var isSelected: Bool = false
     
