@@ -4,120 +4,58 @@ struct MenuView: View {
     //@EnvironmentObject var router: NavigationRouter
     @State private var toggleRotation = false
     @StateObject var router = NavigationRouter()
-
+    
     var body: some View {
         NavigationStack(path: $router.path) {
             VStack {
                 HStack {
-                    Button("", systemImage: "gearshape.fill") {
-                        print("Settings")
-                    }
-                    .padding()
-                    .padding(.top, 20)
-                    .font(.system(size: 50, weight: .regular, design: .default))
-                    .foregroundColor(Color.blueSecond)
-
+                    Image (systemName: "cross.case.fill")
+                        .padding()
+                        .font(.system(size: 40))
+                        .foregroundColor(Color.bluePrimary)
+                    
                     Spacer()
-                }
-
-                Image("Logo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: 800)
-                    .padding(.bottom, 10)
-                
-                
-                Spacer()
-                
-                HStack (spacing: 60) {
-                    VStack(spacing: 30){
-                        Button {
-                            router.path.append(.play)
-                        } label: {
-                            HStack {
-                                Image(systemName: "play.fill")
-                                Spacer()
-                                Text("Play")
-                                Spacer()
-                            }
-                        }
+                    
+                    Image (systemName: "gearshape.fill")
                         .padding()
-                        .font(.system(size: 50, weight: .regular, design: .default))
-                        .foregroundColor(.bluePrimary)
-                        .frame(width: 350)
-                        .background(Color.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(.clear)
-                                .stroke(Color.blueSecond, lineWidth: 4)
-                        }
-                        //.padding(.leading, -300)
-                        //.padding(.top, 30)
-                        
-                        Button {
-                            router.path.append(.tools)
-                        } label: {
-                            HStack {
-                                Image(systemName: "cross.case")
-                                Spacer()
-                                Text("Tools")
-                                Spacer()
-                            }
-                        }
-                        .padding()
-                        .font(.system(size: 50, weight: .regular, design: .default))
-                        .foregroundColor(.bluePrimary)
-                        .frame(width: 350)
-                        .background(Color.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(.clear)
-                                .stroke(Color.blueSecond, lineWidth: 4)
-                        }
-                        //.padding(.top, 30)
-                        //.padding(.leading, -300)
-                    }
-                    
-                    
-                    ZStack {
-                        Circle()
-                            .fill(Color.bluePrimary)
-                            .frame(width: 250, height: 250)
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.blueSecond, lineWidth: 4)
-                            )
-                            .shadow(radius: 12) // Sombra opcional
-
-                        Image("NurseRight")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .padding(0)
-                            .frame(width: 250, height: 250)
-                            .clipShape(Circle())
-                    }
-                    
+                        .font(.system(size: 40))
+                        .foregroundColor(Color.bluePrimary)
                 }
-
-                Spacer()
-
-                CarruselView()
-                    .ignoresSafeArea()
-
+                
+                MenuCaroussel()
+                
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Stories")
+                            .font(.title)
+                            .bold()
+                        Spacer()
+                    }
+                }
+                
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(0..<10) { index in
+                            Text("")
+                        }.frame(width: 320, height: 200)
+                            .background(Color.gray.opacity(0.2))
+                            .cornerRadius(30)
+                    }
+                }
+                
+                
             }
             .ignoresSafeArea()
             .edgesIgnoringSafeArea(.all)
             .padding()
-            .padding(.top, -50)
+            .padding(.top, 100)
             .background(Color.white)
             .onAppear {
                 Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
                     toggleRotation.toggle()
                 }
             }
-
+            
             .navigationDestination(for: Route.self) { route in
                 router.destination(for: route)
             }
