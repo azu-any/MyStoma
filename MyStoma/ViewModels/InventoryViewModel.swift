@@ -10,20 +10,41 @@ import Foundation
 class InventoryViewModel: ObservableObject {
     
     @Published var items: [InventoryItem] = [
-        InventoryItem(name: "Colostomy Bag", imageName: "StomaBag"),
+        //
         InventoryItem(name: "Waste Bag", imageName: "WasteBag"),
         InventoryItem(name: "Adhesive Remover Spray", imageName: "AdhesiveRemover")
     ]
     
     
     
-    func handleDroppedItems(droppedItems: [InventoryItem]) {
+    func handleBodyItems(droppedItems: [InventoryItem]) -> String {
+        guard let firstItem = droppedItems.first else { return "" }
+        
+        if firstItem.imageName == "AdhesiveRemover" {
+            items.removeAll { $0.imageName == "AdhesiveRemover" }
+            items.append(InventoryItem(name: "Colostomy Bag", imageName: "StomaBag"))
+            
+            return "RemoveBag"
+        }
+        
+        if firstItem.imageName == "Cloth" {
+            items.removeAll { $0.imageName == "Cloth" }
+            return "Done"
+        }
+        
+        return ""
+    }
+    
+    func handleMaterialItems(droppedItems: [InventoryItem]) -> String {
         guard let firstItem = droppedItems.first else {
-            return
+            return ""
         }
         
         if firstItem.imageName == "StomaBag" {
-            items.remove(at: 0)
+            items.removeAll { $0.imageName == "StomaBag" }
+            return "TrashBag"
         }
+        
+        return ""
     }
 }

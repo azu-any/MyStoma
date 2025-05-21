@@ -42,7 +42,7 @@ extension InventoryItem: Transferable {
 
     }
 
-    func handleDroppedItems(droppedItems: [InventoryItem], index: Int? = nil) {
+    /*func handleDroppedItems(droppedItems: [InventoryItem], index: Int? = nil) {
         guard let firstItem = droppedItems.first else {
             return
         }
@@ -55,7 +55,7 @@ extension InventoryItem: Transferable {
         } else {
             contacts.insert(firstContact, at: index ?? contacts.endIndex)
         }*/
-    }
+    }*/
     
     /*static func parseVCardData(_ data: Data) async throws -> Contact {
         let contacts = try await CNContactVCardSerialization.contacts(

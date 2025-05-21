@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct QuestionVPView: View {
+struct QuestionView: View {
     
     var question: String
     var answers: [String]
@@ -16,7 +16,7 @@ struct QuestionVPView: View {
 
     var body: some View {
         ZStack {
-            VStack(alignment: .leading, spacing: 20) {
+            VStack(alignment: .center, spacing: 20) {
                 
                 Text(question)
                 
