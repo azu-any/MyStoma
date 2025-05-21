@@ -11,56 +11,61 @@ import RealityKit
 struct ContentView: View {
     
     @EnvironmentObject var viewModel: OstomyViewModel
-    @StateObject private var router = NavigationRouter()
+    //@StateObject private var router = NavigationRouter()
+    @EnvironmentObject private var router: NavigationRouter
 
-    @State private var isSelected: Bool = false
+    //@State private var isSelected: Bool = false
     
     var body: some View {
         
         #if os(visionOS)
-        VStack(spacing: 30) {
-            
-            if !isSelected  {
+        NavigationStack {
+            VStack(spacing: 30) {
                 
                 VStack (spacing: 30) {
                     
-                    Button {
-                        isSelected = true
+                    NavigationLink {
+                        InfoVPView()
+                            .environmentObject(viewModel)
                     } label: {
                         Text("Colostomy")
                     }
                     
-                    Button {
                         
-                    } label: {
-                        
-                        HStack {
-                            Image(systemName: "lock.fill")
-                            Text("Ileostomy")
+                        Button {
+                            
+                        } label: {
+                            
+                            HStack {
+                                Image(systemName: "lock.fill")
+                                Text("Ileostomy")
+                            }
                         }
-                    }
-                    .disabled(true)
-                    
-                    Button {
+                        .disabled(true)
                         
-                    } label: {
-                        
-                        HStack {
-                            Image(systemName: "lock.fill")
-                            Text("Urostomy")
+                        Button {
+                            
+                        } label: {
+                            
+                            HStack {
+                                Image(systemName: "lock.fill")
+                                Text("Urostomy")
+                            }
                         }
+                        .disabled(true)
+                        
                     }
-                    .disabled(true)
-                }
                 .padding(.vertical, 50)
-            } else {
-                InfoVPView()
-                    .environmentObject(viewModel)
             }
-        }
-        .ornament(attachmentAnchor: .scene(.top)) {
-            OrnamentView(isSelected: $isSelected)
-                .glassBackgroundEffect()
+            .ornament(attachmentAnchor: .scene(.top)) {
+                OrnamentView()
+                    .glassBackgroundEffect()
+            }
+            .ornament(attachmentAnchor: .scene(.bottom)) {
+                BottomOrnamentView()
+                    .glassBackgroundEffect()
+            }
+            
         }
         #endif
         
@@ -75,30 +80,46 @@ struct ContentView: View {
 
 struct OrnamentView: View {
     
-    @Binding var isSelected: Bool
-
     var body: some View {
         HStack {
-            Image("Logo")
+            Image("LogoWhite")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200)
-                .foregroundStyle(.white, .white, .white)
                 .padding()
                 .padding(.bottom, -5)
-            
-            Button {
-                isSelected = false
-            } label: {
-                Image(systemName: "line.3.horizontal.circle.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 50)
-                    .padding()
-            }
-            .buttonStyle(.plain)
+                .foregroundStyle(.white, .white, .white)
         }
         .padding(.horizontal)
+        
+    }
+}
+
+
+
+    
+    
+struct BottomOrnamentView: View {
+    
+    var body: some View {
+        NavigationStack{
+            HStack {
+                NavigationLink {
+                    ToolsView()
+                } label: {
+                    Image(systemName: "cross.case.fill")
+                }
+                
+                
+                NavigationLink {
+                    SettingsView()
+                } label: {
+                    Image(systemName: "gear")
+                }
+                
+            }
+            //.padding(.horizontal)
+        }
         
     }
 }
@@ -106,4 +127,6 @@ struct OrnamentView: View {
 #Preview() {
     ContentView()
         .environment(AppModel())
+        .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
+        )
 }

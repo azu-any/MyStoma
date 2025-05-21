@@ -6,11 +6,13 @@ import RealityKit
 
 
 struct ColostomyView: View {
-    
+
     @State private var modelEntity: Entity? = nil
+    @State private var bagEntity: Entity? = nil
+    @State private var stomaEntity: Entity? = nil
     @State private var currentAngle: Float = 0.0
         
-    @ObservedObject private var viewModel = InventoryViewModel()
+    @StateObject private var viewModel = InventoryViewModel()
     @EnvironmentObject var ostomyViewModel: OstomyViewModel
     
     var translationGesture: some Gesture {
@@ -35,40 +37,73 @@ struct ColostomyView: View {
         #if os(iOS)
         ZStack {
             VStack {
-                Spacer()
                 
                 RealityView { content in
                     content.camera = .virtual
                     
-                    if let body = try? await ModelEntity(named: "StomaBody") {
+                    let wrapper = Entity()
+                    wrapper.setPosition([0, -1.2, 1.3], relativeTo: nil)
+                    
+                    if let body = try? await Entity(named: "StomaBody") {
                         
-                       // body.position = [0, -1.2, 1.3]
+                       //body.position = [0, -1.2, 1.3]
                         body.components.set(InputTargetComponent())
                         
-                        let wrapper = Entity()
-                        wrapper.setPosition([0, -1.2, 1.3], relativeTo: nil)
+                        if let stoma = body.findEntity(named: "Human_Stomach") {
+                            stoma.name = "stoma"
+                            stomaEntity = stoma
+                        }
+                        
                         wrapper.addChild(body)
-                        modelEntity = wrapper
-
-                        content.add(wrapper)
                     }
+                    
+                    if let bag = try? await ModelEntity(named: "stomabag") {
+                        bag.isEnabled = false
+                        bag.scale = [0.2, 0.2, 0.2]
+                        bag.position = [0.055, 1.04, 0.195]
+                        rotateEntity(bag, xDegrees: -90, yDegrees: 20)
+                        wrapper.addChild(bag)
+                        bagEntity = bag
+                    }
+                        
+                    modelEntity = wrapper
+                    content.add(wrapper)
                 }
                 .frame(width: 600)
                 .gesture(translationGesture)
-                
-                Spacer()
+                .dropDestination(for: InventoryItem.self) { droppedItems, index in
+                    viewModel.handleDroppedItems(droppedItems: droppedItems)
+                    if let bag = bagEntity{
+                        bag.isEnabled = true
+                        stomaEntity?.isEnabled = false
+                    }
+                    return true
+                }
                 
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 16) {
+                    
+                    Spacer()
+                        .containerRelativeFrame(.horizontal)
+                    
+                    HStack(alignment: .center, spacing: 16) {
+                                                
                         ForEach(viewModel.items) { item in
                             VStack {
                                 Image(item.imageName)
                                     .resizable()
-                                    .aspectRatio(contentMode: .fit)
+                                    .scaledToFit()
+                                    .padding(10)
                                     .frame(width: 100, height: 100)
-                                    .background(Color.white.opacity(0.2))
+                                    .background(Color.white)//.opacity(0.2))
                                     .cornerRadius(8)
+                                    .padding([.top, .horizontal], 5)
+                                    .draggable(item) {
+                                        Image(item.imageName)
+                                    }
+                                
                                 Text(item.name)
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 100, height: 40)
                                     .font(.caption)
                                     .foregroundColor(.white)
                             }
@@ -76,6 +111,8 @@ struct ColostomyView: View {
                     }
                     .padding(.horizontal)
                 }
+                .scrollBounceBehavior(.basedOnSize)
+                .frame(height: 150)
                 .padding()
                 .background(Color.bluePrimary)
                 .cornerRadius(20)

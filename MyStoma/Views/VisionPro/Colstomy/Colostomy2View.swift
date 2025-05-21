@@ -64,15 +64,6 @@ struct ColostomySecondView: View {
                     }
                 }
                 
-                else if draggedEntity.name == "cleanStomabag" {
-                    if isObjectNearTableSurface(itemPosition: draggedEntity.position) {
-                        
-                        draggedEntity.position = cleanBagPosition
-                        
-                        rotateEntity(draggedEntity, xDegrees: 0, yDegrees: 0)
-                    }
-                }
-                
             })
         #endif
     }
@@ -127,31 +118,14 @@ struct ColostomySecondView: View {
                 ))
                 
                 
-                // Clean bag
-                let cleanBag = try await ModelEntity(named: "stomabag")
-                cleanBag.name = "cleanStomabag"
-                cleanBag.position = cleanBagPosition
-                cleanBag.transform.scale = [0.2, 0.2, 0.2]
-                rotateEntity(cleanBag, xDegrees: -90, yDegrees: 180)
+                // Cloth
                 
-                // Collision shape
-                cleanBag.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: cleanBag.model!.mesh)])
-                
-                cleanBag.components.set(PhysicsBodyComponent(
-                    massProperties: .default,
-                    material: .default,
-                    mode: .dynamic
-                ))
-                cleanBag.physicsBody?.isAffectedByGravity = false
-                cleanBag.components.set(InputTargetComponent())
-                
-                
+                // Water
                 
                 
                 // Add models
                 content.add(body)
                 content.add(table)
-                content.add(cleanBag)
 
             } catch {
                 print("Failed to load model: \(error)")
@@ -166,7 +140,7 @@ struct ColostomySecondView: View {
 
 #if os(visionOS)
 #Preview(immersionStyle: .full) {
-    ColostomyFirstView()
+    ColostomySecondView()
         .environment(AppModel())
 }
 #endif
