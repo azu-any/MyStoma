@@ -10,6 +10,7 @@ struct ColostomyView: View {
     @State private var modelEntity: Entity? = nil
     @State private var bagEntity: Entity? = nil
     @State private var stomaEntity: Entity? = nil
+    @State private var stomaSizerEntity: Entity? = nil
     @State private var currentAngle: Float = 0.0
     
     @State var showDialogue: Bool = true
@@ -61,12 +62,29 @@ struct ColostomyView: View {
                     }
                     
                     if let bag = try? await ModelEntity(named: "stomabag") {
-                        //bag.isEnabled = false
                         bag.scale = [0.2, 0.2, 0.2]
                         bag.position = [0.057, 1.03, 0.195]
                         rotateEntity(bag, xDegrees: -90, yDegrees: 20)
                         wrapper.addChild(bag)
                         bagEntity = bag
+                    }
+                    
+                    if let stomaSizer = try? await ModelEntity(named: "StomaSizer") {
+                        stomaSizer.scale = [0.105, 0.105, 0.105]
+                        stomaSizer.position = [0.11, 1.02, 0.175]
+                        rotateEntity(stomaSizer, xDegrees: -90, yDegrees: 20)
+                        wrapper.addChild(stomaSizer)
+                        stomaSizerEntity = stomaSizer
+                        stomaSizerEntity?.isEnabled = false
+                    }
+                    
+                    if let stomaSizer = try? await ModelEntity(named: "StomaSizer") {
+                        stomaSizer.scale = [0.105, 0.105, 0.105]
+                        stomaSizer.position = [0.11, 1.02, 0.175]
+                        rotateEntity(stomaSizer, xDegrees: -90, yDegrees: 20)
+                        wrapper.addChild(stomaSizer)
+                        stomaSizerEntity = stomaSizer
+                        stomaSizerEntity?.isEnabled = false
                     }
                         
                     modelEntity = wrapper
@@ -88,7 +106,8 @@ struct ColostomyView: View {
                         ostomyViewModel.isDone = true
                     }
                     else if result == "Measure" {
-                        // Add measure
+                        stomaSizerEntity?.isEnabled = true
+                        ostomyViewModel.isDone = true
                     }
                     
                     return false

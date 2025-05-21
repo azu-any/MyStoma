@@ -27,10 +27,21 @@ class InventoryViewModel: ObservableObject {
             return "RemoveBag"
         }
         
-        if firstItem.imageName == "Cloth" {
+        else if firstItem.imageName == "Cloth" {
             items.removeAll { $0.imageName == "Cloth" }
             return "Done"
         }
+        
+        else if firstItem.imageName == "Measure" {
+            items.removeAll { $0.imageName == "Measure" }
+            return "Measure"
+        }
+        
+        else if firstItem.imageName == "Ring" {
+            items.removeAll { $0.imageName == "Ring" }
+            return "Ring"
+        }
+        
         
         return ""
     }

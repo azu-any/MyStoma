@@ -85,7 +85,7 @@
             ],
             "question": "You have an irregular peristomal area. What do you use?",
             "answers": ["Modeling paste or barrier ring", "No aid, it sticks anyway"],
-            "timeQuestion": 4,
+            "timeQuestion": 3,
         },
         {
             "id": 5,
