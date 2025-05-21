@@ -22,11 +22,26 @@ struct Ostomy: Codable {
 enum ColostomySpace {
     case first
     case second
+    case third
+    case fourth
+    case fifth
+    case sixth
+    case seventh
+    case eighth
+    case ninth
+    
     
     var id: String {
         switch self {
         case .first: "ColostomyFirstSpace"
         case .second: "ColostomySecondSpace"
+        case .third: "ColostomyThirdSpace"
+        case .fourth: "ColostomyFourthSpace"
+        case .fifth: "ColostomyFifthSpace"
+        case .sixth: "ColostomySixthSpace"
+        case .seventh: "ColostomySeventhSpace"
+        case .eighth: "ColostomyEighthSpace"
+        case .ninth: "ColostomyNinthSpace"
         }
     }
 }

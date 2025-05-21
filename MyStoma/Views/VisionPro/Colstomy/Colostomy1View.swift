@@ -9,7 +9,10 @@ import SwiftUI
 import RealityKit
 import simd
 
+
 struct ColostomyFirstView: View {
+    
+    let customMaterial =  PhysicsMaterialResource.generate(staticFriction: 0.0, dynamicFriction: 0.0, restitution: 0.0)
     
     @EnvironmentObject var viewModel: OstomyViewModel
 
@@ -26,7 +29,7 @@ struct ColostomyFirstView: View {
         #if os(visionOS)
             .targetedToAnyEntity()
             .onChanged({ value in
-                /// The entity that the drag gesture targets.
+                /// The entity that the< drag gesture targets.
                 let draggedEntity = value.entity
 
                 if initialPosition == nil {
@@ -56,6 +59,11 @@ struct ColostomyFirstView: View {
                     
                     if simd_distance(currentPosition, wasteBagEntity!.position) < 0.25 {
                         draggedEntity.isEnabled = false
+                        
+                        showStomaWasteBag(wasteBagEntity!, true)
+                        
+                        wasteBagEntity!.playAnimation(wasteBagEntity!.availableAnimations[0])
+
                         viewModel.isDone = true
                     }
                 }
@@ -65,7 +73,10 @@ struct ColostomyFirstView: View {
                         
                         draggedEntity.isEnabled = false
                         
-                        /*draggedEntity.playAnimation(AnimationResource, transitionDuration: TimeInterval, startsPaused: Bool)*/
+                        stomabagEntity!.components.set(InputTargetComponent())
+                        
+                        //draggedEntity.playAnimation(draggedEntity.availableAnimations[0])
+                        
                         
                     }
                 }
@@ -101,12 +112,12 @@ struct ColostomyFirstView: View {
                     }
                 }
                 
-                else if draggedEntity.name == "wasteBag" {
+                else if draggedEntity == wasteBagEntity {
                     if isObjectNearTableSurface(itemPosition: draggedEntity.position) {
                         
                         draggedEntity.position = wasteBagTargetPosition
                         
-                        rotateEntity(draggedEntity, xDegrees: 0, yDegrees: 0)
+                        rotateEntity(draggedEntity, xDegrees: -90, yDegrees: 0)
                     }
                 }
                 
@@ -133,7 +144,11 @@ struct ColostomyFirstView: View {
                         
                         if let bag = stomabagEntity {
                             bag.components.set(InputTargetComponent())
+                            
+                            print("hi")
                         }
+                        
+                        
                         /*draggedEntity.playAnimation(AnimationResource, transitionDuration: TimeInterval, startsPaused: Bool)*/
                         
                     }
@@ -205,55 +220,63 @@ struct ColostomyFirstView: View {
                 
                 bag.components.set(PhysicsBodyComponent(
                     massProperties: .default,
-                    material: .default,
+                    material: customMaterial,
                     mode: .dynamic
                 ))
                 bag.physicsBody?.isAffectedByGravity = false
                 
-                stomabagEntity = bag
-                //bag.components.set(InputTargetComponent())
-                
-                
-                // Clean bag
-                let cleanBag = try await ModelEntity(named: "stomabag")
-                cleanBag.name = "cleanStomabag"
-                cleanBag.position = cleanBagPosition
-                cleanBag.transform.scale = [0.2, 0.2, 0.2]
-                rotateEntity(cleanBag, xDegrees: -90, yDegrees: 0)
-                
-                // Collision shape
-                cleanBag.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: cleanBag.model!.mesh)])
-                
-                cleanBag.components.set(PhysicsBodyComponent(
-                    massProperties: .default,
-                    material: .default,
-                    mode: .dynamic
-                ))
-                cleanBag.physicsBody?.isAffectedByGravity = false
-                cleanBag.components.set(InputTargetComponent())
-                
-                
-                // Waste bag
-                let wasteBag = try await ModelEntity(named: "WasteBag")
-                wasteBag.name = "wasteBag"
-                wasteBag.position = wasteBagTargetPosition
-                wasteBag.transform.scale = [0.1, 0.1, 0.1]
-                
-                // Collision shape
-                wasteBag.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: wasteBag.model!.mesh)])
-                
-                wasteBag.components.set(PhysicsBodyComponent(
-                    massProperties: .default,
-                    material: .default,
-                    mode: .dynamic,
-                ))
-                wasteBag.physicsBody?.isAffectedByGravity = false
-                wasteBag.components.set(PhysicsMotionComponent(
+                bag.components.set(PhysicsMotionComponent(
                     linearVelocity: .zero,
                     angularVelocity: .zero
                 ))
-
+                
+                stomabagEntity = bag
+                
+                //bag.components.set(InputTargetComponent())
+                
+                
+                // Waste bag
+                let wasteBag = try await Entity(named: "bin")
+                //wasteBag.name = "wasteBag"
+                wasteBag.position = wasteBagTargetPosition
+                wasteBag.transform.scale = [0.3, 0.3, 0.3]
+                rotateEntity(wasteBag, xDegrees: -90, yDegrees: 0)
+                
+                showStomaWasteBag(wasteBag, false)
+                printHierarchy(of: wasteBag)
+                                
+                // Collision shape
+                if let vertEntity = wasteBag.findEntity(named: "Vert") {
+                    
+                    
+                    if let vertModelEntity = vertEntity.children.first(where: { $0.name == "Vert" }) as? ModelEntity {
+                                                
+                        
+                        vertModelEntity.components[CollisionComponent.self] = await CollisionComponent(
+                            shapes: [try ShapeResource.generateConvex(from: vertModelEntity.model!.mesh)]
+                        )
+                        
+                        vertModelEntity.components.set(PhysicsBodyComponent(
+                            massProperties: .default,
+                            material: customMaterial,
+                            mode: .dynamic,
+                        ))
+                        
+                        if var physics = vertModelEntity.components[PhysicsBodyComponent.self] {
+                            physics.isAffectedByGravity = false
+                            wasteBag.components.set(physics)
+                        }
+                        
+                        vertModelEntity.components.set(PhysicsMotionComponent(
+                            linearVelocity: .zero,
+                            angularVelocity: .zero
+                        ))
+                        
+                    }
+                }
+                
                 wasteBag.components.set(InputTargetComponent())
+                
                 wasteBagEntity = wasteBag
                 
                 
@@ -262,16 +285,21 @@ struct ColostomyFirstView: View {
                 bottle.name = "bottle"
                 bottle.position = bottleTargetPosition
                 bottle.transform.scale = [0.04, 0.04, 0.04]
-                
+
                 // Collision shape
                 bottle.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: bottle.model!.mesh)])
-                
+
                 bottle.components.set(PhysicsBodyComponent(
                     massProperties: .default,
-                    material: .default,
+                    material: customMaterial,
                     mode: .dynamic,
                 ))
-                bottle.physicsBody?.isAffectedByGravity = false
+                
+                if var physics = bottle.components[PhysicsBodyComponent.self] {
+                    physics.isAffectedByGravity = false
+                    bottle.components.set(physics)
+                }
+                
                 bottle.components.set(InputTargetComponent())
                 
                 
@@ -279,14 +307,18 @@ struct ColostomyFirstView: View {
                 content.add(body)
                 content.add(table)
                 content.add(bag)
-                content.add(cleanBag)
                 content.add(bottle)
                 content.add(wasteBag)
             } catch {
                 print("Failed to load model: \(error)")
             }
         } placeholder: {
-            ProgressView()
+            VStack(alignment: .center) {
+                    ProgressView("Loading...")
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .scaleEffect(2)
+                    
+            }
         }
         .gesture(translationGesture)
         
@@ -299,3 +331,37 @@ struct ColostomyFirstView: View {
         .environment(AppModel())
 }
 #endif
+
+
+
+func printHierarchy(of entity: Entity, indent: String = "") {
+    print("\(indent)- \(entity.name) [\(type(of: entity))]")
+    for child in entity.children {
+        printHierarchy(of: child, indent: indent + "  ")
+    }
+}
+
+
+
+func showStomaWasteBag(_ wasteBag: Entity, _ isShowing: Bool) {
+    
+    print("Searching for models in \(wasteBag.name)...")
+    
+    if let tap = wasteBag.findEntity(named: "Cube_001_001") {
+        
+        print("found model 1")
+        tap.isEnabled = isShowing
+    }
+    
+    if let tap2 = wasteBag.findEntity(named: "Cube_002") {
+        
+        print("found model 2")
+        tap2.isEnabled = isShowing
+    }
+    
+    if let tap3 = wasteBag.findEntity(named: "Cube_003") {
+        
+        print("found model 3")
+        tap3.isEnabled = isShowing
+    }
+}
