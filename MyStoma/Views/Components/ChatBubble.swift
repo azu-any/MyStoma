@@ -3,11 +3,78 @@ import SwiftUI
 struct ChatBotOverlay: View {
     
     @EnvironmentObject var viewModel: OstomyViewModel
+    @EnvironmentObject var itemsViewModel: InventoryViewModel
     @State private var currentStep: Int = 0
-    
+    @Binding var showDialogue: Bool
     
     var body: some View {
-        VStack(alignment: .trailing) {
+        
+        VStack {
+            
+            VStack(alignment: .center) {
+                //let dialogue = viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex]
+                
+                Text(viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex])
+                //TypingTextView(fullText: dialogue, trigger: viewModel.currentDialogueIndex)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .transition(.slide)
+            }
+            .frame(maxWidth: 500)
+            .font(.body)
+                    
+            Spacer()
+            
+            VStack {
+                
+                
+                
+                HStack {
+                    
+                    if viewModel.currentDialogueIndex == viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count - 1 {
+                        Button {
+                            viewModel.currentStepIndex += 1
+                            viewModel.currentDialogueIndex = 0
+                            viewModel.isDone = false
+                            viewModel.spaceID = ColostomySpaces[viewModel.currentStepIndex].id
+                            
+                            itemsViewModel.items.removeAll()
+                            itemsViewModel.items.append(contentsOf: ColostomySpaces[viewModel.currentStepIndex].items)
+                            
+                        } label: {
+                            Text("Next step")
+                        }
+                        .disabled(!viewModel.isDone)
+                    }
+                    
+                    
+                    Spacer()
+                    
+                    Button {
+                        viewModel.currentDialogueIndex -= 1
+                    } label: {
+                        Image(systemName: "chevron.left")
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(!canGoBack(index: viewModel.currentDialogueIndex))
+                    
+                    
+                    Button {
+                        if viewModel.ostomy.steps[viewModel.currentStepIndex].timeQuestion == viewModel.currentDialogueIndex {
+                            showDialogue.toggle()
+                        }
+                        viewModel.currentDialogueIndex += 1
+                    } label: {
+                        Image(systemName: "chevron.right")
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(!canGoForward(index: viewModel.currentDialogueIndex, count: viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count))
+                }
+                .padding()
+                
+            }
+        }
+        /*VStack(alignment: .trailing) {
             HStack(alignment: .top, spacing: 20) {
                 
                 VStack(alignment: .trailing) {
@@ -52,7 +119,7 @@ struct ChatBotOverlay: View {
                         
                         Button {
                             if viewModel.ostomy.steps[viewModel.currentStepIndex].timeQuestion == viewModel.currentDialogueIndex {
-                                //showDialogue.toggle()
+                                showDialogue.toggle()
                             }
                             viewModel.currentDialogueIndex += 1
                         } label: {
@@ -68,7 +135,7 @@ struct ChatBotOverlay: View {
             }
         }
         .frame(maxWidth: 500)
-        .padding()
+        .padding()*/
     }
 }
 

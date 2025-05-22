@@ -20,7 +20,7 @@
                 "It's a small measure that can make a big difference in your daily comfort.",
                 "Let's practice!",
                 "Grab the spray and drag it to the stoma bag attached to the body.",
-                "Next, remove the stoma bag and put in the waste bag"
+                "Next, remove the stoma bag and put in the waste bag."
             ],
             "question": "What is best to use to make plaque removal easier?",
             "answers": ["A spray remover or an adhesive wipe", "Pulling the plaque directly with your hands"],
@@ -62,7 +62,11 @@
                 "It is a common misconception that a smaller hole will prevent leakage, but in reality it can damage the stoma, causing ulcers or circulatory problems.",
                 "On the other hand, a hole that is too large will leave too much skin exposed to secretions, causing irritation.",
                 "Remember that accurate measurement is key to optimal comfort and to preventing skin problems.",
-                "If you have difficulty measuring your stoma yourself, do not hesitate to ask a family member for help or contact your stoma care nurse."
+                "If you have difficulty measuring your stoma yourself, do not hesitate to ask a family member for help or contact your stoma care nurse.",
+                "Let's practice!",
+                "Grab the measurement board and drag it to the stoma.",
+                "As you can see, the best measurement is 30 mm.",
+                "Now, drag the scissors to the new stoma bag to cut it."
             ],
             "question": "Your stoma measures 28 mm. How big do you cut the hole in the adhesive?",
             "answers": ["29–30 mm, to leave a minimal margin", "25 mm, so it grips better and prevents leakage"],
@@ -81,11 +85,13 @@
                 "These products fill in irregularities in the skin, creating a smooth base for the plate to adhere to and preventing leaks.",
                 "Modeling paste is applied directly to folds or depressions and should be left to dry for a few minutes before applying the plate.",
                 "The barrier ring, on the other hand, can be modeled with your fingers to perfectly fit the shape of your stoma.",
-                "A tip: if you use modeling paste, slightly moisten your fingers with water to prevent the paste from sticking to your hands during application."
+                "A tip: if you use modeling paste, slightly moisten your fingers with water to prevent the paste from sticking to your hands during application.",
+                "Let's practice!",
+                "Grab the barrier ring and drag it to the stoma area."
             ],
             "question": "You have an irregular peristomal area. What do you use?",
             "answers": ["Modeling paste or barrier ring", "No aid, it sticks anyway"],
-            "timeQuestion": 4,
+            "timeQuestion": 3,
         },
         {
             "id": 5,
@@ -100,15 +106,17 @@
                 "The warmth of your hand helps the adhesive to blend better with the skin.",
                 "An extra tip: gently massage from the inside out of the plate, following a circular motion.",
                 "This helps eliminate any air bubbles and further improves adhesion.",
-                "Don't be afraid to press firmly, the system is designed to withstand this pressure."
+                "Don't be afraid to press firmly, the system is designed to withstand this pressure.",
+                "Let's practice!",
+                "Grab the cut stoma bag and drag it to the stoma area."
             ],
             "question": "How long should you hold the plate down for good adhesion?",
             "answers": ["At least 1-2 minutes", "No time, it sticks on its own"],
-            "timeQuestion": 4,
+            "timeQuestion": 3,
         },
         {
             "id": 6,
-            "name": "Frequency of changing the bag",
+            "name": "Bag replacement frequency",
             "dialogues": [
                 "An important aspect of stoma care is knowing how often to change the system.",
                 "There is no hard and fast rule that works for everyone, but there are some general guidelines.",
@@ -142,7 +150,7 @@
             ],
             "question": "You notice a bad smell from your pouch. What do you do?",
             "answers": ["Check the fit and decide whether to replace it", "Spray perfume on the pouch"],
-            "timeQuestion": 4,
+            "timeQuestion": 2,
         },
         {
             "id": 8,
@@ -162,7 +170,7 @@
             ],
             "question": "You notice redness, itching, or pain around your stoma. What do you do?",
             "answers": ["Contact the stoma nurse", "Ignore it, it's normal"],
-            "timeQuestion": 4,
+            "timeQuestion": 2,
         },
         {
             "id": 9,
@@ -181,7 +189,7 @@
             ],
             "question": "When do you wash your hands during the procedure?",
             "answers": ["Before and after each procedure", "Only at the end"],
-            "timeQuestion": 4,
+            "timeQuestion": 2,
         }
     ]
 }

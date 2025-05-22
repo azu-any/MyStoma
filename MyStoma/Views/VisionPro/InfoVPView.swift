@@ -15,7 +15,7 @@ struct InfoVPView: View {
     
     @Environment(AppModel.self) private var appModel
 
-#if os(visionOS)
+    #if os(visionOS)
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
     #endif
@@ -41,7 +41,7 @@ struct InfoVPView: View {
                 DialogueView(showDialogue: $showDialogue)
                 
             } else {
-                QuestionVPView(question: viewModel.ostomy.steps[viewModel.currentStepIndex].question, answers: viewModel.ostomy.steps[viewModel.currentStepIndex].answers,
+                QuestionView(question: viewModel.ostomy.steps[viewModel.currentStepIndex].question, answers: viewModel.ostomy.steps[viewModel.currentStepIndex].answers,
                     showDialogue: $showDialogue
                 )
             }
@@ -73,7 +73,7 @@ struct InfoVPView: View {
                     #endif
                     
                 } label: {
-                    Text("Continue")
+                    Text("Next step")
                 }
                 .disabled(!viewModel.isDone)
             }
@@ -100,7 +100,8 @@ struct InfoVPView: View {
         }
         .onDisappear {
             #if os(visionOS)
-            Task { @MainActor in                        appModel.immersiveSpaceState = .inTransition
+            Task { @MainActor in
+                appModel.immersiveSpaceState = .inTransition
                 await dismissImmersiveSpace()
             }
             #endif

@@ -10,8 +10,9 @@ import SwiftUI
 struct SettingsView: View {
     
     var body: some View {
+        
         HStack {
-            Image("LogoWhite")
+            Image("Logo")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200)
@@ -19,7 +20,13 @@ struct SettingsView: View {
                 .padding(.bottom, -5)
                 .foregroundStyle(.white, .white, .white)
         }
+        
+        
         .padding(.horizontal)
         
     }
+}
+
+#Preview {
+    SettingsView()
 }
