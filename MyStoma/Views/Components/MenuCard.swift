@@ -5,6 +5,14 @@ struct MenuCard: View {
     var title: String
     var subtitle: String
     var imageName: String
+    var navView: AnyView?
+    
+    init(card: CardData) {
+        self.title = card.title
+        self.subtitle = card.subtitle
+        self.imageName = card.imageName
+        self.navView = card.navView
+    }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -18,9 +26,15 @@ struct MenuCard: View {
                 .bold()
                 .foregroundColor(.gray)
                 .padding(.bottom, 4)
-            Button(action: {
-                print("Colostomy button tapped")
-            }) {
+            
+            
+            /*Button {
+                router.push(.c)
+            }*/
+            NavigationLink {
+                navView
+            } label: {
+                
                 HStack(alignment: .center) {
                     Image(imageName)
                         .resizable()
@@ -36,10 +50,13 @@ struct MenuCard: View {
                                startPoint: .leading, endPoint: .trailing)
             )
             .cornerRadius(20)
+            .disabled((navView != nil) ? false : true)
+            .opacity((navView != nil) ? 1.0 : 0.6)
+
         }
     }
 }
 
 #Preview {
-    MenuCard(title: "Colostomy", subtitle: "Colon stoma", imageName: "colostomyImage")
+    MenuCard(card: CardData(title: "Colostomy", subtitle: "Colon stoma", imageName: "colostomyImage", navView: AnyView(ColostomyView())))
 }

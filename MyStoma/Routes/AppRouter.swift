@@ -4,6 +4,7 @@ enum Route: Hashable {
     case play
     case tools
     case colostomy
+    case settings
 }
 
 class NavigationRouter: ObservableObject {
@@ -17,6 +18,8 @@ class NavigationRouter: ObservableObject {
             AnyView(ToolsView())
         case .colostomy:
             AnyView(ColostomyView())
+        case .settings:
+            AnyView(SettingsView())
         }
     }
 }

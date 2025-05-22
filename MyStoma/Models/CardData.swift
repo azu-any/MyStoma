@@ -5,4 +5,5 @@ struct CardData: Identifiable {
     var title: String
     var subtitle: String
     var imageName: String
+    var navView: AnyView?
 }
