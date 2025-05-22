@@ -15,7 +15,8 @@ extension CardData {
             title: "Colostomy",
             subtitle: "Colon stoma",
             imageName: "Untitled_Artwork",
-            description: "This procedure involves creating a stoma by bringing the colon to the surface of the abdomen. It allows waste to be diverted outside of the body, often in cases of bowel disease or injury."
+            navView: AnyView(ColostomyView()),
+            description: "A colostomy is a type of bowel stoma where part of the colon (large intestine) is brought out through the abdominal wall to allow stool to pass out of the body. \"Colostomy\" comes from \"colon\" and \"stoma\" (opening or mouth). \n\nTypes of colostomy \n*Temporary: to give time for a section of bowel to heal after surgery, trauma, or inflammation.\n*Permanent: when it's not possible to reconnect the bowel after resection.\n\nStoma location \nColostomies can be placed at different points in the colon, affecting stool consistency: \n*Ascending colostomy: liquid stool; less common. \n*Transverse colostomy: semi-formed stool; can be temporary or permanent. \n*Descending or sigmoid colostomy: formed or solid stool; most common and easier to manage. \n\nAppearance and management \nThe stoma looks red and moist, and has no nerve endings (so it's not painful to touch). \nStool is collected in a pouching system, which can be: \nClosed (for formed stool) \nDrainable (for liquid or semi-liquid stool) \nIt is important to protect the peristomal skin (the skin around the stoma) to avoid irritation. \n\nIn this section we are going to learn how to take change and take care of our colostomy!"
         ),
         CardData(
             title: "Ileostomy",

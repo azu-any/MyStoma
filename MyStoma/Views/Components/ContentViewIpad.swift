@@ -4,6 +4,7 @@ struct ContentViewIpad: View {
     var title: String
     var subtitle: String
     var imageName: String
+    var navView: AnyView?
     var description: String
 
     @State private var showModal = false
@@ -43,23 +44,12 @@ struct ContentViewIpad: View {
                 )
                 .cornerRadius(20)
             }
-
-            if showModal {
-                ZStack {
-                    Color.black.opacity(0.4)
-                        .ignoresSafeArea()
-                        .onTapGesture {
-                            withAnimation {
-                                showModal = false
-                            }
-                        }
-
-                    WindowView(isPresented: $showModal, title: title, description: description)
-                        .frame(width: UIScreen.main.bounds.width * 2/3,
-                               height: UIScreen.main.bounds.height * 2/3)
-                        .transition(.scale)
-                }
-                .zIndex(1)
+            .sheet(isPresented: $showModal) {
+                WindowView(isPresented: $showModal, title: title, description: description, navView: navView)
+                    .frame(width: UIScreen.main.bounds.width * 2/3,
+                           height: UIScreen.main.bounds.height * 2/3)
+                    .transition(.scale)
+                
             }
         }
     }

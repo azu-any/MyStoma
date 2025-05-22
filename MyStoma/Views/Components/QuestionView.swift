@@ -38,7 +38,7 @@ struct QuestionView: View {
                     } label: {
                         Text(answers[0])
                             .multilineTextAlignment(.center)
-                            .padding(5)
+                            .padding(.horizontal, 5)
                             .frame(maxWidth: .infinity)
                             .background(.regularMaterial)
                             .cornerRadius(10)
@@ -53,7 +53,7 @@ struct QuestionView: View {
                     } label: {
                         Text(answers[1])
                             .multilineTextAlignment(.center)
-                            .padding()
+                            .padding(.horizontal, 5)
                             .frame(maxWidth: .infinity)
                             .background(.regularMaterial)
                             .cornerRadius(10)

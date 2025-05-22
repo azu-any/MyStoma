@@ -5,15 +5,17 @@ struct MenuCard: View {
     var subtitle: String
     var imageName: String
     var navView: AnyView?
+    @Binding var showModal: Bool
+
     
-    init(card: CardData) {
+    init(card: CardData, showModal: Binding<Bool>) {
         self.title = card.title
         self.subtitle = card.subtitle
         self.imageName = card.imageName
         self.navView = card.navView
+        self._showModal = showModal
     }
     
-    @Binding var showModal: Bool
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -28,16 +30,6 @@ struct MenuCard: View {
                 .foregroundColor(.gray)
                 .padding(.bottom, 4)
             
-/*
-            
-            /*Button {
-                router.push(.c)
-            }*/
-            NavigationLink {
-                navView
-            } label: {
-                
-*/
             Button(action: {
                 withAnimation {
                     showModal.toggle()
