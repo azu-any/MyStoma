@@ -43,7 +43,7 @@ extension InventoryItem: Transferable {
     }
 
     func handleDroppedItems(droppedItems: [InventoryItem], index: Int? = nil) {
-        guard let firstItem = droppedItems.first else {
+        guard droppedItems.first != nil else {
             return
         }
         // If the ID of the first contact exists in the contacts list,
