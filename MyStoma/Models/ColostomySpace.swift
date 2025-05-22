@@ -42,7 +42,7 @@ enum ColostomySpace {
         case .second: [InventoryItem(name: "Water", imageName: "Water"), InventoryItem(name: "Cloth", imageName: "Cloth")]
         case .third: [InventoryItem(name: "Stoma Measurement Board", imageName: "Measure")]
         case .fourth: [InventoryItem(name: "Barrier ring", imageName: "Ring")]
-        case .fifth: []
+        case .fifth: [InventoryItem(name: "Cut Stoma Bag", imageName: "Cutstomabag")]
         case .sixth: []
         case .seventh: []
         case .eighth: []

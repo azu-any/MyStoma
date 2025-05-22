@@ -348,20 +348,16 @@ func showStomaWasteBag(_ wasteBag: Entity, _ isShowing: Bool) {
     print("Searching for models in \(wasteBag.name)...")
     
     if let tap = wasteBag.findEntity(named: "Cube_001_001") {
-        
-        print("found model 1")
         tap.isEnabled = isShowing
     }
     
     if let tap2 = wasteBag.findEntity(named: "Cube_002") {
         
-        print("found model 2")
         tap2.isEnabled = isShowing
     }
     
     if let tap3 = wasteBag.findEntity(named: "Cube_003") {
         
-        print("found model 3")
         tap3.isEnabled = isShowing
     }
 }

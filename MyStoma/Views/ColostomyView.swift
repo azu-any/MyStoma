@@ -40,7 +40,6 @@ struct ColostomyView: View {
         #if os(iOS)
         ZStack {
             HStack(spacing: 50) {
-                
                 RealityView { content in
                     content.camera = .virtual
                     
@@ -78,14 +77,15 @@ struct ColostomyView: View {
                         stomaSizerEntity?.isEnabled = false
                     }
                     
-                    if let stomaSizer = try? await ModelEntity(named: "StomaSizer") {
+                    // TODO: Add barrier ring
+                    /*if let stomaSizer = try? await ModelEntity(named: "StomaSizer") {
                         stomaSizer.scale = [0.105, 0.105, 0.105]
                         stomaSizer.position = [0.11, 1.02, 0.175]
                         rotateEntity(stomaSizer, xDegrees: -90, yDegrees: 20)
                         wrapper.addChild(stomaSizer)
                         stomaSizerEntity = stomaSizer
                         stomaSizerEntity?.isEnabled = false
-                    }
+                    }*/
                         
                     modelEntity = wrapper
                     content.add(wrapper)
@@ -107,6 +107,15 @@ struct ColostomyView: View {
                     }
                     else if result == "Measure" {
                         stomaSizerEntity?.isEnabled = true
+                        //ostomyViewModel.isDone = true
+                    }
+                    else if result == "Ring" {
+                        // TODO: Add Ring to AR view
+                        ostomyViewModel.isDone = true
+                    }
+                    else if result == "Cutstomabag" {
+                        bagEntity?.isEnabled = true
+                        stomaEntity?.isEnabled = false
                         ostomyViewModel.isDone = true
                     }
                     
@@ -148,7 +157,7 @@ struct ColostomyView: View {
                                 .clipShape(Circle())
                                 .overlay(Circle().stroke(Color.white, lineWidth: 2))
                                 .shadow(radius: 4)
-                                .offset(x: -40, y: 40)
+                                .offset(x: -40, y: 50)
                         }
 
                     
@@ -178,10 +187,8 @@ struct ColostomyView: View {
                                     .padding(.horizontal, 65)
                                     .padding(.vertical, 40)
                                     .padding(.top, 40)
-
                             }
                         }
-                                                
                         
                         ScrollView(.horizontal, showsIndicators: false) {
                             
@@ -208,6 +215,12 @@ struct ColostomyView: View {
                                                 if result == "TrashBag" {
                                                     ostomyViewModel.isDone = true
                                                     return true
+                                                }
+                                                
+                                                else if result == "Scissors" {
+                                                    stomaSizerEntity?.isEnabled = false
+                                                    ostomyViewModel.isDone = true
+
                                                 }
                                                 
                                                 return false
