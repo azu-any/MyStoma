@@ -1,18 +1,21 @@
-import Foundation
 import SwiftUI
 
 struct MenuCaroussel: View {
-    let data: [CardData] = [
-        CardData(title: "Colostomy", subtitle: "Colon stoma", imageName: "Untitled_Artwork", navView: AnyView(ColostomyView())),
-        CardData(title: "Ileostomy", subtitle: "Small intestine", imageName: "Untitled_Artwork 2"),
-        CardData(title: "Urostomy", subtitle: "Blader", imageName: "Untitled_Artwork 3")
-    ]
+    let data = CardData.sampleData
     
     var body: some View {
-        ScrollView(.horizontal) {
-            HStack {
-                ForEach(data) { item in
-                    MenuCard(card: item)/*title: item.title, subtitle: item.subtitle, imageName: item.imageName, navView: AnyView)*/
+        HStack {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(data) { item in
+                        ContentViewIpad(
+                            title: item.title,
+                            subtitle: item.subtitle,
+                            imageName: item.imageName,
+                            description: item.description
+                        )
+                        .padding()
+                    }
                 }
                 .padding()
             }

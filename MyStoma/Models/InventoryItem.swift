@@ -41,42 +41,4 @@ extension InventoryItem: Transferable {
         .suggestedFileName { $0.imageName }
 
     }
-
-    /*func handleDroppedItems(droppedItems: [InventoryItem], index: Int? = nil) {
-        guard let firstItem = droppedItems.first else {
-            return
-        }
-        // If the ID of the first contact exists in the contacts list,
-        // move the contact from its current position to the new index.
-        // If no index is specified, insert the contact at the end of the list.
-        /*if let existingIndex = contacts.firstIndex(where: { $0.id == firstContact.id }) {
-            let indexSet = IndexSet(integer: existingIndex)
-            contacts.move(fromOffsets: indexSet, toOffset: index ?? contacts.endIndex)
-        } else {
-            contacts.insert(firstContact, at: index ?? contacts.endIndex)
-        }*/
-    }*/
-    
-    /*static func parseVCardData(_ data: Data) async throws -> Contact {
-        let contacts = try await CNContactVCardSerialization.contacts(
-            with: data
-        )
-        
-        guard let contact = contacts.first else {
-            throw NSError(domain: "ContactImportError", code: 1, userInfo: [NSLocalizedDescriptionKey: "Invalid vCard data."])
-        }
-        
-        let phoneNumber = contact.phoneNumbers.first?.value.stringValue ?? ""
-        let email = contact.emailAddresses.first?.value as String?
-        let thumbNail: Data? = contact.imageData
-        return Contact(
-            id: contact.id.uuidString,
-            givenName: contact.givenName,
-            familyName: contact.familyName,
-            thumbNail: thumbNail,
-            phoneNumber: phoneNumber,
-            email: email,
-            videoURL: nil
-        )
-    }*/
 }
