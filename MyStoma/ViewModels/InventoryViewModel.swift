@@ -9,13 +9,10 @@ import Foundation
 
 class InventoryViewModel: ObservableObject {
     
-    @Published var items: [InventoryItem] = [
-        //
+    @Published var items: [InventoryItem] = []/* [
         InventoryItem(name: "Waste Bag", imageName: "WasteBag"),
         InventoryItem(name: "Adhesive Remover Spray", imageName: "AdhesiveRemover")
-    ]
-    
-    
+    ]*/
     
     func handleBodyItems(droppedItems: [InventoryItem]) -> String {
         guard let firstItem = droppedItems.first else { return "" }
