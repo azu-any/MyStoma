@@ -15,20 +15,12 @@ struct ItemGridView: View {
                 Button(action: {
                     selectedItem = item
                 }, label: {
-                    if item.isUnlocked {
-                        Text(item.title)
-                            .multilineTextAlignment(.center)
-                        
-                    } else {
-                        Image(systemName: "lock.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 50)
-                    }
+                    Text(item.title)
+                        .multilineTextAlignment(.center)
                 })
                 .padding()
                 .frame(width: 180, height: 180)
-                .buttonStyle(InfoButtonStyle(color: item.isUnlocked ? Color.bluePrimary : .secondary.opacity(0.8)))
+                .buttonStyle(InfoButtonStyle(color: Color.bluePrimary))
             }
         }
         .padding()
@@ -38,7 +30,7 @@ struct ItemGridView: View {
 struct ItemGridView_Previews: PreviewProvider {
     static var previews: some View {
         ItemGridView(items: [
-            InfoItem(title: "Stoma Care", description: "Detailed info about stoma care.", isUnlocked: true),
+            InfoItem(title: "Stoma Care", description: "Detailed info about stoma care."),
             InfoItem(title: "Nutrition", description: "Tips on what to eat and avoid."),
             InfoItem(
                 title: "Medical Waste Bag",
