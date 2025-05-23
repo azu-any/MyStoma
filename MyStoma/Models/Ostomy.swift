@@ -29,7 +29,8 @@ let defaultOstomy = Ostomy(
             dialogues: ["Welcome to the tutorial."],
             question: "Are you ready to begin?",
             answers: ["Yes", "No"],
-            timeQuestion: 1
+            timeQuestion: 1,
+            timePractice: 1
         )
     ],
     scene: "DefaultScene"

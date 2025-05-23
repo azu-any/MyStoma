@@ -29,7 +29,6 @@ struct WindowView: View {
                     Image("NurseRight")
                         .resizable()
                         .scaledToFit()
-                    //.frame(width: 220, height: 220)
                         .clipShape(RoundedRectangle(cornerRadius: 15))
                         .frame(maxWidth: .infinity, alignment: .center)
                 }
@@ -50,6 +49,8 @@ struct WindowView: View {
                     .frame(minWidth: 100)
                     .padding()
                     .foregroundColor(.blue)
+                    .background(Color.white)
+                    .cornerRadius(15)
                     .overlay(
                         RoundedRectangle(cornerRadius: 15)
                             .stroke(Color.blue, lineWidth: 2)
@@ -57,7 +58,7 @@ struct WindowView: View {
             }
             
             .padding(.bottom, 20)
-            .buttonStyle(ScaleButtonStyle())
+            //.buttonStyle(ScaleButtonStyle())
             .padding()
             .disabled((navView != nil) ? false : true)
             
