@@ -1,0 +1,142 @@
+{
+    "name": "Colostomia",
+    "scene": "ImmersiveSpace",
+    "steps": [
+        {
+            "id": 1,
+            "name": "Rimozione della sacca",
+            "dialogues": [
+                "Iniziamo con il primo passo: la rimozione della sacca.",
+                "Per prima cosa, rivediamo tutti i materiali necessari: la nuova sacca, salviette detergenti o solvente adesivo e un sacchetto per i rifiuti.",
+                "Per rimuovere la sacca attuale, tendi la pelle con una mano e stacca delicatamente la placca dall’alto verso il basso.",
+                "Questo aiuta a ridurre il disagio e protegge la pelle da stiramenti eccessivi.",
+                "Molte persone si chiedono qual è il modo migliore per rimuovere la placca adesiva dalla pelle.",
+                "Vediamo se sai rispondere a questa domanda...",
+                "Esatto!",
+                "Utilizzare uno spray o una salvietta adesiva è molto più delicato sulla pelle.",
+                "Questi prodotti sciolgono l’adesivo, facilitando la rimozione senza causare traumi alla pelle.",
+                "Strappare direttamente può danneggiare la pelle e causare dolore o irritazione.",
+                "Uno spray adesivo scioglie delicatamente l’adesivo, proteggendo la pelle.",
+                "È una piccola accortezza che può fare una grande differenza nel comfort quotidiano.",
+                "Facciamo pratica!",
+                "Prendi lo spray e trascinalo sulla sacca attaccata al corpo.",
+                "Ora rimuovi la sacca e mettila nel sacchetto dei rifiuti."
+            ],
+            "question": "Cosa è meglio usare per facilitare la rimozione della placca?",
+            "answers": ["Uno spray o una salvietta adesiva", "Strappare la placca direttamente con le mani"],
+            "timeQuestion": 5,
+            "timePractice": 12
+        },
+        {
+            "id": 2,
+            "name": "Pulizia della stomia",
+            "dialogues": [
+                "Ora che abbiamo rimosso la sacca, è il momento di pulire la stomia e la pelle circostante.",
+                "La stomia è di un rosso vivo e potrebbe sanguinare un po’ durante la pulizia, non preoccuparti, è normale.",
+                "La pulizia è un passaggio cruciale per prevenire irritazioni cutanee.",
+                "Ricorda che la stomia non ha terminazioni nervose, quindi non sentirai dolore toccandola, ma è comunque importante essere delicati.",
+                "Vediamo se sai qual è il metodo migliore per la pulizia...",
+                "Ottimo!",
+                "Acqua tiepida o soluzione salina sono tutto ciò di cui hai bisogno.",
+                "I saponi, soprattutto quelli profumati o antibatterici, possono lasciare residui sulla pelle che compromettono l’adesione della placca e causano irritazione.",
+                "Un consiglio pratico: usa garze morbide o fazzoletti non abrasivi per la pulizia.",
+                "Tampone delicatamente invece di strofinare e assicurati di asciugare bene la pelle prima di applicare la nuova placca.",
+                "La pelle asciutta garantisce una migliore adesione del sistema.",
+                "Facciamo pratica!",
+                "Prendi il panno e trascinalo sulla zona della stomia."
+            ],
+            "question": "Cosa è meglio usare per pulire la pelle attorno alla stomia?",
+            "answers": ["Solo acqua tiepida o soluzione salina", "Saponi profumati o antibatterici"],
+            "timeQuestion": 4,
+            "timePractice": 11
+        },
+        {
+            "id": 3,
+            "name": "Misurare la stomia",
+            "dialogues": [
+                "Misurare la tua stomia è un passaggio cruciale spesso trascurato.",
+                "La tua stomia può cambiare dimensione nel tempo, specialmente nelle prime settimane dopo l’intervento, quindi è importante misurarla regolarmente.",
+                "Per misurare la stomia, usa una guida di misurazione, spesso fornita nei kit per stomia.",
+                "Posiziona la guida sopra la stomia e trova il foro che meglio si adatta alla dimensione.",
+                "Parliamo ora di quanto dovrebbe essere grande il foro nella placca adesiva...",
+                "Hai risposto correttamente!",
+                "Se la tua stomia misura 28 mm, il foro nella placca dovrebbe essere di 29–30 mm, lasciando solo un piccolo margine di 1–2 mm intorno alla stomia.",
+                "È un errore comune pensare che un foro più piccolo eviti le perdite, ma in realtà può danneggiare la stomia, causando ulcere o problemi circolatori.",
+                "D’altra parte, un foro troppo grande lascia troppa pelle esposta alle secrezioni, causando irritazione.",
+                "Ricorda che una misurazione accurata è fondamentale per il comfort ottimale e per prevenire problemi alla pelle.",
+                "Se hai difficoltà a misurare la stomia da solo, non esitare a chiedere aiuto a un familiare o contatta l’infermiere stomaterapista.",
+                "Facciamo pratica!",
+                "Prendi la guida di misurazione e trascinala sulla stomia.",
+                "Come puoi vedere, la misura migliore è 30 mm.",
+                "Ora, trascina le forbici sulla nuova sacca per tagliarla."
+            ],
+            "question": "La tua stomia misura 28 mm. Quanto deve essere grande il foro nella placca adesiva?",
+            "answers": ["29–30 mm, per lasciare un margine minimo", "25 mm, così aderisce meglio e previene le perdite"],
+            "timeQuestion": 4,
+            "timePractice": 11
+        },
+        {
+            "id": 4,
+            "name": "Protezione della pelle",
+            "dialogues": [
+                "La protezione della pelle peristomale è essenziale per prevenire irritazioni e garantire una buona adesione del sistema.",
+                "La pelle intorno alla stomia deve rimanere sana per evitare dolore e complicazioni.",
+                "Se l’area attorno alla stomia presenta irregolarità, come cicatrici, pieghe o depressioni, possono verificarsi perdite che causano irritazioni.",
+                "Vediamo cosa fare in questi casi...",
+                "Esatto!",
+                "La pasta modellante o l’anello barriera sono strumenti preziosi per creare una superficie uniforme.",
+                "Questi prodotti riempiono le irregolarità della pelle, creando una base liscia per l’adesione della placca e prevenendo le perdite.",
+                "La pasta modellante si applica direttamente sulle pieghe o depressioni e deve asciugarsi per alcuni minuti prima di applicare la placca.",
+                "L’anello barriera, invece, può essere modellato con le dita per adattarsi perfettamente alla forma della stomia.",
+                "Un consiglio: se usi la pasta modellante, inumidisci leggermente le dita per evitare che si attacchi alle mani durante l’applicazione.",
+                "Facciamo pratica!",
+                "Prendi l’anello barriera e trascinalo sulla zona della stomia."
+            ],
+            "question": "Hai un’area peristomale irregolare. Cosa usi?",
+            "answers": ["Pasta modellante o anello barriera", "Nessun ausilio, tanto aderisce lo stesso"],
+            "timeQuestion": 3,
+            "timePractice": 10
+        },
+        {
+            "id": 5,
+            "name": "Applicazione della placca",
+            "dialogues": [
+                "Ora siamo pronti per applicare la nuova placca.",
+                "Questo passaggio richiede precisione e pazienza, ma vedrai che con la pratica diventerà sempre più semplice.",
+                "Rimuovi la pellicola protettiva dalla placca adesiva. Centra il foro della placca attorno alla stomia e applicala sulla pelle, partendo dal basso verso l’alto per evitare la formazione di pieghe.",
+                "C’è un piccolo trucco per garantire una buona adesione. Vediamo se lo conosci...",
+                "Perfetto!",
+                "Mantenere la pressione sulla placca per almeno 1-2 minuti è essenziale per attivare l’adesivo e garantire una tenuta ottimale.",
+                "Il calore della mano aiuta l’adesivo ad aderire meglio alla pelle.",
+                "Un consiglio extra: massaggia delicatamente dal centro verso l’esterno della placca, seguendo un movimento circolare.",
+                "Questo aiuta a eliminare eventuali bolle d’aria e migliora ulteriormente l’adesione.",
+                "Non avere paura di premere con decisione, il sistema è progettato per resistere alla pressione.",
+                "Facciamo pratica!",
+                "Prendi la sacca tagliata e trascinala sulla zona della stomia."
+            ],
+            "question": "Quanto tempo bisogna tenere premuta la placca per una buona adesione?",
+            "answers": ["Almeno 1–2 minuti", "Nessun tempo, aderisce da sola"],
+            "timeQuestion": 3,
+            "timePractice": 10
+        },
+        {
+            "id": 6,
+            "name": "Frequenza di sostituzione della sacca",
+            "dialogues": [
+                "Un aspetto importante della cura della stomia è sapere ogni quanto cambiare il sistema.",
+                "Non esiste una regola valida per tutti, ma ci sono delle linee guida generali.",
+                "Vediamo se sai qual è la frequenza raccomandata per cambiare la sacca o il sistema...",
+                "Esatto!",
+                "La maggior parte dei sistemi può rimanere in sede per 3–5 giorni.",
+                "Cambiare il sistema troppo frequentemente può irritare la pelle, mentre aspettare troppo può causare perdite e irritazioni dovute al deterioramento dell’adesivo.",
+                "Impara a riconoscere i segnali che indicano che è ora di cambiarlo: prurito sotto la placca, deterioramento visibile dell’adesivo ai bordi o la sensazione che il sistema stia per staccarsi.",
+                "Ogni persona è diversa, quindi con il tempo troverai il tuo ritmo ideale.",
+                "Nei primi giorni, tieni un diario per identificare il tuo schema personale, annotando quando cambi il sistema e se ci sono stati problemi o perdite."
+            ],
+            "question": "Ogni quanto è consigliabile cambiare la sacca o il sistema?",
+            "answers": ["Ogni 3–5 giorni o secondo indicazioni del professionista", "Più volte al giorno, appena è scomodo"],
+            "timeQuestion": 4,
+            "timePractice": 20
+        }
+    ]
+}
