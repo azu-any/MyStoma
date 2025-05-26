@@ -11,6 +11,9 @@
         }
       }
     },
+    "%@" : {
+
+    },
     "%lld/%lld" : {
       "localizations" : {
         "en" : {
@@ -106,7 +109,11 @@
         }
       }
     },
+    "Congratulations!" : {
+
+    },
     "Continue" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -121,6 +128,9 @@
           }
         }
       }
+    },
+    "End" : {
+
     },
     "Ileostomy" : {
       "localizations" : {
@@ -225,6 +235,9 @@
         }
       }
     },
+    "Next step" : {
+
+    },
     "Start" : {
       "localizations" : {
         "es-419" : {
@@ -240,6 +253,9 @@
           }
         }
       }
+    },
+    "Step %lld" : {
+
     },
     "Step %lld: %@" : {
       "localizations" : {
@@ -350,6 +366,9 @@
           }
         }
       }
+    },
+    "You have completed the colostomy tutorial" : {
+
     }
   },
   "version" : "1.0"

@@ -16,8 +16,8 @@ extension CardData {
             title: "colostomy_title",
             subtitle: "colostomy_subtitle",
             imageName: "Untitled_Artwork",
-            description: "colostomy_description"
-            navView: AnyView(ColostomyView()),
+            description: "colostomy_description",
+            navView: AnyView(ColostomyView())
         ),
         CardData(
             title: "ileostomy_title",

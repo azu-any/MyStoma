@@ -5,6 +5,7 @@ struct ContentViewIpad: View {
     let subtitle: LocalizedStringResource
     let imageName: String
     let description: LocalizedStringResource
+    var navView: AnyView?
 
     @State private var showModal = false
 
@@ -64,3 +65,4 @@ struct ContentViewIpad: View {
         }
     }
 }
+
