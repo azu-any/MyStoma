@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct MenuCard: View {
-    var title: String
-    var subtitle: String
+    var title: LocalizedStringResource
+    var subtitle: LocalizedStringResource
     var imageName: String
     var navView: AnyView?
     @Binding var showModal: Bool

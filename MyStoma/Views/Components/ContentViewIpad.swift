@@ -1,12 +1,13 @@
 import SwiftUI
 
 struct ContentViewIpad: View {
-    var title: String
-    var subtitle: String
-    var imageName: String
-    var imageModal: String
+
+    let title: LocalizedStringResource
+    let subtitle: LocalizedStringResource
+    let imageName: String
+    let imageModal: String
+    let description: LocalizedStringResource
     var navView: AnyView?
-    var description: String
 
     @State private var animateTap = false
     @State private var showModal = false
@@ -79,6 +80,28 @@ struct ContentViewIpad: View {
                     )
                     //LinearGradient(gradient: Gradient(colors: [Color.clear, .blue.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
                 )
+//<<<<<<< marthabranch
+//=======
+               /* .cornerRadius(20)
+            }
+
+            if showModal {
+                ZStack {
+                    Color.clear
+                        .ignoresSafeArea()
+                        .onTapGesture {
+                            withAnimation {
+                                showModal = false
+                            }
+                        }
+
+                    WindowView(isPresented: $showModal, title: title, description: description)
+                        .frame(width: UIScreen.main.bounds.width * 2/3,
+                               height: UIScreen.main.bounds.height * 2/3)
+                        .transition(.scale)
+                }
+                .zIndex(1)*/
+//>>>>>>> main
             }
             
             .background(
@@ -101,6 +124,7 @@ struct ContentViewIpad: View {
         .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 0)
     }
 }
+
 
 #Preview {
     ContentViewIpad(

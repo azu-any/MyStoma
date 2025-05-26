@@ -1,14 +1,14 @@
 import SwiftUI
 
 struct CardData: Identifiable {
-    var id = UUID()
-    var type: String
-    var title: String
-    var subtitle: String
-    var imageName: String
-    var imageModal: String
+    let id = UUID()
+    let title: LocalizedStringResource
+    let subtitle: LocalizedStringResource
+    let imageName: String
+    let imageModal: String
+    let description: LocalizedStringResource
     var navView: AnyView?
-    let description: String
+
 }
 
 extension CardData {

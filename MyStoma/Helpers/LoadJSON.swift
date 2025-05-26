@@ -8,7 +8,7 @@
 import Foundation
 
 func loadOstomyFromBundle() -> Ostomy? {
-    guard let url = Bundle.main.url(forResource: "Colostomy", withExtension: "json") else {
+    guard let url = Bundle.main.url(forResource: "Colostomy-en", withExtension: "json") else {
         print("colostomy.json not found.")
         return nil
     }
