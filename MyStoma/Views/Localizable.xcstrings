@@ -1,0 +1,56 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%lld/%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld/%2$lld"
+          }
+        }
+      }
+    },
+    "Colostomy" : {
+
+    },
+    "Continue" : {
+
+    },
+    "Ileostomy" : {
+
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Loading..." : {
+
+    },
+    "Make your selection" : {
+
+    },
+    "Start" : {
+
+    },
+    "Step %lld: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Step %1$lld: %2$@"
+          }
+        }
+      }
+    },
+    "Stories" : {
+
+    },
+    "Tools" : {
+
+    }
+  },
+  "version" : "1.0"
+}
