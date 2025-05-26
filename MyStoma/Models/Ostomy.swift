@@ -19,35 +19,6 @@ struct Ostomy: Codable {
     }
 }
 
-enum ColostomySpace {
-    case first
-    case second
-    case third
-    case fourth
-    case fifth
-    case sixth
-    case seventh
-    case eighth
-    case ninth
-    
-    
-    var id: String {
-        switch self {
-        case .first: "ColostomyFirstSpace"
-        case .second: "ColostomySecondSpace"
-        case .third: "ColostomyThirdSpace"
-        case .fourth: "ColostomyFourthSpace"
-        case .fifth: "ColostomyFifthSpace"
-        case .sixth: "ColostomySixthSpace"
-        case .seventh: "ColostomySeventhSpace"
-        case .eighth: "ColostomyEighthSpace"
-        case .ninth: "ColostomyNinthSpace"
-        }
-    }
-}
-
-
-let  ColostomySpaces = [ColostomySpace.first, ColostomySpace.second]
 
 let defaultOstomy = Ostomy(
     name: "Default Ostomy",
@@ -58,7 +29,8 @@ let defaultOstomy = Ostomy(
             dialogues: ["Welcome to the tutorial."],
             question: "Are you ready to begin?",
             answers: ["Yes", "No"],
-            timeQuestion: 1
+            timeQuestion: 1,
+            timePractice: 1
         )
     ],
     scene: "DefaultScene"

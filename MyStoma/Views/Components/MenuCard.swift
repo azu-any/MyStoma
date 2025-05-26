@@ -4,8 +4,18 @@ struct MenuCard: View {
     var title: String
     var subtitle: String
     var imageName: String
-    
+    var navView: AnyView?
     @Binding var showModal: Bool
+
+    
+    init(card: CardData, showModal: Binding<Bool>) {
+        self.title = card.title
+        self.subtitle = card.subtitle
+        self.imageName = card.imageName
+        self.navView = card.navView
+        self._showModal = showModal
+    }
+    
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -40,9 +50,16 @@ struct MenuCard: View {
                                startPoint: .leading, endPoint: .trailing)
             )
             .cornerRadius(20)
+            .disabled((navView != nil) ? false : true)
+            .opacity((navView != nil) ? 1.0 : 0.6)
+
         }
     }
 }
+
+    /*
+#Preview {
+    MenuCard(card: CardData(title: "Colostomy", subtitle: "Colon stoma", imageName: "colostomyImage", navView: AnyView(ColostomyView())))
 
 struct MenuCard_Previews: PreviewProvider {
     @State static var showModal = false
@@ -53,4 +70,4 @@ struct MenuCard_Previews: PreviewProvider {
                  imageName: "colostomyImage",
                  showModal: $showModal)
     }
-}
+}*/

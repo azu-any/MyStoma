@@ -6,6 +6,8 @@ struct CardData: Identifiable {
     let subtitle: LocalizedStringResource
     let imageName: String
     let description: LocalizedStringResource
+    var navView: AnyView?
+
 }
 
 extension CardData {
@@ -15,6 +17,7 @@ extension CardData {
             subtitle: "colostomy_subtitle",
             imageName: "Untitled_Artwork",
             description: "colostomy_description"
+            navView: AnyView(ColostomyView()),
         ),
         CardData(
             title: "ileostomy_title",

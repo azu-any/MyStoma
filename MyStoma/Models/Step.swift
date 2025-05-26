@@ -14,14 +14,16 @@ struct Step: Codable, Identifiable {
     var question: String
     var answers: [String]
     var timeQuestion: Int
+    var timePractice: Int
     
-    init(id: Int, name: String, dialogues: [String], question: String, answers: [String], timeQuestion: Int) {
+    init(id: Int, name: String, dialogues: [String], question: String, answers: [String], timeQuestion: Int, timePractice: Int) {
         self.id = id
         self.name = name
         self.dialogues = dialogues
         self.question = question
         self.answers = answers
         self.timeQuestion = timeQuestion
+        self.timePractice = timePractice
     }
     
 }

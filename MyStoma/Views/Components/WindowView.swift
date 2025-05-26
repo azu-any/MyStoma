@@ -1,63 +1,71 @@
 import SwiftUI
 
 struct WindowView: View {
+    
+    @EnvironmentObject var router: NavigationRouter
+    @Environment(\.dismiss) var dismiss
+
     @Binding var isPresented: Bool
     var title: LocalizedStringResource
     var description: LocalizedStringResource
+    var navView: AnyView?
 
     
     var body: some View {
-        VStack(spacing: 20) {
-            HStack {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
                 Text(title)
                     .font(.largeTitle)
                     .bold()
-                Spacer()
-            }
-            .padding(.horizontal)
-
-            HStack(alignment: .top, spacing: 40) {
-                Text(description)
-                    .font(.body)
-                    .multilineTextAlignment(.leading)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-
-                Spacer()
-
-                Image("NurseRight")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 220, height: 220)
-                    .clipShape(RoundedRectangle(cornerRadius: 15))
-                    .frame(maxWidth: .infinity, alignment: .center)
-            }
-            .padding(.horizontal)
-
-            Spacer()
-
-            Button(action: {
-                withAnimation {
-                    isPresented = false
+                    .padding()
+                
+                HStack(alignment: .top, spacing: 40) {
+                    Text(description)
+                        .font(.body)
+                        .multilineTextAlignment(.leading)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    Spacer()
+                    
+                    Image("NurseRight")
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                        .frame(maxWidth: .infinity, alignment: .center)
                 }
-            }) {
+                .padding(.horizontal)
+                
+                Spacer()
+                
+            }
+            .padding()
+        }
+        .overlay(alignment: .bottom) {
+            Button {
+                dismiss()
+                router.path.append(.colostomy)
+            } label: {
                 Text("Start")
                     .fontWeight(.semibold)
                     .frame(minWidth: 100)
                     .padding()
                     .foregroundColor(.blue)
+                    .background(Color.white)
+                    .cornerRadius(15)
                     .overlay(
                         RoundedRectangle(cornerRadius: 15)
                             .stroke(Color.blue, lineWidth: 2)
                     )
             }
+            
             .padding(.bottom, 20)
-            .buttonStyle(ScaleButtonStyle())
+            //.buttonStyle(ScaleButtonStyle())
+            .padding()
+            .disabled((navView != nil) ? false : true)
+            
         }
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.white)
-        .cornerRadius(20)
-        .shadow(radius: 20)
+
     }
 }
 
@@ -74,7 +82,7 @@ struct WindowView_Previews: PreviewProvider {
         WindowView(
             isPresented: .constant(true),
             title: "Colostomy",
-            description: "This procedure involves creating a stoma by bringing the colon to the surface of the abdomen. It allows waste to be diverted outside of the body, often in cases of bowel disease or injury."
+            description: "A colostomy is a type of bowel stoma where part of the colon (large intestine) is brought out through the abdominal wall to allow stool to pass out of the body. \"Colostomy\" comes from \"colon\" and \"stoma\" (opening or mouth). \n\nTypes of colostomy \n*Temporary: to give time for a section of bowel to heal after surgery, trauma, or inflammation.\n*Permanent: when it's not possible to reconnect the bowel after resection.\n\nStoma location \nColostomies can be placed at different points in the colon, affecting stool consistency: \n*Ascending colostomy: liquid stool; less common. \n*Transverse colostomy: semi-formed stool; can be temporary or permanent. \n*Descending or sigmoid colostomy: formed or solid stool; most common and easier to manage. \n\nAppearance and management \nThe stoma looks red and moist, and has no nerve endings (so it's not painful to touch). \nStool is collected in a pouching system, which can be: \nClosed (for formed stool) \nDrainable (for liquid or semi-liquid stool) \nIt is important to protect the peristomal skin (the skin around the stoma) to avoid irritation. \n\nIn this section we are going to learn how to take change and take care of our colostomy!"
         )
     }
 }
