@@ -8,15 +8,26 @@ struct MenuCaroussel: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(data) { item in
-                        ContentViewIpad(
-                            title: item.title,
-                            subtitle: item.subtitle,
-                            imageName: item.imageName,
-                            imageModal: item.imageModal,
-                            navView: item.navView,
-                            description: item.description
-                        )
-                        .padding()
+                        if item.type == "content" {
+                            ContentViewIpad(
+                                title: item.title,
+                                subtitle: item.subtitle,
+                                imageName: item.imageName,
+                                imageModal: item.imageModal,
+                                navView: item.navView,
+                                description: item.description
+                            )
+                            .padding()
+                        } else if item.type == "story" {
+                            StoryView(
+                                title: item.title,
+                                subtitle: item.subtitle,
+                                imageName: item.imageName,
+                                imageModal: item.imageModal,
+                                description: item.description
+                            )
+                            .padding()
+                        }
                     }
                 }
                 //.padding()
@@ -26,5 +37,6 @@ struct MenuCaroussel: View {
 }
 
 #Preview {
-    MenuCaroussel(data: CardData.sampleData)
+    MenuCaroussel(data: CardData.storyData)
 }
+
