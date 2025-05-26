@@ -259,7 +259,7 @@ struct ColostomyFirstView: View {
                         vertModelEntity.components.set(PhysicsBodyComponent(
                             massProperties: .default,
                             material: customMaterial,
-                            mode: .dynamic,
+                            mode: .dynamic
                         ))
                         
                         if var physics = vertModelEntity.components[PhysicsBodyComponent.self] {
@@ -292,7 +292,7 @@ struct ColostomyFirstView: View {
                 bottle.components.set(PhysicsBodyComponent(
                     massProperties: .default,
                     material: customMaterial,
-                    mode: .dynamic,
+                    mode: .dynamic
                 ))
                 
                 if var physics = bottle.components[PhysicsBodyComponent.self] {

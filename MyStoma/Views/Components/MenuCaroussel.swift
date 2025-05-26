@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MenuCaroussel: View {
-    let data = CardData.sampleData
+    let data: [CardData]
     
     var body: some View {
         HStack {
@@ -12,18 +12,19 @@ struct MenuCaroussel: View {
                             title: item.title,
                             subtitle: item.subtitle,
                             imageName: item.imageName,
+                            imageModal: item.imageModal,
                             navView: item.navView,
                             description: item.description
                         )
                         .padding()
                     }
                 }
-                .padding()
+                //.padding()
             }
         }
     }
 }
 
 #Preview {
-    MenuCaroussel()
+    MenuCaroussel(data: CardData.sampleData)
 }
