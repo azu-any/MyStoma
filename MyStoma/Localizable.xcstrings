@@ -2,7 +2,14 @@
   "sourceLanguage" : "en",
   "strings" : {
     "" : {
-
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"\""
+          }
+        }
+      }
     },
     "%lld/%lld" : {
       "localizations" : {
@@ -11,11 +18,86 @@
             "state" : "new",
             "value" : "%1$lld/%2$lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld/%2$lld"
+          }
         }
       }
     },
     "Colostomy" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colostomía"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colostomia"
+          }
+        }
+      }
+    },
+    "colostomy_description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This procedure involves creating a stoma by bringing the colon to the surface of the abdomen. It allows waste to be diverted outside of the body, often in cases of bowel disease or injury."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa procedura prevede la creazione di uno stoma portando il colon sulla superficie dell'addome. Consente di deviare i rifiuti all'esterno del corpo, spesso in caso di malattie o lesioni intestinali."
+          }
+        }
+      }
+    },
+    "colostomy_subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colon stoma"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estoma del colon"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stomia del colon"
+          }
+        }
+      }
+    },
+    "colostomy_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colostomy"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colostomía"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26,6 +108,12 @@
     },
     "Continue" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continua"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -36,6 +124,73 @@
     },
     "Ileostomy" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ileostomía"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ileostomia"
+          }
+        }
+      }
+    },
+    "ileostomy_description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An ileostomy is a surgical opening constructed by bringing the end or loop of the small intestine (the ileum) out onto the surface of the skin. It allows waste to exit the body bypassing the colon."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un'ileostomia è un'apertura chirurgica creata portando l'estremità o l'ansa dell'intestino tenue (ileo) sulla superficie della pelle. Permette ai rifiuti di uscire dal corpo bypassando il colon."
+          }
+        }
+      }
+    },
+    "ileostomy_subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Small Intestine"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estoma del íleon"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stomia dell’ileo"
+          }
+        }
+      }
+    },
+    "ileostomy_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ileostomy"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ileostomía"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -46,10 +201,16 @@
     },
     "Loading..." : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cargando…"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Caricamento..."
+            "value" : "Caricando..."
           }
         }
       }
@@ -66,6 +227,12 @@
     },
     "Start" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comienza"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -85,13 +252,19 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Passo"
+            "value" : "Passo %1$lld: %2$@"
           }
         }
       }
     },
     "Stories" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historias"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -102,10 +275,78 @@
     },
     "Tools" : {
       "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Herramientas"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Strumenti"
+          }
+        }
+      }
+    },
+    "urostomy_description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A urostomy is a surgical procedure that creates an opening for the urinary system to divert urine away from a diseased or damaged bladder."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un'urostomia è una procedura chirurgica che crea un'apertura per il sistema urinario per deviare l'urina da una vescica malata o danneggiata."
+          }
+        }
+      }
+    },
+    "urostomy_subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bladder"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estoma urinario"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stomia urinaria"
+          }
+        }
+      }
+    },
+    "urostomy_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urostomy"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urostomía"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urostomia"
           }
         }
       }

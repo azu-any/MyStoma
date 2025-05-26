@@ -2,9 +2,10 @@ import SwiftUI
 
 struct WindowView: View {
     @Binding var isPresented: Bool
-    var title: String
-    var description: String
+    var title: LocalizedStringResource
+    var description: LocalizedStringResource
 
+    
     var body: some View {
         VStack(spacing: 20) {
             HStack {

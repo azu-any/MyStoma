@@ -2,31 +2,31 @@ import SwiftUI
 
 struct CardData: Identifiable {
     let id = UUID()
-    let title: String
-    let subtitle: String
+    let title: LocalizedStringResource
+    let subtitle: LocalizedStringResource
     let imageName: String
-    let description: String
+    let description: LocalizedStringResource
 }
 
 extension CardData {
     static let sampleData: [CardData] = [
         CardData(
-            title: "Colostomy",
-            subtitle: "Colon stoma",
+            title: "colostomy_title",
+            subtitle: "colostomy_subtitle",
             imageName: "Untitled_Artwork",
-            description: "This procedure involves creating a stoma by bringing the colon to the surface of the abdomen. It allows waste to be diverted outside of the body, often in cases of bowel disease or injury."
+            description: "colostomy_description"
         ),
         CardData(
-            title: "Ileostomy",
-            subtitle: "Small intestine",
+            title: "ileostomy_title",
+            subtitle: "ileostomy_subtitle",
             imageName: "Untitled_Artwork 2",
-            description: "An ileostomy is a surgical opening constructed by bringing the end or loop of the small intestine (the ileum) out onto the surface of the skin. It allows waste to exit the body bypassing the colon."
+            description: "ileostomy_description"
         ),
         CardData(
-            title: "Urostomy",
-            subtitle: "Bladder",
+            title: "urostomy_title",
+            subtitle: "urostomy_subtitle",
             imageName: "Untitled_Artwork 3",
-            description: "A urostomy is a surgical procedure that creates an opening for the urinary system to divert urine away from a diseased or damaged bladder."
+            description: "urostomy_description"
         )
     ]
 }

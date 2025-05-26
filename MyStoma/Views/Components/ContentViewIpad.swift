@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct ContentViewIpad: View {
-    var title: String
-    var subtitle: String
-    var imageName: String
-    var description: String
+    let title: LocalizedStringResource
+    let subtitle: LocalizedStringResource
+    let imageName: String
+    let description: LocalizedStringResource
 
     @State private var showModal = false
 
@@ -46,7 +46,7 @@ struct ContentViewIpad: View {
 
             if showModal {
                 ZStack {
-                    Color.black.opacity(0.4)
+                    Color.clear
                         .ignoresSafeArea()
                         .onTapGesture {
                             withAnimation {

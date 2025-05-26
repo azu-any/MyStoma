@@ -1,61 +1,64 @@
 import SwiftUI
 
 struct MenuView: View {
-    //@EnvironmentObject var router: NavigationRouter
     @State private var toggleRotation = false
     @StateObject var router = NavigationRouter()
-    
+
     var body: some View {
         NavigationStack(path: $router.path) {
-            VStack {
+            ZStack(alignment: .top) {
+                ScrollView {
+                    VStack(spacing: 20) {
+                        Spacer().frame(height: 75)
+
+                        MenuCaroussel()
+
+                        VStack(alignment: .leading) {
+                            Text("Stories")
+                                .font(.title)
+                                .bold()
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.horizontal)
+                        }
+
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 16) {
+                                ForEach(0..<10) { _ in
+                                    RoundedRectangle(cornerRadius: 30)
+                                        .fill(Color.gray.opacity(0.2))
+                                        .frame(width: 320, height: 200)
+                                }
+                            }
+                            .padding(.horizontal)
+                        }
+                    }
+                    .padding(.bottom, 30)
+                }
+
+                // BARRA SUPERIOR FIJA
                 HStack {
-                    Image (systemName: "cross.case.fill")
-                        .padding()
+                    Image(systemName: "cross.case.fill")
                         .font(.system(size: 40))
                         .foregroundColor(Color.bluePrimary)
-                    
+
                     Spacer()
-                    
-                    Image (systemName: "gearshape.fill")
-                        .padding()
+
+                    Image(systemName: "gearshape.fill")
                         .font(.system(size: 40))
                         .foregroundColor(Color.bluePrimary)
                 }
-                
-                MenuCaroussel()
-                
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text("Stories")
-                            .font(.title)
-                            .bold()
-                        Spacer()
-                    }
-                }
-                
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach(0..<10) { index in
-                            Text("")
-                        }.frame(width: 320, height: 200)
-                            .background(Color.gray.opacity(0.2))
-                            .cornerRadius(30)
-                    }
-                }
-                
-                
+                .padding(.horizontal)
+                .padding(.top, 50)
             }
             .ignoresSafeArea()
-            .edgesIgnoringSafeArea(.all)
-            .padding()
-            .padding(.top, 100)
             .background(Color.white)
+
             .onAppear {
                 Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
                     toggleRotation.toggle()
                 }
             }
-            
+
             .navigationDestination(for: Route.self) { route in
                 router.destination(for: route)
             }
@@ -64,9 +67,9 @@ struct MenuView: View {
     }
 }
 
+
 #Preview {
     MenuView()
         .environmentObject(NavigationRouter())
-        .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
-        )
+        .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy))
 }
