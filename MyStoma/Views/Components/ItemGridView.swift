@@ -7,11 +7,15 @@ struct ItemGridView: View {
     
     let columns = Array(repeating: GridItem(.flexible(), spacing: 10), count: 6)
 
+    private var sortedItems: [InfoItem] {
+        items.sorted { $0.title < $1.title }
+    }
+
     var body: some View {
         
         LazyVGrid(columns: columns, spacing: 10) {
             
-            ForEach(items) { item in
+            ForEach(sortedItems) { item in
                 Button(action: {
                     selectedItem = item
                 }, label: {
