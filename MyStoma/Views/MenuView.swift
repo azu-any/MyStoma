@@ -68,3 +68,5 @@ struct MenuView: View {
         .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
         )
 }
+
+

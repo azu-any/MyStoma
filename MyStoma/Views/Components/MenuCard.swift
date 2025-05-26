@@ -57,7 +57,7 @@ struct MenuCard: View {
     }
 }
 
-    /*
+/*
 #Preview {
     MenuCard(card: CardData(title: "Colostomy", subtitle: "Colon stoma", imageName: "colostomyImage", navView: AnyView(ColostomyView())))
 
@@ -70,4 +70,5 @@ struct MenuCard_Previews: PreviewProvider {
                  imageName: "colostomyImage",
                  showModal: $showModal)
     }
-}*/
+
+*/
