@@ -10,86 +10,15 @@ struct ChatBotOverlay: View {
     @Binding var showInventory: Bool
     
     var body: some View {
-        
-        VStack {
             
-            VStack(alignment: .center) {
-                let dialogue = viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex]
-                
-                Text(dialogue)
-                //TypingTextView(fullText: dialogue, trigger: viewModel.currentDialogueIndex)
-                    .multilineTextAlignment(.center)
-                    .padding()
-                    .transition(.slide)
-            }
-            .frame(maxWidth: 500)
-            .font(.body)
-                    
-            Spacer()
+        VStack(alignment: .leading) {
+            let dialogue = viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex]
             
-            VStack {
+            TextViewWithPopovers(fullText: dialogue)
                 
-                HStack {
-                    if viewModel.currentStepIndex == viewModel.ostomy.steps.count - 1 {
-                        Button {
-                            showEnd = true
-                        } label: {
-                            Text("End")
-                        }
-                        .disabled(!viewModel.isDone)
-                    }
-                    
-                    else if viewModel.currentDialogueIndex == viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count - 1 {
-                        Button {
-                            viewModel.currentStepIndex += 1
-                            viewModel.currentDialogueIndex = 0
-                            viewModel.isDone = false
-                            showInventory = false
-                            viewModel.spaceID = ColostomySpaces[viewModel.currentStepIndex].id
-                            
-                            itemsViewModel.items.removeAll()
-                            
-                        } label: {
-                            Text("Next step")
-                        }
-                        .disabled(!viewModel.isDone)
-                    }
-                    
-                    
-                    Spacer()
-                    
-                    Button {
-                        viewModel.currentDialogueIndex -= 1
-                    } label: {
-                        Image(systemName: "chevron.left")
-                    }
-                    .buttonStyle(.plain)
-                    .disabled(!canGoBack(index: viewModel.currentDialogueIndex))
-                    
-                    
-                    Button {
-                        if viewModel.ostomy.steps[viewModel.currentStepIndex].timeQuestion == viewModel.currentDialogueIndex {
-                            showDialogue.toggle()
-                            
-                        }
-                        
-                        else if !showInventory && viewModel.currentDialogueIndex >= viewModel.ostomy.steps[viewModel.currentStepIndex].timePractice {
-                            
-                            showInventory = true
-                            itemsViewModel.items.append(contentsOf: ColostomySpaces[viewModel.currentStepIndex].items)
-                            
-                        }
-                        viewModel.currentDialogueIndex += 1
-                    } label: {
-                        Image(systemName: "chevron.right")
-                    }
-                    .buttonStyle(.plain)
-                    .disabled(!canGoForward(index: viewModel.currentDialogueIndex, count: viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count))
-                }
-                .padding()
-                
-            }
         }
+        .font(.body)
+        .frame(maxWidth: .infinity)
     }
 }
 

@@ -29,32 +29,6 @@ struct DialogueView: View {
                     .frame(width: 400, height: 100)
                     .padding(.top, 40)
             }
-            
-            HStack {
-                Spacer()
-                Button {
-                    viewModel.currentDialogueIndex -= 1
-                } label: {
-                    Image(systemName: "chevron.left")
-                }
-                .buttonStyle(.plain)
-                .disabled(!canGoBack(index: viewModel.currentDialogueIndex))
-                
-                
-                Button {
-                    if viewModel.ostomy.steps[viewModel.currentStepIndex].timeQuestion == viewModel.currentDialogueIndex {
-                        showDialogue.toggle()
-                    }
-                    viewModel.currentDialogueIndex += 1
-                } label: {
-                    Image(systemName: "chevron.right")
-                }
-                .buttonStyle(.plain)
-                .disabled(!canGoForward(index: viewModel.currentDialogueIndex, count: viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count))
-            }
-            
-
-            
         }
     }
 }

@@ -21,6 +21,7 @@
 
     },
     "%@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -986,6 +987,9 @@
         }
       }
     },
+    "That's right!" : {
+
+    },
     "Tools" : {
       "localizations" : {
         "en" : {
@@ -1007,6 +1011,9 @@
           }
         }
       }
+    },
+    "Ups, try again!" : {
+        
     },
     "Urostomia" : {
 
