@@ -6,137 +6,14 @@
 //
 import SwiftUI
 
-/*
-struct ContentViewIpad: View {
-    var title: String
-    var subtitle: String
-    var imageName: String
-    var imageModal: String
-    var navView: AnyView?
-    var description: String
-
-    @State private var animateTap = false
-    @State private var showModal = false
-    
-    var body: some View {
-        ZStack {
-            Button(action: {
-                animateTap = true
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                    showModal = true
-                    animateTap = false
-                }
-            }) {
-                HStack {
-                    
-                    
-                    HStack {
-                        Image(imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: UIScreen.main.bounds.width * 0.1,
-                                   height: UIScreen.main.bounds.width * 0.17)
-                            .clipped()
-                            .cornerRadius(20)
-                    }
-
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(subtitle)
-                            .font(.title)
-                            .bold()
-                            .foregroundColor(.white)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.5)
-                            .padding(.bottom, 4)
-                            //.padding(.top, 120)
-
-                        Text(title)
-                            .font(.title)
-                            .bold()
-                            .foregroundColor(.white)
-                            //.lineLimit(1)
-                            //.minimumScaleFactor(0.5)
-                            .multilineTextAlignment(.leading)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            //.padding(.bottom, 40)
-                    }
-                    .padding()
-                    //.frame(maxWidth: .infinity, alignment: .leading)
-                    .frame(maxWidth: UIScreen.main.bounds.width * 0.3, maxHeight: UIScreen.main.bounds.width * 0.17)
-                    /*.background(
-                        LinearGradient(
-                            gradient: Gradient(stops: [
-                                .init(color: Color.clear, location: 0.0),
-                                .init(color: Color.bluePrimary.opacity(0.6), location: 0.5),
-                                .init(color: Color.blueSecondaryColor.opacity(0.8), location: 1.0)
-                            ]),
-                            startPoint: .topTrailing,
-                            endPoint: .bottomLeading
-                        )
-                        //LinearGradient(gradient: Gradient(colors: [Color.clear, .blue.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
-                    )*/
-                    
-                }
-                
-                /*.background(
-                    LinearGradient(
-                        gradient: Gradient(stops: [
-                            .init(color: Color.white.opacity(0.8), location: 0.0),
-                            .init(color: Color.bluePrimary.opacity(0.0), location: 0.5),
-                            .init(color: Color.blue.opacity(0.0), location: 1.0)
-                        ]),
-                        startPoint: .top,
-                        endPoint: .leading
-                    )
-                    //LinearGradient(gradient: Gradient(colors: [Color.clear, .blue.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
-                )*/
-            }
-            
-            /*.background(
-                LinearGradient(gradient: Gradient(colors: [.bluePrimary.opacity(0.6), .black.opacity(0)]),
-                               startPoint: .leading, endPoint: .trailing)
-            )*/
-            
-            .background(
-                LinearGradient(
-                    gradient: Gradient(stops: [
-                        .init(color: Color.bluePrimary, location: 0.0),
-                        .init(color: Color.bluePrimary.opacity(0.8), location: 0.5),
-                        .init(color: Color.blueSecondaryColor.opacity(0.9), location: 1.0)
-                    ]),
-                    startPoint: .topTrailing,
-                    endPoint: .bottomLeading
-                )
-                //LinearGradient(gradient: Gradient(colors: [Color.clear, .blue.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
-            )
-            
-            .cornerRadius(20)
-            .scaleEffect(animateTap ? 0.95 : 1.0)
-            .animation(.spring(duration: 0.7), value: animateTap)
-        }
-        .sheet(isPresented: $showModal) {
-            WindowView(isPresented: $showModal, title: title, description: description, navView: navView)
-                .frame(width: UIScreen.main.bounds.width * 2/3,
-                       height: UIScreen.main.bounds.height * 2/3)
-                .transition(.scale)
-        }
-        .padding()
-        //.frame(maxWidth: UIScreen.main.bounds.width * 0.3, maxHeight: UIScreen.main.bounds.width * 0.17)
-        //.shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 0)
-    }
-}
-
-
-*/
-
-
 struct StoryView: View {
     var title: LocalizedStringResource
     var subtitle: LocalizedStringResource
     var imageName: String
     var imageModal: String
-    var navView: AnyView?
     var description: LocalizedStringResource
+    var navView: AnyView?
+    var quote: LocalizedStringResource?
 
     @State private var animateTap = false
     @State private var showModal = false
@@ -155,38 +32,56 @@ struct StoryView: View {
                 }
             }) {
                 
-                Image(imageName)
-                    .resizable()
-                    .aspectRatio(1, contentMode: .fit)
-                    .frame(width: 70, height: 70)
-                    .cornerRadius(14)
-
-                // Title and subtitle
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(title)
-                        .font(.headline)
-                        .foregroundColor(.black)
-                    Text(subtitle)
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
+                HStack(alignment: .top, spacing: 16) {
                     
-                   /* Text("Get")
-                        .font(.headline)
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 6)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(16)
-                    */
+                    Image(imageName)
+                        .resizable()
+                        .aspectRatio(1, contentMode: .fit)
+                        //.frame(maxWidth: 100, minHeight: 100)
+                        .frame(width: UIScreen.main.bounds.width * 0.1,
+                               height: UIScreen.main.bounds.width * 0.1)
+                        .cornerRadius(14)
+                    
+                    // Title and subtitle
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(title)
+                            .font(.headline)
+                            .foregroundColor(.black)
+                        
+                        Text("“\(quote ?? "No quote")”")
+                            //.padding(.top, 10)
+                            .font(.subheadline.bold().italic())
+                            .minimumScaleFactor(0.5)
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(.gray)
+                        Spacer()
+                        HStack() {
+                            Spacer()
+                            
+                            Text(subtitle)
+                                .font(.subheadline.bold())
+                                .frame(alignment: .topLeading)
+                                .foregroundColor(.gray)
+                        }
+                    }
                 }
+                .padding()
+                .background(Color.white)
+                .cornerRadius(20)
+                .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
+                .frame(width: UIScreen.main.bounds.width * 0.4,
+                       height: UIScreen.main.bounds.width * 0.12)
                 
             }
             .scaleEffect(animateTap ? 0.95 : 1.0)
             .animation(.spring(), value: animateTap)
+            .frame(width: UIScreen.main.bounds.width * 0.4,
+                   height: UIScreen.main.bounds.width * 0.12)
         }
-        .padding()
-        .background(Color.white)
-        .cornerRadius(20)
-        .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
+        //.padding()
+        //.background(Color.white)
+        //.cornerRadius(20)
+        //.shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
         .sheet(isPresented: $showModal) {
             WindowView(isPresented: $showModal, title: title, description: description, navView: navView)
                 .frame(width: UIScreen.main.bounds.width * 2/3,
@@ -198,12 +93,13 @@ struct StoryView: View {
 
 #Preview {
     StoryView(
-        title: "Colostomy l",
-        subtitle: "Colon Stoma",
+        title: "Colostomy Leaving It Beh9ind",
+        subtitle: "Martha Mendoza",
         imageName: "NurseLeft",
         imageModal: "Untitled_Artwork",
+        description: "This is a preview of the colostomy content for demonstration purposes.",
         navView: AnyView(Text("Next View")),
-        description: "This is a preview of the colostomy content for demonstration purposes."
+        quote: "I couldn't let my urostomy change my love for sports and change who I am."
     )
 }
 
