@@ -3,6 +3,7 @@ import SwiftUI
 struct MenuView: View {
     @State private var toggleRotation = false
     @StateObject var router = NavigationRouter()
+    @State private var showSettingsPopover = false
     
     var body: some View {
         NavigationStack(path: $router.path) {
@@ -44,12 +45,15 @@ struct MenuView: View {
                     }
                 }
                 ToolbarItem(placement: .primaryAction) {
-                    Button(action: {
-                        router.path.append(.settings)
-                    }) {
-                        Label("Settings", systemImage: "gearshape.fill")
-                            .labelStyle(.titleAndIcon)
-                            .foregroundColor(Color.bluePrimary)
+                    Button {
+                        showSettingsPopover.toggle()
+                    } label: {
+                        Image(systemName: "gearshape.fill")
+                    }
+                    .popover(isPresented: $showSettingsPopover) {
+                        AppSettingsView()
+                            .frame(width: 300, height: 300)
+                            .padding()
                     }
                 }
             }
