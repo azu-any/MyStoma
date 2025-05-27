@@ -132,8 +132,8 @@ struct ContentViewIpad: View {
         subtitle: "Colon Stoma",
         imageName: "Colostomy",
         imageModal: "Untitled_Artwork",
-        navView: AnyView(Text("Next View")),
-        description: "This is a preview of the colostomy content for demonstration purposes."
+        description: "This is a preview of the colostomy content for demonstration purposes.",
+        navView: AnyView(Text("Next View"))
     )
 }
 
