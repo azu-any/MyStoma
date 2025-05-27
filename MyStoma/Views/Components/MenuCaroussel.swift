@@ -24,7 +24,8 @@ struct MenuCaroussel: View {
                                 subtitle: item.subtitle,
                                 imageName: item.imageName,
                                 imageModal: item.imageModal,
-                                description: item.description
+                                description: item.description,
+                                quote: item.quote
                             )
                             .padding()
                         }

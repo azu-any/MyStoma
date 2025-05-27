@@ -25,35 +25,35 @@ struct ContentViewIpad: View {
                     HStack(alignment: .center) {
                         Image(imageName)
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: UIScreen.main.bounds.width * 0.3,
-                                   height: UIScreen.main.bounds.width * 0.17)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: UIScreen.main.bounds.width * 0.4,
+                                   height: UIScreen.main.bounds.width * 0.24)
                             .clipped()
                     }
 
                     VStack(alignment: .leading, spacing: 4) {
                         Text(subtitle)
-                            .font(.title)
+                            .font(.largeTitle)
                             .bold()
                             .foregroundColor(.white)
                             .lineLimit(1)
                             .minimumScaleFactor(0.5)
                             .padding(.bottom, 4)
-                            .padding(.top, 120)
+                            .padding(.top, 150)
 
                         Text(title)
-                            .font(.title)
+                            .font(.largeTitle)
                             .bold()
                             .foregroundColor(.white)
                             //.lineLimit(1)
                             //.minimumScaleFactor(0.5)
                             .multilineTextAlignment(.leading)
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.bottom, 40)
+                            .padding(.bottom, 10)
                     }
                     .padding()
                     //.frame(maxWidth: .infinity, alignment: .leading)
-                    .frame(maxWidth: UIScreen.main.bounds.width * 0.3, maxHeight: UIScreen.main.bounds.width * 0.17)
+                    .frame(maxWidth: UIScreen.main.bounds.width * 0.4, maxHeight: UIScreen.main.bounds.width * 0.24)
                     .background(
                         LinearGradient(
                             gradient: Gradient(stops: [
@@ -80,28 +80,7 @@ struct ContentViewIpad: View {
                     )
                     //LinearGradient(gradient: Gradient(colors: [Color.clear, .blue.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
                 )
-//<<<<<<< marthabranch
-//=======
-               /* .cornerRadius(20)
-            }
 
-            if showModal {
-                ZStack {
-                    Color.clear
-                        .ignoresSafeArea()
-                        .onTapGesture {
-                            withAnimation {
-                                showModal = false
-                            }
-                        }
-
-                    WindowView(isPresented: $showModal, title: title, description: description)
-                        .frame(width: UIScreen.main.bounds.width * 2/3,
-                               height: UIScreen.main.bounds.height * 2/3)
-                        .transition(.scale)
-                }
-                .zIndex(1)*/
-//>>>>>>> main
             }
             
             .background(
@@ -120,7 +99,7 @@ struct ContentViewIpad: View {
                 .transition(.scale)
         }
         .padding()
-        .frame(maxWidth: UIScreen.main.bounds.width * 0.3, maxHeight: UIScreen.main.bounds.width * 0.17)
+        .frame(maxWidth: UIScreen.main.bounds.width * 0.4, maxHeight: UIScreen.main.bounds.width * 0.24)
         .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 0)
     }
 }

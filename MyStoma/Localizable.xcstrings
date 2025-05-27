@@ -17,6 +17,9 @@
         }
       }
     },
+    "“%@”" : {
+
+    },
     "%@" : {
       "localizations" : {
         "en" : {
@@ -76,19 +79,13 @@
     "An ileostomy brings the end of the small intestine through the belly. The stool is more liquid and comes out often. It needs a drainable pouch. It’s usually needed when the colon can’t be used." : {
 
     },
+    "Anna Paola" : {
+
+    },
     "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible." : {
 
     },
     "BLADDER STOMA" : {
-
-    },
-    "BY ANNA PAOLA" : {
-
-    },
-    "BY FRANCESCO POGLIARE" : {
-
-    },
-    "BY MARTHA MENDOZA" : {
 
     },
     "Category" : {
@@ -219,6 +216,15 @@
 
     },
     "Feeling Invisible" : {
+
+    },
+    "Francesco Pogliare" : {
+
+    },
+    "I couldn't let my urostomy change my love for sports and change who I am." : {
+
+    },
+    "I had difficulties everyday, but it seemed that for the rest of the world I was still the same." : {
 
     },
     "Ileostomy" : {
@@ -802,6 +808,12 @@
         }
       }
     },
+    "Martha Mendoza" : {
+
+    },
+    "My stoma is a constant reminder of what I’ve lost. But it’s also a symbol of my strength." : {
+
+    },
     "Next step" : {
       "localizations" : {
         "en" : {
@@ -823,6 +835,9 @@
           }
         }
       }
+    },
+    "No quote" : {
+
     },
     "Practice with Simulators" : {
 
@@ -992,6 +1007,9 @@
           }
         }
       }
+    },
+    "Urostomia" : {
+
     },
     "Urostomy" : {
 
