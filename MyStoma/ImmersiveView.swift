@@ -221,7 +221,7 @@ struct ImmersiveView: View {
                 wasteBag.components.set(PhysicsBodyComponent(
                     massProperties: .default,
                     material: .default,
-                    mode: .dynamic,
+                    mode: .dynamic
                 ))
                 wasteBag.physicsBody?.isAffectedByGravity = false
                 wasteBag.components.set(PhysicsMotionComponent(
@@ -244,7 +244,7 @@ struct ImmersiveView: View {
                 bottle.components.set(PhysicsBodyComponent(
                     massProperties: .default,
                     material: .default,
-                    mode: .dynamic,
+                    mode: .dynamic
                 ))
                 bottle.physicsBody?.isAffectedByGravity = false
                 bottle.components.set(InputTargetComponent())

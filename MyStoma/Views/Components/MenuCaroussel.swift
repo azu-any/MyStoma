@@ -1,29 +1,42 @@
 import SwiftUI
 
 struct MenuCaroussel: View {
-    let data = CardData.sampleData
+    let data: [CardData]
     
     var body: some View {
         HStack {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(data) { item in
-                        ContentViewIpad(
-                            title: item.title,
-                            subtitle: item.subtitle,
-                            imageName: item.imageName,
-                            description: item.description,
-                            navView: item.navView,
-                        )
-                        .padding()
+                        if item.type == "content" {
+                            ContentViewIpad(
+                                title: item.title,
+                                subtitle: item.subtitle,
+                                imageName: item.imageName,
+                                imageModal: item.imageModal,
+                                navView: item.navView,
+                                description: item.description
+                            )
+                            .padding()
+                        } else if item.type == "story" {
+                            StoryView(
+                                title: item.title,
+                                subtitle: item.subtitle,
+                                imageName: item.imageName,
+                                imageModal: item.imageModal,
+                                description: item.description
+                            )
+                            .padding()
+                        }
                     }
                 }
-                .padding()
+                //.padding()
             }
         }
     }
 }
 
 #Preview {
-    MenuCaroussel()
+    MenuCaroussel(data: CardData.storyData)
 }
+
