@@ -5,7 +5,6 @@ enum StomaCategory: String, CaseIterable, Identifiable, Codable {
     case colostomy
     case ileostomy
     case urostomy
-    case unknown
 
     var id: String { self.rawValue }
 }
@@ -18,12 +17,10 @@ struct InfoItem: Identifiable, Equatable {
     let categories: [StomaCategory]
     let modelPosition: SIMD3<Float>
     let modelScale: SIMD3<Float>
-    let isUnlocked: Bool
 
     init(
         title: LocalizedStringResource,
         description: LocalizedStringResource,
-        isUnlocked: Bool = false,
         modelName: String = "",
         categories: [StomaCategory] = [],
         modelPosition: SIMD3<Float> = [0, 0, 0],
