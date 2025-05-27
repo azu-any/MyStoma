@@ -14,8 +14,8 @@ struct MenuCaroussel: View {
                                 subtitle: item.subtitle,
                                 imageName: item.imageName,
                                 imageModal: item.imageModal,
-                                navView: item.navView,
-                                description: item.description
+                                description: item.description,
+                                navView: item.navView
                             )
                             .padding()
                         } else if item.type == "story" {
