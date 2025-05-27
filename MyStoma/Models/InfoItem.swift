@@ -71,7 +71,7 @@ let items: [InfoItem] = [
     InfoItem(
         title: "infoitem_scissors_title",
         description: "infoitem_scissors_description",
-        modelName: "Scissors",
+        modelName: "scissors",
         categories: [.colostomy]
     ),
     InfoItem(
@@ -89,7 +89,7 @@ let items: [InfoItem] = [
     InfoItem(
         title: "infoitem_adhesiveremover_title",
         description: "infoitem_adhesiveremover_description",
-        modelName: "AdhesiveRemover",
+        modelName: "Bottle",
         categories: [.colostomy]
     ),
     InfoItem(
