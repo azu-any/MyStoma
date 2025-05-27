@@ -49,6 +49,7 @@ struct StoryView: View {
                             .foregroundColor(.black)
                         
                         Text("“\(quote ?? "No quote")”")
+                            //.padding(.top, 10)
                             .font(.subheadline.bold().italic())
                             .minimumScaleFactor(0.5)
                             .multilineTextAlignment(.leading)
