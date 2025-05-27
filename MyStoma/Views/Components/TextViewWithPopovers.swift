@@ -16,23 +16,26 @@ struct TextViewWithPopovers: View {
     @State private var attributedText = AttributedString("")
 
     var body: some View {
-            Text(attributedText)
-                .padding()
-                .onTapGesture {
-                    if hasWord {
-                        showPopover = true
-                    }
+        
+        Text(attributedText)
+            .multilineTextAlignment(.leading)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .onTapGesture {
+                if hasWord {
+                    showPopover = true
                 }
-                .onAppear{
-                    setupAttributedText()
-                }
-                .onChange(of: fullText) {
-                    setupAttributedText()
-                }
-                .popover(isPresented: $showPopover) {
-                    Text("Definition of '\(word)' goes here.")
-                        .padding()
-                }
+            }
+            .onAppear{
+                setupAttributedText()
+            }
+            .onChange(of: fullText) {
+                setupAttributedText()
+            }
+            .popover(isPresented: $showPopover) {
+                Text(definitions[word] ?? "No definition found")
+                    .padding()
+            }
         }
     
 
