@@ -6,10 +6,11 @@ struct WindowView: View {
     @Environment(\.dismiss) var dismiss
 
     @Binding var isPresented: Bool
-    var title: String
-    var description: String
+    var title: LocalizedStringResource
+    var description: LocalizedStringResource
     var navView: AnyView?
 
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {

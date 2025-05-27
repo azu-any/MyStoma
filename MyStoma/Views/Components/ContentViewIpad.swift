@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct ContentViewIpad: View {
-    var title: String
-    var subtitle: String
-    var imageName: String
+    let title: LocalizedStringResource
+    let subtitle: LocalizedStringResource
+    let imageName: String
+    let description: LocalizedStringResource
     var navView: AnyView?
-    var description: String
 
     @State private var showModal = false
 
@@ -44,13 +44,25 @@ struct ContentViewIpad: View {
                 )
                 .cornerRadius(20)
             }
-            .sheet(isPresented: $showModal) {
-                WindowView(isPresented: $showModal, title: title, description: description, navView: navView)
-                    .frame(width: UIScreen.main.bounds.width * 2/3,
-                           height: UIScreen.main.bounds.height * 2/3)
-                    .transition(.scale)
-                
+
+            if showModal {
+                ZStack {
+                    Color.clear
+                        .ignoresSafeArea()
+                        .onTapGesture {
+                            withAnimation {
+                                showModal = false
+                            }
+                        }
+
+                    WindowView(isPresented: $showModal, title: title, description: description)
+                        .frame(width: UIScreen.main.bounds.width * 2/3,
+                               height: UIScreen.main.bounds.height * 2/3)
+                        .transition(.scale)
+                }
+                .zIndex(1)
             }
         }
     }
 }
+
