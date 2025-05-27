@@ -7,28 +7,24 @@ struct ItemGridView: View {
     
     let columns = Array(repeating: GridItem(.flexible(), spacing: 10), count: 6)
 
+    private var sortedItems: [InfoItem] {
+        items.sorted { $0.title < $1.title }
+    }
+
     var body: some View {
         
         LazyVGrid(columns: columns, spacing: 10) {
             
-            ForEach(items) { item in
+            ForEach(sortedItems) { item in
                 Button(action: {
                     selectedItem = item
                 }, label: {
-                    if item.isUnlocked {
-                        Text(item.title)
-                            .multilineTextAlignment(.center)
-                        
-                    } else {
-                        Image(systemName: "lock.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 50)
-                    }
+                    Text(item.title)
+                        .multilineTextAlignment(.center)
                 })
                 .padding()
                 .frame(width: 180, height: 180)
-                .buttonStyle(InfoButtonStyle(color: item.isUnlocked ? Color.bluePrimary : .secondary.opacity(0.8)))
+                .buttonStyle(InfoButtonStyle(color: Color.bluePrimary))
             }
         }
         .padding()
@@ -38,7 +34,7 @@ struct ItemGridView: View {
 struct ItemGridView_Previews: PreviewProvider {
     static var previews: some View {
         ItemGridView(items: [
-            InfoItem(title: "Stoma Care", description: "Detailed info about stoma care.", isUnlocked: true),
+            InfoItem(title: "Stoma Care", description: "Detailed info about stoma care."),
             InfoItem(title: "Nutrition", description: "Tips on what to eat and avoid."),
             InfoItem(
                 title: "Medical Waste Bag",
