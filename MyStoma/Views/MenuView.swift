@@ -14,7 +14,7 @@ struct MenuView: View {
                     //.foregroundColor(.black)
                     .padding(.horizontal)
 
-                MenuCaroussel(data: CardData.sampleData)
+                Menu(data: CardData.sampleData)
 
                 Text("Connect with Stories")
                     .font(.title2)

@@ -24,7 +24,8 @@ struct MenuCaroussel: View {
                                 subtitle: item.subtitle,
                                 imageName: item.imageName,
                                 imageModal: item.imageModal,
-                                description: item.description
+                                description: item.description,
+                                quote: item.quote
                             )
                             .padding()
                         }
@@ -32,6 +33,47 @@ struct MenuCaroussel: View {
                 }
                 //.padding()
             }
+        }
+    }
+}
+
+#Preview {
+    MenuCaroussel(data: CardData.storyData)
+}
+
+
+
+struct Menu: View {
+    let data: [CardData]
+    
+    var body: some View {
+        HStack {
+                HStack {
+                    ForEach(data) { item in
+                        if item.type == "content" {
+                            ContentViewIpad(
+                                title: item.title,
+                                subtitle: item.subtitle,
+                                imageName: item.imageName,
+                                imageModal: item.imageModal,
+                                description: item.description,
+                                navView: item.navView
+                            )
+                            .padding()
+                        } else if item.type == "story" {
+                            StoryView(
+                                title: item.title,
+                                subtitle: item.subtitle,
+                                imageName: item.imageName,
+                                imageModal: item.imageModal,
+                                description: item.description,
+                                quote: item.quote
+                            )
+                            .padding()
+                        }
+                    }
+                }
+                //.padding()
         }
     }
 }
