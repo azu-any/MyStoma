@@ -17,6 +17,9 @@
         }
       }
     },
+    "“%@”" : {
+
+    },
     "%@" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -71,7 +74,13 @@
     "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive." : {
 
     },
+    "All" : {
+
+    },
     "An ileostomy brings the end of the small intestine through the belly. The stool is more liquid and comes out often. It needs a drainable pouch. It’s usually needed when the colon can’t be used." : {
+
+    },
+    "Anna Paola" : {
 
     },
     "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible." : {
@@ -80,13 +89,10 @@
     "BLADDER STOMA" : {
 
     },
-    "BY ANNA PAOLA" : {
+    "Category" : {
 
     },
-    "BY FRANCESCO POGLIARE" : {
-
-    },
-    "BY MARTHA MENDOZA" : {
+    "Choose Category" : {
 
     },
     "COLON STOMA" : {
@@ -213,6 +219,15 @@
     "Feeling Invisible" : {
 
     },
+    "Francesco Pogliare" : {
+
+    },
+    "I couldn't let my urostomy change my love for sports and change who I am." : {
+
+    },
+    "I had difficulties everyday, but it seemed that for the rest of the world I was still the same." : {
+
+    },
     "Ileostomy" : {
       "localizations" : {
         "en" : {
@@ -309,18 +324,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A gentle spray that helps remove the bag and adhesives without damaging the skin."
+            "value" : "Gently lifts the wafer from the skin without pain or damage. Especially useful for sensitive skin or frequent pouch changes, this spray prevents trauma and makes removal easier and safer."
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Un spray suave diseñado para retirar sin esfuerzo las bolsas de estoma y adhesivos médicos de la piel, reduciendo la incomodidad y protegiendo las áreas sensibles durante los cambios de dispositivo."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Un prodotto utilizzato per rimuovere delicatamente i residui di adesivo dalla pelle."
           }
         }
@@ -331,18 +346,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Adhesive remover spray"
+            "value" : "Ostomy adhesive remover spray"
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Spray removedor de adhesivo"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Rimuovi Adesivo"
           }
         }
@@ -353,18 +368,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A spray that improves the adhesion of the stoma bag to the skin, ensuring a more secure hold."
+            "value" : "Adhesive spray improves the wafer’s grip on the skin, while protective wipes form a thin barrier to prevent skin irritation from the adhesive. Both help maintain skin health and appliance security."
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Spray que mejora la adhesión o permite retirar la barrera suavemente sin irritar la piel."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Uno spray che aiuta a fissare la sacca alla pelle in modo più sicuro."
           }
         }
@@ -375,18 +390,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Adhesive spray"
+            "value" : "Adhesive spray / Protective wipe"
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Spray adhesivo / Removedor"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Spray Adesivo"
           }
         }
@@ -397,18 +412,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A ring or paste that helps seal the stoma area better and prevent leaks."
+            "value" : "Flexible products that fill skin folds and help ensure a snug seal between the wafer and skin. They prevent leaks and protect the skin from irritation caused by output. Rings are pre-shaped; paste is moldable."
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Anillo o pasta que ayuda a sellar mejor la zona del estoma y evitar fugas."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Un anello flessibile che si adatta intorno allo stoma per proteggere la pelle."
           }
         }
@@ -419,18 +434,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Barrier ring / Moldable paste"
+            "value" : "Stoma paste or barrier ring"
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Pasta moldeadora / Anillo de barrera"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Anello di Barriera"
           }
         }
@@ -441,18 +456,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A one-piece system that combines the bag and the skin barrier in a single product."
+            "value" : "A device combining the adhesive barrier (wafer) and pouch in one. It collects waste from the stoma and can be emptied multiple times before changing. Ideal for frequent output, such as with ileostomies or colostomies."
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Sistema de una sola pieza que combina la bolsa y la barrera cutánea en un solo producto."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Un anello flessibile che si adatta intorno allo stoma per proteggere la pelle."
           }
         }
@@ -463,18 +478,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "One-piece drainable bag"
+            "value" : "One-piece drainable ostomy pouch"
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Bolsa de una pieza y drenable"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Sacca Monopezzo"
           }
         }
@@ -573,18 +588,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Curved scissors used to cut the skin barrier to fit the size of the stoma."
+            "value" : "Used to cut the wafer to fit the exact size and shape of the stoma when pre-cut options are not suitable. The curved design ensures precise, safe cuts without damaging the protective layer."
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Tijeras curvas utilizadas para recortar la barrera cutánea al tamaño adecuado del estoma."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Forbici utilizzate per tagliare la barriera cutanea alla dimensione dello stoma."
           }
         }
@@ -661,18 +676,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A bag used to safely dispose of used stoma bags and other contaminated materials."
+            "value" : "Designed to safely discard used ostomy supplies like pouches, gloves, wipes, or absorbent pads. These bags are often odor-resistant, leakproof, and sealable to maintain hygiene."
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Bolsa utilizada para desechar de forma segura bolsas de estoma usadas y otros materiales contaminados."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Un sacchetto utilizzato per lo smaltimento igienico delle sacche usate."
           }
         }
@@ -683,18 +698,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Medical waste bag"
+            "value" : "Absorbent wipes or underpads"
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Bolsa para desechos médicos"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Sacchetto per i Rifiuti"
           }
         }
@@ -705,18 +720,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Alcohol-free wipes or gauze used to clean and dry the skin around the stoma."
+            "value" : "Placed around the stoma or under the working area to catch any leaks during changes. They protect clothing, skin, and surfaces while ensuring a clean and comfortable procedure."
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Gasas o toallitas sin alcohol que se usan para limpiar y secar la piel alrededor del estoma."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Salviette umidificate usate per pulire delicatamente la pelle attorno allo stoma."
           }
         }
@@ -794,6 +809,12 @@
         }
       }
     },
+    "Martha Mendoza" : {
+
+    },
+    "My stoma is a constant reminder of what I’ve lost. But it’s also a symbol of my strength." : {
+
+    },
     "Next step" : {
       "localizations" : {
         "en" : {
@@ -815,6 +836,9 @@
           }
         }
       }
+    },
+    "No quote" : {
+
     },
     "Practice with Simulators" : {
 
@@ -989,6 +1013,9 @@
       }
     },
     "Ups, try again!" : {
+        
+    },
+    "Urostomia" : {
 
     },
     "Urostomy" : {
