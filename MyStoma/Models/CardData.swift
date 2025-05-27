@@ -2,6 +2,7 @@ import SwiftUI
 
 struct CardData: Identifiable {
     let id = UUID()
+    let type: String
     let title: LocalizedStringResource
     let subtitle: LocalizedStringResource
     let imageName: String
@@ -19,8 +20,8 @@ extension CardData {
             subtitle: "COLON STOMA",
             imageName: "Colostomy",
             imageModal: "Untitled_Artwork",
-            navView: AnyView(ColostomyView()),
-            description: "A colostomy brings part of the colon to the surface of the belly to pass stool. The stool is usually formed or semi-formed, depending on where the stoma is placed. A closed or drainable bag collects it. The stoma is red and moist but doesn’t hurt to touch."
+            description: "A colostomy brings part of the colon to the surface of the belly to pass stool. The stool is usually formed or semi-formed, depending on where the stoma is placed. A closed or drainable bag collects it. The stoma is red and moist but doesn’t hurt to touch.",
+            navView: AnyView(ColostomyView())
         ),
         CardData(
             type: "content",
@@ -47,8 +48,8 @@ extension CardData {
             subtitle: "BY MARTHA MENDOZA",
             imageName: "NurseLeft",
             imageModal: "Untitled_Artwork 3",
-            navView: AnyView(ColostomyView()),
-            description: "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive."
+            description: "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive.",
+            navView: AnyView(ColostomyView())
         ),
         CardData(
             type: "story",

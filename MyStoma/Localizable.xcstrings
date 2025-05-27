@@ -61,6 +61,36 @@
         }
       }
     },
+    "A colostomy brings part of the colon to the surface of the belly to pass stool. The stool is usually formed or semi-formed, depending on where the stoma is placed. A closed or drainable bag collects it. The stoma is red and moist but doesn’t hurt to touch." : {
+
+    },
+    "A urostomy helps urine exit the body through a stoma made from a small piece of intestine. Urine flows into a drainable bag. It’s needed when the bladder is damaged or removed." : {
+
+    },
+    "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive." : {
+
+    },
+    "An ileostomy brings the end of the small intestine through the belly. The stool is more liquid and comes out often. It needs a drainable pouch. It’s usually needed when the colon can’t be used." : {
+
+    },
+    "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible." : {
+
+    },
+    "BLADDER STOMA" : {
+
+    },
+    "BY ANNA PAOLA" : {
+
+    },
+    "BY FRANCESCO POGLIARE" : {
+
+    },
+    "BY MARTHA MENDOZA" : {
+
+    },
+    "COLON STOMA" : {
+
+    },
     "Colostomy" : {
       "localizations" : {
         "en" : {
@@ -151,6 +181,9 @@
         }
       }
     },
+    "Connect with Stories" : {
+
+    },
     "End" : {
       "localizations" : {
         "en" : {
@@ -172,6 +205,12 @@
           }
         }
       }
+    },
+    "Explore & Learn" : {
+
+    },
+    "Feeling Invisible" : {
+
     },
     "Ileostomy" : {
       "localizations" : {
@@ -219,6 +258,7 @@
       }
     },
     "ileostomy_subtitle" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -241,6 +281,7 @@
       }
     },
     "ileostomy_title" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -702,6 +743,12 @@
         }
       }
     },
+    "Keep Doing Sports" : {
+
+    },
+    "Living with a Stoma" : {
+
+    },
     "Loading..." : {
       "localizations" : {
         "en" : {
@@ -768,6 +815,9 @@
         }
       }
     },
+    "Practice with Simulators" : {
+
+    },
     "Removing the pouch" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -790,6 +840,15 @@
           }
         }
       }
+    },
+    "Settings" : {
+
+    },
+    "SMALL INTESTINE STOMA" : {
+
+    },
+    "Soccer was my life, and after my urostomy, I thought it was gone. I was scared to move too much, to get tackled, to leak. But my coach said, “Come back. We’ll figure it out.” I trained slow. I tried different bags. The first match back, I was terrified. Then I scored. My team lifted me in the air, and I cried like a baby. I still have my urostomy, but now I also have my confidence, my team, and my game back." : {
+
     },
     "Start" : {
       "localizations" : {
@@ -881,6 +940,7 @@
       }
     },
     "Stories" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -923,6 +983,9 @@
           }
         }
       }
+    },
+    "Urostomy" : {
+
     },
     "urostomy_description" : {
       "extractionState" : "manual",
@@ -971,6 +1034,7 @@
       }
     },
     "urostomy_title" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

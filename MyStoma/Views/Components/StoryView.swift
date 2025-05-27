@@ -131,12 +131,12 @@ struct ContentViewIpad: View {
 
 
 struct StoryView: View {
-    var title: String
-    var subtitle: String
+    var title: LocalizedStringResource
+    var subtitle: LocalizedStringResource
     var imageName: String
     var imageModal: String
     var navView: AnyView?
-    var description: String
+    var description: LocalizedStringResource
 
     @State private var animateTap = false
     @State private var showModal = false
