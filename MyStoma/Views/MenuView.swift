@@ -16,6 +16,16 @@ struct MenuView: View {
                     .padding(.horizontal)
 
                 MenuCaroussel(data: CardData.sampleData)
+                
+                
+                Text("Connect with Stories")
+                    .font(.title2)
+                    .bold()
+                    //.foregroundColor(.black)
+                    .padding([.horizontal, .top])
+                
+                ToolCaroussel(items: items, selectedItem: .constant(nil))
+                
 
                 Text("Connect with Stories")
                     .font(.title2)
@@ -55,7 +65,7 @@ struct MenuView: View {
                     }
                 }
             }
-            .navigationTitle("Explore & Learn")
+            //.navigationTitle("Explore & Learn")
         }
         .environmentObject(router)
         //.background(Color.white.ignoresSafeArea())

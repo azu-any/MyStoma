@@ -558,6 +558,7 @@
       }
     },
     "Explore & Learn" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
