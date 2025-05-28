@@ -20,8 +20,7 @@ struct AppSettingsView: View {
             Toggle("Dislexia Font", isOn: $useDyslexiaFont)
 
             Text("Skin Color")
-                .font(.subheadline)
-
+            
             HStack(spacing: 15) {
                 ForEach(0..<skinColors.count, id: \.self) { index in
                     Circle()
