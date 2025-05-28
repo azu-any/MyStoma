@@ -37,6 +37,7 @@ struct MenuView: View {
                             Image(systemName: "slider.horizontal.3")
                                 .imageScale(.large)
                         }
+                        .padding(.trailing)
                         .popover(isPresented: $showCategoryPicker) {
                             VStack(alignment: .leading) {
                                 Text("Choose category")
