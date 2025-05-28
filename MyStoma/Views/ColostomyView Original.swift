@@ -180,6 +180,7 @@ struct ColostomyView: View {
             }
         }
         .navigationTitle("Colostomy")
+        .navigationBarTitleDisplayMode(.large)
         .onDisappear {
             ostomyViewModel.restartTutorial()
 

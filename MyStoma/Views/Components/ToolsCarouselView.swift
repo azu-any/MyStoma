@@ -31,7 +31,7 @@ struct ToolsCarouselView: View {
                 }
                 .popover(isPresented: $showCategoryPicker) {
                     VStack(alignment: .leading) {
-                        Text("Choose Category")
+                        Text("Choose category")
                             .font(.headline)
                             .padding(.bottom, 5)
 

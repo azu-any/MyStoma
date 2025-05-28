@@ -20,11 +20,9 @@ struct ToolCaroussel: View {
     var body: some View {
         HStack {
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
+                HStack(spacing: 20) {
                     ForEach(sortedItems) { item in
                         InfoItemCardView(item: item)
-                        .padding()
-                       
                     }
                 }
                 //.padding()

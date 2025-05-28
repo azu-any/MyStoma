@@ -6,7 +6,7 @@ struct MenuCaroussel: View {
     var body: some View {
         HStack {
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
+                HStack(spacing: 25) {
                     ForEach(data) { item in
                         if item.type == "content" {
                             ContentViewIpad(
@@ -17,7 +17,7 @@ struct MenuCaroussel: View {
                                 description: item.description,
                                 navView: item.navView
                             )
-                            .padding()
+
                         } else if item.type == "story" {
                             StoryView(
                                 title: item.title,
@@ -27,7 +27,7 @@ struct MenuCaroussel: View {
                                 description: item.description,
                                 quote: item.quote
                             )
-                            .padding()
+
                         }
                     }
                 }
