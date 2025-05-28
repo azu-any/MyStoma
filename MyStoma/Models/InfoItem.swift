@@ -60,7 +60,7 @@ let items: [InfoItem] = [
         modelName: "WasteBag",
         categories: [.colostomy],
         modelPosition: [0, -0.7, 0],
-        modelScale: [0.7, 0.7, 0.7]
+        modelScale: [2, 2, 2]
     ),
     InfoItem(
         title: "infoitem_wipes_title",
