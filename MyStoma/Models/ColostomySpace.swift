@@ -1,13 +1,4 @@
-//
-//  ColostomySpace.swift
-//  MyStoma
-//
-//  Created by Azuany Mila Cerón on 21/05/25.
-//
-
-
 import SwiftUI
-
 
 enum ColostomySpace {
     case first
@@ -19,7 +10,6 @@ enum ColostomySpace {
     case seventh
     case eighth
     case ninth
-    
     
     var id: String {
         switch self {
@@ -37,22 +27,36 @@ enum ColostomySpace {
     
     var items: [InventoryItem] {
         switch self {
-        case .first: [InventoryItem(name: "Waste Bag", imageName: "WasteBag"),
-                      InventoryItem(name: "Adhesive Remover Spray", imageName: "AdhesiveRemover")]
-        case .second: [InventoryItem(name: "Water", imageName: "Water"), InventoryItem(name: "Cloth", imageName: "Cloth")]
-        case .third: [InventoryItem(name: "Stoma Measurement Board", imageName: "Measure")]
-        case .fourth: [InventoryItem(name: "Barrier ring", imageName: "Ring")]
-        case .fifth: [InventoryItem(name: "Cut Stoma Bag", imageName: "Cutstomabag")]
-        case .sixth: []
-        case .seventh: []
-        case .eighth: []
-        case .ninth: []
-            
+        case .first:
+            return [
+                InventoryItem(nameKey: "Waste Bag", imageName: "WasteBag"),
+                InventoryItem(nameKey: "Adhesive Remover Spray", imageName: "AdhesiveRemover")
+            ]
+        case .second:
+            return [
+                InventoryItem(nameKey: "Water", imageName: "Water"),
+                InventoryItem(nameKey: "Cloth", imageName: "Cloth")
+            ]
+        case .third:
+            return [
+                InventoryItem(nameKey: "Stoma Measurement Board", imageName: "Measure")
+            ]
+        case .fourth:
+            return [
+                InventoryItem(nameKey: "Barrier ring", imageName: "Ring")
+            ]
+        case .fifth:
+            return [
+                InventoryItem(nameKey: "Cut Stoma Bag", imageName: "Cutstomabag")
+            ]
+        case .sixth, .seventh, .eighth, .ninth:
+            return []
         }
     }
 }
 
-
-let  ColostomySpaces = [ColostomySpace.first, ColostomySpace.second, ColostomySpace.third, ColostomySpace.fourth, ColostomySpace.fifth, ColostomySpace.sixth, ColostomySpace.seventh, ColostomySpace.eighth, ColostomySpace.ninth]
-
-
+let ColostomySpaces = [
+    ColostomySpace.first, ColostomySpace.second, ColostomySpace.third,
+    ColostomySpace.fourth, ColostomySpace.fifth, ColostomySpace.sixth,
+    ColostomySpace.seventh, ColostomySpace.eighth, ColostomySpace.ninth
+]

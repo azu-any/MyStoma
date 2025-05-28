@@ -1,36 +1,30 @@
-//
-//  InventoryItem.swift
-//  MyStoma
-//
-//  Created by Azuany Mila Cerón on 13/05/25.
-//
 import SwiftUI
 import UniformTypeIdentifiers
-typealias PlatformImage = UIImage
 
+typealias PlatformImage = UIImage
 
 struct InventoryItem: Identifiable, Codable, Hashable {
     var id: UUID = UUID()
-    var name: String
+    var nameKey: String
     var imageName: String
+    
+    var name: LocalizedStringResource {
+        LocalizedStringResource(stringLiteral: nameKey)
+    }
+    
+    init(id: UUID = UUID(), nameKey: String, imageName: String) {
+        self.id = id
+        self.nameKey = nameKey
+        self.imageName = imageName
+    }
 }
 
 extension UTType {
     static var exampleInventory = UTType(exportedAs: "com.example.inventory")
 }
 
-
 extension InventoryItem: Transferable {
     static var transferRepresentation: some TransferRepresentation {
-        
         CodableRepresentation(contentType: .exampleInventory)
-
-        ProxyRepresentation { item in
-            item.imageName
-        } importing: { value in
-            InventoryItem(id: UUID(), name: "", imageName: "")
-        }
-        .suggestedFileName { $0.imageName }
-
     }
 }

@@ -18,27 +18,23 @@
       }
     },
     "“%@”" : {
-
-    },
-    "%@" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@"
+            "value" : "“%@”"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@"
+            "value" : "“%@”"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@"
+            "value" : "“%@”"
           }
         }
       }
@@ -47,62 +43,340 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld/%2$lld"
+            "state" : "translated",
+            "value" : "%lld/%lld"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$lld/%2$lld"
+            "value" : "%lld/%lld"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$lld/%2$lld"
+            "value" : "%lld/%lld"
           }
         }
       }
     },
     "A colostomy brings part of the colon to the surface of the belly to pass stool. The stool is usually formed or semi-formed, depending on where the stoma is placed. A closed or drainable bag collects it. The stoma is red and moist but doesn’t hurt to touch." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A colostomy brings part of the colon to the surface of the belly to pass stool. The stool is usually formed or semi-formed, depending on where the stoma is placed. A closed or drainable bag collects it. The stoma is red and moist but doesn’t hurt to touch."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una colostomía saca una parte del colon a la superficie del abdomen para evacuar las heces. Las heces suelen estar formadas o semi formadas, dependiendo de dónde esté colocado el estoma. Se recoge en una bolsa cerrada o drenable. El estoma es rojo y húmedo, pero no duele al tacto."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una colostomia porta parte del colon alla superficie dell'addome per evacuare le feci. Le feci sono solitamente formate o semi-formate, a seconda della posizione dello stoma. Vengono raccolte in una sacca chiusa o drenabile. Lo stoma è rosso e umido, ma non fa male al tatto."
+          }
+        }
+      }
     },
     "A urostomy helps urine exit the body through a stoma made from a small piece of intestine. Urine flows into a drainable bag. It’s needed when the bladder is damaged or removed." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A urostomy helps urine exit the body through a stoma made from a small piece of intestine. Urine flows into a drainable bag. It’s needed when the bladder is damaged or removed."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una urostomía ayuda a que la orina salga del cuerpo a través de un estoma hecho con un pequeño trozo de intestino. La orina fluye hacia una bolsa drenable. Se necesita cuando la vejiga está dañada o ha sido removida."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una urostomia aiuta l'urina a uscire dal corpo tramite uno stoma creato con un piccolo pezzo di intestino. L'urina scorre in una sacca drenabile. È necessaria quando la vescica è danneggiata o rimossa."
+          }
+        }
+      }
+    },
+    "Adhesive Remover Spray" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adhesive Remover Spray"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spray removedor de adhesivo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spray rimuovi adesivo"
+          }
+        }
+      }
     },
     "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Después de mi cirugía, pensé que mi vida había terminado. La bolsa del estoma se sentía como un castigo. Pero poco a poco, aprendí trucos, como usar ropa suelta o planear con anticipación cuando salía. Un día, mi bolsa se rompió en medio de una cita. Entré en pánico, pero él solo se rió y me ayudó a limpiar. Fue entonces cuando me di cuenta: esto no me define. Sigo siendo yo: divertida, amable y fuerte. ¿Y honestamente? Nunca me he sentido más viva."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dopo l'intervento chirurgico, pensavo che la mia vita fosse finita. La sacca dello stoma mi sembrava una punizione. Ma poco a poco ho imparato dei trucchi—come indossare maglie larghe o pianificare prima di uscire. Un giorno, la mia sacca è scoppiata nel bel mezzo di un appuntamento. Sono andata nel panico, ma lui ha solo riso e mi ha aiutato a pulire. È stato allora che ho capito: questa cosa non mi definisce. Sono ancora me stessa—divertente, gentile e forte. E onestamente? Non mi sono mai sentita così viva."
+          }
+        }
+      }
     },
     "All" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutto"
+          }
+        }
+      }
     },
     "An ileostomy brings the end of the small intestine through the belly. The stool is more liquid and comes out often. It needs a drainable pouch. It’s usually needed when the colon can’t be used." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An ileostomy brings the end of the small intestine through the belly. The stool is more liquid and comes out often. It needs a drainable pouch. It’s usually needed when the colon can’t be used."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una ileostomía saca el extremo del intestino delgado a través del abdomen. Las heces son más líquidas y salen con frecuencia. Se necesita una bolsa drenable. Generalmente se necesita cuando no se puede usar el colon."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un'ileostomia porta l'estremità dell'intestino tenue attraverso l'addome. Le feci sono più liquide ed escono frequentemente. È necessaria una sacca drenabile. Di solito è necessaria quando il colon non può essere utilizzato."
+          }
+        }
+      }
     },
     "Anna Paola" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anna Paola"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anna Paola"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anna Paola"
+          }
+        }
+      }
     },
     "Are you sure you want to restart the tutorial? Your current progress will be lost." : {
 
     },
     "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al principio, nadie me miraba a los ojos. Sentí que había desaparecido después de hacerme la ileostomía. Dejé de salir, incluso al parque. Luego, un día, tomé un pincel y empecé a pintar cómo me sentía: borroso, gris, oculto. Pero poco a poco, el color volvió a mi lienzo y a mí. Una galería ofreció mostrar mi arte. En la inauguración, alguien dijo: “Tu obra me hizo sentir visto.” Fue entonces cuando supe: no soy invisible. Solo tuve que encontrar nuevas formas de ser visible."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All'inizio, nessuno mi guardava negli occhi. Mi sentivo come se fossi scomparsa dopo aver fatto l'ileostomia. Ho smesso di uscire, anche solo per andare al parco. Poi un giorno ho preso un pennello e ho iniziato a dipingere come mi sentivo—sfocata, grigia, nascosta. Ma lentamente, il colore è tornato sulla mia tela, e in me. Una galleria ha voluto esporre le mie opere. All'inaugurazione, qualcuno ha detto: “Il tuo lavoro mi ha fatto sentire visto.” È stato allora che ho capito: non sono invisibile. Dovevo solo trovare nuovi modi per essere visibile."
+          }
+        }
+      }
+    },
+    "Barrier ring" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barrier ring"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anillo barrera"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anello barriera"
+          }
+        }
+      }
     },
     "BLADDER STOMA" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BLADDER STOMA"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ESTOMA DE VEJIGA"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "STOMA DELLA VESCICA"
+          }
+        }
+      }
     },
     "Cancel" : {
 
     },
     "Category" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Category"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categoría"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Categoria"
+          }
+        }
+      }
     },
     "Choose Category" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose Category"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elige categoría"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli Categoria"
+          }
+        }
+      }
+    },
+    "Cloth" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cloth"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paño"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Panno"
+          }
+        }
+      }
     },
     "COLON STOMA" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "COLON STOMA"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ESTOMA DE COLON"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "STOMA DEL COLON"
+          }
+        }
+      }
     },
     "Colostomy" : {
       "localizations" : {
@@ -195,7 +469,71 @@
       }
     },
     "Connect with Stories" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect with Stories"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conéctate con historias"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connetti con Storie"
+          }
+        }
+      }
+    },
+    "Cut Stoma Bag" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cut Stoma Bag"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corta la bolsa del estoma"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taglia la sacca"
+          }
+        }
+      }
+    },
+    "Dislexia Font" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dislexia Font"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuente Dislexia"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carattere per dislessia"
+          }
+        }
+      }
     },
     "End" : {
       "localizations" : {
@@ -220,19 +558,114 @@
       }
     },
     "Explore & Learn" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explore & Learn"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explorar y aprender"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esplora & Impara"
+          }
+        }
+      }
     },
     "Feeling Invisible" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feeling Invisible"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sentirse invisible"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sentirsi invisibili"
+          }
+        }
+      }
     },
     "Francesco Pogliare" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Francesco Pogliare"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Francesco Pogliare"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Francesco Pogliare"
+          }
+        }
+      }
     },
     "I couldn't let my urostomy change my love for sports and change who I am." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I couldn't let my urostomy change my love for sports and change who I am."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No podía permitir que mi urostomía cambiara mi amor por los deportes ni cambiara quién soy."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non potevo lasciare che la mia urostomia cambiasse il mio amore per lo sport e chi sono."
+          }
+        }
+      }
     },
     "I had difficulties everyday, but it seemed that for the rest of the world I was still the same." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I had difficulties everyday, but it seemed that for the rest of the world I was still the same."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuve dificultades todos los días, pero parecía que para el resto del mundo seguía siendo la misma."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avevo difficoltà ogni giorno, ma sembrava che per il resto del mondo fossi ancora la stessa."
+          }
+        }
+      }
     },
     "Ileostomy" : {
       "localizations" : {
@@ -279,52 +712,6 @@
         }
       }
     },
-    "ileostomy_subtitle" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Small Intestine"
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Estoma del íleon"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stomia dell’ileo"
-          }
-        }
-      }
-    },
-    "ileostomy_title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ileostomy"
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ileostomía"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ileostomia"
-          }
-        }
-      }
-    },
     "infoitem_adhesiveremover_description" : {
       "localizations" : {
         "en" : {
@@ -335,14 +722,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Un spray suave diseñado para retirar sin esfuerzo las bolsas de estoma y adhesivos médicos de la piel, reduciendo la incomodidad y protegiendo las áreas sensibles durante los cambios de dispositivo."
+            "state" : "translated",
+            "value" : "Levanta suavemente la barrera adhesiva de la piel sin dolor ni daño. Especialmente útil para piel sensible o cambios frecuentes de bolsa, este spray previene el trauma y facilita una remoción más segura y fácil."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Un prodotto utilizzato per rimuovere delicatamente i residui di adesivo dalla pelle."
+            "state" : "translated",
+            "value" : "Solleva delicatamente la placca dalla pelle senza dolore o danni. Particolarmente utile per la pelle sensibile o per cambi frequenti della sacca, questo spray previene traumi e rende la rimozione più facile e sicura."
           }
         }
       }
@@ -357,14 +744,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Spray removedor de adhesivo"
+            "state" : "translated",
+            "value" : "Spray removedor de adhesivo para ostomía"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Rimuovi Adesivo"
+            "state" : "translated",
+            "value" : "Spray rimuovi-adesivo per stomia"
           }
         }
       }
@@ -379,14 +766,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Spray que mejora la adhesión o permite retirar la barrera suavemente sin irritar la piel."
+            "state" : "translated",
+            "value" : "El spray adhesivo mejora la adherencia de la barrera a la piel, mientras que las toallitas protectoras forman una fina barrera para prevenir la irritación causada por el adhesivo. Ambos ayudan a mantener la salud de la piel y la seguridad del dispositivo."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Uno spray che aiuta a fissare la sacca alla pelle in modo più sicuro."
+            "state" : "translated",
+            "value" : "Lo spray adesivo migliora l’aderenza della placca sulla pelle, mentre le salviette protettive formano una barriera sottile per prevenire irritazioni cutanee causate dall’adesivo. Entrambi aiutano a mantenere la salute della pelle e la sicurezza dell’apparecchio."
           }
         }
       }
@@ -401,14 +788,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Spray adhesivo / Removedor"
+            "state" : "translated",
+            "value" : "Spray adhesivo / Toallita protectora"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Spray Adesivo"
+            "state" : "translated",
+            "value" : "Spray adesivo / Salvietta protettiva"
           }
         }
       }
@@ -423,14 +810,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Anillo o pasta que ayuda a sellar mejor la zona del estoma y evitar fugas."
+            "state" : "translated",
+            "value" : "Productos flexibles que rellenan los pliegues de la piel y ayudan a asegurar un sellado ajustado entre la barrera y la piel. Previenen fugas y protegen la piel de la irritación causada por las secreciones. Los anillos están preformados; la pasta es moldeable."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Un anello flessibile che si adatta intorno allo stoma per proteggere la pelle."
+            "state" : "translated",
+            "value" : "Prodotti flessibili che riempiono le pieghe della pelle e aiutano a garantire una tenuta aderente tra la placca e la pelle. Prevengono perdite e proteggono la pelle dall’irritazione causata dall’uscita. Gli anelli sono preformati; la pasta è modellabile."
           }
         }
       }
@@ -445,14 +832,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Pasta moldeadora / Anillo de barrera"
+            "state" : "translated",
+            "value" : "Pasta para estoma o anillo barrera"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Anello di Barriera"
+            "state" : "translated",
+            "value" : "Pasta per stomia o anello barriera"
           }
         }
       }
@@ -467,14 +854,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Sistema de una sola pieza que combina la bolsa y la barrera cutánea en un solo producto."
+            "state" : "translated",
+            "value" : "Dispositivo que combina la barrera adhesiva (barrera) y la bolsa en uno solo. Recoge los desechos del estoma y puede vaciarse varias veces antes de cambiarlo. Ideal para salidas frecuentes, como en ileostomías o colostomías."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Un anello flessibile che si adatta intorno allo stoma per proteggere la pelle."
+            "state" : "translated",
+            "value" : "Dispositivo che combina barriera adesiva (placca) e sacca in un unico pezzo. Raccoglie i rifiuti dallo stoma e può essere svuotato più volte prima di essere cambiato. Ideale per uscite frequenti, come nelle ileostomie o colostomie."
           }
         }
       }
@@ -489,14 +876,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Bolsa de una pieza y drenable"
+            "state" : "translated",
+            "value" : "Bolsa de ostomía drenable de una pieza"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Sacca Monopezzo"
+            "state" : "translated",
+            "value" : "Sacca per stomia drenabile monopezzo"
           }
         }
       }
@@ -599,14 +986,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Tijeras curvas utilizadas para recortar la barrera cutánea al tamaño adecuado del estoma."
+            "state" : "translated",
+            "value" : "Se utiliza para cortar la barrera a la medida y forma exacta del estoma cuando las opciones pre-cortadas no son adecuadas. El diseño curvo asegura cortes precisos y seguros sin dañar la capa protectora."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Forbici utilizzate per tagliare la barriera cutanea alla dimensione dello stoma."
+            "state" : "translated",
+            "value" : "Usato per tagliare la placca per adattarla alla misura e forma esatte dello stoma quando le opzioni pre-tagliate non sono adatte. Il design curvo garantisce tagli precisi e sicuri senza danneggiare lo strato protettivo."
           }
         }
       }
@@ -687,14 +1074,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Bolsa utilizada para desechar de forma segura bolsas de estoma usadas y otros materiales contaminados."
+            "state" : "translated",
+            "value" : "Diseñados para desechar de forma segura los materiales usados para ostomía como bolsas, guantes, toallitas o compresas absorbentes. Estas bolsas suelen ser resistentes a los olores, a prueba de fugas y sellables para mantener la higiene."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Un sacchetto utilizzato per lo smaltimento igienico delle sacche usate."
+            "state" : "translated",
+            "value" : "Progettati per eliminare in sicurezza i materiali usati per stomia come sacche, guanti, salviette o assorbenti. Questi sacchetti sono spesso resistenti agli odori, a prova di perdita e richiudibili per mantenere l’igiene."
           }
         }
       }
@@ -709,14 +1096,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Bolsa para desechos médicos"
+            "state" : "translated",
+            "value" : "Toallitas absorbentes o protectores"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Sacchetto per i Rifiuti"
+            "state" : "translated",
+            "value" : "Salviette assorbenti o sotto-pannolini"
           }
         }
       }
@@ -731,14 +1118,14 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Gasas o toallitas sin alcohol que se usan para limpiar y secar la piel alrededor del estoma."
+            "state" : "translated",
+            "value" : "Colocados alrededor del estoma o bajo el área de trabajo para captar cualquier fuga durante el cambio. Protegen la ropa, la piel y las superficies, asegurando un procedimiento limpio y cómodo."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Salviette umidificate usate per pulire delicatamente la pelle attorno allo stoma."
+            "state" : "translated",
+            "value" : "Posizionati intorno allo stoma o sotto l’area di lavoro per raccogliere eventuali perdite durante il cambio. Proteggono i vestiti, la pelle e le superfici garantendo una procedura pulita e confortevole."
           }
         }
       }
@@ -766,10 +1153,48 @@
       }
     },
     "Keep Doing Sports" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keep Doing Sports"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sigue practicando deportes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continua a fare sport"
+          }
+        }
+      }
     },
     "Living with a Stoma" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Living with a Stoma"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vivir con un estoma"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vivere con uno stoma"
+          }
+        }
+      }
     },
     "Loading..." : {
       "localizations" : {
@@ -816,10 +1241,48 @@
       }
     },
     "Martha Mendoza" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Martha Mendoza"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Martha Mendoza"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Martha Mendoza"
+          }
+        }
+      }
     },
     "My stoma is a constant reminder of what I’ve lost. But it’s also a symbol of my strength." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My stoma is a constant reminder of what I’ve lost. But it’s also a symbol of my strength."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mi estoma es un recordatorio constante de lo que he perdido. Pero también es un símbolo de mi fuerza."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il mio stoma è un costante promemoria di ciò che ho perso. Ma è anche un simbolo della mia forza"
+          }
+        }
+      }
     },
     "Next step" : {
       "localizations" : {
@@ -844,10 +1307,48 @@
       }
     },
     "No quote" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No quote"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ninguna cita"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna citazione"
+          }
+        }
+      }
     },
     "Practice with Simulators" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Practice with Simulators"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrena con simuladores"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allenati con simulatori"
+          }
+        }
+      }
     },
     "Removing the pouch" : {
       "extractionState" : "manual",
@@ -879,13 +1380,92 @@
 
     },
     "Settings" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
+          }
+        }
+      }
+    },
+    "Skin Color" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skin Color"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Color de piel"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colore della pelle"
+          }
+        }
+      }
     },
     "SMALL INTESTINE STOMA" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SMALL INTESTINE STOMA"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ESTOMA DE INTESTINO DELGADO"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "STOMA DELL’INTESTINO TENUE"
+          }
+        }
+      }
     },
     "Soccer was my life, and after my urostomy, I thought it was gone. I was scared to move too much, to get tackled, to leak. But my coach said, “Come back. We’ll figure it out.” I trained slow. I tried different bags. The first match back, I was terrified. Then I scored. My team lifted me in the air, and I cried like a baby. I still have my urostomy, but now I also have my confidence, my team, and my game back." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soccer was my life, and after my urostomy, I thought it was gone. I was scared to move too much, to get tackled, to leak. But my coach said, “Come back. We’ll figure it out.” I trained slow. I tried different bags. The first match back, I was terrified. Then I scored. My team lifted me in the air, and I cried like a baby. I still have my urostomy, but now I also have my confidence, my team, and my game back."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El fútbol era mi vida, y después de mi urostomía pensé que se había acabado. Tenía miedo de moverme mucho, de que me tumbaran, de que tuviera fugas. Pero mi entrenador dijo: “Vuelve. Lo resolveremos.” Me entrené despacio. Probé diferentes bolsas. En el primer partido, estaba aterrorizado. Luego marqué un gol. Mi equipo me levantó en el aire y lloré como un bebé. Todavía tengo mi urostomía, pero ahora también tengo mi confianza, mi equipo y mi juego de vuelta."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il calcio era la mia vita, e dopo la mia urostomia pensavo fosse finita. Avevo paura di muovermi troppo, di subire un placcaggio, di perdere. Ma il mio allenatore ha detto: “Torna. Troveremo una soluzione.” Mi sono allenato piano. Ho provato sacche diverse. Alla prima partita, ero terrorizzato. Poi ho segnato. La mia squadra mi ha sollevato in aria e ho pianto come un bambino. Ho ancora la mia urostomia, ma ora ho anche la mia fiducia, la mia squadra e il mio gioco di ritorno."
+          }
+        }
+      }
     },
     "Start" : {
       "localizations" : {
@@ -953,6 +1533,29 @@
         }
       }
     },
+    "Stoma Measurement Board" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stoma Measurement Board"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tabla de medición del estoma"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tavola di misurazione dello stoma"
+          }
+        }
+      }
+    },
     "stoma_bag_title" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -976,25 +1579,24 @@
         }
       }
     },
-    "Stories" : {
-      "extractionState" : "stale",
+    "That's right!" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Stories"
+            "value" : "That's right!"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Historias"
+            "value" : "¡Correcto!"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Storia"
+            "value" : "Giusto!"
           }
         }
       }
@@ -1028,13 +1630,70 @@
       }
     },
     "Ups, try again!" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ups, try again!"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Ups, inténtalo de nuevo!"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ops, prova di nuovo!"
+          }
+        }
+      }
     },
     "Urostomia" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urostomia"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urostomía"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urostomia"
+          }
+        }
+      }
     },
     "Urostomy" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urostomy"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urostomía"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Urostomia"
+          }
+        }
+      }
     },
     "urostomy_description" : {
       "extractionState" : "manual",
@@ -1082,25 +1741,48 @@
         }
       }
     },
-    "urostomy_title" : {
-      "extractionState" : "stale",
+    "Waste Bag" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Urostomy"
+            "value" : "Waste Bag"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Urostomía"
+            "value" : "Bolsa para desechos"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Urostomia"
+            "value" : "Sacco per rifiuti"
+          }
+        }
+      }
+    },
+    "Water" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Water"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agua"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acqua"
           }
         }
       }
