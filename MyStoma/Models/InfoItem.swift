@@ -38,14 +38,14 @@ struct InfoItem: Identifiable, Equatable {
 
 
 let items: [InfoItem] = [
-    InfoItem(
+    /*InfoItem(
         title: "infoitem_stomabag_title",
         description: "infoitem_stomabag_description",
         modelName: "stomabag",
         categories: [.colostomy],
         modelPosition: [0, 0.5, 0],
         modelScale: [2, 2, 2]
-    ),
+    ),*/
     InfoItem(
         title: "infoitem_adhesivespray_title",
         description: "infoitem_adhesivespray_description",
@@ -77,31 +77,13 @@ let items: [InfoItem] = [
     InfoItem(
         title: "infoitem_onepiecebag_title",
         description: "infoitem_onepiecebag_description",
-        modelName: "stomabag",
+        modelName: "cleanstoma",
         categories: [.colostomy]
     ),
     InfoItem(
         title: "infoitem_barrierring_title",
         description: "infoitem_barrierring_description",
-        modelName: "Ring",
-        categories: [.colostomy]
-    ),
-    InfoItem(
-        title: "infoitem_adhesiveremover_title",
-        description: "infoitem_adhesiveremover_description",
-        modelName: "Bottle",
-        categories: [.colostomy]
-    ),
-    InfoItem(
-        title: "infoitem_placeholder1_title",
-        description: "infoitem_placeholder1_description",
-        modelName: "WasteBag",
-        categories: [.colostomy]
-    ),
-    InfoItem(
-        title: "infoitem_placeholder2_title",
-        description: "infoitem_placeholder2_description",
-        modelName: "WasteBag",
+        modelName: "Paste",
         categories: [.colostomy]
     ),
 ]
