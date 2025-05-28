@@ -84,8 +84,10 @@ struct StoryView: View {
         //.shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
         .sheet(isPresented: $showModal) {
             WindowView(isPresented: $showModal, title: title, description: description, navView: navView)
+            #if os(iOS)
                 .frame(width: UIScreen.main.bounds.width * 2/3,
                        height: UIScreen.main.bounds.height * 2/3)
+            #endif
                 .transition(.scale)
         }
     }

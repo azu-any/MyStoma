@@ -29,7 +29,7 @@ class OstomyViewModel: ObservableObject {
         if firstItem.imageName == "AdhesiveRemover" {
             print("done")
             self.items.removeAll { $0.imageName == "AdhesiveRemover" }
-            items.append(InventoryItem(name: "Colostomy Bag", imageName: "StomaBag"))
+            items.append(InventoryItem(nameKey: "Colostomy Bag", imageName: "StomaBag"))
             return "RemoveBag"
         }
         
@@ -40,8 +40,8 @@ class OstomyViewModel: ObservableObject {
         
         else if firstItem.imageName == "Measure" {
             items.removeAll { $0.imageName == "Measure" }
-            items.append(InventoryItem(name: "Scissors", imageName: "Scissors"))
-            items.append(InventoryItem(name: "New Stoma Bag", imageName: "Cleanstomabag"))
+            items.append(InventoryItem(nameKey: "Scissors", imageName: "Scissors"))
+            items.append(InventoryItem(nameKey: "New Stoma Bag", imageName: "Cleanstomabag"))
             return "Measure"
         }
         
