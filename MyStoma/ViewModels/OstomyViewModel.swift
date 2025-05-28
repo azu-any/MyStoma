@@ -33,8 +33,8 @@ class OstomyViewModel: ObservableObject {
             return "RemoveBag"
         }
         
-        else if firstItem.imageName == "Cloth" {
-            items.removeAll { $0.imageName == "Cloth" }
+        else if firstItem.imageName == "WetCloth" {
+            items.removeAll { $0.imageName == "WetCloth" }
             return "Done"
         }
         
@@ -72,8 +72,14 @@ class OstomyViewModel: ObservableObject {
         else if firstItem.imageName == "Scissors" {
             items.removeAll { $0.imageName == "Scissors" }
             items.removeAll { $0.imageName == "Cleanstomabag" }
-            items.append(InventoryItem(nameKey: "Cut Stoma Bag", imageName: "Cutstomabag"))
+            items.append(InventoryItem(nameKey: "Cut Stoma Bag", imageName: "Cutstomabag-Nointeraction"))
             return "Scissors"
+        }
+        
+        else if firstItem.imageName == "Water" {
+            items.removeAll { $0.imageName == "Water" }
+            items.removeAll { $0.imageName == "Cloth" }
+            items.append(InventoryItem(nameKey: "Wet cloth", imageName: "WetCloth"))
         }
         
         return ""
@@ -95,6 +101,7 @@ class OstomyViewModel: ObservableObject {
                     viewState = .question
                 } else if currentDialogueIndex == currentStep.timePractice {
                     if !showInventory {
+                        items.removeAll()
                         items.append(contentsOf: ColostomySpaces[currentStepIndex].items)
                         showInventory.toggle()
                     }

@@ -1100,18 +1100,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Absorbent wipes or underpads"
+            "value" : "Waste bag for stoma bag"
           }
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Toallitas absorbentes o protectores"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Salviette assorbenti o sotto-pannolini"
           }
         }
