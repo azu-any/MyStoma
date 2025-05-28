@@ -42,9 +42,7 @@ struct InventoryItemsView: View {
                                 else if result == "Scissors" {
                                     stomaSizerEntity?.isEnabled = false
                                     ostomyViewModel.isDone = true
-                                    
                                 }
-                                
                                 return false
                             }
                             .padding([.top, .horizontal], 5)

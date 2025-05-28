@@ -58,6 +58,40 @@ struct ColostomyView: View {
                         
                         body.components.set(InputTargetComponent())
                         
+                        let texture = try? await TextureResource(named: "DarkColor")
+                        
+                        // Load and apply texture
+                        if let texture = try? await TextureResource.load(named: "DarkColor") {
+                            if var modelComponent = body.components[ModelComponent.self] as? ModelComponent {
+                                if var material = modelComponent.materials.first as? SimpleMaterial {
+                                                
+                                    /*/ ✅ Use MaterialParameters.Texture instead of Texture()
+                                    material.baseColor = .init(
+                                        texture: MaterialParameters.Texture(resource: texture)
+                                    )
+                                    
+                                    modelComponent.materials = [material]
+                                    body.components[ModelComponent.self] = modelComponent*/
+                                }
+                            }
+                        }
+
+                        // Apply it to the model's material
+                        /*if var material = body.model?.materials.first as? SimpleMaterial {
+                            material.baseColor = .texture(Texture(resource: texture))
+                            body.model?.materials = [material]
+                        }*/
+                        /*if let modelComponent = body.components[ModelComponent.self] as? ModelComponent {
+                            // Now you can access or modify the model properties
+                            if var material = modelComponent.mesh.materials.first as? SimpleMaterial {
+                                material.baseColor = .texture(Texture(resource: "DarkColor"))
+                                modelComponent.mesh.materials = [material]
+
+                                // Re-assign the updated model component back
+                                modelEntity?.components[ModelComponent.self] = modelComponent
+                            }
+                        }*/
+                        
                         if let stoma = body.findEntity(named: "Human_Stomach") {
                             stoma.name = "stoma"
                             stomaEntity = stoma
@@ -84,7 +118,6 @@ struct ColostomyView: View {
                         stomaSizerEntity?.isEnabled = false
                     }
                     
-                    // TODO: Add barrier ring
                     if let paste = try? await ModelEntity(named: "Paste") {
                         paste.scale = [0.03, 0.03, 0.03]
                         paste.position = [0.068, 1.048, 0.19]

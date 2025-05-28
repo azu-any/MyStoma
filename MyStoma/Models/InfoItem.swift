@@ -77,7 +77,7 @@ let items: [InfoItem] = [
     InfoItem(
         title: "infoitem_onepiecebag_title",
         description: "infoitem_onepiecebag_description",
-        modelName: "cleanstoma",
+        modelName: "Cleanstoma",
         categories: [.colostomy]
     ),
     InfoItem(
