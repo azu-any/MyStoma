@@ -18,7 +18,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        #if os(visionOS)
+        /*#if os(visionOS)
         NavigationStack {
             VStack(spacing: 30) {
                 
@@ -69,11 +69,11 @@ struct ContentView: View {
         }
         #endif
         
-        #if os(iOS)
+        #if os(iOS)*/
         MenuView()
             .environmentObject(NavigationRouter())
             .environmentObject(viewModel)
-        #endif
+        //#endif
     }
 }
 
@@ -127,6 +127,5 @@ struct BottomOrnamentView: View {
 #Preview() {
     ContentView()
         .environment(AppModel())
-        .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
-        )
+        .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy))        
 }

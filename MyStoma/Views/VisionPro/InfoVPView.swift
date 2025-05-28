@@ -41,8 +41,7 @@ struct InfoVPView: View {
                 DialogueView(showDialogue: $showDialogue)
                 
             } else {
-                QuestionView(question: viewModel.ostomy.steps[viewModel.currentStepIndex].question, answers: viewModel.ostomy.steps[viewModel.currentStepIndex].answers,
-                    showDialogue: $showDialogue
+                QuestionView(question: viewModel.ostomy.steps[viewModel.currentStepIndex].question, answers: viewModel.ostomy.steps[viewModel.currentStepIndex].answers
                 )
             }
             

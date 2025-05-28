@@ -23,8 +23,6 @@ struct DialogueView: View {
                 
                 let dialogue = viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues[viewModel.currentDialogueIndex]
                 
-                //Text(dialogue)
-                    //.multilineTextAlignment(.leading)
                 TypingTextView(fullText: dialogue, trigger: viewModel.currentDialogueIndex)
                     .frame(width: 400, height: 100)
                     .padding(.top, 40)

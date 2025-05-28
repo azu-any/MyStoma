@@ -35,3 +35,8 @@ let defaultOstomy = Ostomy(
     ],
     scene: "DefaultScene"
 )
+
+
+enum OstomyViewState {
+    case dialogue, question, end
+}

@@ -8,13 +8,14 @@ import SwiftUI
 
 struct QuestionView: View {
     
+    @EnvironmentObject var ostomyViewModel: OstomyViewModel
+    
+    @State private var selectedAnswer: String?
+    @State private var shuffledAnswers: [String] = []
+    @State private var answerResult: AnswerResult = .none
+    
     var question: String
     var answers: [String]
-    @State private var selectedAnswer: String?
-    @Binding var showDialogue: Bool
-    
-    @State private var answerResult: AnswerResult = .none
-    @State private var shuffledAnswers: [String] = []
 
 
     var body: some View {
@@ -40,13 +41,13 @@ struct QuestionView: View {
                                 answerResult = (answer == answers[0]) ? .correct : .incorrect
                             }
                             
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                             withAnimation(.easeInOut(duration: 0.5)) {
                                 selectedAnswer = nil
                                 answerResult = .none
-                                if answer == answers[0] {
-                                    showDialogue = true
-                                }
+                            }
+                            if answer == answers[0] {
+                                ostomyViewModel.viewState = .dialogue
                             }
                         }
                             
@@ -106,5 +107,5 @@ enum AnswerResult {
 }
 
 #Preview {
-    QuestionView(question: "Here goes the question?", answers: ["correct", "right"], showDialogue: .constant(false))
+    QuestionView(question: "Here goes the question?", answers: ["correct", "right"])
 }

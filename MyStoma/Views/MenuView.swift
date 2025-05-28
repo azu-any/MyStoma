@@ -133,5 +133,3 @@ struct MenuView: View {
         .environmentObject(NavigationRouter())
         .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy))
 }
-
-
