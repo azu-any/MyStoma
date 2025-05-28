@@ -99,7 +99,7 @@ class OstomyViewModel: ObservableObject {
                 currentDialogueIndex += 1
                 if currentDialogueIndex == currentStep.timeQuestion + 1{
                     viewState = .question
-                } else if currentDialogueIndex == currentStep.timePractice {
+                } else if currentDialogueIndex == currentStep.timePractice + 1 {
                     if !showInventory {
                         items.removeAll()
                         items.append(contentsOf: ColostomySpaces[currentStepIndex].items)
