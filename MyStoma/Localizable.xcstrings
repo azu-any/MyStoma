@@ -105,6 +105,29 @@
         }
       }
     },
+    "Adhesive Remover Spray" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adhesive Remover Spray"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spray removedor de adhesivo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spray rimuovi adesivo"
+          }
+        }
+      }
+    },
     "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive." : {
       "localizations" : {
         "en" : {
@@ -215,6 +238,29 @@
         }
       }
     },
+    "Barrier ring" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barrier ring"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anillo barrera"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anello barriera"
+          }
+        }
+      }
+    },
     "BLADDER STOMA" : {
       "localizations" : {
         "en" : {
@@ -277,6 +323,29 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scegli Categoria"
+          }
+        }
+      }
+    },
+    "Cloth" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cloth"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paño"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Panno"
           }
         }
       }
@@ -411,6 +480,29 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Connetti con Storie"
+          }
+        }
+      }
+    },
+    "Cut Stoma Bag" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cut Stoma Bag"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corta la bolsa del estoma"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taglia la sacca"
           }
         }
       }
@@ -1429,6 +1521,29 @@
         }
       }
     },
+    "Stoma Measurement Board" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stoma Measurement Board"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tabla de medición del estoma"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tavola di misurazione dello stoma"
+          }
+        }
+      }
+    },
     "stoma_bag_title" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1604,6 +1719,52 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stomia urinaria"
+          }
+        }
+      }
+    },
+    "Waste Bag" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waste Bag"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bolsa para desechos"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sacco per rifiuti"
+          }
+        }
+      }
+    },
+    "Water" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Water"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agua"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acqua"
           }
         }
       }
