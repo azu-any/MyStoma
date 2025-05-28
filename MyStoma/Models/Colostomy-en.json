@@ -41,7 +41,8 @@
                 "Pat gently instead of scrubbing, and be sure to dry the skin thoroughly before applying the new plate.",
                 "Dry skin ensures better adhesion of the system.",
                 "Let's practice!",
-                "Grab the cloth and drag it to the stoma area."
+                "Grab the water and drag it to the cloth to wet it.",
+                "Grab the wet cloth and drag it to the stoma area."
             ],
             "question": "What is best to clean the skin around the stoma?",
             "answers": ["Only warm water or saline", "Scented or antibacterial soaps"],

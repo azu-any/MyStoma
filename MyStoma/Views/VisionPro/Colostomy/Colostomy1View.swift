@@ -10,9 +10,11 @@ import RealityKit
 import simd
 
 
+let customMaterial =  PhysicsMaterialResource.generate(staticFriction: 0.0, dynamicFriction: 0.0, restitution: 0.0)
+
+
 struct ColostomyFirstView: View {
     
-    let customMaterial =  PhysicsMaterialResource.generate(staticFriction: 0.0, dynamicFriction: 0.0, restitution: 0.0)
     
     @EnvironmentObject var viewModel: OstomyViewModel
 

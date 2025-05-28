@@ -23,6 +23,7 @@ struct TextViewWithPopovers: View {
     }
     
     var body: some View {
+        
         Text(attributedText)
             .multilineTextAlignment(.leading)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -39,13 +40,24 @@ struct TextViewWithPopovers: View {
                 setupAttributedText()
             }
             .popover(isPresented: $showPopover) {
-                if let word = highlightedWord {
-                    Text(definitions["\(languageCode)_\(word)"] ?? "No definition found")
-                        .padding()
-                } else {
-                    Text("No definition found")
-                        .padding()
+                ScrollView {
+                    if let word = highlightedWord {
+                        Text(word)
+                            .bold()
+                            .font(.callout)
+                            .textCase(.uppercase)
+                        
+                        Text(definitions["\(languageCode)_\(word)"] ?? "No definition found")
+                            .multilineTextAlignment(.leading)
+                            .font(.callout)
+
+                    } else {
+                        Text("No definition found")
+                    }
                 }
+                .padding()
+                .frame(width: 400, height: 200)
+                .fixedSize()
             }
     }
     

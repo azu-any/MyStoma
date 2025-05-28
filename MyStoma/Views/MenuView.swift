@@ -14,65 +14,63 @@ struct MenuView: View {
     
     var body: some View {
         NavigationStack(path: $router.path) {
-
-            VStack(alignment: .leading) {
-                Text("Practice with Simulators")
-                    .font(.title2)
-                    .bold()
-                    //.foregroundColor(.black)
-                    .padding(.horizontal)
-
-                MenuCaroussel(data: CardData.sampleData)
+            ScrollView {
+                VStack(alignment: .leading, spacing: 20) {
                 
-                HStack{
-                    Text("Learn the Tools")
+                    Text("Practice with Simulators")
                         .font(.title2)
                         .bold()
-                    //.foregroundColor(.black)
-                        .padding([.horizontal, .top])
                     
-                    Spacer()
-                    Button {
-                        showCategoryPicker.toggle()
-                    } label: {
-                        Image(systemName: "slider.horizontal.3")
-                            .imageScale(.large)
-                    }
-                    .padding()
-                    .popover(isPresented: $showCategoryPicker) {
-                        VStack(alignment: .leading) {
-                            Text("Choose Category")
-                                .font(.headline)
-                                //.padding(.bottom, 5)
-                            
-                            Picker("Category", selection: $selectedCategory) {
-                                Text("All").tag(StomaCategory?.none)
-                                ForEach(StomaCategory.allCases) { category in
-                                    Text(category.rawValue.capitalized).tag(Optional(category))
-                                }
-                            }
-                            .pickerStyle(.inline)
+                    MenuCaroussel(data: CardData.sampleData)
+                    
+                    
+                    HStack{
+                        Text("Learn the Tools")
+                            .font(.title2)
+                            .bold()
+                        
+                        Spacer()
+                        
+                        Button {
+                            showCategoryPicker.toggle()
+                        } label: {
+                            Image(systemName: "slider.horizontal.3")
+                                .imageScale(.large)
                         }
-                        .padding()
-                        .frame(width: 250)
+                        .padding(.trailing)
+                        .popover(isPresented: $showCategoryPicker) {
+                            VStack(alignment: .leading) {
+                                Text("Choose category")
+                                    .font(.headline)
+                                
+                                Picker("Category", selection: $selectedCategory) {
+                                    Text("All").tag(StomaCategory?.none)
+                                    ForEach(StomaCategory.allCases) { category in
+                                        Text(category.rawValue.capitalized).tag(Optional(category))
+                                    }
+                                }
+                                .pickerStyle(.inline)
+                            }
+                            .padding()
+                            .frame(width: 250)
+                        }
                     }
+                        
+                    ToolCaroussel(
+                        items: items.filter { selectedCategory == nil || $0.categories.contains(selectedCategory!) },
+                        selectedItem: .constant(nil)
+                    )
+                    
+                    Text("Connect with Stories")
+                        .font(.title2)
+                        .bold()
+                    
+                    MenuCaroussel(data: CardData.storyData)
                 }
-                
-                ToolCaroussel(
-                    items: items.filter { selectedCategory == nil || $0.categories.contains(selectedCategory!) },
-                    selectedItem: .constant(nil)
-                )
-                
+                .padding(.leading)
 
-                Text("Connect with Stories")
-                    .font(.title2)
-                    .bold()
-                    //.foregroundColor(.black)
-                    .padding([.horizontal, .top])
-
-                MenuCaroussel(data: CardData.storyData)
+                //.background(Color.white.ignoresSafeArea())
             }
-            //.background(Color.white.ignoresSafeArea())
             .onAppear {
                 Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
                     toggleRotation.toggle()
@@ -93,7 +91,7 @@ struct MenuView: View {
                     }
                 }
             }
-            //.navigationTitle("Explore & Learn")
+            .navigationTitle("Explore & Learn")
         }
         .environmentObject(router)
         //.background(Color.white.ignoresSafeArea())

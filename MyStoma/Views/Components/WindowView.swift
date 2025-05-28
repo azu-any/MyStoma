@@ -21,7 +21,6 @@ struct WindowView: View {
                 
                 HStack(alignment: .top, spacing: 40) {
                     Text(description)
-                        .font(.body)
                         .multilineTextAlignment(.leading)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
