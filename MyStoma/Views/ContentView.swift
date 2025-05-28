@@ -105,13 +105,6 @@ struct BottomOrnamentView: View {
         NavigationStack{
             HStack {
                 NavigationLink {
-                    ToolsView()
-                } label: {
-                    Image(systemName: "cross.case.fill")
-                }
-                
-                
-                NavigationLink {
                     AppSettingsView()
                 } label: {
                     Image(systemName: "gear")

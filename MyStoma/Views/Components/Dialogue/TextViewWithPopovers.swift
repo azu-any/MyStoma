@@ -1,56 +1,67 @@
-//
-//  TextViewWithPopovers.swift
-//  MyStoma
-//
-//  Created by Azuany Mila Cerón on 27/05/25.
-//
 import SwiftUI
 
 struct TextViewWithPopovers: View {
     let fullText: String
-     let word = "plaque"
-
-    @State var selectedWord: String?
-    @State var showPopover: Bool = false
-    @State var hasWord: Bool = false
+    var languageCode: String {
+        return Locale.current.language.languageCode?.identifier ?? "en"
+    }
+    
+    @State private var showPopover = false
+    @State private var highlightedWord: String? = nil
     @State private var attributedText = AttributedString("")
-
+    
+    var availableWords: [String] {
+        let keys = definitions.keys
+        var words = Set<String>()
+        for key in keys {
+            let components = key.split(separator: "_")
+            if components.count == 2 {
+                words.insert(String(components[1]))
+            }
+        }
+        return Array(words)
+    }
+    
     var body: some View {
-        
         Text(attributedText)
             .multilineTextAlignment(.leading)
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
             .onTapGesture {
-                if hasWord {
+                if highlightedWord != nil {
                     showPopover = true
                 }
             }
-            .onAppear{
+            .onAppear {
                 setupAttributedText()
             }
             .onChange(of: fullText) {
                 setupAttributedText()
             }
             .popover(isPresented: $showPopover) {
-                Text(definitions[word] ?? "No definition found")
-                    .padding()
+                if let word = highlightedWord {
+                    Text(definitions["\(languageCode)_\(word)"] ?? "No definition found")
+                        .padding()
+                } else {
+                    Text("No definition found")
+                        .padding()
+                }
             }
-        }
+    }
     
-
-        private func setupAttributedText() {
-            var attributed = AttributedString(fullText)
-            let cleanedWord = word.trimmingCharacters(in: .punctuationCharacters.union(.whitespacesAndNewlines))
-
-            if let range = attributed.range(of: cleanedWord, options: .caseInsensitive) {
+    private func setupAttributedText() {
+        var attributed = AttributedString(fullText)
+        highlightedWord = nil
+        
+        for word in availableWords {
+            if let range = attributed.range(of: word, options: .caseInsensitive) {
                 attributed[range].foregroundColor = .accentColor
                 attributed[range].font = .body.bold()
-                hasWord = true
-            } else {
-                hasWord = false
+                highlightedWord = word
+                break
             }
-
-            attributedText = attributed
         }
+        
+        attributedText = attributed
+    }
 }

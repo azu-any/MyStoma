@@ -4,6 +4,13 @@ struct MenuView: View {
     @State private var toggleRotation = false
     @StateObject var router = NavigationRouter()
     @State private var showSettingsPopover = false
+    @State private var selectedCategory: StomaCategory? = nil
+    let categories = [nil] + StomaCategory.allCases
+    @State private var showCategoryPicker: Bool = false
+    @State var selectedItem: InfoItem?
+    
+    let items: [InfoItem] = InfoItem.sampleItems
+    
     
     var body: some View {
         NavigationStack(path: $router.path) {
@@ -16,6 +23,46 @@ struct MenuView: View {
                     .padding(.horizontal)
 
                 MenuCaroussel(data: CardData.sampleData)
+                
+                HStack{
+                    Text("Learn the Tools")
+                        .font(.title2)
+                        .bold()
+                    //.foregroundColor(.black)
+                        .padding([.horizontal, .top])
+                    
+                    Spacer()
+                    Button {
+                        showCategoryPicker.toggle()
+                    } label: {
+                        Image(systemName: "slider.horizontal.3")
+                            .imageScale(.large)
+                    }
+                    .padding()
+                    .popover(isPresented: $showCategoryPicker) {
+                        VStack(alignment: .leading) {
+                            Text("Choose Category")
+                                .font(.headline)
+                                //.padding(.bottom, 5)
+                            
+                            Picker("Category", selection: $selectedCategory) {
+                                Text("All").tag(StomaCategory?.none)
+                                ForEach(StomaCategory.allCases) { category in
+                                    Text(category.rawValue.capitalized).tag(Optional(category))
+                                }
+                            }
+                            .pickerStyle(.inline)
+                        }
+                        .padding()
+                        .frame(width: 250)
+                    }
+                }
+                
+                ToolCaroussel(
+                    items: items.filter { selectedCategory == nil || $0.categories.contains(selectedCategory!) },
+                    selectedItem: .constant(nil)
+                )
+                
 
                 Text("Connect with Stories")
                     .font(.title2)
@@ -36,15 +83,6 @@ struct MenuView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
-                    Button(action: {
-                        router.path.append(.tools)
-                    }) {
-                        Label("Tools", systemImage: "cross.case.fill")
-                            .labelStyle(.titleAndIcon)
-                            .foregroundColor(Color.bluePrimary)
-                    }
-                }
-                ToolbarItem(placement: .primaryAction) {
                     Button {
                         showSettingsPopover.toggle()
                     } label: {
@@ -55,7 +93,7 @@ struct MenuView: View {
                     }
                 }
             }
-            .navigationTitle("Explore & Learn")
+            //.navigationTitle("Explore & Learn")
         }
         .environmentObject(router)
         //.background(Color.white.ignoresSafeArea())

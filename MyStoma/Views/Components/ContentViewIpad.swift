@@ -27,24 +27,24 @@ struct ContentViewIpad: View {
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             #if os(iOS)
-                            .frame(width: UIScreen.main.bounds.width * 0.4,
-                                   height: UIScreen.main.bounds.width * 0.24)
+                            .frame(width: UIScreen.main.bounds.width * 0.3,
+                                   height: UIScreen.main.bounds.width * 0.17) //.4, .24
                             .clipped()
                             #endif
                     }
 
                     VStack(alignment: .leading, spacing: 4) {
                         Text(subtitle)
-                            .font(.largeTitle)
+                            .font(.title)
                             .bold()
                             .foregroundColor(.white)
                             .lineLimit(1)
                             .minimumScaleFactor(0.5)
                             .padding(.bottom, 4)
-                            .padding(.top, 150)
+                            .padding(.top, 120)
 
                         Text(title)
-                            .font(.largeTitle)
+                            .font(.title)
                             .bold()
                             .foregroundColor(.white)
                             //.lineLimit(1)
@@ -55,7 +55,7 @@ struct ContentViewIpad: View {
                     }
                     .padding()
                     #if os(iOS)
-                    .frame(maxWidth: UIScreen.main.bounds.width * 0.4, maxHeight: UIScreen.main.bounds.width * 0.24)
+                    .frame(maxWidth: UIScreen.main.bounds.width * 0.3, maxHeight: UIScreen.main.bounds.width * 0.17)
                     #endif
                     .background(
                         LinearGradient(
@@ -105,7 +105,7 @@ struct ContentViewIpad: View {
         }
         .padding()
         #if os(iOS)
-        .frame(maxWidth: UIScreen.main.bounds.width * 0.4, maxHeight: UIScreen.main.bounds.width * 0.24)
+        .frame(maxWidth: UIScreen.main.bounds.width * 0.3, maxHeight: UIScreen.main.bounds.width * 0.17)
         #endif
         .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 0)
     }
