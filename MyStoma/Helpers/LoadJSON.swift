@@ -1,10 +1,8 @@
 import Foundation
 
 func loadOstomyFromBundle() -> Ostomy? {
-    // Obtener el idioma principal del sistema (código ISO)
     let languageCode: String = Locale.current.language.languageCode?.identifier ?? "en"
 
-    // Elegir el sufijo del archivo según el idioma
     let fileSuffix: String
     switch languageCode {
     case "it":
@@ -14,8 +12,6 @@ func loadOstomyFromBundle() -> Ostomy? {
     default:
         fileSuffix = "en"
     }
-    
-    // Construir el nombre del archivo con el sufijo adecuado
     let fileName = "Colostomy-\(fileSuffix)"
     
     guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else {
