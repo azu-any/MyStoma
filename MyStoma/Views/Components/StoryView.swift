@@ -7,13 +7,16 @@
 import SwiftUI
 
 struct StoryView: View {
-    var title: LocalizedStringResource
-    var subtitle: LocalizedStringResource
-    var imageName: String
-    var imageModal: String
-    var description: LocalizedStringResource
+    
+    
+    let data: CardData
+    //var title: LocalizedStringResource
+    //var subtitle: LocalizedStringResource
+    //var imageName: String
+    //var imageModal: String
+    //var description: LocalizedStringResource
     var navView: AnyView?
-    var quote: LocalizedStringResource?
+    //var quote: LocalizedStringResource?
 
     @State private var animateTap = false
     @State private var showModal = false
@@ -34,7 +37,7 @@ struct StoryView: View {
                 
                 HStack(alignment: .top, spacing: 16) {
                     
-                    Image(imageName)
+                    Image(data.imageName)
                         .resizable()
                         .aspectRatio(1, contentMode: .fit)
                         //.frame(maxWidth: 100, minHeight: 100)
@@ -46,11 +49,11 @@ struct StoryView: View {
                     
                     // Title and subtitle
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(title)
+                        Text(data.title)
                             .font(.headline)
                             .foregroundColor(.black)
                         
-                        Text("“\(quote ?? "No quote")”")
+                        Text("“\(data.quote ?? "No quote")”")
                             //.padding(.top, 10)
                             .font(.subheadline.bold().italic())
                             .minimumScaleFactor(0.5)
@@ -60,7 +63,7 @@ struct StoryView: View {
                         HStack() {
                             Spacer()
                             
-                            Text(subtitle)
+                            Text(data.subtitle)
                                 .font(.subheadline.bold())
                                 .frame(alignment: .topLeading)
                                 .foregroundColor(.gray)
@@ -89,7 +92,7 @@ struct StoryView: View {
         //.cornerRadius(20)
         //.shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
         .sheet(isPresented: $showModal) {
-            WindowView(isPresented: $showModal, title: title, description: description, navView: navView)
+            WindowView(isPresented: $showModal, data:data)
             #if os(iOS)
                 .frame(width: UIScreen.main.bounds.width * 2/3,
                        height: UIScreen.main.bounds.height * 2/3)
@@ -101,13 +104,16 @@ struct StoryView: View {
 
 #Preview {
     StoryView(
-        title: "Colostomy Leaving It Beh9ind",
-        subtitle: "Martha Mendoza",
-        imageName: "NurseLeft",
-        imageModal: "Untitled_Artwork",
-        description: "This is a preview of the colostomy content for demonstration purposes.",
-        navView: AnyView(Text("Next View")),
-        quote: "I couldn't let my urostomy change my love for sports and change who I am."
+        data: CardData(
+            type: "content",
+            title: "Colostomy Leaving It Beh9ind",
+            subtitle: "Martha Mendoza",
+            imageName: "NurseLeft",
+            imageModal: "Untitled_Artwork",
+            description: "This is a preview of the colostomy content for demonstration purposes.",
+            navView: AnyView(Text("Next View")),
+            quote: "I couldn't let my urostomy change my love for sports and change who I am."
+        )
     )
 }
 

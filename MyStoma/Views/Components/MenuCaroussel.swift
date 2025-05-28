@@ -10,22 +10,24 @@ struct MenuCaroussel: View {
                     ForEach(data) { item in
                         if item.type == "content" {
                             ContentViewIpad(
-                                title: item.title,
+                                data: item
+                                /*title: item.title,
                                 subtitle: item.subtitle,
                                 imageName: item.imageName,
                                 imageModal: item.imageModal,
                                 description: item.description,
-                                navView: item.navView
+                                navView: item.navView*/
                             )
                             .padding()
                         } else if item.type == "story" {
                             StoryView(
-                                title: item.title,
+                                data: item
+                                /*title: item.title,
                                 subtitle: item.subtitle,
                                 imageName: item.imageName,
                                 imageModal: item.imageModal,
                                 description: item.description,
-                                quote: item.quote
+                                quote: item.quote*/
                             )
                             .padding()
                         }

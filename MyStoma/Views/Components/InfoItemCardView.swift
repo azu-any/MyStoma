@@ -58,14 +58,7 @@ struct InfoItemCardView: View {
                 .transition(.scale)*/
                 #endif
         }
-        /*.sheet(isPresented: $showModal) {
-            WindowView(isPresented: $showModal, title: item.title, description: item.description, navView: navView)
-                #if os(iOS)
-                .frame(width: UIScreen.main.bounds.width * 2/3,
-                       height: UIScreen.main.bounds.height * 2/3)
-                .transition(.scale)
-                #endif
-        }*/
+
         .shadow(radius: 5)
         //.padding()
     }
