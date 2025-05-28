@@ -216,6 +216,9 @@
         }
       }
     },
+    "Are you sure you want to restart the tutorial? Your current progress will be lost." : {
+
+    },
     "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible." : {
       "localizations" : {
         "en" : {
@@ -282,6 +285,9 @@
           }
         }
       }
+    },
+    "Cancel" : {
+
     },
     "Category" : {
       "localizations" : {
@@ -1367,6 +1373,12 @@
         }
       }
     },
+    "Restart" : {
+
+    },
+    "Restart tutorial" : {
+
+    },
     "Settings" : {
       "localizations" : {
         "en" : {
@@ -1589,6 +1601,12 @@
         }
       }
     },
+    "Tap and hold to drag items" : {
+
+    },
+    "That's right!" : {
+
+    },
     "Tools" : {
       "localizations" : {
         "en" : {
@@ -1770,6 +1788,7 @@
       }
     },
     "You have completed the colostomy tutorial" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1790,6 +1809,9 @@
           }
         }
       }
+    },
+    "You have completed the colostomy tutorial." : {
+
     }
   },
   "version" : "1.0"

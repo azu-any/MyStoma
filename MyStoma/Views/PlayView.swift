@@ -45,5 +45,6 @@ struct PlayView: View {
 #Preview {
     PlayView()
         .environmentObject(NavigationRouter())
-        .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
-        )}
+        .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy))
+        
+}

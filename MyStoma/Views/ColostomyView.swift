@@ -6,19 +6,17 @@ import RealityKit
 
 
 struct ColostomyView: View {
-
+    
+    @EnvironmentObject var ostomyViewModel: OstomyViewModel
+    
+    @State var showRestart: Bool = false
+    @State private var currentAngle: Float = 0.0
     @State private var modelEntity: Entity? = nil
     @State private var bagEntity: Entity? = nil
     @State private var stomaEntity: Entity? = nil
     @State private var stomaSizerEntity: Entity? = nil
-    @State private var currentAngle: Float = 0.0
-    
-    @State var showDialogue: Bool = true
-    @State var showInventory: Bool = false
-    @State var showEnd: Bool = false
-        
-    @StateObject private var viewModel = InventoryViewModel()
-    @EnvironmentObject var ostomyViewModel: OstomyViewModel
+    @State private var pasteEntity: Entity? = nil
+
     
     var translationGesture: some Gesture {
         DragGesture()
@@ -58,7 +56,6 @@ struct ColostomyView: View {
                     
                     if let body = try? await Entity(named: "StomaBody") {
                         
-                       //body.position = [0, -1.2, 1.3]
                         body.components.set(InputTargetComponent())
                         
                         if let stoma = body.findEntity(named: "Human_Stomach") {
@@ -88,14 +85,14 @@ struct ColostomyView: View {
                     }
                     
                     // TODO: Add barrier ring
-                    /*if let stomaSizer = try? await ModelEntity(named: "StomaSizer") {
-                        stomaSizer.scale = [0.105, 0.105, 0.105]
-                        stomaSizer.position = [0.11, 1.02, 0.175]
-                        rotateEntity(stomaSizer, xDegrees: -90, yDegrees: 20)
-                        wrapper.addChild(stomaSizer)
-                        stomaSizerEntity = stomaSizer
-                        stomaSizerEntity?.isEnabled = false
-                    }*/
+                    if let paste = try? await ModelEntity(named: "Paste") {
+                        paste.scale = [0.03, 0.03, 0.03]
+                        paste.position = [0.068, 1.048, 0.19]
+                        rotateEntity(paste, xDegrees: -90, yDegrees: 22)
+                        wrapper.addChild(paste)
+                        pasteEntity = paste
+                        pasteEntity?.isEnabled = false
+                    }
                         
                     modelEntity = wrapper
                     content.add(wrapper)
@@ -105,10 +102,12 @@ struct ColostomyView: View {
                 .frame(width: 450)
                 .gesture(translationGesture)
                 .dropDestination(for: InventoryItem.self) { droppedItems, index in
-                    let result = viewModel.handleBodyItems(droppedItems: droppedItems)
+                    let result = ostomyViewModel.handleBodyItems(droppedItems: droppedItems)
+                    
+                    print(result)
                     
                     if result == "RemoveBag" {
-                        if let bag = bagEntity{
+                        if let bag = bagEntity {
                             bag.isEnabled = false
                             stomaEntity?.isEnabled = true
                             return true
@@ -119,10 +118,9 @@ struct ColostomyView: View {
                     }
                     else if result == "Measure" {
                         stomaSizerEntity?.isEnabled = true
-                        //ostomyViewModel.isDone = true
                     }
                     else if result == "Ring" {
-                        // TODO: Add Ring to AR view
+                        pasteEntity?.isEnabled = true
                         ostomyViewModel.isDone = true
                     }
                     else if result == "Cutstomabag" {
@@ -134,7 +132,7 @@ struct ColostomyView: View {
                     return false
                 }
                 
-                ZStack(alignment: .center) {
+                ZStack(alignment: .top) {
                     
                     Image("chart-bg")
                         .resizable()
@@ -144,145 +142,34 @@ struct ColostomyView: View {
                         
                         ChartNurseView()
                             .edgesIgnoringSafeArea([.top])
-                                                        
-                        if showDialogue {
-                            ChatBotOverlay(
-                                showDialogue: $showDialogue,
-                                showEnd: $showEnd,
-                                showInventory: $showInventory)
+                        
+                        switch ostomyViewModel.viewState {
+                        case .dialogue:
+                            ChatBotOverlay()
+                            .environmentObject(ostomyViewModel)
+                            
+                            Spacer()
+
+                            if ostomyViewModel.showInventory && !ostomyViewModel.items.isEmpty {
+                                InventoryItemsView(stomaSizerEntity: stomaSizerEntity)
+                                    .environmentObject(ostomyViewModel)
+                            }
+                            
+                            DialogueControlsView()
                                 .environmentObject(ostomyViewModel)
-                                .environmentObject(viewModel)
-                        } else {
                             
-                            if showEnd {
-                                Text("Congratulations!")
-                                Text("You have completed the colostomy tutorial")
-                            } else {
-                                QuestionView(question: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].question, answers: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].answers,
-                                             showDialogue: $showDialogue
-                                )
+                        case .question:
+                            QuestionView(question: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].question, answers: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].answers)
+                                .environmentObject(ostomyViewModel)
                                 .padding()
-                            }
-                        }
-                        
-                        Spacer()
-                        
-                        if showInventory {
                             
-                            VStack {
-                                HStack(alignment: .center, spacing: 16) {
-                                    
-                                    ForEach(viewModel.items) { item in
-                                        VStack {
-                                            Image(item.imageName)
-                                                .resizable()
-                                                .scaledToFit()
-                                                .padding(10)
-                                                .frame(width: 100, height: 100)
-                                                .draggable(item) {
-                                                    Image(item.imageName)
-                                                }
-                                                .background(Color.gray.opacity(0.2))
-                                                .cornerRadius(8)
-                                                .dropDestination(for: InventoryItem.self) { droppedItems, index in
-                                                    let result = viewModel.handleMaterialItems(droppedItems: droppedItems)
-                                                    
-                                                    if result == "TrashBag" {
-                                                        ostomyViewModel.isDone = true
-                                                        return true
-                                                    }
-                                                    
-                                                    else if result == "Scissors" {
-                                                        stomaSizerEntity?.isEnabled = false
-                                                        ostomyViewModel.isDone = true
-                                                        
-                                                    }
-                                                    
-                                                    return false
-                                                }
-                                                .padding([.top, .horizontal], 5)
-                                            
-                                            
-                                            Text(item.name)
-                                                .multilineTextAlignment(.center)
-                                                .frame(width: 100, height: 40)
-                                                .font(.caption)
-                                        }
-                                    }
-                                }
+                        case .end:
+                            Spacer()
+                            Text("Congratulations!")
+                                .bold()
                                 .padding()
-                                
-                            }
-                        
-                        }
-                        
-                        if showDialogue {
-                            
-                            
-                            HStack {
-                                
-                                Button {
-                                    ostomyViewModel.currentDialogueIndex -= 1
-                                } label: {
-                                    Image(systemName: "chevron.left.circle.fill")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 30, height: 30)
-                                }
-                                .disabled(!canGoBack(index: ostomyViewModel.currentDialogueIndex))
-                                
-                                Spacer()
-                                
-                                
-                                if ostomyViewModel.currentStepIndex == ostomyViewModel.ostomy.steps.count - 1 {
-                                    Button {
-                                        showEnd = true
-                                    } label: {
-                                        Text("End")
-                                    }
-                                    .disabled(!ostomyViewModel.isDone)
-                                }
-                                
-                                else if ostomyViewModel.currentDialogueIndex == ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].dialogues.count - 1 {
-                                    Button {
-                                        ostomyViewModel.currentStepIndex += 1
-                                        ostomyViewModel.currentDialogueIndex = 0
-                                        ostomyViewModel.isDone = false
-                                        showInventory = false
-                                        ostomyViewModel.spaceID = ColostomySpaces[ostomyViewModel.currentStepIndex].id
-                                        
-                                        viewModel.items.removeAll()
-                                        
-                                    } label: {
-                                        Text("Next step")
-                                    }
-                                    .disabled(!ostomyViewModel.isDone)
-                                }
-                                
-                                Spacer()
-                                
-                                
-                                Button {
-                                    if ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].timeQuestion == ostomyViewModel.currentDialogueIndex {
-                                        showDialogue.toggle()
-                                        
-                                    }
-                                    
-                                    else if !showInventory && ostomyViewModel.currentDialogueIndex >= ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].timePractice {
-                                        
-                                        showInventory = true
-                                        viewModel.items.append(contentsOf: ColostomySpaces[ostomyViewModel.currentStepIndex].items)
-                                        
-                                    }
-                                    ostomyViewModel.currentDialogueIndex += 1
-                                } label: {
-                                    Image(systemName: "chevron.right.circle.fill")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 30, height: 30)
-                                }
-                                .disabled(!canGoForward(index: ostomyViewModel.currentDialogueIndex, count: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].dialogues.count))
-                            }
+                            Text("You have completed the colostomy tutorial.")
+                            Spacer()
                         }
                         
                     }
@@ -294,86 +181,39 @@ struct ColostomyView: View {
         }
         .navigationTitle("Colostomy")
         .onDisappear {
-            ostomyViewModel.currentDialogueIndex = 0
+            ostomyViewModel.restartTutorial()
+
         }
-        #endif
+        .toolbar {
+            
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    showRestart = true
+                } label: {
+                    Label("Restart", systemImage: "arrow.clockwise")
+                }
+                .alert("Restart tutorial", isPresented: $showRestart) {
+                    Button("Cancel", role: .cancel) { }
+                    Button("Restart", role: .destructive, action: restartTutorial)
+                } message: {
+                    Text("Are you sure you want to restart the tutorial? Your current progress will be lost.")
+                }
+            }
+        }
+        
+    #endif
+    }
+    
+    func restartTutorial() {
+        ostomyViewModel.restartTutorial()
     }
 }
 
 #Preview {
     NavigationStack {
         ColostomyView()
-            .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
-            )
-    }
-
-}
-
-
-struct ChartNurseView: View {
-    
-    @EnvironmentObject var ostomyViewModel: OstomyViewModel
-
-    var body : some View {
-        HStack (spacing: 12) {
-            Image("NurseLeft")
-                .resizable()
-                .frame(width: 120, height: 120)
-                .offset(y: 4)
-                .background {
-                    Rectangle()
-                      .foregroundColor(.clear)
-                      .frame(width: 124, height: 124)
-                      .background(Color(red: 0.19, green: 0.28, blue: 0.34))
-                      .cornerRadius(20)
-                      .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                          .inset(by: 0.5)
-                          .stroke(Color(red: 0.42, green: 0.6, blue: 0.74), lineWidth: 1)
-                      )
-                      .offset(y: 2)
-                }
-
-            
-            
-            VStack(spacing: 12) {
-                Text("Step \(ostomyViewModel.currentStepIndex + 1)")
-                    .foregroundStyle(.white)
-                    .italic()
-                    .bold()
-                    .frame(width: 240, height: 25)
-                    .background {
-                        Rectangle()
-                            .foregroundColor(.clear)
-                            .background(Color(red: 0.42, green: 0.6, blue: 0.74))
-                            .cornerRadius(20)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .inset(by: 0.5)
-                                    .stroke(Color(red: 0.42, green: 0.6, blue: 0.74), lineWidth: 1)
-                            )
-                    }
-                
-                Text(ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].name)
-                    .multilineTextAlignment(.center)
-                    .foregroundStyle(.white)
-                    .italic()
-                    .bold()
-                    .frame(width: 240, height: 80)
-                    .background {
-                        Rectangle()
-                            .foregroundColor(.clear)
-                            .background(Color(red: 0.42, green: 0.6, blue: 0.74))
-                            .cornerRadius(20)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .inset(by: 0.5)
-                                    .stroke(Color(red: 0.42, green: 0.6, blue: 0.74), lineWidth: 1)
-                            )
-                    }
-            }
-            
-            
-        }
+            .environmentObject(OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy))
     }
 }
+
+

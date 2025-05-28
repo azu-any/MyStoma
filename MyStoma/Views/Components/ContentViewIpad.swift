@@ -94,9 +94,11 @@ struct ContentViewIpad: View {
         }
         .sheet(isPresented: $showModal) {
             WindowView(isPresented: $showModal, title: title, description: description, navView: navView)
+            #if os(iOS)
                 .frame(width: UIScreen.main.bounds.width * 2/3,
                        height: UIScreen.main.bounds.height * 2/3)
                 .transition(.scale)
+            #endif
         }
         .padding()
         .frame(maxWidth: UIScreen.main.bounds.width * 0.4, maxHeight: UIScreen.main.bounds.width * 0.24)
