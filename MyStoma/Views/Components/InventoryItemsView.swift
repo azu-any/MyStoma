@@ -14,7 +14,7 @@ struct InventoryItemsView: View {
 
     var body: some View {
         VStack {
-            Text("Tap and hold to drag items")
+            Text("Tap and hold to drag and combine items")
                 .font(.caption)
                 .foregroundStyle(.secondary)
             HStack(spacing: 16) {

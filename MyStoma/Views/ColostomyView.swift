@@ -47,7 +47,7 @@ struct Colostomy2View: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea(.all, edges: .bottom)
-                .opacity(0.8)
+                .opacity(0.5)
             
             
             HStack(spacing: 10) {
