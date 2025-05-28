@@ -13,15 +13,15 @@ enum ColostomySpace {
     
     var id: String {
         switch self {
-        case .first: return "ColostomyFirstSpace"
-        case .second: return "ColostomySecondSpace"
-        case .third: return "ColostomyThirdSpace"
-        case .fourth: return "ColostomyFourthSpace"
-        case .fifth: return "ColostomyFifthSpace"
-        case .sixth: return "ColostomySixthSpace"
-        case .seventh: return "ColostomySeventhSpace"
-        case .eighth: return "ColostomyEighthSpace"
-        case .ninth: return "ColostomyNinthSpace"
+        case .first: "ColostomyFirstSpace"
+        case .second: "ColostomySecondSpace"
+        case .third: "ColostomyThirdSpace"
+        case .fourth: "ColostomyFourthSpace"
+        case .fifth: "ColostomyFifthSpace"
+        case .sixth: "ColostomySixthSpace"
+        case .seventh: "ColostomySeventhSpace"
+        case .eighth: "ColostomyEighthSpace"
+        case .ninth: "ColostomyNinthSpace"
         }
     }
     
