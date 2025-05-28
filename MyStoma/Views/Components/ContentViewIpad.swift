@@ -26,9 +26,11 @@ struct ContentViewIpad: View {
                         Image(imageName)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
+                            #if os(iOS)
                             .frame(width: UIScreen.main.bounds.width * 0.4,
                                    height: UIScreen.main.bounds.width * 0.24)
                             .clipped()
+                            #endif
                     }
 
                     VStack(alignment: .leading, spacing: 4) {
@@ -52,8 +54,9 @@ struct ContentViewIpad: View {
                             .padding(.bottom, 10)
                     }
                     .padding()
-                    //.frame(maxWidth: .infinity, alignment: .leading)
+                    #if os(iOS)
                     .frame(maxWidth: UIScreen.main.bounds.width * 0.4, maxHeight: UIScreen.main.bounds.width * 0.24)
+                    #endif
                     .background(
                         LinearGradient(
                             gradient: Gradient(stops: [
@@ -101,7 +104,9 @@ struct ContentViewIpad: View {
             #endif
         }
         .padding()
+        #if os(iOS)
         .frame(maxWidth: UIScreen.main.bounds.width * 0.4, maxHeight: UIScreen.main.bounds.width * 0.24)
+        #endif
         .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 0)
     }
 }

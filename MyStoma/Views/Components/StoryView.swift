@@ -38,8 +38,10 @@ struct StoryView: View {
                         .resizable()
                         .aspectRatio(1, contentMode: .fit)
                         //.frame(maxWidth: 100, minHeight: 100)
+                        #if os(iOS)
                         .frame(width: UIScreen.main.bounds.width * 0.1,
                                height: UIScreen.main.bounds.width * 0.1)
+                        #endif
                         .cornerRadius(14)
                     
                     // Title and subtitle
@@ -69,14 +71,18 @@ struct StoryView: View {
                 .background(Color.white)
                 .cornerRadius(20)
                 .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
+                #if os(iOS)
                 .frame(width: UIScreen.main.bounds.width * 0.4,
                        height: UIScreen.main.bounds.width * 0.12)
+                #endif
                 
             }
             .scaleEffect(animateTap ? 0.95 : 1.0)
             .animation(.spring(), value: animateTap)
+            #if os(iOS)
             .frame(width: UIScreen.main.bounds.width * 0.4,
                    height: UIScreen.main.bounds.width * 0.12)
+            #endif
         }
         //.padding()
         //.background(Color.white)
