@@ -52,8 +52,6 @@ struct MenuView: View {
                     }
                     .popover(isPresented: $showSettingsPopover) {
                         AppSettingsView()
-                            .frame(width: 300, height: 300)
-                            .padding()
                     }
                 }
             }

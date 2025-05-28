@@ -713,6 +713,7 @@
       }
     },
     "infoitem_adhesiveremover_description" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -735,6 +736,7 @@
       }
     },
     "infoitem_adhesiveremover_title" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -889,6 +891,7 @@
       }
     },
     "infoitem_placeholder1_description" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -911,6 +914,7 @@
       }
     },
     "infoitem_placeholder1_title" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -933,6 +937,7 @@
       }
     },
     "infoitem_placeholder2_description" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -955,6 +960,7 @@
       }
     },
     "infoitem_placeholder2_title" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1021,6 +1027,7 @@
       }
     },
     "infoitem_stomabag_description" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1043,6 +1050,7 @@
       }
     },
     "infoitem_stomabag_title" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1579,6 +1587,9 @@
         }
       }
     },
+    "Tap and hold to drag items" : {
+
+    },
     "That's right!" : {
       "localizations" : {
         "en" : {
@@ -1600,12 +1611,6 @@
           }
         }
       }
-    },
-    "Tap and hold to drag items" : {
-
-    },
-    "That's right!" : {
-
     },
     "Tools" : {
       "localizations" : {
@@ -1671,7 +1676,8 @@
             "value" : "Urostomia"
           }
         }
-      }
+      },
+      "shouldTranslate" : false
     },
     "Urostomy" : {
       "localizations" : {

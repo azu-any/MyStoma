@@ -72,8 +72,7 @@ class OstomyViewModel: ObservableObject {
         else if firstItem.imageName == "Scissors" {
             items.removeAll { $0.imageName == "Scissors" }
             items.removeAll { $0.imageName == "Cleanstomabag" }
-            items.append(InventoryItem(name: "Cut Stoma Bag", imageName: "Cutstomabag"))
-
+            items.append(InventoryItem(nameKey: "Cut Stoma Bag", imageName: "Cutstomabag"))
             return "Scissors"
         }
         

@@ -112,7 +112,7 @@ struct BottomOrnamentView: View {
                 
                 
                 NavigationLink {
-                    SettingsView()
+                    AppSettingsView()
                 } label: {
                     Image(systemName: "gear")
                 }

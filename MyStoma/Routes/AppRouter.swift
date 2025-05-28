@@ -19,7 +19,7 @@ class NavigationRouter: ObservableObject {
         case .colostomy:
             AnyView(ColostomyView())
         case .settings:
-            AnyView(SettingsView())
+            AnyView(AppSettingsView())
         }
     }
 }

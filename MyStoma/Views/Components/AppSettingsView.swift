@@ -12,12 +12,12 @@ struct AppSettingsView: View {
     ]
 
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(alignment: .leading, spacing: 20) {
             Text("Settings")
                 .font(.headline)
+                .frame(maxWidth: .infinity, alignment: .center)
 
             Toggle("Dislexia Font", isOn: $useDyslexiaFont)
-                .padding(.horizontal)
 
             Text("Skin Color")
                 .font(.subheadline)

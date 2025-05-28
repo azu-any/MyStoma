@@ -13,6 +13,8 @@ struct MyStomaApp: App {
     @State private var appModel = AppModel()
     @StateObject var viewModel = OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
     @StateObject var router = NavigationRouter()
+    @AppStorage("useDyslexiaFont") var useDyslexiaFont: Bool = false
+
 
     var body: some Scene {
         
@@ -21,6 +23,7 @@ struct MyStomaApp: App {
             ContentView()
                 .environment(appModel)
                 .environmentObject(viewModel)
+                .environment(\.font, useDyslexiaFont ? .custom("OpenDyslexic-Regular", size: 17) : .body)
 
         }
         #if os(visionOS)

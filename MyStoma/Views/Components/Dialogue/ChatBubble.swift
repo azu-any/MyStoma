@@ -15,7 +15,6 @@ struct ChatBotOverlay: View {
             TextViewWithPopovers(fullText: dialogue)
                 
         }
-        .font(.body)
         .frame(maxWidth: .infinity)
     }
 }
