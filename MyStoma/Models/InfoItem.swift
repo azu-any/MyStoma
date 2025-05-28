@@ -87,3 +87,7 @@ let items: [InfoItem] = [
         categories: [.colostomy]
     ),
 ]
+
+extension InfoItem {
+    static let sampleItems: [InfoItem] = items
+}
