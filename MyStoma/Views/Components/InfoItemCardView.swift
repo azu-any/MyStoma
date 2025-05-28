@@ -41,8 +41,10 @@ struct InfoItemCardView: View {
                                 //.padding(),alignment: .bottomLeading
                         )
                 }
+                #if os(iOS)
                 .frame(width: UIScreen.main.bounds.width * 0.2,
                        height: UIScreen.main.bounds.width * 0.12)
+                #endif
                 .scaleEffect(animateTap ? 0.95 : 1.0)
                 .animation(.spring(response: 0.4, dampingFraction: 0.6), value: animateTap)
             }
