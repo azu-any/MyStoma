@@ -9,6 +9,7 @@ struct Colostomy2View: View {
     
     @EnvironmentObject var ostomyViewModel: OstomyViewModel
     
+
     @State var showRestart: Bool = false
     @State private var currentAngle: Float = 0.0
     @State private var modelEntity: Entity? = nil

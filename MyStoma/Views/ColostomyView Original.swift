@@ -9,6 +9,8 @@ struct ColostomyView: View {
     
     @EnvironmentObject var ostomyViewModel: OstomyViewModel
     
+    @AppStorage("skinColorSelection") private var skinColorSelection = "LightColor"
+
     @State var showRestart: Bool = false
     @State private var currentAngle: Float = 0.0
     @State private var modelEntity: Entity? = nil
@@ -54,19 +56,29 @@ struct ColostomyView: View {
                     let wrapper = Entity()
                     wrapper.setPosition([0, -1.2, 1.3], relativeTo: nil)
                     
-                    if let body = try? await Entity(named: "StomaBody") {
-                        
-                        body.components.set(InputTargetComponent())
-                        
-                        
-                        if let stoma = body.findEntity(named: "Human_Stomach") {
-                            stoma.name = "stoma"
-                            stomaEntity = stoma
-                            stomaEntity?.isEnabled = false
+                    if let donorModel = try? await Entity(named: skinColorSelection), let donorEntity = donorModel.findEntity(named: "m_ca01_skeleton") as? ModelEntity, let copiedMaterial = donorEntity.model?.materials.first {
+                                
+                        if let body = try? await Entity(named: "StomaBody") {
+                            body.components.set(InputTargetComponent()) // ✅ make interactive
+                            
+                            
+                            if let bodyModel = body.findEntity(named: "m_ca01_skeleton") as? ModelEntity {
+                                bodyModel.model?.materials = [copiedMaterial] // ✅ apply material
+                            }
+                            
+                            
+                            if let stoma = body.findEntity(named: "Human_Stomach") {
+                                stoma.name = "stoma"
+                                stomaEntity = stoma
+                                stomaEntity?.isEnabled = false
+                            }
+                            
+                            wrapper.addChild(body)
                         }
-                        
-                        wrapper.addChild(body)
                     }
+
+                    
+                    
                     
                     if let bag = try? await ModelEntity(named: "stomabag") {
                         bag.scale = [0.2, 0.2, 0.2]

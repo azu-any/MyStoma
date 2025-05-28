@@ -329,15 +329,11 @@
       }
     },
     "Choose category" : {
-
-    },
-    "Choose Category" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Choose Category"
+            "value" : "Choose category"
           }
         },
         "es-419" : {
@@ -349,7 +345,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scegli Categoria"
+            "value" : "Scegli categoria"
           }
         }
       }

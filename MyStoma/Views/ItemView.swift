@@ -24,7 +24,7 @@ struct ItemView: View {
                     .multilineTextAlignment(.center)
                 
                 Text(selectedItem.description)
-                    .font(.body)
+
             }
             .padding()
             
