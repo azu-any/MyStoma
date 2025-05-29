@@ -92,13 +92,22 @@ struct StoryView: View {
         //.cornerRadius(20)
         //.shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
         .sheet(isPresented: $showModal) {
-            WindowView(isPresented: $showModal, data:data)
-            #if os(iOS)
+            CustomModalView(isPresented: $showModal, data: data)
+                .presentationDetents([.large])
+                .presentationDragIndicator(.hidden)
+                .presentationBackground(.clear)
+            
+            /*#if os(iOS)
                 .frame(width: UIScreen.main.bounds.width * 2/3,
                        height: UIScreen.main.bounds.height * 2/3)
             #endif
-                .transition(.scale)
+                .transition(.scale)*/
         }
+        .padding()
+        #if os(iOS)
+        .frame(maxWidth: UIScreen.main.bounds.width * 0.3, maxHeight: UIScreen.main.bounds.width * 0.17)
+        .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 0)
+        #endif
     }
 }
 

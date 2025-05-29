@@ -81,7 +81,7 @@ struct ContentViewIpad: View {
                 LinearGradient(gradient: Gradient(colors: [.bluePrimary.opacity(0.6), .black.opacity(0)]),
                                startPoint: .leading, endPoint: .trailing)
             )
-            .cornerRadius(25)
+            .cornerRadius(20)
             .scaleEffect(animateTap ? 0.95 : 1.0)
             .animation(.spring(duration: 0.7), value: animateTap)
         }
@@ -94,10 +94,13 @@ struct ContentViewIpad: View {
         .padding()
         #if os(iOS)
         .frame(maxWidth: UIScreen.main.bounds.width * 0.3, maxHeight: UIScreen.main.bounds.width * 0.17)
+        .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 0)
         #endif
-        .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 0)
     }
 }
+
+
+/*
 
 struct CustomModalView: View {
     @EnvironmentObject var router: NavigationRouter
@@ -284,6 +287,11 @@ struct CustomModalView: View {
         }
     }
 }
+
+*/
+
+
+
 
 /*
 struct ContentViewIpad: View {
