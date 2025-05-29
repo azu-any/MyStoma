@@ -80,17 +80,6 @@ struct MenuView: View {
                 router.destination(for: route)
             }
             .toolbar {
-
-                /*ToolbarItem(placement: .primaryAction) {
-                    Button(action: {
-                        router.path.append(.tools)
-                    }) {
-                        Label("Tools", systemImage: "cross.case.fill")
-                            .labelStyle(.titleAndIcon)
-                            .foregroundColor(Color.bluePrimary)
-                    }
-                }*/
-
                 ToolbarItem(placement: .primaryAction) {
                     Button {
                         showSettingsPopover.toggle()
