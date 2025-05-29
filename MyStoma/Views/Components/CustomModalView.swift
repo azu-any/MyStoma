@@ -60,7 +60,8 @@ struct CustomModalView: View {
                 // Background for the modal content with glassmorphism
                 RoundedRectangle(cornerRadius: 25)
                     .fill(.regularMaterial)
-                    .environment(\.colorScheme, .dark)
+                    //CHANGES
+                    //.environment(\.colorScheme, .dark)
                     .overlay(
                         RoundedRectangle(cornerRadius: 25)  // ← Changed from 20 to 25
                             .stroke(
@@ -76,7 +77,8 @@ struct CustomModalView: View {
                                 lineWidth: 1
                             )
                     )
-                    .shadow(color: .black.opacity(0.3), radius: 20, x: 0, y: 10)
+                    //CHANGES
+                    //.shadow(color: .black.opacity(0.3), radius: 20, x: 0, y: 10)
                 
                 // Content
                 HStack(alignment: .top, spacing: 0) {
@@ -96,7 +98,11 @@ struct CustomModalView: View {
                             endPoint: .top
                         )
                     }
-                    .frame(maxWidth: .infinity)
+                    #if os(iOS)
+                    .frame(maxWidth: UIScreen.main.bounds.width * 0.28)
+                    .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 0)
+                    #endif
+                    //.frame(maxWidth: .infinity)
                     .clipShape(
                         UnevenRoundedRectangle(
                             topLeadingRadius: 20,
@@ -107,6 +113,7 @@ struct CustomModalView: View {
                     )
                     
                     // Text content section
+                    
                     VStack(alignment: .leading, spacing: 20) {
                         ScrollView {
                             VStack(alignment: .leading, spacing: 30) {
@@ -128,6 +135,7 @@ struct CustomModalView: View {
                         .scrollIndicators(.hidden)
                     }
                     .frame(maxWidth: .infinity)
+                    
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 25))
             }
@@ -164,15 +172,15 @@ struct CustomModalView: View {
                         .padding(.vertical, 12)
                         .foregroundColor(.white)
                         .background(
-                            RoundedRectangle(cornerRadius: 25)
+                            RoundedRectangle(cornerRadius: 20)
                                 .fill(.regularMaterial)
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
+                                    RoundedRectangle(cornerRadius: 20)
                                         .fill(
                                             LinearGradient(
                                                 gradient: Gradient(colors: [
-                                                    Color.blue.opacity(0.8),
-                                                    Color.blue.opacity(0.6)
+                                                    Color.bluePrimaryColor.opacity(0.8),
+                                                    Color.blueSecondary.opacity(0.6)
                                                 ]),
                                                 startPoint: .topLeading,
                                                 endPoint: .bottomTrailing
@@ -180,7 +188,7 @@ struct CustomModalView: View {
                                         )
                                 )
                                 .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
+                                    RoundedRectangle(cornerRadius: 20)
                                         .stroke(Color.white.opacity(0.3), lineWidth: 1)
                                 )
                         )
