@@ -69,7 +69,7 @@ extension CardData {
             title: "Living with a Stoma",
             subtitle: "Martha Mendoza",
             imageName: "NurseLeft",
-            imageModal: "Untitled_Artwork 3",
+            imageModal: "NurseLeft",
             description: "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive.",
             navView: AnyView(ColostomyView()),
             quote: "My stoma is a constant reminder of what I’ve lost. But it’s also a symbol of my strength."
@@ -79,7 +79,7 @@ extension CardData {
             title: "Feeling Invisible",
             subtitle: "Anna Paola",
             imageName: "NurseLeft",
-            imageModal: "Untitled_Artwork 3",
+            imageModal: "NurseLeft",
             description: "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible.",
             quote: "I had difficulties everyday, but it seemed that for the rest of the world I was still the same."
             
@@ -89,7 +89,7 @@ extension CardData {
             title: "Keep Doing Sports",
             subtitle: "Francesco Pogliare",
             imageName: "NurseLeft",
-            imageModal: "Untitled_Artwork 3",
+            imageModal: "NurseLeft",
             description: "Soccer was my life, and after my urostomy, I thought it was gone. I was scared to move too much, to get tackled, to leak. But my coach said, “Come back. We’ll figure it out.” I trained slow. I tried different bags. The first match back, I was terrified. Then I scored. My team lifted me in the air, and I cried like a baby. I still have my urostomy, but now I also have my confidence, my team, and my game back.",
             quote: "I couldn't let my urostomy change my love for sports and change who I am."
         )
