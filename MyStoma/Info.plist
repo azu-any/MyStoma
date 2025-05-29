@@ -40,7 +40,7 @@
 			<key>UTTypeDescription</key>
 			<string>Inventory</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.example.inventory</string>
+			<string>myStoma.inventory</string>
 			<key>UTTypeTagSpecification</key>
 			<dict/>
 		</dict>
