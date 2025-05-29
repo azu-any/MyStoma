@@ -142,6 +142,7 @@ struct ScaleButtonStyle: ButtonStyle {
                 HStack(alignment: .top, spacing: 40) {
                     Text(data.description)
                         .font(.body)
+
                         .multilineTextAlignment(.leading)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     

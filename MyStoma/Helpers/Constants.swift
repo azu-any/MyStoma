@@ -5,7 +5,7 @@
 //  Created by Azuany Mila Cerón on 08/05/25.
 //
 
-import Foundation
+import SwiftUI
 import simd
 
 let stomaTargetPosition = SIMD3<Float>(0.96, 1.025, -1.32)
@@ -20,3 +20,11 @@ let tableBoundingBoxMin = SIMD3<Float>(-0.47335356, -0.075258516, -1.6806084)
 let tableBoundingBoxMax = SIMD3<Float>(0.41929293, 0.7959688, -1.319781)
 
 let threshold: Float = 0.15
+
+
+let skinColors: [String: Color] = [
+    "LighterColor": Color(red: 240/255, green: 205/255, blue: 186/255),
+    "LightColor": Color(red: 153/255, green: 112/255, blue: 100/255),
+    "DarkColor": Color(red: 30/255, green: 15/255, blue: 0/255),
+    "DarkerColor": Color(red: 60/255, green: 32/255, blue: 4/255),
+]

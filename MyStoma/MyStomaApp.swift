@@ -7,6 +7,58 @@
 
 import SwiftUI
 
+
+import SwiftUI
+
+extension Font {
+    static func customAppFont(forTextStyle style: TextStyle) -> Font {
+        // Replace "YourFontName-Regular" with your font's name
+        let fontName = "OpenDyslexic-Regular"
+        
+        // Get the UIFont for dynamic type size
+        let uiFont = UIFont(name: fontName, size: UIFont.preferredFont(forTextStyle: UIFont.TextStyle(style)).pointSize)!
+        
+        return Font(uiFont)
+    }
+}
+
+extension UIFont.TextStyle {
+    init(_ style: Font.TextStyle) {
+        switch style {
+        case .largeTitle: self = .largeTitle
+        case .title: self = .title1
+        case .title2: self = .title2
+        case .title3: self = .title3
+        case .headline: self = .headline
+        case .subheadline: self = .subheadline
+        case .callout: self = .callout
+        case .caption: self = .caption1
+        case .caption2: self = .caption2
+        case .footnote: self = .footnote
+        default: self = .body
+        }
+    }
+}
+
+struct AppFontModifier: ViewModifier {
+    let useCustomFont: Bool
+    let style: Font.TextStyle
+
+    func body(content: Content) -> some View {
+        content.font(useCustomFont ? Font.customAppFont(forTextStyle: style) : Font.system(style))
+    }
+}
+
+extension View {
+    func appFont(_ style: Font.TextStyle, useCustomFont: Bool) -> some View {
+        self.modifier(AppFontModifier(useCustomFont: useCustomFont, style: style))
+    }
+}
+
+
+
+
+
 @main
 struct MyStomaApp: App {
 
@@ -23,7 +75,11 @@ struct MyStomaApp: App {
             ContentView()
                 .environment(appModel)
                 .environmentObject(viewModel)
-                .environment(\.font, useDyslexiaFont ? .custom("OpenDyslexic-Regular", size: 17) : .body)
+                //.environment(\.font, Font.customAppFont(forTextStyle: .body))
+                .appFont(.body, useCustomFont: useDyslexiaFont)
+                //.environment(\.font, useDyslexiaFont ? .custom("OpenDyslexic-Regular", size: 17) : .body)
+
+            
 
         }
         #if os(visionOS)

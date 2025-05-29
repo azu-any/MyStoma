@@ -12,7 +12,6 @@
         "Esto ayuda a reducir molestias y protege la piel de estiramientos innecesarios.",
         "Muchas personas se preguntan cuál es la mejor manera de retirar la base adhesiva de la piel.",
         "Veamos si sabes responder esta pregunta...",
-        "¡Correcto!",
         "Usar un spray o toallita removedora de adhesivo es mucho más amable con la piel.",
         "Estos productos disuelven el adhesivo, lo que hace más fácil retirarlo sin lastimar la piel.",
         "Si arrancas la base directamente, puedes dañar la piel y provocar dolor o irritación.",
@@ -25,7 +24,7 @@
       "question": "¿Qué es mejor usar para facilitar el retiro de la base adhesiva?",
       "answers": ["Un spray o toallita removedora de adhesivo", "Arrancar la base directamente con las manos"],
       "timeQuestion": 5,
-      "timePractice": 12
+      "timePractice": 10
     },
     {
       "id": 2,
@@ -36,19 +35,19 @@
         "La limpieza es clave para evitar irritaciones en la piel.",
         "Recuerda que la estoma no tiene terminaciones nerviosas, así que no sentirás dolor al tocarla, pero aun así es importante ser delicado.",
         "Veamos si sabes cuál es la mejor manera de limpiarla...",
-        "¡Muy bien!",
         "Agua tibia o solución salina es todo lo que necesitas.",
         "Los jabones, sobre todo los perfumados o antibacteriales, pueden dejar residuos que dificultan que se adhiera bien la base y pueden irritar la piel.",
         "Un tip útil: usa gasas suaves o pañuelos que no raspen.",
         "Da toquecitos en vez de tallar y asegúrate de secar bien la piel antes de poner la nueva base.",
         "La piel seca ayuda a que el sistema se adhiera mejor.",
         "¡Vamos a practicar!",
-        "Toma el pañito y arrástralo sobre la zona de la estoma."
+        "Toma el agua y arrástralo sobre el paño para mojarlo.",
+        "Toma el paño y arrástralo sobre la zona de la estoma."
       ],
       "question": "¿Qué es mejor usar para limpiar la piel alrededor de la estoma?",
       "answers": ["Solo agua tibia o solución salina", "Jabones perfumados o antibacteriales"],
       "timeQuestion": 4,
-      "timePractice": 11
+      "timePractice": 10,
     },
     {
       "id": 3,
@@ -59,7 +58,6 @@
         "Para hacerlo, usa una guía de medición, que normalmente viene en los kits para estoma.",
         "Coloca la guía sobre la estoma y encuentra el orificio que mejor se ajuste al tamaño.",
         "Ahora hablemos de qué tan grande debe ser el orificio en la base adhesiva...",
-        "¡Exacto!",
         "Si tu estoma mide 28 mm, el orificio en la base debe ser de 29 a 30 mm, dejando solo un pequeño margen de 1 a 2 mm alrededor.",
         "Es un error común pensar que un orificio más pequeño evita fugas, pero en realidad puede dañar la estoma y causar úlceras o problemas de circulación.",
         "Y si el orificio es demasiado grande, queda mucha piel expuesta a los desechos, lo cual puede irritarla.",
@@ -73,7 +71,7 @@
       "question": "Tu estoma mide 28 mm. ¿Qué tamaño debe tener el orificio en la base adhesiva?",
       "answers": ["29–30 mm, para dejar un pequeño margen", "25 mm, así se ajusta mejor y evita fugas"],
       "timeQuestion": 4,
-      "timePractice": 11
+      "timePractice": 9,
     },
     {
       "id": 4,
@@ -83,7 +81,6 @@
         "Esa piel tiene que mantenerse sana para evitar dolor y complicaciones.",
         "Si el área tiene cicatrices, pliegues o hundimientos, puede haber fugas que irriten la piel.",
         "Veamos qué hacer en esos casos...",
-        "¡Correcto!",
         "La pasta moldeadora o el anillo barrera son muy útiles para crear una superficie pareja.",
         "Estos productos rellenan los pliegues o huequitos y permiten que la base se adhiera mejor, evitando fugas.",
         "La pasta se aplica directamente en los pliegues y debe secarse unos minutos antes de colocar la base.",
@@ -94,8 +91,8 @@
       ],
       "question": "Tienes piel irregular alrededor de la estoma. ¿Qué usas?",
       "answers": ["Pasta moldeadora o anillo barrera", "Nada, de todos modos se adhiere"],
-      "timeQuestion": 3,
-      "timePractice": 10
+      "timeQuestion": 2,
+      "timePractice": 8,
     },
     {
       "id": 5,
@@ -105,7 +102,6 @@
         "Este paso requiere precisión y paciencia, pero verás que con práctica se vuelve más sencillo.",
         "Retira el papel protector de la base. Centra el orificio alrededor de la estoma y colócala desde abajo hacia arriba para evitar pliegues.",
         "Hay un pequeño truco para que se adhiera bien. ¿Lo conoces?",
-        "¡Exacto!",
         "Presionar la base durante al menos 1 o 2 minutos ayuda a que el adhesivo se active y se pegue mejor.",
         "El calor de tu mano ayuda a que se adhiera más firmemente.",
         "Un consejo extra: masajea con movimientos circulares desde el centro hacia fuera.",
@@ -116,27 +112,8 @@
       ],
       "question": "¿Cuánto tiempo hay que presionar la base para que se adhiera bien?",
       "answers": ["Al menos 1–2 minutos", "Nada, se adhiere sola"],
-      "timeQuestion": 3,
+      "timeQuestion": 4,
       "timePractice": 10
     },
-    {
-      "id": 6,
-      "name": "Frecuencia para cambiar la bolsa",
-      "dialogues": [
-        "Algo importante en el cuidado de la estoma es saber cada cuánto cambiar el sistema.",
-        "No hay una única regla para todos, pero sí hay recomendaciones generales.",
-        "¿Sabes cada cuánto se recomienda cambiar la bolsa o el sistema?",
-        "¡Muy bien!",
-        "La mayoría de los sistemas puede quedarse puestos de 3 a 5 días.",
-        "Cambiarlo muy seguido puede irritar la piel, pero dejarlo demasiado tiempo puede causar fugas o que el adhesivo ya no funcione bien.",
-        "Aprende a reconocer las señales que indican que ya toca cambiarlo: picazón, bordes levantados o sensación de que se va a despegar.",
-        "Cada persona es diferente, así que con el tiempo encontrarás tu ritmo ideal.",
-        "En los primeros días, lleva un registro de cada cuánto lo cambias y cómo responde tu piel. Eso te ayudará a ajustar la rutina a lo que mejor te funcione."
-      ],
-      "question": "¿Cada cuánto se recomienda cambiar el sistema de bolsa?",
-      "answers": ["Cada 3–5 días", "Cada 7–10 días"],
-      "timeQuestion": 3,
-      "timePractice": 8
-    }
   ]
 }

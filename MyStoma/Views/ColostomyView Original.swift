@@ -5,10 +5,11 @@ import SwiftUI
 import RealityKit
 
 
-struct Colostomy2View: View {
+struct ColostomyView: View {
     
     @EnvironmentObject var ostomyViewModel: OstomyViewModel
     
+    @AppStorage("skinColorSelection") private var skinColorSelection = "LightColor"
 
     @State var showRestart: Bool = false
     @State private var currentAngle: Float = 0.0
@@ -17,7 +18,6 @@ struct Colostomy2View: View {
     @State private var stomaEntity: Entity? = nil
     @State private var stomaSizerEntity: Entity? = nil
     @State private var pasteEntity: Entity? = nil
-    @State private var bottleEntity: Entity? = nil
 
     
     var translationGesture: some Gesture {
@@ -27,10 +27,8 @@ struct Colostomy2View: View {
                 let delta = Float(value.translation.width)
                 let angle = currentAngle + delta * 0.01  // Sensitivity
 
-                /*if let model = modelEntity {
+                if let model = modelEntity {
                     model.transform.rotation = simd_quatf(angle: angle, axis: [0, 1, 0])
-                } else*/ if let bottle = bottleEntity {
-                    bottle.position.x += delta
                 }
             }
             .onEnded { value in
@@ -55,22 +53,32 @@ struct Colostomy2View: View {
                 RealityView { content in
                     content.camera = .virtual
                     
-                    //
                     let wrapper = Entity()
-                    wrapper.setPosition([-0.3, -1.2, 1.3], relativeTo: nil)
+                    wrapper.setPosition([0, -1.2, 1.3], relativeTo: nil)
                     
-                    if let body = try? await Entity(named: "StomaBody") {
-                        
-                        body.components.set(InputTargetComponent())
-                        
-                        if let stoma = body.findEntity(named: "Human_Stomach") {
-                            stoma.name = "stoma"
-                            stomaEntity = stoma
-                            stomaEntity?.isEnabled = false
+                    if let donorModel = try? await Entity(named: skinColorSelection), let donorEntity = donorModel.findEntity(named: "m_ca01_skeleton") as? ModelEntity, let copiedMaterial = donorEntity.model?.materials.first {
+                                
+                        if let body = try? await Entity(named: "StomaBody") {
+                            body.components.set(InputTargetComponent()) // ✅ make interactive
+                            
+                            
+                            if let bodyModel = body.findEntity(named: "m_ca01_skeleton") as? ModelEntity {
+                                bodyModel.model?.materials = [copiedMaterial] // ✅ apply material
+                            }
+                            
+                            
+                            if let stoma = body.findEntity(named: "Human_Stomach") {
+                                stoma.name = "stoma"
+                                stomaEntity = stoma
+                                stomaEntity?.isEnabled = false
+                            }
+                            
+                            wrapper.addChild(body)
                         }
-                        
-                        wrapper.addChild(body)
                     }
+
+                    
+                    
                     
                     if let bag = try? await ModelEntity(named: "stomabag") {
                         bag.scale = [0.2, 0.2, 0.2]
@@ -99,69 +107,12 @@ struct Colostomy2View: View {
                     }
                         
                     modelEntity = wrapper
-                    
-                    // EQUIPMENT
-                    
-                    
-                    // Bottle
-                    if let bottle = try? await ModelEntity(named: "Bottle") {
-                        bottle.name = "bottle"
-                        bottle.position = [0.4, -0.2, 1.3]
-                        bottle.scale = [0.04, 0.04, 0.04]
-
-                        // Add Input Target for interaction
-                        bottle.components.set(InputTargetComponent())
-
-                        // Only add physics & collision if we can get the mesh
-                        if let modelComponent = bottle.components[ModelComponent.self] {
-                            do {
-                                let mesh = modelComponent.mesh
-                                // Generate convex shape safely
-                                if let convexShape = try? await ShapeResource.generateConvex(from: mesh) {
-                                    let collision = CollisionComponent(shapes: [convexShape])
-                                    bottle.components[CollisionComponent.self] = collision
-
-                                    // Set Physics Body
-                                    var physics = PhysicsBodyComponent(
-                                        massProperties: .default,
-                                        material: customMaterial,
-                                        mode: .dynamic
-                                    )
-                                    physics.isAffectedByGravity = false
-                                    bottle.components.set(physics)
-
-                             } else {
-                                 print("Failed to generate convex shape")
-                             }
-                             // Set Physics Body
-                             let physics = PhysicsBodyComponent(
-                                 massProperties: .default,
-                                 material: customMaterial,
-                                 mode: .dynamic
-                             )
-                             bottle.components.set(physics)
-
-                             // Modify physics properties
-                             if var physicsBody = bottle.components[PhysicsBodyComponent.self] {
-                                 physicsBody.isAffectedByGravity = false
-                                 bottle.components.set(physicsBody)
-                             }
-
-                            }
-                        }
-                        
-                        bottleEntity = bottle
-                        content.add(bottle)
-                    }
-                    
-                    
                     content.add(wrapper)
-                    
                 }
                 .ignoresSafeArea(edges: .bottom)
                 .padding(.leading)
+                .frame(width: 450)
                 .gesture(translationGesture)
-                
                 .dropDestination(for: InventoryItem.self) { droppedItems, index in
                     let result = ostomyViewModel.handleBodyItems(droppedItems: droppedItems)
                     
@@ -192,55 +143,56 @@ struct Colostomy2View: View {
                     
                     return false
                 }
-                .overlay(alignment: .topTrailing) {
+                
+                ZStack(alignment: .top) {
                     
-                    ZStack(alignment: .center) {
+                    Image("chart-bg")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    
+                    VStack {
                         
-                        Image("chart-bg")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
+                        ChartNurseView()
+                            .edgesIgnoringSafeArea([.top])
                         
-                        VStack {
-                            ChartNurseView()
-                                .edgesIgnoringSafeArea([.top])
+                        switch ostomyViewModel.viewState {
+                        case .dialogue:
+                            ChatBotOverlay()
+                            .environmentObject(ostomyViewModel)
                             
-                            switch ostomyViewModel.viewState {
-                            case .dialogue:
-                                ChatBotOverlay()
+                            Spacer()
+
+                            if ostomyViewModel.showInventory && !ostomyViewModel.items.isEmpty {
+                                InventoryItemsView(stomaSizerEntity: stomaSizerEntity)
                                     .environmentObject(ostomyViewModel)
-                                
-                                DialogueControlsView()
-                                    .environmentObject(ostomyViewModel)
-                                
-                            case .question:
-                                QuestionView(question: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].question, answers: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].answers)
-                                    .environmentObject(ostomyViewModel)
-                                    .padding()
-                                
-                            case .end:
-                                Spacer()
-                                Text("Congratulations!")
-                                    .bold()
-                                    .padding()
-                                Text("You have completed the colostomy tutorial.")
-                                Spacer()
                             }
                             
+                            DialogueControlsView()
+                                .environmentObject(ostomyViewModel)
+                            
+                        case .question:
+                            QuestionView(question: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].question, answers: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].answers)
+                                .environmentObject(ostomyViewModel)
+                                .padding()
+                            
+                        case .end:
+                            Spacer()
+                            Text("Congratulations!")
+                                .bold()
+                                .padding()
+                            Text("You have completed the colostomy tutorial.")
+                            Spacer()
                         }
-                        .padding(.top, 100)
-                        .padding(.horizontal, 20)
-                        .padding(.trailing, 50)
-                        .padding(.bottom, 20)
-                        .border(Color.red, width: 1)
+                        
                     }
-                    #if os(iOS)
-                    .frame(width: UIScreen.main.bounds.width * 0.4,
-                           height: UIScreen.main.bounds.height * 0.3)
-                #endif
+                    .padding(.top, 150)
+                    .padding(.horizontal, 125)
+                    .padding(.bottom, 20)
                 }
             }
         }
         .navigationTitle("Colostomy")
+        .navigationBarTitleDisplayMode(.large)
         .onDisappear {
             ostomyViewModel.restartTutorial()
 

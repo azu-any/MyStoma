@@ -21,9 +21,10 @@ struct ItemView: View {
                 Text(selectedItem.title)
                     .font(.title)
                     .bold()
+                    .multilineTextAlignment(.center)
                 
                 Text(selectedItem.description)
-                    .font(.body)
+
             }
             .padding()
             
@@ -36,6 +37,10 @@ struct ItemView: View {
                     model.components.set(InputTargetComponent())
                     model.position = selectedItem.modelPosition
                     model.transform.scale = selectedItem.modelScale
+                    
+                    if let degrees = selectedItem.modelRotation {
+                        rotateEntity(model, xDegrees: degrees[0], yDegrees: degrees[1], zDegrees: degrees[2])
+                    }
                     
                     let wrapper = Entity()
                     wrapper.addChild(model)
@@ -73,8 +78,4 @@ struct ItemView: View {
         .padding()
     }
     
-}
-
-#Preview {
-    ToolsView()
 }

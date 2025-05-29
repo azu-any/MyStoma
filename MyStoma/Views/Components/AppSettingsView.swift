@@ -2,14 +2,7 @@ import SwiftUI
 
 struct AppSettingsView: View {
     @AppStorage("useDyslexiaFont") private var useDyslexiaFont = false
-    @AppStorage("skinColorSelection") private var skinColorSelection = 0
-
-    let skinColors: [Color] = [
-        Color(red: 153/255, green: 112/255, blue: 100/255), // brown pink
-        Color(red: 240/255, green: 205/255, blue: 186/255), // light brown
-        Color(red: 60/255, green: 32/255, blue: 4/255), // beige
-        Color(red: 30/255, green: 15/255, blue: 0/255),     // dark brown
-    ]
+    @AppStorage("skinColorSelection") private var skinColorSelection = "LightColor"
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -22,20 +15,22 @@ struct AppSettingsView: View {
             Text("Skin Color")
             
             HStack(spacing: 15) {
-                ForEach(0..<skinColors.count, id: \.self) { index in
+                ForEach(Array(skinColors.keys), id: \.self) { key in
+                    let color = skinColors[key] ?? .clear
                     Circle()
-                        .fill(skinColors[index])
+                        .fill(color)
                         .frame(width: 32, height: 32)
                         .overlay(
                             Circle()
-                                .stroke(Color.primary, lineWidth: skinColorSelection == index ? 3 : 0)
+                                .stroke(Color.accentColor, lineWidth: skinColorSelection == key ? 3 : 0)
                         )
                         .onTapGesture {
-                            skinColorSelection = index
+                            skinColorSelection = key
                         }
                 }
             }
         }
+        .animation(.easeInOut, value: useDyslexiaFont)
         .padding()
         .frame(width: 260)
         .background(.ultraThinMaterial)

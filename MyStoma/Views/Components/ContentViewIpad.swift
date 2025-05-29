@@ -391,6 +391,7 @@ struct ContentViewIpad: View {
         }
         .ignoresSafeArea()
         .padding()
+
         #if os(iOS)
         .frame(maxWidth: UIScreen.main.bounds.width * 0.3, maxHeight: UIScreen.main.bounds.width * 0.17)
         #endif

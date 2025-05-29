@@ -15,7 +15,7 @@ struct InfoItemCardView: View {
     @State private var showModal = false
 
     var body: some View {
-        ZStack {
+        ZStack(alignment: .center) {
             Button(action: {
                 animateTap = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
@@ -23,7 +23,7 @@ struct InfoItemCardView: View {
                     animateTap = false
                 }
             }) {
-                ZStack(alignment: .bottomLeading) {
+                ZStack(alignment: .center) {
                     Rectangle()
                         .fill(
                             LinearGradient(
@@ -33,16 +33,23 @@ struct InfoItemCardView: View {
                             )
                         )
                         .cornerRadius(20)
-                        .overlay(
-                            Text(item.title)
-                                .font(.title2)
-                                .bold()
-                                .foregroundColor(.white)
-                                //.padding(),alignment: .bottomLeading
-                        )
+                        .opacity(0.5)
+                        
+                        Image(item.imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .padding()
+                        
+                        
+                        /*Text(item.title)
+                            .font(.headline)
+                            .bold()
+                            .foregroundColor(.white)
+                        //.padding(),alignment: .bottomLeading
+                    */
                 }
                 #if os(iOS)
-                .frame(width: UIScreen.main.bounds.width * 0.2,
+                .frame(width: UIScreen.main.bounds.width * 0.12,
                        height: UIScreen.main.bounds.width * 0.12)
                 #endif
                 .scaleEffect(animateTap ? 0.95 : 1.0)

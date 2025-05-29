@@ -12,7 +12,6 @@
                 "Questo aiuta a ridurre il disagio e protegge la pelle da stiramenti eccessivi.",
                 "Molte persone si chiedono qual è il modo migliore per rimuovere la placca adesiva dalla pelle.",
                 "Vediamo se sai rispondere a questa domanda...",
-                "Esatto!",
                 "Utilizzare uno spray o una salvietta adesiva è molto più delicato sulla pelle.",
                 "Questi prodotti sciolgono l’adesivo, facilitando la rimozione senza causare traumi alla pelle.",
                 "Strappare direttamente può danneggiare la pelle e causare dolore o irritazione.",
@@ -36,7 +35,6 @@
                 "La pulizia è un passaggio cruciale per prevenire irritazioni cutanee.",
                 "Ricorda che la stomia non ha terminazioni nervose, quindi non sentirai dolore toccandola, ma è comunque importante essere delicati.",
                 "Vediamo se sai qual è il metodo migliore per la pulizia...",
-                "Ottimo!",
                 "Acqua tiepida o soluzione salina sono tutto ciò di cui hai bisogno.",
                 "I saponi, soprattutto quelli profumati o antibatterici, possono lasciare residui sulla pelle che compromettono l’adesione della placca e causano irritazione.",
                 "Un consiglio pratico: usa garze morbide o fazzoletti non abrasivi per la pulizia.",
@@ -59,7 +57,6 @@
                 "Per misurare la stomia, usa una guida di misurazione, spesso fornita nei kit per stomia.",
                 "Posiziona la guida sopra la stomia e trova il foro che meglio si adatta alla dimensione.",
                 "Parliamo ora di quanto dovrebbe essere grande il foro nella placca adesiva...",
-                "Hai risposto correttamente!",
                 "Se la tua stomia misura 28 mm, il foro nella placca dovrebbe essere di 29–30 mm, lasciando solo un piccolo margine di 1–2 mm intorno alla stomia.",
                 "È un errore comune pensare che un foro più piccolo eviti le perdite, ma in realtà può danneggiare la stomia, causando ulcere o problemi circolatori.",
                 "D’altra parte, un foro troppo grande lascia troppa pelle esposta alle secrezioni, causando irritazione.",
@@ -83,7 +80,6 @@
                 "La pelle intorno alla stomia deve rimanere sana per evitare dolore e complicazioni.",
                 "Se l’area attorno alla stomia presenta irregolarità, come cicatrici, pieghe o depressioni, possono verificarsi perdite che causano irritazioni.",
                 "Vediamo cosa fare in questi casi...",
-                "Esatto!",
                 "La pasta modellante o l’anello barriera sono strumenti preziosi per creare una superficie uniforme.",
                 "Questi prodotti riempiono le irregolarità della pelle, creando una base liscia per l’adesione della placca e prevenendo le perdite.",
                 "La pasta modellante si applica direttamente sulle pieghe o depressioni e deve asciugarsi per alcuni minuti prima di applicare la placca.",
@@ -105,7 +101,6 @@
                 "Questo passaggio richiede precisione e pazienza, ma vedrai che con la pratica diventerà sempre più semplice.",
                 "Rimuovi la pellicola protettiva dalla placca adesiva. Centra il foro della placca attorno alla stomia e applicala sulla pelle, partendo dal basso verso l’alto per evitare la formazione di pieghe.",
                 "C’è un piccolo trucco per garantire una buona adesione. Vediamo se lo conosci...",
-                "Perfetto!",
                 "Mantenere la pressione sulla placca per almeno 1-2 minuti è essenziale per attivare l’adesivo e garantire una tenuta ottimale.",
                 "Il calore della mano aiuta l’adesivo ad aderire meglio alla pelle.",
                 "Un consiglio extra: massaggia delicatamente dal centro verso l’esterno della placca, seguendo un movimento circolare.",
@@ -119,24 +114,5 @@
             "timeQuestion": 3,
             "timePractice": 10
         },
-        {
-            "id": 6,
-            "name": "Frequenza di sostituzione della sacca",
-            "dialogues": [
-                "Un aspetto importante della cura della stomia è sapere ogni quanto cambiare il sistema.",
-                "Non esiste una regola valida per tutti, ma ci sono delle linee guida generali.",
-                "Vediamo se sai qual è la frequenza raccomandata per cambiare la sacca o il sistema...",
-                "Esatto!",
-                "La maggior parte dei sistemi può rimanere in sede per 3–5 giorni.",
-                "Cambiare il sistema troppo frequentemente può irritare la pelle, mentre aspettare troppo può causare perdite e irritazioni dovute al deterioramento dell’adesivo.",
-                "Impara a riconoscere i segnali che indicano che è ora di cambiarlo: prurito sotto la placca, deterioramento visibile dell’adesivo ai bordi o la sensazione che il sistema stia per staccarsi.",
-                "Ogni persona è diversa, quindi con il tempo troverai il tuo ritmo ideale.",
-                "Nei primi giorni, tieni un diario per identificare il tuo schema personale, annotando quando cambi il sistema e se ci sono stati problemi o perdite."
-            ],
-            "question": "Ogni quanto è consigliabile cambiare la sacca o il sistema?",
-            "answers": ["Ogni 3–5 giorni o secondo indicazioni del professionista", "Più volte al giorno, appena è scomodo"],
-            "timeQuestion": 4,
-            "timePractice": 20
-        }
     ]
 }

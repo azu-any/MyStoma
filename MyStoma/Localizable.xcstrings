@@ -220,7 +220,14 @@
       }
     },
     "Are you sure you want to restart the tutorial? Your current progress will be lost." : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Seguro que quieres reiniciar el tutorial? Se perderá tu progreso actual."
+          }
+        }
+      }
     },
     "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible." : {
       "localizations" : {
@@ -290,7 +297,14 @@
       }
     },
     "Cancel" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        }
+      }
     },
     "Category" : {
       "localizations" : {
@@ -314,12 +328,12 @@
         }
       }
     },
-    "Choose Category" : {
+    "Choose category" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Choose Category"
+            "value" : "Choose category"
           }
         },
         "es-419" : {
@@ -331,7 +345,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scegli Categoria"
+            "value" : "Scegli categoria"
           }
         }
       }
@@ -561,7 +575,6 @@
       }
     },
     "Explore & Learn" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -717,16 +730,36 @@
       }
     },
     "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. A colostomy is a surgical opening on the abdomen, called a stoma, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. It can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. Now that you have a basic understanding, you're ready to begin. Click on the buttons and let's start this journey together!" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En esta sección aprenderá qué es una colostomía, cómo funciona y qué aspectos importantes debe conocer en su vida diaria. Una colostomía es una abertura quirúrgica en el abdomen, llamada estoma, que permite que las heces salgan del colon al exterior del cuerpo, donde se recogen en una bolsa adhesiva especial. Puede ser temporal o permanente, según la condición clínica. Las heces ya no pasan por el ano, sino por el estoma, a una bolsa. Ahora que tiene una comprensión básica, está listo para comenzar. ¡Haga clic en los botones y empecemos este viaje juntos!"
+          }
+        }
+      }
     },
     "In this section you will learn what a urostomy is, how it functions and what you need to know for managing it in your daily life. A urostomy is a surgically created opening in the abdomen, called a stoma, that redirects urine from the kidneys directly to the outside of the body, where it is collected in a specialized adhesive pouch system. This procedure is usually permanent and is performed when the bladder cannot function properly or needs to be removed. The urine no longer flows through the bladder but exits continuously through the stoma into a collection bag. Since urine production is constant, urostomy bags typically need to be emptied more frequently and often include a drainage tap for easy emptying. Now that you have a basic understanding, you're ready to begin. Click on the buttons and let's start this journey together!" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En esta sección aprenderá qué es una urostomía, cómo funciona y qué necesita saber para manejarla en su vida diaria. Una urostomía es una abertura creada quirúrgicamente en el abdomen, llamada estoma, que redirige la orina desde los riñones directamente al exterior del cuerpo, donde se recolecta en un sistema de bolsa adhesiva especializada. Este procedimiento suele ser permanente y se realiza cuando la vejiga no funciona correctamente o necesita ser extirpada. La orina ya no fluye por la vejiga, sino que sale continuamente por el estoma hacia una bolsa recolectora. Dado que la producción de orina es constante, las bolsas de urostomía suelen necesitar vaciarse con mayor frecuencia y suelen incluir un drenaje para facilitar el vaciado. Ahora que tiene una comprensión básica, está listo para comenzar. ¡Haga clic en los botones y empecemos este viaje juntos!"
+          }
+        }
+      }
     },
     "In this section you will learn what an ileostomy is, how it functions and what you need to know for your daily routine. An ileostomy is a surgically created opening in the abdomen, called a stoma, that diverts the flow of intestinal waste from the small intestine directly to the outside of the body, where it is collected in a specialized adhesive pouch. This procedure can be either temporary or permanent, based on your specific medical needs. The waste no longer travels through the large intestine and rectum but exits through the stoma into a collection bag. Because the output comes from the small intestine, it tends to be more liquid and frequent than other types of ostomies. Now that you have a basic understanding, you're ready to begin. Click on the buttons and let's start this journey together!" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En esta sección aprenderá qué es una ileostomía, cómo funciona y qué necesita saber para su rutina diaria. Una ileostomía es una abertura quirúrgica en el abdomen, llamada estoma, que desvía el flujo de desechos intestinales del intestino delgado directamente al exterior del cuerpo, donde se recolectan en una bolsa adhesiva especializada. Este procedimiento puede ser temporal o permanente, según sus necesidades médicas específicas. Los desechos ya no pasan por el intestino grueso y el recto, sino que salen por el estoma a una bolsa recolectora. Debido a que la eliminación proviene del intestino delgado, tiende a ser más líquida y frecuente que otros tipos de ostomías. Ahora que tiene una comprensión básica, está listo para comenzar. ¡Haga clic en los botones y empecemos este viaje juntos!"
+          }
+        }
+      }
     },
     "infoitem_adhesiveremover_description" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -749,7 +782,6 @@
       }
     },
     "infoitem_adhesiveremover_title" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -772,6 +804,7 @@
       }
     },
     "infoitem_adhesivespray_description" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -794,6 +827,7 @@
       }
     },
     "infoitem_adhesivespray_title" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -842,19 +876,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Stoma paste or barrier ring"
+            "value" : "Stoma paste"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pasta para estoma o anillo barrera"
+            "value" : "Pasta para estoma"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pasta per stomia o anello barriera"
+            "value" : "Pasta per stomia"
           }
         }
       }
@@ -899,98 +933,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sacca per stomia drenabile monopezzo"
-          }
-        }
-      }
-    },
-    "infoitem_placeholder1_description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This item is not yet available. Unlock it to discover more."
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Este elemento aún no está disponible. Desbloquéalo para descubrir más."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descrizione generica per il primo elemento"
-          }
-        }
-      }
-    },
-    "infoitem_placeholder1_title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Locked item"
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Elemento bloqueado"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bloccato"
-          }
-        }
-      }
-    },
-    "infoitem_placeholder2_description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This item is not yet available. Unlock it to discover more."
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Este elemento aún no está disponible. Desbloquéalo para descubrir más."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descrizione generica per il primo elemento"
-          }
-        }
-      }
-    },
-    "infoitem_placeholder2_title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Locked item"
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Elemento bloqueado"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bloccato"
           }
         }
       }
@@ -1085,6 +1027,26 @@
         }
       }
     },
+    "infoitem_stomasizer_description" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A stoma measuring plate or guide that helps to measure the size of a stoma."
+          }
+        }
+      }
+    },
+    "infoitem_stomasizer_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stoma measurement board"
+          }
+        }
+      }
+    },
     "infoitem_wastebag_description" : {
       "localizations" : {
         "en" : {
@@ -1117,8 +1079,8 @@
         },
         "es-419" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Toallitas absorbentes o protectores"
+            "state" : "translated",
+            "value" : "Bolsa de basura para bolsa de estoma"
           }
         },
         "it" : {
@@ -1191,6 +1153,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Continua a fare sport"
+          }
+        }
+      }
+    },
+    "Learn the Tools" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aprende las herramiantas"
           }
         }
       }
@@ -1327,6 +1299,16 @@
         }
       }
     },
+    "No definition found" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Definición no encontrada"
+          }
+        }
+      }
+    },
     "No quote" : {
       "localizations" : {
         "en" : {
@@ -1395,10 +1377,24 @@
       }
     },
     "Restart" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reiniciar"
+          }
+        }
+      }
     },
     "Restart tutorial" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reiniciar tutorial"
+          }
+        }
+      }
     },
     "Settings" : {
       "localizations" : {
@@ -1600,8 +1596,15 @@
         }
       }
     },
-    "Tap and hold to drag items" : {
-
+    "Tap and hold to drag and combine items" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulsa y mantén para arrastrar y combinar objetos"
+          }
+        }
+      }
     },
     "That's right!" : {
       "localizations" : {
@@ -1806,19 +1809,18 @@
         }
       }
     },
-    "You have completed the colostomy tutorial" : {
-      "extractionState" : "stale",
+    "You have completed the colostomy tutorial." : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You have completed the colostomy tutorial"
+            "value" : "You have completed the colostomy tutorial!"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Has completado el tutorial de colostomía."
+            "value" : "Has completado el tutorial de colostomía!"
           }
         },
         "it" : {
@@ -1828,9 +1830,6 @@
           }
         }
       }
-    },
-    "You have completed the colostomy tutorial." : {
-
     }
   },
   "version" : "1.0"

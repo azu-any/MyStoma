@@ -21,16 +21,15 @@ struct ChartNurseView: View {
                     Rectangle()
                       .foregroundColor(.clear)
                       .frame(width: 124, height: 124)
-                      .background(Color(red: 0.19, green: 0.28, blue: 0.34))
+                      .background(Color(red: 0.19, green: 0.28, blue: 0.34).opacity(0.6))
                       .cornerRadius(20)
                       .overlay(
                         RoundedRectangle(cornerRadius: 20)
                           .inset(by: 0.5)
-                          .stroke(Color(red: 0.42, green: 0.6, blue: 0.74), lineWidth: 1)
+                          .stroke(Color(red: 0.42, green: 0.6, blue: 0.74).opacity(0.6), lineWidth: 1)
                       )
                       .offset(y: 2)
                 }
-
             
             
             VStack(spacing: 12) {
@@ -55,10 +54,7 @@ struct ChartNurseView: View {
                      
                      */
                     Text("Step \(ostomyViewModel.currentStepIndex + 1)")
-                        .foregroundStyle(.white)
-                        .italic()
                         .bold()
-                    
                     
                     /*Spacer()
                     
@@ -83,31 +79,20 @@ struct ChartNurseView: View {
                 .background {
                     Rectangle()
                         .foregroundColor(.clear)
-                        .background(Color(red: 0.42, green: 0.6, blue: 0.74))
+                        .background(Color.gray.opacity(0.3))
                         .cornerRadius(20)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .inset(by: 0.5)
-                                .stroke(Color(red: 0.42, green: 0.6, blue: 0.74), lineWidth: 1)
-                        )
                 }
                 
                 Text(ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].name)
                     .multilineTextAlignment(.center)
-                    .foregroundStyle(.white)
                     .italic()
                     .bold()
                     .frame(width: 240, height: 80)
                     .background {
                         Rectangle()
                             .foregroundColor(.clear)
-                            .background(Color(red: 0.42, green: 0.6, blue: 0.74))
+                            .background(Color.gray.opacity(0.3))
                             .cornerRadius(20)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .inset(by: 0.5)
-                                    .stroke(Color(red: 0.42, green: 0.6, blue: 0.74), lineWidth: 1)
-                            )
                     }
             }
             
