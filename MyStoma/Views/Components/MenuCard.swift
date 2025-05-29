@@ -57,18 +57,23 @@ struct MenuCard: View {
     }
 }
 
-/*
-#Preview {
-    MenuCard(card: CardData(title: "Colostomy", subtitle: "Colon stoma", imageName: "colostomyImage", navView: AnyView(ColostomyView())))
 
-struct MenuCard_Previews: PreviewProvider {
-    @State static var showModal = false
-    
-    static var previews: some View {
-        MenuCard(title: "Colostomy",
-                 subtitle: "Colon stoma",
-                 imageName: "colostomyImage",
-                 showModal: $showModal)
+#Preview {
+    struct MenuCard_Previews: View {
+        @State private var showModal = false
+
+        var body: some View {
+            MenuCard(card: CardData(type: "colostomy",
+                                    title: "Colostomy",
+                                    subtitle: "Colon stoma",
+                                    imageName: "colostomyImage",
+                                    imageModal: "colostomyModalImage",
+                                    description: "A surgically created opening from the colon to the abdominal wall.",
+                                    navView: AnyView(ColostomyView()),
+                                    quote: nil),
+                     showModal: $showModal)
+        }
     }
 
-*/
+    return MenuCard_Previews()
+}
