@@ -92,60 +92,7 @@ struct MyStomaApp: App {
                 }
         }
         .immersionStyle(selection: .constant(.mixed), in: .mixed)
-
-        ImmersiveSpace(id: ColostomySpace.sixth.id) {
-            ColostomySixthView()
-                .environment(appModel)
-                .environmentObject(viewModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
-        }
-        .immersionStyle(selection: .constant(.mixed), in: .mixed)
-
-    
-        ImmersiveSpace(id: ColostomySpace.seventh.id) {
-            ColostomySeventhView()
-                .environment(appModel)
-                .environmentObject(viewModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
-        }
-        .immersionStyle(selection: .constant(.mixed), in: .mixed)
-
-        ImmersiveSpace(id: ColostomySpace.eighth.id) {
-            ColostomyEighthView()
-                .environment(appModel)
-                .environmentObject(viewModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
-        }
-        .immersionStyle(selection: .constant(.mixed), in: .mixed)
-
-        ImmersiveSpace(id: ColostomySpace.ninth.id) {
-            ColostomyNinthView()
-                .environment(appModel)
-                .environmentObject(viewModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
-        }
-        .immersionStyle(selection: .constant(.mixed), in: .mixed)
-        #endif
+#endif
         
         
      }
