@@ -61,52 +61,6 @@
         }
       }
     },
-    "A colostomy brings part of the colon to the surface of the belly to pass stool. The stool is usually formed or semi-formed, depending on where the stoma is placed. A closed or drainable bag collects it. The stoma is red and moist but doesn’t hurt to touch." : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A colostomy brings part of the colon to the surface of the belly to pass stool. The stool is usually formed or semi-formed, depending on where the stoma is placed. A closed or drainable bag collects it. The stoma is red and moist but doesn’t hurt to touch."
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Una colostomía saca una parte del colon a la superficie del abdomen para evacuar las heces. Las heces suelen estar formadas o semi formadas, dependiendo de dónde esté colocado el estoma. Se recoge en una bolsa cerrada o drenable. El estoma es rojo y húmedo, pero no duele al tacto."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Una colostomia porta parte del colon alla superficie dell'addome per evacuare le feci. Le feci sono solitamente formate o semi-formate, a seconda della posizione dello stoma. Vengono raccolte in una sacca chiusa o drenabile. Lo stoma è rosso e umido, ma non fa male al tatto."
-          }
-        }
-      }
-    },
-    "A urostomy helps urine exit the body through a stoma made from a small piece of intestine. Urine flows into a drainable bag. It’s needed when the bladder is damaged or removed." : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A urostomy helps urine exit the body through a stoma made from a small piece of intestine. Urine flows into a drainable bag. It’s needed when the bladder is damaged or removed."
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Una urostomía ayuda a que la orina salga del cuerpo a través de un estoma hecho con un pequeño trozo de intestino. La orina fluye hacia una bolsa drenable. Se necesita cuando la vejiga está dañada o ha sido removida."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Una urostomia aiuta l'urina a uscire dal corpo tramite uno stoma creato con un piccolo pezzo di intestino. L'urina scorre in una sacca drenabile. È necessaria quando la vescica è danneggiata o rimossa."
-          }
-        }
-      }
-    },
     "Adhesive Remover Spray" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -174,29 +128,6 @@
         }
       }
     },
-    "An ileostomy brings the end of the small intestine through the belly. The stool is more liquid and comes out often. It needs a drainable pouch. It’s usually needed when the colon can’t be used." : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "An ileostomy brings the end of the small intestine through the belly. The stool is more liquid and comes out often. It needs a drainable pouch. It’s usually needed when the colon can’t be used."
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Una ileostomía saca el extremo del intestino delgado a través del abdomen. Las heces son más líquidas y salen con frecuencia. Se necesita una bolsa drenable. Generalmente se necesita cuando no se puede usar el colon."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Un'ileostomia porta l'estremità dell'intestino tenue attraverso l'addome. Le feci sono più liquide ed escono frequentemente. È necessaria una sacca drenabile. Di solito è necessaria quando il colon non può essere utilizzato."
-          }
-        }
-      }
-    },
     "Anna Paola" : {
       "localizations" : {
         "en" : {
@@ -221,10 +152,22 @@
     },
     "Are you sure you want to restart the tutorial? Your current progress will be lost." : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to restart the tutorial? Your current progress will be lost."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "¿Seguro que quieres reiniciar el tutorial? Se perderá tu progreso actual."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sei sicuro di voler riavviare il tutorial? I tuoi progressi attuali andranno persi."
           }
         }
       }
@@ -298,10 +241,22 @@
     },
     "Cancel" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancelar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancella"
           }
         }
       }
@@ -531,6 +486,7 @@
       }
     },
     "Dislexia Font" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -730,43 +686,67 @@
       }
     },
     "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. \n\nA colostomy is a surgical opening on the abdomen, called a stoma, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. \n\nIt can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!" : {
-
-    },
-    "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. A colostomy is a surgical opening on the abdomen, called a stoma, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. It can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. Now that you have a basic understanding, you're ready to begin. Click on the buttons and let's start this journey together!" : {
-      "extractionState" : "stale",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. \n\nA colostomy is a surgical opening on the abdomen, called a stoma, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. \n\nIt can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "En esta sección aprenderá qué es una colostomía, cómo funciona y qué aspectos importantes debe conocer en su vida diaria. Una colostomía es una abertura quirúrgica en el abdomen, llamada estoma, que permite que las heces salgan del colon al exterior del cuerpo, donde se recogen en una bolsa adhesiva especial. Puede ser temporal o permanente, según la condición clínica. Las heces ya no pasan por el ano, sino por el estoma, a una bolsa. Ahora que tiene una comprensión básica, está listo para comenzar. ¡Haga clic en los botones y empecemos este viaje juntos!"
+            "value" : "En esta sección aprenderás qué es una colostomía, cómo funciona y qué aspectos son importantes conocer en la vida diaria.\n\nUna colostomía es una abertura quirúrgica en el abdomen, llamada estoma, que permite que las heces salgan del colon hacia el exterior del cuerpo, donde se recogen en una bolsa adhesiva especial.\n\nPuede ser temporal o permanente, dependiendo de la condición clínica. Las heces ya no pasan por el ano, sino a través del estoma, hacia una bolsa.\n\nAhora que tienes una comprensión básica, estás listo para comenzar.\n\nHaz clic en los botones y ¡comencemos este camino juntos!"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In questa sezione imparerai cos'è una colostomia, come funziona e quali aspetti sono importanti da conoscere nella vita quotidiana.\n\nLa colostomia è un’apertura chirurgica sull’addome, chiamata stomia, che permette alle feci di uscire dal colon verso l’esterno del corpo, dove vengono raccolte in una sacca adesiva \nspeciale.\n\nPuò essere temporanea o permanente, a seconda della condizione clinica. Le feci non passano più attraverso l’ano ma attraverso la stomia, in una sacca.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\nClicca sui pulsanti e iniziamo insieme questo percorso!\n"
           }
         }
       }
     },
     "In this section you will learn what a urostomy is, how it functions and what you need to know for managing it in your daily life. \n\nA urostomy is a surgically created opening in the abdomen, called a stoma, that redirects urine from the kidneys directly to the outside of the body, where it is collected in a specialized adhesive pouch system. \n\nThis procedure is usually permanent and is performed when the bladder cannot function properly or needs to be removed. The urine no longer flows through the bladder but exits continuously through the stoma into a collection bag. Since urine production is constant, urostomy bags typically need to be emptied more frequently and often include a drainage tap for easy emptying. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!" : {
-
-    },
-    "In this section you will learn what a urostomy is, how it functions and what you need to know for managing it in your daily life. A urostomy is a surgically created opening in the abdomen, called a stoma, that redirects urine from the kidneys directly to the outside of the body, where it is collected in a specialized adhesive pouch system. This procedure is usually permanent and is performed when the bladder cannot function properly or needs to be removed. The urine no longer flows through the bladder but exits continuously through the stoma into a collection bag. Since urine production is constant, urostomy bags typically need to be emptied more frequently and often include a drainage tap for easy emptying. Now that you have a basic understanding, you're ready to begin. Click on the buttons and let's start this journey together!" : {
-      "extractionState" : "stale",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In this section you will learn what a urostomy is, how it functions and what you need to know for managing it in your daily life. \n\nA urostomy is a surgically created opening in the abdomen, called a stoma, that redirects urine from the kidneys directly to the outside of the body, where it is collected in a specialized adhesive pouch system. \n\nThis procedure is usually permanent and is performed when the bladder cannot function properly or needs to be removed. The urine no longer flows through the bladder but exits continuously through the stoma into a collection bag. Since urine production is constant, urostomy bags typically need to be emptied more frequently and often include a drainage tap for easy emptying. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "En esta sección aprenderá qué es una urostomía, cómo funciona y qué necesita saber para manejarla en su vida diaria. Una urostomía es una abertura creada quirúrgicamente en el abdomen, llamada estoma, que redirige la orina desde los riñones directamente al exterior del cuerpo, donde se recolecta en un sistema de bolsa adhesiva especializada. Este procedimiento suele ser permanente y se realiza cuando la vejiga no funciona correctamente o necesita ser extirpada. La orina ya no fluye por la vejiga, sino que sale continuamente por el estoma hacia una bolsa recolectora. Dado que la producción de orina es constante, las bolsas de urostomía suelen necesitar vaciarse con mayor frecuencia y suelen incluir un drenaje para facilitar el vaciado. Ahora que tiene una comprensión básica, está listo para comenzar. ¡Haga clic en los botones y empecemos este viaje juntos!"
+            "value" : "En esta sección aprenderás qué es una urostomía, cómo funciona y qué necesitas saber para manejarla en tu vida diaria.\n\nUna urostomía es una abertura quirúrgica creada en el abdomen, llamada estoma, que redirige la orina desde los riñones directamente al exterior del cuerpo, donde se recoge en un sistema de bolsas adhesivas especializadas.\n\nEste procedimiento generalmente es permanente y se realiza cuando la vejiga no puede funcionar correctamente o necesita ser removida. La orina ya no pasa por la vejiga, sino que sale continuamente por el estoma hacia una bolsa de recolección. Como la producción de orina es constante, las bolsas de urostomía suelen vaciarse con más frecuencia y a menudo incluyen una válvula de drenaje para facilitar el vaciado.\n\nAhora que tienes una comprensión básica, estás listo para comenzar.\n\nHaz clic en los botones y ¡comencemos este camino juntos!"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In questa sezione imparerai cos'è una urostomia, come funziona e cosa devi sapere per gestirla nella vita quotidiana.\n\nL’ileostomia è un’apertura chirurgica creata sull’addome, chiamata stomia, che devia il flusso dei residui intestinali dall’intestino tenue direttamente all’esterno del corpo, dove vengono raccolti in una sacca adesiva speciale.\n\nQuesta procedura può essere temporanea o permanente, a seconda delle esigenze mediche specifiche. I residui non passano più attraverso l’intestino crasso e il retto, ma escono attraverso la stomia in una sacca di raccolta.\n\nPoiché i residui provengono dall’intestino tenue, tendono ad essere più liquidi e frequenti rispetto ad altri tipi di stomia.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\n\nClicca sui pulsanti e iniziamo insieme questo percorso!"
           }
         }
       }
     },
     "In this section you will learn what an ileostomy is, how it functions and what you need to know for your daily routine. \n\nAn ileostomy is a surgically created opening in the abdomen, called a stoma, that diverts the flow of intestinal waste from the small intestine directly to the outside of the body, where it is collected in a specialized adhesive pouch. \n\nThis procedure can be either temporary or permanent, based on your specific medical needs. The waste no longer travels through the large intestine and rectum but exits through the stoma into a collection bag. Because the output comes from the small intestine, it tends to be more liquid and frequent than other types of ostomies. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!" : {
-
-    },
-    "In this section you will learn what an ileostomy is, how it functions and what you need to know for your daily routine. An ileostomy is a surgically created opening in the abdomen, called a stoma, that diverts the flow of intestinal waste from the small intestine directly to the outside of the body, where it is collected in a specialized adhesive pouch. This procedure can be either temporary or permanent, based on your specific medical needs. The waste no longer travels through the large intestine and rectum but exits through the stoma into a collection bag. Because the output comes from the small intestine, it tends to be more liquid and frequent than other types of ostomies. Now that you have a basic understanding, you're ready to begin. Click on the buttons and let's start this journey together!" : {
-      "extractionState" : "stale",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In this section you will learn what an ileostomy is, how it functions and what you need to know for your daily routine. \n\nAn ileostomy is a surgically created opening in the abdomen, called a stoma, that diverts the flow of intestinal waste from the small intestine directly to the outside of the body, where it is collected in a specialized adhesive pouch. \n\nThis procedure can be either temporary or permanent, based on your specific medical needs. The waste no longer travels through the large intestine and rectum but exits through the stoma into a collection bag. Because the output comes from the small intestine, it tends to be more liquid and frequent than other types of ostomies. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "En esta sección aprenderá qué es una ileostomía, cómo funciona y qué necesita saber para su rutina diaria. Una ileostomía es una abertura quirúrgica en el abdomen, llamada estoma, que desvía el flujo de desechos intestinales del intestino delgado directamente al exterior del cuerpo, donde se recolectan en una bolsa adhesiva especializada. Este procedimiento puede ser temporal o permanente, según sus necesidades médicas específicas. Los desechos ya no pasan por el intestino grueso y el recto, sino que salen por el estoma a una bolsa recolectora. Debido a que la eliminación proviene del intestino delgado, tiende a ser más líquida y frecuente que otros tipos de ostomías. Ahora que tiene una comprensión básica, está listo para comenzar. ¡Haga clic en los botones y empecemos este viaje juntos!"
+            "value" : "En esta sección aprenderás qué es una ileostomía, cómo funciona y qué necesitas saber para tu rutina diaria.\n\nUna ileostomía es una abertura quirúrgica creada en el abdomen, llamada estoma, que desvía el flujo de desechos intestinales desde el intestino delgado directamente al exterior del cuerpo, donde se recogen en una bolsa adhesiva especializada.\n\nEste procedimiento puede ser temporal o permanente, dependiendo de tus necesidades médicas específicas. Los desechos ya no pasan por el intestino grueso ni el recto, sino que salen por el estoma hacia una bolsa recolectora. Como la salida proviene del intestino delgado, tiende a ser más líquida y frecuente que en otros tipos de ostomías.\n\nAhora que tienes una comprensión básica, estás listo para comenzar.\n\nHaz clic en los botones y ¡comencemos este camino juntos!"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In questa sezione imparerai cos'è un’ileostomia, come funziona e cosa devi sapere per la tua routine quotidiana.\n\nL’ileostomia è un’apertura chirurgica creata sull’addome, chiamata stomia, che devia il flusso dei residui intestinali dall’intestino tenue direttamente all’esterno del corpo, dove vengono raccolti in una sacca adesiva speciale.\n\nQuesta procedura può essere temporanea o permanente, a seconda delle esigenze mediche specifiche. I residui non passano più attraverso l’intestino crasso e il retto, ma escono attraverso la stomia in una sacca di raccolta.\n\nPoiché i residui provengono dall’intestino tenue, tendono ad essere più liquidi e frequenti rispetto ad altri tipi di stomia.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\n\nClicca sui pulsanti e iniziamo insieme questo percorso!"
           }
         }
       }
@@ -811,52 +791,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spray rimuovi-adesivo per stomia"
-          }
-        }
-      }
-    },
-    "infoitem_adhesivespray_description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Adhesive spray improves the wafer’s grip on the skin, while protective wipes form a thin barrier to prevent skin irritation from the adhesive. Both help maintain skin health and appliance security."
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El spray adhesivo mejora la adherencia de la barrera a la piel, mientras que las toallitas protectoras forman una fina barrera para prevenir la irritación causada por el adhesivo. Ambos ayudan a mantener la salud de la piel y la seguridad del dispositivo."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lo spray adesivo migliora l’aderenza della placca sulla pelle, mentre le salviette protettive formano una barriera sottile per prevenire irritazioni cutanee causate dall’adesivo. Entrambi aiutano a mantenere la salute della pelle e la sicurezza dell’apparecchio."
-          }
-        }
-      }
-    },
-    "infoitem_adhesivespray_title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Adhesive spray / Protective wipe"
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Spray adhesivo / Toallita protectora"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Spray adesivo / Salvietta protettiva"
           }
         }
       }
@@ -993,58 +927,24 @@
         }
       }
     },
-    "infoitem_stomabag_description" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A medical device that collects body waste after surgeries where a stoma is created."
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dispositivo médico que recolecta desechos del cuerpo después de ciertas cirugías en las que se crea un estoma."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Una sacca che raccoglie i rifiuti corporei provenienti dallo stoma."
-          }
-        }
-      }
-    },
-    "infoitem_stomabag_title" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stoma bag"
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bolsa de estoma"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sacca per Stomia"
-          }
-        }
-      }
-    },
     "infoitem_stomasizer_description" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "A stoma measuring plate or guide that helps to measure the size of a stoma."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una plantilla o guía para medir que ayuda a determinar el tamaño del estoma."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una placca o guida per la misurazione della stomia che aiuta a determinare la dimensione della stomia."
           }
         }
       }
@@ -1055,6 +955,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stoma measurement board"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tabla de medición del estoma"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scheda di misurazione della stomia"
           }
         }
       }
@@ -1097,8 +1009,8 @@
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Salviette assorbenti o sotto-pannolini"
+            "state" : "translated",
+            "value" : "Sacca di ricambio per la stomia"
           }
         }
       }
@@ -1171,10 +1083,22 @@
     },
     "Learn the Tools" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Learn the Tools"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aprende las herramiantas"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impara gli strumenti"
           }
         }
       }
@@ -1313,10 +1237,22 @@
     },
     "No definition found" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No definition found"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Definición no encontrada"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna definizione trovata!"
           }
         }
       }
@@ -1390,20 +1326,44 @@
     },
     "Restart" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restart"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reiniciar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riavvia"
           }
         }
       }
     },
     "Restart tutorial" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restart tutorial"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reiniciar tutorial"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riavvia il tutorial"
           }
         }
       }
@@ -1615,6 +1575,12 @@
             "state" : "translated",
             "value" : "Pulsa y mantén para arrastrar y combinar objetos"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca e tieni premuto per trascinare e combinare gli oggetti"
+          }
         }
       }
     },
@@ -1685,6 +1651,7 @@
       }
     },
     "Urostomia" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

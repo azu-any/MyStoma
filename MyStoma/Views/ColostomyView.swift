@@ -25,7 +25,7 @@ struct Colostomy2View: View {
             .onChanged { value in
                 // Convert drag to horizontal angle
                 let delta = Float(value.translation.width)
-                let angle = currentAngle + delta * 0.01  // Sensitivity
+                _ = currentAngle + delta * 0.01  // Sensitivity
 
                 /*if let model = modelEntity {
                     model.transform.rotation = simd_quatf(angle: angle, axis: [0, 1, 0])
