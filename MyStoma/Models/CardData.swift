@@ -31,7 +31,7 @@ struct CardData: Identifiable {
         self.navView = navView
         self.quote = quote
     }
-
+    
 }
 
 extension CardData {
@@ -66,32 +66,143 @@ extension CardData {
     static let storyData: [CardData] = [
         CardData(
             type: "story",
-            title: "Living with a Stoma",
-            subtitle: "Martha Mendoza",
+            title: "One Stoma, Two Miracles",
+            subtitle: "Patrizia Nazzarro",
             imageName: "NurseLeft",
             imageModal: "NurseLeft",
-            description: "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive.",
+            description: """
+Elena was 28 when she was diagnosed with inflammatory bowel disease that required an ileostomy. Two years later, she and her husband Marco decided to try for a baby. "I was terrified at first," Elena says. "I thought the stoma would keep me from being a normal mother."
+
+**The Discovery of Pregnancy**  
+When Elena found out she was pregnant, her first thought was about her stoma. "I rushed to my stoma doctor," she recalls with a smile. "I needed to know what to expect for the next nine months."
+
+**First Trimester: Adjustment and Nausea**  
+During the first few months, Elena had to deal with the classic morning sickness, complicated by the management of the stoma.
+
+*Practical advice from the first trimester:*
+- Always keep dry crackers and water on hand to manage nausea  
+- Switch your collection system in the evening, when nausea is less intense  
+- Use smaller bags during the day for greater comfort  
+- Check with your medical team regularly to monitor hydration
+
+**Second Trimester: Growth and Adjustments**  
+As her belly grew, Elena began to notice changes in the position of her stoma. "My stoma doctor explained to me that this was normal," she says. "The skin was stretching and the stoma was moving slightly."
+
+*Practical advice from the second trimester:*
+- Use more flexible bases that adapt to the changes in the body  
+- Invest in support belts specifically for ostomates during pregnancy  
+- Apply barrier creams to protect more sensitive skin  
+- Document changes with photos to help your medical team
+
+**Third Trimester: Preparing for Birth**  
+In the last few months, Elena prepared for birth with a focus on stoma care. "I prepared a special hospital bag with all the necessary supplies," she explains.
+
+*Practical tips for the third trimester and birth:*
+- Prepare an extra supply of hospital supplies (pads, bags, accessories)  
+- Inform all hospital staff that you have a stoma  
+- Choose a hospital with experience in managing ostomy patients  
+- Position the bag so that it does not interfere with fetal monitoring
+
+**Birth and Beyond**  
+Elena gave birth to little Sofia naturally without any complications. "During labor, the stoma did not cause any problems," she says excitedly. "On the contrary, the medical staff were very knowledgeable and made me feel completely at ease."
+
+**Breastfeeding and New Life**  
+After giving birth, Elena was able to breastfeed without difficulty. "The best position for me was lying on my side," she explains. "That way I avoided pressure on the stoma and Sofia was able to latch on well."
+
+*Practical breastfeeding tips:*
+- Experiment with different positions to find the most comfortable one  
+- Use support pillows to avoid pressure on the stoma  
+- Stay well hydrated to support milk production  
+- Do not hesitate to seek help from experienced lactation consultants
+
+**Final Thoughts**  
+Today Sofia is three years old and Elena is pregnant with her second child. "My stoma has never stopped me from being the mother I wanted to be," Elena concludes. "In fact, it has taught me to be stronger and more resilient. My children will grow up knowing that diversity is normal and that love knows no obstacles."
+""",
             navView: AnyView(ColostomyView()),
             quote: "My stoma is a constant reminder of what I’ve lost. But it’s also a symbol of my strength."
         ),
         CardData(
             type: "story",
-            title: "Feeling Invisible",
-            subtitle: "Anna Paola",
+            title: "First Dive Into Hope",
+            subtitle: "Patrizia Nazzarro",
             imageName: "NurseLeft",
             imageModal: "NurseLeft",
-            description: "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible.",
-            quote: "I had difficulties everyday, but it seemed that for the rest of the world I was still the same."
+            description: """
+When Luca discovered he had to live with a stoma, the world seemed to stop. He had just experienced one of the most intense moments of his life — the birth of his first child — and immediately afterwards he found himself facing a new, completely unexpected reality. A stoma. A difficult word, a radical change, a wound that seemed to be more of a wound to the soul than to the body.
+
+"I thought my active life was over," he says today. And yet, what seemed like a limitation has turned into one of the greatest — and most beautiful — challenges of his life.
+
+**Accept, Understand, Start Over**  
+At the beginning, like many, there were moments of fear and uncertainty:
+
+- How will I dress?  
+- Will I be able to swim, go to the beach?  
+- Will people notice?  
+- Will I be able to hug my son without fear?  
+
+Over time, Luca has learned that a stoma is not the end, but a new beginning. It is not a sign of weakness, but a demonstration of survival and adaptation. With the right medical support, good nursing guidance and a lot of inner strength, he has discovered that life can be lived to the fullest, even with a bag.
+
+**Technique, Routine and Freedom**  
+Luca has learned to manage his stoma day after day. Here are some of the tips he has made his own and that he shares with those who are starting this journey:
+
+-  Choose the right bag for you. There are different types: one-piece, two-piece, with filter, transparent or opaque. Your stoma nurse will help you find the one that best suits your lifestyle.  
+-  Prepare a kit to always carry with you. A small beauty case with a spare bag, wipes, plasters, scissors, and a bag for waste. It makes you feel more secure wherever you are.  
+-  Respect your skin. Use delicate products for cleaning and, if necessary, protective barriers to avoid irritation.  
+-  Be patient with yourself. The first changes may seem complicated, but with practice they will become routine.  
+-  Move. Live. Train. After talking to his doctor, Luca gradually returned to the pool. With a wetsuit and waterproof devices, he discovered that he could still swim, just like before. Better than before.  
+-  Face fears with words. Talk about them with those close to you. Often, fear is more in our heads than in the eyes of others.
+
+**The English Channel Feat**  
+Three years after his operation, Luca swam across the English Channel. Almost 14 hours in freezing water, without being able to stop.  
+"Every stroke was a way of saying: I am not just my body. I am my strength, my will, my desire to live."  
+That day, on the French coast, not just an athlete arrived. A new, rebuilt man arrived.
+
+**Support That Makes a Difference**  
+Luca has now founded an association that helps those who live with a stoma, offers advice, tells true stories, distributes guides and proposes group and sports meetings.  
+He has created a network that unites those who have already done this journey with those who are starting now.
+
+_Remember: you are not alone._  
+Every day, thousands of people live, work, love, travel, play sports, and enjoy life with a stoma.
+
+**Luca's Message**  
+"We are not broken. We are rebuilt. And often, stronger than before."
+
+ **First Steps for You**
+
+1. Trust your stoma therapist. He will guide you through the most delicate days and teach you specific techniques.  
+2. Inform those close to you. Even a little support can make a big difference.  
+3. Find your routine. After a few weeks, management will become automatic.  
+4. Don't give up on what you love. Ask how to adapt, but don't stop dreaming.  
+5. Join a patient network. Sharing experiences is the best medicine for the soul.
+""",
+            quote: "The sea had not abandoned me… it was I who had to learn to return to it."
             
         ),
         CardData(
             type: "story",
-            title: "Keep Doing Sports",
-            subtitle: "Francesco Pogliare",
+            title: "From Stoma Care to Clinics",
+            subtitle: "Giuseppe Fama, Stomatherapist",
             imageName: "NurseLeft",
             imageModal: "NurseLeft",
-            description: "Soccer was my life, and after my urostomy, I thought it was gone. I was scared to move too much, to get tackled, to leak. But my coach said, “Come back. We’ll figure it out.” I trained slow. I tried different bags. The first match back, I was terrified. Then I scored. My team lifted me in the air, and I cried like a baby. I still have my urostomy, but now I also have my confidence, my team, and my game back.",
-            quote: "I couldn't let my urostomy change my love for sports and change who I am."
+            description: """
+After the birth of his first child, Luca was told he needed a stoma. Shocked and overwhelmed, he feared life would never be the same. "I thought everything I loved was over," he says.
+
+But step by step, he adapted. With guidance from his stoma nurse and support from loved ones, Luca regained control.
+
+- Carry a small kit: bag, wipes, scissors  
+- Use gentle skin products  
+- Build a routine—practice brings confidence  
+- Stay active with medical approval  
+
+Three years later, he swam the English Channel—14 hours non-stop. "That swim proved I'm not just my body,I’m my strength and will."
+
+Today, Luca runs a support network for others with stomas. His message is clear:
+
+"We’re not broken. We’re rebuilt and stronger."
+
+First steps: Trust your stoma nurse. Inform loved ones. Don’t stop living.
+""",
+            quote: "Everything You Need to Know About Getting Professional Support for Your Stoma Journey"
         )
     ]
 }
