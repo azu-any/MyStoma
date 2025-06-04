@@ -78,8 +78,8 @@ extension CardData {
             type: "story",
             title: "Feeling Invisible",
             subtitle: "Anna Paola",
-            imageName: "NurseLeft",
-            imageModal: "NurseLeft",
+            imageName: "story2",
+            imageModal: "story2",
             description: "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible.",
             quote: "I had difficulties everyday, but it seemed that for the rest of the world I was still the same."
             
