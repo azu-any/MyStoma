@@ -2,16 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenDyslexic-Regular.otf</string>
 		<string>OpenDyslexic-Bold.otf</string>
 		<string>OpenDyslexic-Italic.otf</string>
 		<string>OpenDyslexic-Bold-Italic.otf</string>
-	</array>
-	<key>CFBundleLocalizations</key>
-	<array>
-		<string>en</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
@@ -39,8 +39,10 @@
 			</array>
 			<key>UTTypeDescription</key>
 			<string>Inventory</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
 			<key>UTTypeIdentifier</key>
-			<string>com.example.inventory</string>
+			<string>visionchilla.MyStoma.inventory</string>
 			<key>UTTypeTagSpecification</key>
 			<dict/>
 		</dict>
