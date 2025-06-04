@@ -20,7 +20,7 @@ struct InventoryItem: Identifiable, Codable, Hashable {
 }
 
 extension UTType {
-    static var exampleInventory = UTType(exportedAs: "com.example.inventory")
+    static var exampleInventory = UTType(exportedAs: "visionchilla.MyStoma.inventory") //com.example.inventory
 }
 
 extension InventoryItem: Transferable {
