@@ -71,7 +71,7 @@ let items: [InfoItem] = [
         categories: [.colostomy, .ileostomy, .urostomy],
         modelPosition: [0, -0.2, 0],
         modelScale: [0.4, 0.4, 0.4],
-        modelRotation: [90 , 0 ,0]
+        modelRotation: [0 , 90 ,0]
     ),
     InfoItem(
         title: "infoitem_scissors_title",
