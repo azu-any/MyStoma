@@ -167,10 +167,14 @@ struct CustomModalView: View {
             .overlay(alignment: .bottomTrailing) {
                 // Start button with glassmorphism
                 Button {
-                    dismiss()
-                    router.path.append(.colostomy)
+                    if !data.disabledSection {
+                        dismiss()
+                        if let destination = data.navView {
+                            router.path.append(.colostomy) // You may want to make this dynamic
+                        }
+                    }
                 } label: {
-                    Text("Start")
+                    Text(data.disabledSection ? "Coming Soon" : "Start")
                         .fontWeight(.semibold)
                         .padding(.horizontal, 30)
                         .padding(.vertical, 12)
@@ -180,16 +184,7 @@ struct CustomModalView: View {
                                 .fill(.regularMaterial)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 20)
-                                        .fill(Color.bluePrimaryColor
-//                                            LinearGradient(
-//                                                gradient: Gradient(colors: [
-//                                                    Color.bluePrimaryColor.opacity(0.8),
-//                                                    Color.blueSecondary.opacity(0.6)
-//                                                ]),
-//                                                startPoint: .topLeading,
-//                                                endPoint: .bottomTrailing
-//                                            )
-                                        )
+                                        .fill(data.disabledSection ? Color.gray : Color.bluePrimaryColor)
                                 )
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 20)
@@ -199,7 +194,7 @@ struct CustomModalView: View {
                 }
                 .padding(.bottom, 30)
                 .padding(.trailing, 30)
-                .disabled(data.navView == nil)
+                .disabled(data.disabledSection)
             }
         }
     }
