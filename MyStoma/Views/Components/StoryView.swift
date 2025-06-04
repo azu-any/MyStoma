@@ -111,7 +111,7 @@ struct StoryView: View {
                 .transition(.scale)
         }*/
         .sheet(isPresented: $showModal) {
-            CustomModalView(isPresented: $showModal, data: data)
+            CustomModalView2(isPresented: $showModal, data: data)
                 .presentationDetents([.large])
                 .presentationDragIndicator(.hidden)
                 .presentationBackground(.clear)
