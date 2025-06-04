@@ -66,7 +66,7 @@ struct MenuCard: View {
             MenuCard(card: CardData(type: "colostomy",
                                     title: "Colostomy",
                                     subtitle: "Colon stoma",
-                                    imageName: "colostomyImage",
+                                    imageName: "Untitled_Artwork 2",
                                     imageModal: "colostomyModalImage",
                                     description: "A surgically created opening from the colon to the abdominal wall.",
                                     navView: AnyView(ColostomyView()),
