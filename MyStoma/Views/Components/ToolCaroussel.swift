@@ -25,7 +25,8 @@ struct ToolCaroussel: View {
                         InfoItemCardView(item: item)
                     }
                 }
-                //.padding()
+                .padding(.horizontal)
+                .padding(.vertical, 4) 
             }
         }
     }

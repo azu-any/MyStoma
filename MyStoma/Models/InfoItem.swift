@@ -44,6 +44,7 @@ struct InfoItem: Identifiable, Equatable {
 
 
 let items: [InfoItem] = [
+
     InfoItem(
         title: "infoitem_onepiecebag_title",
         description: "infoitem_onepiecebag_description",
@@ -72,24 +73,6 @@ let items: [InfoItem] = [
         modelScale: [0.4, 0.4, 0.4]
     ),
     InfoItem(
-        title: "infoitem_scissors_title",
-        description: "infoitem_scissors_description",
-        imageName: "Scissors",
-        modelName: "scissors",
-        categories: [.colostomy, .ileostomy, .urostomy],
-        modelPosition: [0, -0.3, 0],
-        modelScale: [0.6, 0.6, 0.6]
-    ),
-    InfoItem(
-        title: "infoitem_barrierring_title",
-        description: "infoitem_barrierring_description",
-        imageName: "Ring",
-        modelName: "Paste",
-        categories: [.colostomy, .ileostomy, .urostomy],
-        modelPosition: [0, 0.3, 0],
-        modelScale: [0.4, 0.4, 0.4]
-    ),
-    InfoItem(
         title: "infoitem_wipes_title",
         description: "infoitem_wipes_description",
         imageName: "Cloth",
@@ -108,6 +91,25 @@ let items: [InfoItem] = [
         modelPosition: [0, 0.1, 0],
         modelScale: [2, 2, 2]
     ),
+    InfoItem(
+        title: "infoitem_barrierring_title",
+        description: "infoitem_barrierring_description",
+        imageName: "Ring",
+        modelName: "Paste",
+        categories: [.colostomy, .ileostomy, .urostomy],
+        modelPosition: [0, 0.3, 0],
+        modelScale: [0.4, 0.4, 0.4]
+    ),
+    InfoItem(
+        title: "infoitem_scissors_title",
+        description: "infoitem_scissors_description",
+        imageName: "Scissors",
+        modelName: "scissors",
+        categories: [.colostomy, .ileostomy, .urostomy],
+        modelPosition: [0, -0.3, 0],
+        modelScale: [0.6, 0.6, 0.6]
+    ),
+
 ]
 
 extension InfoItem {
