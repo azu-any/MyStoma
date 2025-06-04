@@ -372,6 +372,9 @@
         }
       }
     },
+    "Colostomy Leaving It Beh9ind" : {
+
+    },
     "colostomy_subtitle" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -486,6 +489,7 @@
       }
     },
     "Dislexia Font" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1234,6 +1238,9 @@
         }
       }
     },
+    "Next View" : {
+
+    },
     "No definition found" : {
       "localizations" : {
         "en" : {
@@ -1604,6 +1611,9 @@
           }
         }
       }
+    },
+    "This is a preview of the colostomy content for demonstration purposes." : {
+
     },
     "Tools" : {
       "localizations" : {

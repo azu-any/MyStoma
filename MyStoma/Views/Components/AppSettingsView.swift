@@ -3,6 +3,15 @@ import SwiftUI
 struct AppSettingsView: View {
     @AppStorage("useDyslexiaFont") private var useDyslexiaFont = false
     @AppStorage("skinColorSelection") private var skinColorSelection = "LightColor"
+    
+    let orderedSkinColorKeys = ["LighterColor", "LightColor", "DarkColor", "DarkerColor"]
+    
+    let skinColorDescriptions: [String: String] = [
+        "LighterColor": "Lightest skin tone",
+        "LightColor": "Light skin tone",
+        "DarkColor": "Dark skin tone",
+        "DarkerColor": "Darkest skin tone"
+    ]
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -10,13 +19,16 @@ struct AppSettingsView: View {
                 .font(.headline)
                 .frame(maxWidth: .infinity, alignment: .center)
 
-            Toggle("Dislexia Font", isOn: $useDyslexiaFont)
+            //No dislexia font for now
+            
+            /*Toggle("Dislexia Font", isOn: $useDyslexiaFont)*/
 
             Text("Skin Color")
             
             HStack(spacing: 15) {
-                ForEach(Array(skinColors.keys), id: \.self) { key in
+                ForEach(orderedSkinColorKeys, id: \.self) { key in
                     let color = skinColors[key] ?? .clear
+                    let description = skinColorDescriptions[key] ?? "Skin color"
                     Circle()
                         .fill(color)
                         .frame(width: 32, height: 32)
@@ -27,6 +39,10 @@ struct AppSettingsView: View {
                         .onTapGesture {
                             skinColorSelection = key
                         }
+                        .accessibilityLabel(Text(description))
+                        .accessibilityAddTraits(
+                            skinColorSelection == key ? .isSelected : []
+                        )
                 }
             }
         }
