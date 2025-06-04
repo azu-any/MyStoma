@@ -78,8 +78,8 @@ extension CardData {
             type: "story",
             title: "One Stoma, Two Miracles",
             subtitle: "Patrizia Nazzarro",
-            imageName: "NurseLeft",
-            imageModal: "NurseLeft",
+            imageName: "story1",
+            imageModal: "story1",
             description: """
 Elena was 28 when she was diagnosed with inflammatory bowel disease that required an ileostomy. Two years later, she and her husband Marco decided to try for a baby. "I was terrified at first," Elena says. "I thought the stoma would keep me from being a normal mother."
 
@@ -135,8 +135,8 @@ Today Sofia is three years old and Elena is pregnant with her second child. "My 
             type: "story",
             title: "First Dive Into Hope",
             subtitle: "Patrizia Nazzarro",
-            imageName: "NurseLeft",
-            imageModal: "NurseLeft",
+            imageName: "story22",
+            imageModal: "story2",
             description: """
 When Luca discovered he had to live with a stoma, the world seemed to stop. He had just experienced one of the most intense moments of his life — the birth of his first child — and immediately afterwards he found himself facing a new, completely unexpected reality. A stoma. A difficult word, a radical change, a wound that seemed to be more of a wound to the soul than to the body.
 
@@ -192,8 +192,8 @@ Every day, thousands of people live, work, love, travel, play sports, and enjoy 
             type: "story",
             title: "From Stoma Care to Clinics",
             subtitle: "Giuseppe Fama, Stomatherapist",
-            imageName: "NurseLeft",
-            imageModal: "NurseLeft",
+            imageName: "story33",
+            imageModal: "story3",
             description: """
 If you’ve just had a stoma or are preparing for surgery, you might feel overwhelmed and unsure where to turn. That’s where the stoma care clinic comes in. It’s a specialized service led by trained stoma care nurses who will guide you step by step, helping you adjust, learn, and regain your independence.
 
