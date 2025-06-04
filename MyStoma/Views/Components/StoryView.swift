@@ -35,23 +35,25 @@ struct StoryView: View {
                 }
             }) {
                 
-                HStack(alignment: .top, spacing: 16) {
+                HStack(alignment: .center, spacing: 16) {
                     
                     Image(data.imageName)
                         .resizable()
-                        .aspectRatio(1, contentMode: .fit)
+                        //.aspectRatio(1, contentMode: .fill)
                         //.frame(maxWidth: 100, minHeight: 100)
                         #if os(iOS)
                         .frame(width: UIScreen.main.bounds.width * 0.1,
                                height: UIScreen.main.bounds.width * 0.1)
                         #endif
-                        .cornerRadius(14)
+                        .cornerRadius(20)
+                        
                     
                     // Title and subtitle
                     VStack(alignment: .leading, spacing: 4) {
                         Text(data.title)
                             .font(.headline)
                             .foregroundColor(.black)
+                            .padding(.top,8)
                         
                         Text("“\(data.quote ?? "No quote")”")
                             //.padding(.top, 10)
@@ -59,7 +61,7 @@ struct StoryView: View {
                             .minimumScaleFactor(0.5)
                             .multilineTextAlignment(.leading)
                             .foregroundColor(.gray)
-                        Spacer()
+                        //Spacer()
                         HStack() {
                             Spacer()
                             
@@ -67,17 +69,26 @@ struct StoryView: View {
                                 .font(.subheadline.bold())
                                 .frame(alignment: .topLeading)
                                 .foregroundColor(.gray)
+                                .padding()
                         }
                     }
                 }
-                .padding()
-                .background(Color.white)
+                //.padding()
+                .background(
+                   .white
+                    /*LinearGradient(
+                        gradient: Gradient(colors: [Color.white.opacity(0.8), Color.white.opacity(0.8)]),
+                        startPoint: .leading, //top
+                        endPoint: .trailing //bottom
+                    )*/
+                )
                 .cornerRadius(20)
-                .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
+                /*.shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)*/
                 #if os(iOS)
                 .frame(width: UIScreen.main.bounds.width * 0.4,
                        height: UIScreen.main.bounds.width * 0.12)
                 #endif
+                .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 0)
                 
             }
             .scaleEffect(animateTap ? 0.95 : 1.0)
@@ -114,8 +125,8 @@ struct StoryView: View {
             type: "content",
             title: "Colostomy Leaving It Beh9ind",
             subtitle: "Martha Mendoza",
-            imageName: "NurseLeft",
-            imageModal: "Untitled_Artwork",
+            imageName: "story1",
+            imageModal: "story1",
             description: "This is a preview of the colostomy content for demonstration purposes.",
             navView: AnyView(Text("Next View")),
             quote: "I couldn't let my urostomy change my love for sports and change who I am."

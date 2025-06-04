@@ -33,13 +33,16 @@ struct MenuCaroussel: View {
                         }
                     }
                 }
-                //.padding()
+                //.padding(.top)
+                //.padding(.bottom)
+                .padding(.horizontal)
+                .padding(.vertical, 4) 
             }
         }
     }
 }
 
 #Preview {
-    MenuCaroussel(data: CardData.storyData)
+    MenuCaroussel(data: CardData.sampleData)
 }
 

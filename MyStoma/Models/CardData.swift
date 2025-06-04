@@ -40,7 +40,7 @@ extension CardData {
             type: "content",
             title: "Colostomy",
             subtitle: "COLON STOMA",
-            imageName: "Colostomia",
+            imageName: "colostomia2",
             imageModal: "Untitled_Artwork",
             description: "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. \n\nA colostomy is a surgical opening on the abdomen, called a stoma, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. \n\nIt can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!",
             navView: AnyView(ColostomyView())
@@ -49,7 +49,7 @@ extension CardData {
             type: "content",
             title: "Ileostomy",
             subtitle: "SMALL INTESTINE STOMA",
-            imageName: "Ileostomia",
+            imageName: "ileostomia2",
             imageModal: "Untitled_Artwork 2",
             description: "In this section you will learn what an ileostomy is, how it functions and what you need to know for your daily routine. \n\nAn ileostomy is a surgically created opening in the abdomen, called a stoma, that diverts the flow of intestinal waste from the small intestine directly to the outside of the body, where it is collected in a specialized adhesive pouch. \n\nThis procedure can be either temporary or permanent, based on your specific medical needs. The waste no longer travels through the large intestine and rectum but exits through the stoma into a collection bag. Because the output comes from the small intestine, it tends to be more liquid and frequent than other types of ostomies. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!"
         ),
@@ -57,7 +57,7 @@ extension CardData {
             type: "content",
             title: "Urostomy",
             subtitle: "BLADDER STOMA",
-            imageName: "Urostomia",
+            imageName: "urostomia2",
             imageModal: "Untitled_Artwork 3",
             description: "In this section you will learn what a urostomy is, how it functions and what you need to know for managing it in your daily life. \n\nA urostomy is a surgically created opening in the abdomen, called a stoma, that redirects urine from the kidneys directly to the outside of the body, where it is collected in a specialized adhesive pouch system. \n\nThis procedure is usually permanent and is performed when the bladder cannot function properly or needs to be removed. The urine no longer flows through the bladder but exits continuously through the stoma into a collection bag. Since urine production is constant, urostomy bags typically need to be emptied more frequently and often include a drainage tap for easy emptying. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!"
         )
@@ -68,8 +68,8 @@ extension CardData {
             type: "story",
             title: "Living with a Stoma",
             subtitle: "Martha Mendoza",
-            imageName: "NurseLeft",
-            imageModal: "NurseLeft",
+            imageName: "story1",
+            imageModal: "story1",
             description: "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive.",
             navView: AnyView(ColostomyView()),
             quote: "My stoma is a constant reminder of what I’ve lost. But it’s also a symbol of my strength."

@@ -486,6 +486,7 @@
       }
     },
     "Dislexia Font" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1650,6 +1651,7 @@
       }
     },
     "Urostomia" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
