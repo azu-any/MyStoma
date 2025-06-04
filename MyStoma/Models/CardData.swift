@@ -78,7 +78,7 @@ extension CardData {
             type: "story",
             title: "Feeling Invisible",
             subtitle: "Anna Paola",
-            imageName: "story2",
+            imageName: "story22",
             imageModal: "story2",
             description: "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible.",
             quote: "I had difficulties everyday, but it seemed that for the rest of the world I was still the same."
@@ -88,8 +88,8 @@ extension CardData {
             type: "story",
             title: "Keep Doing Sports",
             subtitle: "Francesco Pogliare",
-            imageName: "NurseLeft",
-            imageModal: "NurseLeft",
+            imageName: "story33",
+            imageModal: "story3",
             description: "Soccer was my life, and after my urostomy, I thought it was gone. I was scared to move too much, to get tackled, to leak. But my coach said, “Come back. We’ll figure it out.” I trained slow. I tried different bags. The first match back, I was terrified. Then I scored. My team lifted me in the air, and I cried like a baby. I still have my urostomy, but now I also have my confidence, my team, and my game back.",
             quote: "I couldn't let my urostomy change my love for sports and change who I am."
         )
