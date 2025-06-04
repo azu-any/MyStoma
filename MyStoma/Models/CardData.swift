@@ -51,7 +51,7 @@ extension CardData {
             subtitle: "SMALL INTESTINE STOMA",
             imageName: "ileostomia2",
             imageModal: "Untitled_Artwork 2",
-            description: "Coming Soon!",
+            description: "Coming Soon!"
          
 //                "In this section you will learn what an ileostomy is, how it functions and what you need to know for your daily routine. \n\nAn ileostomy is a surgically created opening in the abdomen, called a stoma, that diverts the flow of intestinal waste from the small intestine directly to the outside of the body, where it is collected in a specialized adhesive pouch. \n\nThis procedure can be either temporary or permanent, based on your specific medical needs. The waste no longer travels through the large intestine and rectum but exits through the stoma into a collection bag. Because the output comes from the small intestine, it tends to be more liquid and frequent than other types of ostomies. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!"
         ),
@@ -61,7 +61,7 @@ extension CardData {
             subtitle: "BLADDER STOMA",
             imageName: "urostomia2",
             imageModal: "Untitled_Artwork 3",
-            description: "Coming Soon!",
+            description: "Coming Soon!"
            
 //                "In this section you will learn what a urostomy is, how it functions and what you need to know for managing it in your daily life. \n\nA urostomy is a surgically created opening in the abdomen, called a stoma, that redirects urine from the kidneys directly to the outside of the body, where it is collected in a specialized adhesive pouch system. \n\nThis procedure is usually permanent and is performed when the bladder cannot function properly or needs to be removed. The urine no longer flows through the bladder but exits continuously through the stoma into a collection bag. Since urine production is constant, urostomy bags typically need to be emptied more frequently and often include a drainage tap for easy emptying. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!"
         )
@@ -82,8 +82,8 @@ extension CardData {
             type: "story",
             title: "Feeling Invisible",
             subtitle: "Anna Paola",
-            imageName: "NurseLeft",
-            imageModal: "NurseLeft",
+            imageName: "story22",
+            imageModal: "story2",
             description: "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible.",
             quote: "I had difficulties everyday, but it seemed that for the rest of the world I was still the same."
             
@@ -92,8 +92,8 @@ extension CardData {
             type: "story",
             title: "Keep Doing Sports",
             subtitle: "Francesco Pogliare",
-            imageName: "NurseLeft",
-            imageModal: "NurseLeft",
+            imageName: "story33",
+            imageModal: "story3",
             description: "Soccer was my life, and after my urostomy, I thought it was gone. I was scared to move too much, to get tackled, to leak. But my coach said, “Come back. We’ll figure it out.” I trained slow. I tried different bags. The first match back, I was terrified. Then I scored. My team lifted me in the air, and I cried like a baby. I still have my urostomy, but now I also have my confidence, my team, and my game back.",
             quote: "I couldn't let my urostomy change my love for sports and change who I am."
         )
