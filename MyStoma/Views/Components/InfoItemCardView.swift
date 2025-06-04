@@ -27,13 +27,13 @@ struct InfoItemCardView: View {
                     Rectangle()
                         .fill(
                             LinearGradient(
-                                gradient: Gradient(colors: [Color.bluePrimary.opacity(0.7), Color.blueSecondaryColor.opacity(0.9)]),
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
+                                gradient: Gradient(colors: [Color.white.opacity(0.8), Color.white.opacity(0.8)]),
+                                startPoint: .leading, //top
+                                endPoint: .trailing //bottom
                             )
                         )
                         .cornerRadius(20)
-                        .opacity(0.5)
+                        //.opacity(0.5)
                         
                         Image(item.imageName)
                             .resizable()
@@ -66,7 +66,7 @@ struct InfoItemCardView: View {
                 #endif
         }
 
-        .shadow(radius: 5)
+        .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 0)
         //.padding()
     }
 }

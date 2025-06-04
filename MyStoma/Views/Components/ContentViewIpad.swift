@@ -19,26 +19,16 @@ struct ContentViewIpad: View {
                 }
             }) {
                 ZStack {
-                    HStack(alignment: .center) {
-                        Image(data.imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            #if os(iOS)
-                            .frame(width: UIScreen.main.bounds.width * 0.3,
-                                   height: UIScreen.main.bounds.width * 0.17)
-                            .clipped()
-                            #endif
-                    }
 
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(data.subtitle)
+                        /*Text(data.subtitle)
                             .font(.title)
                             .bold()
                             .foregroundColor(.white)
                             .lineLimit(1)
                             .minimumScaleFactor(0.5)
                             .padding(.bottom, 4)
-                            .padding(.top, 120)
+                            .padding(.top, 120)*/
 
                         Text(data.title)
                             .font(.title)
@@ -54,33 +44,55 @@ struct ContentViewIpad: View {
                     #endif
                     .background(
                         LinearGradient(
+                            /*gradient: Gradient(colors: [.bluePrimary, .bluePrimary.opacity(0.5)]),*/
                             gradient: Gradient(stops: [
-                                .init(color: Color.clear, location: 0.0),
-                                .init(color: Color.bluePrimary.opacity(0.6), location: 0.5),
-                                .init(color: Color.blueSecondaryColor.opacity(0.8), location: 1.0)
+                                .init(color: .bluePrimary, location: 0.0),
+                                .init(color: .bluePrimary.opacity(0.6), location: 0.5),
+                                .init(color: .bluePrimary.opacity(0.2), location: 1.0)
+                                ]),
+                            startPoint: .leading, endPoint: .trailing
+                            
+                            
+                            /*gradient: Gradient(stops: [
+                                //.init(color: Color.clear, location: 0.0),
+                                .init(color: Color.blueSecondary.opacity(0.6), location: 0.5),
+                                .init(color: Color.bluePrimaryColor.opacity(0.8), location: 1.0)
                             ]),
-                            startPoint: .topTrailing,
-                            endPoint: .bottomLeading
+                            startPoint: .leading,
+                            endPoint: .topTrailing
+                             */
                         )
                     )
                     
+                    
+                    HStack(alignment: .center) {
+                        Image(data.imageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            #if os(iOS)
+                            .frame(width: UIScreen.main.bounds.width * 0.3,
+                                   height: UIScreen.main.bounds.width * 0.17)
+                            .clipped()
+                            #endif
+                    }
+                    
                 }
-                .background(
+                /*.background(
                     LinearGradient(
                         gradient: Gradient(stops: [
-                            .init(color: Color.white.opacity(0.8), location: 0.0),
-                            .init(color: Color.bluePrimary.opacity(0.0), location: 0.5),
-                            .init(color: Color.blue.opacity(0.0), location: 1.0)
+                            .init(color: Color.blueSecondaryColor.opacity(0.8), location: 0.0),
+                            .init(color: Color.bluePrimaryColor.opacity(0.0), location: 0.5),
+                            .init(color: Color.bluePrimaryColor.opacity(0.0), location: 1.0)
                         ]),
-                        startPoint: .top,
-                        endPoint: .leading
+                        startPoint: .leading,
+                        endPoint: .trailing
                     )
-                )
+                )*/
             }
-            .background(
+            /*.background(
                 LinearGradient(gradient: Gradient(colors: [.bluePrimary.opacity(0.6), .black.opacity(0)]),
                                startPoint: .leading, endPoint: .trailing)
-            )
+            )*/
             .cornerRadius(20)
             .scaleEffect(animateTap ? 0.95 : 1.0)
             .animation(.spring(duration: 0.7), value: animateTap)
