@@ -21,7 +21,7 @@ struct ToolCaroussel: View {
         HStack {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
-                    ForEach(sortedItems) { item in
+                    ForEach(items) { item in
                         InfoItemCardView(item: item)
                     }
                 }

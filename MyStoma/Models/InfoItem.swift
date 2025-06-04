@@ -46,6 +46,24 @@ struct InfoItem: Identifiable, Equatable {
 let items: [InfoItem] = [
 
     InfoItem(
+        title: "infoitem_onepiecebag_title",
+        description: "infoitem_onepiecebag_description",
+        imageName: "Cleanstomabag",
+        modelName: "Cleanstoma",
+        categories: [.colostomy, .ileostomy],
+        modelPosition: [0, 0.5, 0],
+        modelScale: [1.9, 1.9, 1.9]
+    ),
+    InfoItem(
+        title: "infoitem_stomasizer_title",
+        description: "infoitem_stomasizer_description",
+        imageName: "Measure",
+        modelName: "StomaSizer",
+        categories: [.colostomy, .ileostomy, .urostomy],
+        modelPosition: [0, -0.3, 0],
+        modelScale: [0.8, 0.8, 0.8]
+    ),
+    InfoItem(
         title: "infoitem_adhesiveremover_title",
         description: "infoitem_adhesiveremover_description",
         imageName: "AdhesiveRemover",
@@ -53,15 +71,6 @@ let items: [InfoItem] = [
         categories: [.colostomy, .ileostomy, .urostomy],
         modelPosition: [0, -0.6, 0],
         modelScale: [0.4, 0.4, 0.4]
-    ),
-    InfoItem(
-        title: "infoitem_wastebag_title",
-        description: "infoitem_wastebag_description",
-        imageName: "WasteBag",
-        modelName: "WasteBag",
-        categories: [.colostomy, .ileostomy, .urostomy],
-        modelPosition: [0, 0.1, 0],
-        modelScale: [2, 2, 2]
     ),
     InfoItem(
         title: "infoitem_wipes_title",
@@ -74,22 +83,13 @@ let items: [InfoItem] = [
         modelRotation: [90 , 0 ,0]
     ),
     InfoItem(
-        title: "infoitem_scissors_title",
-        description: "infoitem_scissors_description",
-        imageName: "Scissors",
-        modelName: "scissors",
+        title: "infoitem_wastebag_title",
+        description: "infoitem_wastebag_description",
+        imageName: "WasteBag",
+        modelName: "WasteBag",
         categories: [.colostomy, .ileostomy, .urostomy],
-        modelPosition: [0, -0.3, 0],
-        modelScale: [0.6, 0.6, 0.6]
-    ),
-    InfoItem(
-        title: "infoitem_onepiecebag_title",
-        description: "infoitem_onepiecebag_description",
-        imageName: "Cleanstomabag",
-        modelName: "Cleanstoma",
-        categories: [.colostomy, .ileostomy],
-        modelPosition: [0, 0.5, 0],
-        modelScale: [1.9, 1.9, 1.9]
+        modelPosition: [0, 0.1, 0],
+        modelScale: [2, 2, 2]
     ),
     InfoItem(
         title: "infoitem_barrierring_title",
@@ -101,14 +101,15 @@ let items: [InfoItem] = [
         modelScale: [0.4, 0.4, 0.4]
     ),
     InfoItem(
-        title: "infoitem_stomasizer_title",
-        description: "infoitem_stomasizer_description",
-        imageName: "Measure",
-        modelName: "StomaSizer",
+        title: "infoitem_scissors_title",
+        description: "infoitem_scissors_description",
+        imageName: "Scissors",
+        modelName: "scissors",
         categories: [.colostomy, .ileostomy, .urostomy],
         modelPosition: [0, -0.3, 0],
-        modelScale: [0.8, 0.8, 0.8]
+        modelScale: [0.6, 0.6, 0.6]
     ),
+
 ]
 
 extension InfoItem {
