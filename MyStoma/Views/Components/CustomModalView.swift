@@ -85,18 +85,22 @@ struct CustomModalView: View {
                     // Image section
                     ZStack {
                         Rectangle()
-                            .fill(Color.blueSecondaryColor.opacity(0.2))
+                            .fill(Color.bluePrimary)
+                            LinearGradient(  gradient: Gradient(colors: [Color.white.opacity(0.2), Color.clear]),
+                                             startPoint: .top,
+                                             endPoint: .bottom)
+//                            .fill(Color.blueSecondaryColor.opacity(0.2))
                         
                         Image(data.imageModal)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .clipped()
                         
-                        LinearGradient(
-                            gradient: Gradient(colors: [Color.bluePrimary.opacity(0.4), Color.clear]),
-                            startPoint: .bottom,
-                            endPoint: .top
-                        )
+//                        LinearGradient(
+//                            gradient: Gradient(colors: [Color.bluePrimary.opacity(0.4), Color.clear]),
+//                            startPoint: .bottom,
+//                            endPoint: .top
+//                        )
                     }
                     #if os(iOS)
                     .frame(maxWidth: UIScreen.main.bounds.width * 0.28)
@@ -176,15 +180,15 @@ struct CustomModalView: View {
                                 .fill(.regularMaterial)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 20)
-                                        .fill(
-                                            LinearGradient(
-                                                gradient: Gradient(colors: [
-                                                    Color.bluePrimaryColor.opacity(0.8),
-                                                    Color.blueSecondary.opacity(0.6)
-                                                ]),
-                                                startPoint: .topLeading,
-                                                endPoint: .bottomTrailing
-                                            )
+                                        .fill(Color.bluePrimaryColor
+//                                            LinearGradient(
+//                                                gradient: Gradient(colors: [
+//                                                    Color.bluePrimaryColor.opacity(0.8),
+//                                                    Color.blueSecondary.opacity(0.6)
+//                                                ]),
+//                                                startPoint: .topLeading,
+//                                                endPoint: .bottomTrailing
+//                                            )
                                         )
                                 )
                                 .overlay(
