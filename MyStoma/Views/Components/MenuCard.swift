@@ -46,7 +46,7 @@ struct MenuCard: View {
             }
             .padding()
             .background(
-                LinearGradient(gradient: Gradient(colors: [.blue.opacity(1), .black.opacity(0)]),
+                LinearGradient(gradient: Gradient(colors: [.bluePrimaryColor.opacity(1), .bluePrimaryColor.opacity(0)]),
                                startPoint: .leading, endPoint: .trailing)
             )
             .cornerRadius(20)
@@ -72,3 +72,7 @@ struct MenuCard_Previews: PreviewProvider {
     }
 
 */
+
+#Preview{
+    MenuView()
+}
