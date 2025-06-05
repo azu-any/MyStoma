@@ -49,7 +49,7 @@ struct AppSettingsView: View {
         .animation(.easeInOut, value: useDyslexiaFont)
         .padding()
         .frame(width: 260)
-        .background(.ultraThinMaterial)
+        //.background(.ultraThinMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
 }
