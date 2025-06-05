@@ -127,15 +127,20 @@ A stoma is not a barrier to aquatic sports. With proper equipment, planning, and
             imageName: "story33",
             imageModal: "story3",
             description: """
-If you’ve just had a stoma or are preparing for surgery, you might feel overwhelmed and unsure where to turn. That’s where the stoma care clinic comes in. It’s a specialized service led by trained stoma care nurses who will guide you step by step, helping you adjust, learn, and regain your independence.
+If you've just received a stoma, the specialized clinic becomes your primary ally. Here you'll find specialized nurses who guide you step by step toward independence. You're not alone in this journey: these centers exist specifically to support you in transitioning to normal life.
 
-Support begins right after surgery, often while you're still in the hospital. But the real journey starts after you're home, especially in the first month, when your stoma changes shape and you face many new challenges. These clinics welcome everyone, even if your surgery was done elsewhere, and they're there for you for life.
+**When to Access the Service**
+You can contact the clinic immediately after surgery, during the critical first month when the stoma changes shape and size, and for life whenever you need help. The service is open to all stoma patients, regardless of where you had your surgery.
 
-In follow up visits, you’ll learn how to care for your stoma daily, keeping your skin healthy, changing appliances correctly, and choosing the right products. You'll also learn how to spot and manage problems like leaks, irritation, or changes in your stoma.
+**What You'll Learn**
+During visits you'll learn daily management: perfect hygiene to keep skin healthy, when and how to change baseplates and pouches, which collection system suits you best. You'll learn to recognize and prevent problems like skin irritation, leaks from poor adhesion, stoma changes, and bowel blockages.
 
-You won’t be alone. Alongside the nurse, specialists like gastroenterologists, nutritionists, psychologists, or oncologists may support your care.
+**The Support Team**
+The stoma care nurse will be your main reference, but you can also access a gastroenterologist for digestive problems, nutritionist to adapt your diet, psychologist for free emotional support, and oncologist if needed.
 
-If anything feels wrong, pain, color changes, or fever, don’t wait. The clinic is your lifeline. It's not just a medical service, but a key part of living well with a stoma.
+**Warning Signs**
+Contact the clinic immediately if the stoma becomes dark or black, you have severe continuous pain, haven't had a bowel movement for over 24 hours, have high fever with chills, or surrounding skin is very red and painful. Call within 24 hours for significant color changes, frequent leaks, persistent irritations, or urgent questions.
+The stoma care clinic is your most important ally. Don't hesitate to use this service: it's made specifically for you and will help you discover that your stoma isn't an obstacle, but a solution to continue living life fully.
 """,
             quote: "Everything You Need to Know About Getting Professional Support for Your Stoma Journey"
         )
