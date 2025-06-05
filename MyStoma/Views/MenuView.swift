@@ -122,8 +122,10 @@ struct InfoModalView: View {
                 Text("Disclaimer & Citations")
                     .font(.title)
                     .bold()
-                Text("This app is intended for educational and informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with any questions you may have regarding a medical condition. All data, references, and methodologies used in the app are transparently documented. You can review the full list of citations and supporting materials at the following link:")
+                Text("This app is intended for educational and informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with any questions you may have regarding a medical condition. \n\nAll data, references, and methodologies used in the app are transparently documented. You can review the full list of citations and supporting materials down below.")
                 Spacer()
+                Link("View Disclamer & Citations",
+                      destination: URL(string: "https://burly-paddleboat-08e.notion.site/Disclaimer-Citations-209edfd114ce80809264f42020663388")!)
             }
             .padding()
             
