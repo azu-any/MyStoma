@@ -8,6 +8,7 @@ struct MenuView: View {
     let categories = [nil] + StomaCategory.allCases
     @State private var showCategoryPicker: Bool = false
     @State var selectedItem: InfoItem?
+    @State private var showInfoModal = false
     
     let items: [InfoItem] = InfoItem.sampleItems
     
@@ -16,7 +17,7 @@ struct MenuView: View {
         NavigationStack(path: $router.path) {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
-                
+                    
                     Text("Practice with Simulators")
                         .font(.title2)
                         .bold()
@@ -57,7 +58,7 @@ struct MenuView: View {
                             .frame(width: 250)
                         }
                     }
-                        
+                    
                     ToolCaroussel(
                         items: items.filter { selectedCategory == nil || $0.categories.contains(selectedCategory!) },
                         selectedItem: .constant(nil)
@@ -71,7 +72,7 @@ struct MenuView: View {
                     MenuCaroussel(data: CardData.storyData)
                 }
                 //.padding(.leading)
-
+                
                 //.background(Color.white.ignoresSafeArea())
             }
             .onAppear {
@@ -85,6 +86,14 @@ struct MenuView: View {
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Button {
+                        showInfoModal.toggle()
+                    } label: {
+                        Image(systemName: "info.circle.fill")
+                    }
+                }
+                
+                ToolbarItem(placement: .primaryAction) {
+                    Button {
                         showSettingsPopover.toggle()
                     } label: {
                         Image(systemName: "gearshape.fill")
@@ -94,14 +103,40 @@ struct MenuView: View {
                     }
                 }
             }
+            .sheet(isPresented: $showInfoModal) {
+                InfoModalView()
+            }
             .navigationTitle("Explore & Learn")
         }
         .environmentObject(router)
         //.background(Color.white.ignoresSafeArea())
-
+        
     }
 }
 
+struct InfoModalView: View {
+    @Environment(\.dismiss) private var dismiss
+    var body: some View {
+        ZStack(alignment: .topTrailing) {
+            VStack(spacing: 20) {
+                Text("Disclaimer & Citations")
+                    .font(.title)
+                    .bold()
+                Text("This app is intended for educational and informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with any questions you may have regarding a medical condition. All data, references, and methodologies used in the app are transparently documented. You can review the full list of citations and supporting materials at the following link:")
+                Spacer()
+            }
+            .padding()
+            
+            Button(action: {
+                dismiss()
+            }) {
+                Image(systemName: "xmark.circle.fill")
+                    .imageScale(.large)
+                    .padding()
+            }
+        }
+    }
+}
 
 #Preview {
     MenuView()

@@ -12,6 +12,7 @@ struct CustomModalView: View {
     @Environment(\.dismiss) var dismiss
     @Binding var isPresented: Bool
     let data: CardData
+    @State private var showConfirmation = false
     
     var body: some View {
         ZStack {
@@ -167,12 +168,7 @@ struct CustomModalView: View {
             .overlay(alignment: .bottomTrailing) {
                 // Start button with glassmorphism
                 Button {
-                    if !data.disabledSection {
-                        dismiss()
-                        if let destination = data.navView {
-                            router.path.append(.colostomy) // You may want to make this dynamic
-                        }
-                    }
+                    showConfirmation = true
                 } label: {
                     Text(data.disabledSection ? "Coming Soon" : "Start")
                         .fontWeight(.semibold)
@@ -195,6 +191,17 @@ struct CustomModalView: View {
                 .padding(.bottom, 30)
                 .padding(.trailing, 30)
                 .disabled(data.disabledSection)
+                .alert("Important Notice", isPresented: $showConfirmation) {
+                    Button("Confirm", role: .destructive) {
+                        dismiss()
+                        if let destination = data.navView {
+                            router.path.append(.colostomy) // Update to dynamic routing if needed
+                        }
+                    }
+                    Button("Cancel", role: .cancel) { }
+                } message: {
+                    Text("This simulator is just a tool, not a diagnosis. Consult your doctor.")
+                }
             }
         }
     }
@@ -215,5 +222,6 @@ struct CustomModalView_Previews: PreviewProvider {
                 navView: AnyView(Text("Next View"))
             )
         )
+        .environmentObject(NavigationRouter())
     }
 }
