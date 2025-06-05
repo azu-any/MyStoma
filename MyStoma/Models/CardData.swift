@@ -76,8 +76,8 @@ extension CardData {
             type: "story",
             title: "One Stoma, Two Miracles",
             subtitle: "Patrizia Nazzarro",
-            imageName: "story1",
-            imageModal: "story1",
+            imageName: "story22",
+            imageModal: "story2",
             description: """
 Elena was 28 when she was diagnosed with inflammatory bowel disease that required an ileostomy. Two years later, she and her husband Marco decided to try for a baby. "I was terrified at first," Elena says. "I thought the stoma would keep me from being a normal mother."
 
@@ -133,55 +133,23 @@ Today Sofia is three years old and Elena is pregnant with her second child. "My 
             type: "story",
             title: "First Dive Into Hope",
             subtitle: "Patrizia Nazzarro",
-            imageName: "story22",
-            imageModal: "story2",
+            imageName: "story1",
+            imageModal: "story1",
             description: """
-When Luca discovered he had to live with a stoma, the world seemed to stop. He had just experienced one of the most intense moments of his life — the birth of his first child — and immediately afterwards he found himself facing a new, completely unexpected reality. A stoma. A difficult word, a radical change, a wound that seemed to be more of a wound to the soul than to the body.
+Swimming with a Stoma: Practical Guide & Gill Castle’s Inspiration
+Gill Castle’s Journey: Innovation and Strength
+Gill Castle, a 44-year-old woman living with an ileostomy since 2011, developed a structured approach to overcome the challenges of swimming with a stoma. After years of leaks, she found success using convex bags, which offered better adhesion and security. She trained gradually in the North Sea, increasing exposure to tough conditions.
 
-"I thought my active life was over," he says today. And yet, what seemed like a limitation has turned into one of the greatest — and most beautiful — challenges of his life.
+On September 12, 2023, Gill swam solo across the English Channel in 13 hours and 53 minutes, covering 21 nautical miles. Her stoma appliance remained perfectly sealed, proving it’s possible to swim at high levels with the right preparation.
 
-**Accept, Understand, Start Over**  
-At the beginning, like many, there were moments of fear and uncertainty:
+Practical Tips for Swimming with a Stoma
+Use high-adhesion convex pouches. Apply a barrier spray or protective film 30 minutes before entering water. Change the pouch no more than 2 hours before activity to ensure optimal adhesion. For extra security, use a stoma support belt, especially for long sessions. Always inspect the wafer seal and carry a spare kit.
 
-- How will I dress?  
-- Will I be able to swim, go to the beach?  
-- Will people notice?  
-- Will I be able to hug my son without fear?  
+Medical Guidelines and Cautions
+Wait at least 6–8 weeks post-surgery before swimming to allow full healing. Avoid highly chlorinated or dirty water that may irritate peristomal skin. Swimming is not advised during active skin infections, severe stenosis, or significant prolapse. Start with short 30-minute sessions, increasing gradually.
 
-Over time, Luca has learned that a stoma is not the end, but a new beginning. It is not a sign of weakness, but a demonstration of survival and adaptation. With the right medical support, good nursing guidance and a lot of inner strength, he has discovered that life can be lived to the fullest, even with a bag.
-
-**Technique, Routine and Freedom**  
-Luca has learned to manage his stoma day after day. Here are some of the tips he has made his own and that he shares with those who are starting this journey:
-
--  Choose the right bag for you. There are different types: one-piece, two-piece, with filter, transparent or opaque. Your stoma nurse will help you find the one that best suits your lifestyle.  
--  Prepare a kit to always carry with you. A small beauty case with a spare bag, wipes, plasters, scissors, and a bag for waste. It makes you feel more secure wherever you are.  
--  Respect your skin. Use delicate products for cleaning and, if necessary, protective barriers to avoid irritation.  
--  Be patient with yourself. The first changes may seem complicated, but with practice they will become routine.  
--  Move. Live. Train. After talking to his doctor, Luca gradually returned to the pool. With a wetsuit and waterproof devices, he discovered that he could still swim, just like before. Better than before.  
--  Face fears with words. Talk about them with those close to you. Often, fear is more in our heads than in the eyes of others.
-
-**The English Channel Feat**  
-Three years after his operation, Luca swam across the English Channel. Almost 14 hours in freezing water, without being able to stop.  
-"Every stroke was a way of saying: I am not just my body. I am my strength, my will, my desire to live."  
-That day, on the French coast, not just an athlete arrived. A new, rebuilt man arrived.
-
-**Support That Makes a Difference**  
-Luca has now founded an association that helps those who live with a stoma, offers advice, tells true stories, distributes guides and proposes group and sports meetings.  
-He has created a network that unites those who have already done this journey with those who are starting now.
-
-_Remember: you are not alone._  
-Every day, thousands of people live, work, love, travel, play sports, and enjoy life with a stoma.
-
-**Luca's Message**  
-"We are not broken. We are rebuilt. And often, stronger than before."
-
- **First Steps for You**
-
-1. Trust your stoma therapist. He will guide you through the most delicate days and teach you specific techniques.  
-2. Inform those close to you. Even a little support can make a big difference.  
-3. Find your routine. After a few weeks, management will become automatic.  
-4. Don't give up on what you love. Ask how to adapt, but don't stop dreaming.  
-5. Join a patient network. Sharing experiences is the best medicine for the soul.
+Conclusion
+A stoma is not a barrier to aquatic sports. With proper equipment, planning, and gradual reintroduction, swimming remains safe and empowering. Gill Castle’s example proves that strength is not the absence of change, but the courage to face it—and swim through it.
 """,
             quote: "The sea had not abandoned me… it was I who had to learn to return to it."
             
