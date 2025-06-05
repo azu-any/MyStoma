@@ -2,6 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     "" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es-419" : {
           "stringUnit" : {
@@ -106,9 +107,6 @@
           }
         }
       }
-    },
-    "After the birth of his first child, Luca was told he needed a stoma. Shocked and overwhelmed, he feared life would never be the same. \"I thought everything I loved was over,\" he says.\n\nBut step by step, he adapted. With guidance from his stoma nurse and support from loved ones, Luca regained control.\n\n- Carry a small kit: bag, wipes, scissors  \n- Use gentle skin products  \n- Build a routine—practice brings confidence  \n- Stay active with medical approval  \n\nThree years later, he swam the English Channel—14 hours non-stop. \"That swim proved I'm not just my body,I’m my strength and will.\"\n\nToday, Luca runs a support network for others with stomas. His message is clear:\n\n\"We’re not broken. We’re rebuilt and stronger.\"\n\nFirst steps: Trust your stoma nurse. Inform loved ones. Don’t stop living." : {
-
     },
     "All" : {
       "localizations" : {
@@ -424,6 +422,9 @@
         }
       }
     },
+    "Coming Soon" : {
+
+    },
     "Coming Soon!" : {
 
     },
@@ -667,6 +668,9 @@
           }
         }
       }
+    },
+    "If you’ve just had a stoma or are preparing for surgery, you might feel overwhelmed and unsure where to turn. That’s where the stoma care clinic comes in. It’s a specialized service led by trained stoma care nurses who will guide you step by step, helping you adjust, learn, and regain your independence.\n\nSupport begins right after surgery, often while you're still in the hospital. But the real journey starts after you're home, especially in the first month, when your stoma changes shape and you face many new challenges. These clinics welcome everyone, even if your surgery was done elsewhere, and they're there for you for life.\n\nIn follow up visits, you’ll learn how to care for your stoma daily, keeping your skin healthy, changing appliances correctly, and choosing the right products. You'll also learn how to spot and manage problems like leaks, irritation, or changes in your stoma.\n\nYou won’t be alone. Alongside the nurse, specialists like gastroenterologists, nutritionists, psychologists, or oncologists may support your care.\n\nIf anything feels wrong, pain, color changes, or fever, don’t wait. The clinic is your lifeline. It's not just a medical service, but a key part of living well with a stoma." : {
+
     },
     "Ileostomy" : {
       "localizations" : {

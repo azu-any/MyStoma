@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "lightt.png",
+      "filename" : "iconStoma.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -13,7 +13,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "darki.png",
+      "filename" : "iconStomaDark.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -25,7 +25,7 @@
           "value" : "tinted"
         }
       ],
-      "filename" : "tintedd.png",
+      "filename" : "iconStomaTint.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
