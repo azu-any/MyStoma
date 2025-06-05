@@ -200,7 +200,7 @@ struct CustomModalView: View {
                     }
                     Button("Cancel", role: .cancel) { }
                 } message: {
-                    Text("This simulator is just a tool, not a diagnosis. Consult your doctor.")
+                    Text("This simulator is just a tool to learn, not a diagnosis. Consult your doctor.")
                 }
             }
         }
