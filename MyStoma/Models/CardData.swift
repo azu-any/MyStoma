@@ -45,7 +45,7 @@ extension CardData {
             subtitle: "COLON STOMA",
             imageName: "Colostomia",
             imageModal: "Untitled_Artwork",
-            description: "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. \n\nA colostomy is a surgical opening on the abdomen, called a stoma, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. \n\nIt can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!",
+            description: "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. \n\nA **colostomy** is a surgical opening on the abdomen, called a **stoma**, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. \n\nIt can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. \n\nNow that you have a basic understanding, you're ready to begin. \n\n**Let's start this journey together!**",
             navView: AnyView(ColostomyView()),
             disabledSection: false
         ),
@@ -74,60 +74,29 @@ extension CardData {
     static let storyData: [CardData] = [
         CardData(
             type: "story",
-            title: "One Stoma, Two Miracles",
+            title: "A New Life Inside and Out",
             subtitle: "Patrizia Nazzarro",
             imageName: "story22",
             imageModal: "story2",
             description: """
-Elena was 28 when she was diagnosed with inflammatory bowel disease that required an ileostomy. Two years later, she and her husband Marco decided to try for a baby. "I was terrified at first," Elena says. "I thought the stoma would keep me from being a normal mother."
+*"There's this assumption that if you have a stoma you won't be able to have a baby,"* says Holly Fleet, 28, who faced pregnancy after an emergency ileostomy in 2021. 
+The reality is very different: the vast majority of women with stomas can conceive and experience completely normal pregnancies. Stomas don't affect fertility, so conception occurs without additional problems.
 
-**The Discovery of Pregnancy**  
-When Elena found out she was pregnant, her first thought was about her stoma. "I rushed to my stoma doctor," she recalls with a smile. "I needed to know what to expect for the next nine months."
+**First Trimester: Managing Nausea**
+During the first months, morning sickness requires specific strategies. Keep dry crackers and water always within reach to manage discomfort. 
+It's preferable to change the collection system in the evening when nausea is less intense, and use smaller bags during the day for greater comfort. Hydration control becomes fundamental and requires regular medical monitoring.
 
-**First Trimester: Adjustment and Nausea**  
-During the first few months, Elena had to deal with the classic morning sickness, complicated by the management of the stoma.
+**Second and Third Trimester: Physical Adaptations**
+As the belly grows, stoma size may increase but will return to normal after delivery. Use more flexible baseplates that adapt to body changes and invest in support belts specific for pregnant ostomates. The stoma may disappear from view as the belly grows, so using a mirror becomes helpful. Apply barrier creams to protect more sensitive skin and document changes with photos to help the medical team.
 
-*Practical advice from the first trimester:*
-- Always keep dry crackers and water on hand to manage nausea  
-- Switch your collection system in the evening, when nausea is less intense  
-- Use smaller bags during the day for greater comfort  
-- Check with your medical team regularly to monitor hydration
+**Delivery and Breastfeeding**
+Most women deliver without stoma-related complications. It's essential to prepare extra hospital supplies and inform all healthcare staff about the stoma presence. 
+During breastfeeding, experimenting with different positions helps find the most comfortable one. Often the side-lying position avoids pressure on the stoma while maintaining good baby latch.
 
-**Second Trimester: Growth and Adjustments**  
-As her belly grew, Elena began to notice changes in the position of her stoma. "My stoma doctor explained to me that this was normal," she says. "The skin was stretching and the stoma was moving slightly."
-
-*Practical advice from the second trimester:*
-- Use more flexible bases that adapt to the changes in the body  
-- Invest in support belts specifically for ostomates during pregnancy  
-- Apply barrier creams to protect more sensitive skin  
-- Document changes with photos to help your medical team
-
-**Third Trimester: Preparing for Birth**  
-In the last few months, Elena prepared for birth with a focus on stoma care. "I prepared a special hospital bag with all the necessary supplies," she explains.
-
-*Practical tips for the third trimester and birth:*
-- Prepare an extra supply of hospital supplies (pads, bags, accessories)  
-- Inform all hospital staff that you have a stoma  
-- Choose a hospital with experience in managing ostomy patients  
-- Position the bag so that it does not interfere with fetal monitoring
-
-**Birth and Beyond**  
-Elena gave birth to little Sofia naturally without any complications. "During labor, the stoma did not cause any problems," she says excitedly. "On the contrary, the medical staff were very knowledgeable and made me feel completely at ease."
-
-**Breastfeeding and New Life**  
-After giving birth, Elena was able to breastfeed without difficulty. "The best position for me was lying on my side," she explains. "That way I avoided pressure on the stoma and Sofia was able to latch on well."
-
-*Practical breastfeeding tips:*
-- Experiment with different positions to find the most comfortable one  
-- Use support pillows to avoid pressure on the stoma  
-- Stay well hydrated to support milk production  
-- Do not hesitate to seek help from experienced lactation consultants
-
-**Final Thoughts**  
-Today Sofia is three years old and Elena is pregnant with her second child. "My stoma has never stopped me from being the mother I wanted to be," Elena concludes. "In fact, it has taught me to be stronger and more resilient. My children will grow up knowing that diversity is normal and that love knows no obstacles."
+Having a stoma is not an obstacle to motherhood. With proper preparation and medical support, every woman can fully experience pregnancy and parenthood, often discovering unexpected strength and resilience.
 """,
             navView: AnyView(ColostomyView()),
-            quote: "My stoma is a constant reminder of what I’ve lost. But it’s also a symbol of my strength."
+            quote: "A stoma doesn't stop the rhythm of life — every woman can be a mother, strong and whole, just as she is."
         ),
         CardData(
             type: "story",
@@ -136,20 +105,17 @@ Today Sofia is three years old and Elena is pregnant with her second child. "My 
             imageName: "story1",
             imageModal: "story1",
             description: """
-Swimming with a Stoma: Practical Guide & Gill Castle’s Inspiration
-Gill Castle’s Journey: Innovation and Strength
 Gill Castle, a 44-year-old woman living with an ileostomy since 2011, developed a structured approach to overcome the challenges of swimming with a stoma. After years of leaks, she found success using convex bags, which offered better adhesion and security. She trained gradually in the North Sea, increasing exposure to tough conditions.
 
 On September 12, 2023, Gill swam solo across the English Channel in 13 hours and 53 minutes, covering 21 nautical miles. Her stoma appliance remained perfectly sealed, proving it’s possible to swim at high levels with the right preparation.
 
-Practical Tips for Swimming with a Stoma
+**Practical Tips for Swimming with a Stoma**
 Use high-adhesion convex pouches. Apply a barrier spray or protective film 30 minutes before entering water. Change the pouch no more than 2 hours before activity to ensure optimal adhesion. For extra security, use a stoma support belt, especially for long sessions. Always inspect the wafer seal and carry a spare kit.
 
-Medical Guidelines and Cautions
+**Medical Guidelines and Cautions**
 Wait at least 6–8 weeks post-surgery before swimming to allow full healing. Avoid highly chlorinated or dirty water that may irritate peristomal skin. Swimming is not advised during active skin infections, severe stenosis, or significant prolapse. Start with short 30-minute sessions, increasing gradually.
 
-Conclusion
-A stoma is not a barrier to aquatic sports. With proper equipment, planning, and gradual reintroduction, swimming remains safe and empowering. Gill Castle’s example proves that strength is not the absence of change, but the courage to face it—and swim through it.
+A stoma is not a barrier to aquatic sports. With proper equipment, planning, and gradual reintroduction, swimming remains safe and empowering. Gill Castle’s example proves that strength is not the absence of change, but the courage to face it and swim through it.
 """,
             quote: "The sea had not abandoned me… it was I who had to learn to return to it."
             
