@@ -1,22 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
-      "localizations" : {
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\"\""
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\"\""
-          }
-        }
-      }
-    },
     "“%@”" : {
       "localizations" : {
         "en" : {
@@ -60,19 +44,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld/%lld"
+            "value" : "*\"There's this assumption that if you have a stoma you won't be able to have a baby,\"* says Holly Fleet, 28, who faced pregnancy after an emergency ileostomy in 2021. \nThe reality is very different: the vast majority of women with stomas can conceive and experience completely normal pregnancies. Stomas don't affect fertility, so conception occurs without additional problems.\n\n**First Trimester: Managing Nausea**\nDuring the first months, morning sickness requires specific strategies. Keep dry crackers and water always within reach to manage discomfort. \nIt's preferable to change the collection system in the evening when nausea is less intense, and use smaller bags during the day for greater comfort. Hydration control becomes fundamental and requires regular medical monitoring.\n\n**Second and Third Trimester: Physical Adaptations**\nAs the belly grows, stoma size may increase but will return to normal after delivery. Use more flexible baseplates that adapt to body changes and invest in support belts specific for pregnant ostomates. The stoma may disappear from view as the belly grows, so using a mirror becomes helpful. Apply barrier creams to protect more sensitive skin and document changes with photos to help the medical team.\n\n**Delivery and Breastfeeding**\nMost women deliver without stoma-related complications. It's essential to prepare extra hospital supplies and inform all healthcare staff about the stoma presence. \nDuring breastfeeding, experimenting with different positions helps find the most comfortable one. Often the side-lying position avoids pressure on the stoma while maintaining good baby latch.\n\nHaving a stoma is not an obstacle to motherhood. With proper preparation and medical support, every woman can fully experience pregnancy and parenthood, often discovering unexpected strength and resilience."
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld/%lld"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld/%lld"
+            "value" : "**\"Existe la suposición de que si tienes una estoma no podrás tener un bebé\",** dice Holly Fleet, de 28 años, quien enfrentó un embarazo después de una ileostomía de emergencia en 2021.\nLa realidad es muy diferente: la gran mayoría de las mujeres con estoma pueden concebir y tener embarazos completamente normales. El estoma no afecta la fertilidad, por lo que la concepción ocurre sin problemas adicionales.\n\n**Primer trimestre: control de las náuseas**\nDurante los primeros meses, las náuseas matutinas requieren estrategias específicas. Manteniendo siempre a la mano galletas saladas y agua para aliviar el malestar.\nEs preferible cambiar el sistema de recolección por la noche, cuando las náuseas son menos intensas, y usando bolsas más pequeñas durante el día para mayor comodidad. El control de la hidratación se vuelve fundamental y requiere monitoreo médico regular.\n\n**Segundo y tercer trimestre: adaptaciones físicas**\nA medida que el abdomen crece, el tamaño del estoma puede aumentar, pero volverá a la normalidad después del parto. Usando placas base más flexibles que se adapten a los cambios del cuerpo e invirtiendo en cinturones de soporte específicos para embarazadas con estoma. El estoma puede dejar de estar visible conforme crece la panza, por lo que usar un espejo resulta útil. Aplicando cremas barrera para proteger la piel, que se vuelve más sensible, y documentando los cambios con fotos para ayudar al equipo médico.\n\n**Parto y lactancia**\nLa mayoría de las mujeres da a luz sin complicaciones relacionadas con el estoma. Es esencial preparar suministros adicionales para el hospital e informar a todo el personal médico sobre la presencia del estoma.\nDurante la lactancia, ayuda experimentar con diferentes posiciones para encontrar la más cómoda. A menudo, la posición acostada de lado evita la presión sobre el estoma y permite un buen agarre del bebé.\n\nTener un estoma no es un obstáculo para la maternidad. Con la preparación adecuada y el apoyo médico, toda mujer puede vivir plenamente el embarazo y la maternidad, descubriendo con frecuencia una fortaleza y resiliencia inesperadas.\n"
           }
         }
       }
@@ -115,19 +93,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Adhesive Remover Spray"
+            "value" : "%lld/%lld"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Spray removedor de adhesivo"
+            "value" : "%lld/%lld"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Spray rimuovi adesivo"
+            "value" : "%lld/%lld"
           }
         }
       }
@@ -138,7 +116,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive."
+            "value" : "A New Life Inside and Out"
           }
         },
         "es-419" : {
@@ -177,6 +155,46 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "A stoma doesn't stop the rhythm of life — every woman can be a mother, strong and whole, just as she is."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un estoma no detiene el ritmo de la vida: cada mujer puede ser madre, siendo fuerte y completa, tal y como es."
+          }
+        }
+      }
+    },
+    "Anna Paola" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adhesive Remover Spray"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spray removedor de adhesivo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annapaola"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "All" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
             "value" : "All"
           }
         },
@@ -194,31 +212,8 @@
         }
       }
     },
-    "Anna Paola" : {
+    "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible." : {
       "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anna Paola"
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anna Paola"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Annapaola"
-          }
-        }
-      },
-      "shouldTranslate" : false
-    },
-    "Are you sure you want to restart the tutorial? Your current progress will be lost." : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -236,29 +231,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sei sicuro di voler riavviare il tutorial? I tuoi progressi attuali andranno persi."
-          }
-        }
-      }
-    },
-    "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible."
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Al principio, nadie me miraba a los ojos. Sentí que había desaparecido después de hacerme la ileostomía. Dejé de salir, incluso al parque. Luego, un día, tomé un pincel y empecé a pintar cómo me sentía: borroso, gris, oculto. Pero poco a poco, el color volvió a mi lienzo y a mí. Una galería ofreció mostrar mi arte. En la inauguración, alguien dijo: “Tu obra me hizo sentir visto.” Fue entonces cuando supe: no soy invisible. Solo tuve que encontrar nuevas formas de ser visible."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All'inizio, nessuno mi guardava negli occhi. Mi sentivo come se fossi scomparsa dopo aver fatto l'ileostomia. Ho smesso di uscire, anche solo per andare al parco. Poi un giorno ho preso un pennello e ho iniziato a dipingere come mi sentivo—sfocata, grigia, nascosta. Ma lentamente, il colore è tornato sulla mia tela, e in me. Una galleria ha voluto esporre le mie opere. All'inaugurazione, qualcuno ha detto: “Il tuo lavoro mi ha fatto sentire visto.” È stato allora che ho capito: non sono invisibile. Dovevo solo trovare nuovi modi per essere visibile."
           }
         }
       }
@@ -364,7 +336,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Elige categoría"
+            "value" : "Elige la categoría"
           }
         },
         "it" : {
@@ -570,7 +542,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Conéctate con historias"
+            "value" : "Conecta con las Historias"
           }
         },
         "it" : {
@@ -626,7 +598,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dislexia Font"
+            "value" : "Disclaimer & Citations"
           }
         },
         "es-419" : {
@@ -703,19 +675,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Explore & Learn"
+            "value" : "Everything You Need to Know About Getting Professional Support for Your Stoma Journey"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Explorar y aprender"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Esplora & Impara"
+            "value" : "Todo lo que necesita saber para obtener apoyo profesional sobre la vida con un estoma"
           }
         }
       }
@@ -726,19 +692,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Feeling Invisible"
+            "value" : "Explore & Learn"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sentirse invisible"
+            "value" : "Explora y Aprende"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sentirsi invisibili"
+            "value" : "Esplora & Impara"
           }
         }
       }
@@ -765,19 +731,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Francesco Pogliare"
+            "value" : "First Dive Into Hope"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Francesco Pogliare"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Francesco Pogliare"
+            "value" : "Mi Primer Salto a la Esperanza"
           }
         }
       }
@@ -836,16 +796,20 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "I couldn't let my urostomy change my love for sports and change who I am."
+            "value" : "From Stoma Care to Clinics"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No podía permitir que mi urostomía cambiara mi amor por los deportes ni cambiara quién soy."
+            "value" : "Del Cuidado del Estoma a las Clínicas"
           }
-        },
-        "it" : {
+        }
+      }
+    },
+    "Gill Castle, a 44-year-old woman living with an ileostomy since 2011, developed a structured approach to overcome the challenges of swimming with a stoma. After years of leaks, she found success using convex bags, which offered better adhesion and security. She trained gradually in the North Sea, increasing exposure to tough conditions.\n\nOn September 12, 2023, Gill swam solo across the English Channel in 13 hours and 53 minutes, covering 21 nautical miles. Her stoma appliance remained perfectly sealed, proving it’s possible to swim at high levels with the right preparation.\n\n**Practical Tips for Swimming with a Stoma**\nUse high-adhesion convex pouches. Apply a barrier spray or protective film 30 minutes before entering water. Change the pouch no more than 2 hours before activity to ensure optimal adhesion. For extra security, use a stoma support belt, especially for long sessions. Always inspect the wafer seal and carry a spare kit.\n\n**Medical Guidelines and Cautions**\nWait at least 6–8 weeks post-surgery before swimming to allow full healing. Avoid highly chlorinated or dirty water that may irritate peristomal skin. Swimming is not advised during active skin infections, severe stenosis, or significant prolapse. Start with short 30-minute sessions, increasing gradually.\n\nA stoma is not a barrier to aquatic sports. With proper equipment, planning, and gradual reintroduction, swimming remains safe and empowering. Gill Castle’s example proves that strength is not the absence of change, but the courage to face it and swim through it." : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non potevo lasciare che la mia urostomia cambiasse il mio amore per lo sport "
@@ -859,7 +823,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "I had difficulties everyday, but it seemed that for the rest of the world I was still the same."
+            "value" : "Giuseppe Fama, Stomatherapist"
           }
         },
         "es-419" : {
@@ -975,7 +939,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. \n\nA colostomy is a surgical opening on the abdomen, called a stoma, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. \n\nIt can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!"
+            "value" : "Important Notice"
           }
         },
         "es-419" : {
@@ -998,7 +962,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "In this section you will learn what a urostomy is, how it functions and what you need to know for managing it in your daily life. \n\nA urostomy is a surgically created opening in the abdomen, called a stoma, that redirects urine from the kidneys directly to the outside of the body, where it is collected in a specialized adhesive pouch system. \n\nThis procedure is usually permanent and is performed when the bladder cannot function properly or needs to be removed. The urine no longer flows through the bladder but exits continuously through the stoma into a collection bag. Since urine production is constant, urostomy bags typically need to be emptied more frequently and often include a drainage tap for easy emptying. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!"
+            "value" : "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. \n\nA **colostomy** is a surgical opening on the abdomen, called a **stoma**, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. \n\nIt can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. \n\nNow that you have a basic understanding, you're ready to begin. \n\n**Let's start this journey together!**"
           }
         },
         "es-419" : {
@@ -1049,7 +1013,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Levanta suavemente la barrera adhesiva de la piel sin dolor ni daño. Especialmente útil para piel sensible o cambios frecuentes de bolsa, este spray previene el trauma y facilita una remoción más segura y fácil."
+            "value" : "Levanta suavemente la barrera adhesiva de la piel sin dolor o daño. Es especialmente útil para piel sensible o con cambios frecuentes de la bolsa, este spray previene el trauma y facilita una remoción más segura y fácil."
           }
         },
         "it" : {
@@ -1137,7 +1101,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dispositivo que combina la barrera adhesiva (barrera) y la bolsa en uno solo. Recoge los desechos del estoma y puede vaciarse varias veces antes de cambiarlo. Ideal para salidas frecuentes, como en ileostomías o colostomías."
+            "value" : "Dispositivo que combina la barrera adhesiva y la bolsa en uno solo. Recoge los desechos del estoma y puede vaciarse varias veces antes de cambiarlo. Ideal para salidas frecuentes, como en ileostomías o colostomías."
           }
         },
         "it" : {
@@ -1380,7 +1344,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aprende las herramiantas"
+            "value" : "Aprende sobre las herramiantas"
           }
         },
         "it" : {
@@ -1447,7 +1411,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Haz tu selección."
+            "value" : "Haz tu selección"
           }
         },
         "it" : {
@@ -1614,7 +1578,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Entrena con simuladores"
+            "value" : "Entrena con los simuladores"
           }
         },
         "it" : {
@@ -1637,7 +1601,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Quitar la bolsa"
+            "value" : "Quitando la bolsa"
           }
         },
         "it" : {
@@ -1681,7 +1645,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reiniciar tutorial"
+            "value" : "Reinicia el tutorial"
           }
         },
         "it" : {
@@ -1896,6 +1860,12 @@
     },
     "Tap and hold to drag and combine items" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap and hold to drag and combine items"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1985,41 +1955,45 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tools"
+            "value" : "The sea had not abandoned me… it was I who had to learn to return to it."
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Herramientas"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Strumenti"
+            "value" : "El mar no me había abandonado…era yo quien tenía que aprender a regresar a él."
           }
         }
       }
     },
-    "Ups, try again!" : {
+    "This app is intended for educational and informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with any questions you may have regarding a medical condition. \n\nAll data, references, and methodologies used in the app are transparently documented. You can review the full list of citations and supporting materials down below." : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ups, try again!"
+            "value" : "This app is intended for educational and informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with any questions you may have regarding a medical condition. \n\nAll data, references, and methodologies used in the app are transparently documented. You can review the full list of citations and supporting materials down below."
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "¡Ups, inténtalo de nuevo!"
+            "value" : "Esta aplicación tiene fines exclusivamente educativos e informativos y no sustituye el consejo, diagnóstico ni tratamiento médico profesional. Si tienes alguna pregunta sobre una afección médica, consulta siempre con un profesional de la salud cualificado.\n\nTodos los datos, referencias y metodologías utilizados en la aplicación están documentados de forma transparente. Puedes consultar la lista completa de citas y materiales de apoyo a continuación."
           }
-        },
-        "it" : {
+        }
+      }
+    },
+    "This simulator is just a tool to learn, not a diagnosis. Consult your doctor." : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ops, prova di nuovo!"
+            "value" : "This simulator is just a tool to learn, not a diagnosis. Consult your doctor."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este simulador es solo una herramienta de aprendizaje, no es un diagnóstico. Consulta a tu médico."
           }
         }
       }
@@ -2030,13 +2004,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Urostomia"
+            "value" : "Tools"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Urostomía"
+            "value" : "Herramientas"
           }
         },
         "it" : {
@@ -2054,19 +2028,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Urostomy"
+            "value" : "Ups, try again!"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Urostomía"
+            "value" : "¡Ups, inténtalo de nuevo!"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Urostomia"
+            "value" : "Ops, prova di nuovo!"
           }
         }
       }
@@ -2145,7 +2119,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bolsa para desechos"
+            "value" : "Bolsa para los desechos"
           }
         },
         "it" : {
@@ -2207,7 +2181,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Has completado el tutorial de colostomía!"
+            "value" : "¡Has completado el tutorial de colostomía!"
           }
         },
         "it" : {
