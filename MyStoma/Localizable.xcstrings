@@ -39,6 +39,22 @@
         }
       }
     },
+    "*\"There's this assumption that if you have a stoma you won't be able to have a baby,\"* says Holly Fleet, 28, who faced pregnancy after an emergency ileostomy in 2021. \nThe reality is very different: the vast majority of women with stomas can conceive and experience completely normal pregnancies. Stomas don't affect fertility, so conception occurs without additional problems.\n\n**First Trimester: Managing Nausea**\nDuring the first months, morning sickness requires specific strategies. Keep dry crackers and water always within reach to manage discomfort. \nIt's preferable to change the collection system in the evening when nausea is less intense, and use smaller bags during the day for greater comfort. Hydration control becomes fundamental and requires regular medical monitoring.\n\n**Second and Third Trimester: Physical Adaptations**\nAs the belly grows, stoma size may increase but will return to normal after delivery. Use more flexible baseplates that adapt to body changes and invest in support belts specific for pregnant ostomates. The stoma may disappear from view as the belly grows, so using a mirror becomes helpful. Apply barrier creams to protect more sensitive skin and document changes with photos to help the medical team.\n\n**Delivery and Breastfeeding**\nMost women deliver without stoma-related complications. It's essential to prepare extra hospital supplies and inform all healthcare staff about the stoma presence. \nDuring breastfeeding, experimenting with different positions helps find the most comfortable one. Often the side-lying position avoids pressure on the stoma while maintaining good baby latch.\n\nHaving a stoma is not an obstacle to motherhood. With proper preparation and medical support, every woman can fully experience pregnancy and parenthood, often discovering unexpected strength and resilience." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "*\"Existe la suposición de que si tienes un estoma no podrás tener un bebé \"*, dice Holly Fleet, de 28 años, que se enfrentó al embarazo tras una ileostomía de urgencia en 2021. \nLa realidad es muy distinta: la gran mayoría de las mujeres con estomas pueden concebir y tener embarazos completamente normales. Los estomas no afectan a la fertilidad, por lo que la concepción se produce sin problemas adicionales.\n\n**Primer trimestre: Control de las náuseas**\nDurante los primeros meses, las náuseas matutinas requieren estrategias específicas. Ten siempre a mano galletas secas y agua para controlar las molestias. \nEs preferible cambiar el sistema de recogida por la noche, cuando las náuseas son menos intensas, y utilizar bolsas más pequeñas durante el día para mayor comodidad. El control de la hidratación se vuelve fundamental y requiere un seguimiento médico regular.\n\n**Segundo y Tercer Trimestre: Adaptaciones físicas**\nA medida que el vientre crece, el tamaño del estoma puede aumentar, pero volverá a la normalidad después del parto. Utiliza placas base más flexibles que se adapten a los cambios corporales e invierte en cinturones de sujeción específicos para embarazadas ostomizadas. El estoma puede desaparecer de la vista a medida que crece la barriga, por lo que resulta útil utilizar un espejo. Aplica cremas barrera para proteger la piel más sensible y documenta los cambios con fotos para ayudar al equipo médico.\n\n**Parto y lactancia**\nLa mayoría de las mujeres dan a luz sin complicaciones relacionadas con el estoma. Es esencial preparar material hospitalario adicional e informar a todo el personal sanitario de la presencia del estoma. \nDurante la lactancia, experimentar con diferentes posiciones ayuda a encontrar la más cómoda. A menudo, la posición tumbada de lado evita la presión sobre el estoma a la vez que mantiene un buen agarre del bebé.\n\nTener un estoma no es un obstáculo para la maternidad. Con la preparación y el apoyo médico adecuados, todas las mujeres pueden vivir plenamente el embarazo y la maternidad, descubriendo a menudo una fuerza y una resistencia inesperadas."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"C'è questa convinzione che se hai una stomia non potrai avere figli,\" racconta Holly Fleet, 28 anni, che ha affrontato la gravidanza dopo un'ileostomia d'urgenza nel 2021.\nLa realtà è molto diversa: la stragrande maggioranza delle donne con stomia può concepire e vivere gravidanze completamente normali. Le stomie non influenzano la fertilità, quindi il concepimento avviene senza problemi aggiuntivi.\nPrimo Trimestre: Gestire le Nausee\nDurante i primi mesi, le nausee mattutine richiedono strategie specifiche. Tieni sempre a portata di mano crackers secchi e acqua per gestire il fastidio.\nÈ preferibile cambiare il sistema di raccolta la sera quando le nausee sono meno intense, e usare sacche più piccole durante il giorno per maggiore comfort. Il controllo dell'idratazione diventa fondamentale e richiede un monitoraggio medico regolare.\nSecondo e Terzo Trimestre: Adattamenti Fisici\nMan mano che il pancione cresce, la dimensione della stomia può aumentare ma tornerà normale dopo il parto. Usa placche più flessibili che si adattano ai cambiamenti del corpo e investi in cinture di supporto specifiche per gestanti stomizzate. La stomia potrebbe scomparire dalla vista con la crescita del pancione, quindi usare uno specchio diventa utile. Applica creme barriera per proteggere la pelle più sensibile e documenta i cambiamenti con foto per aiutare l'équipe medica.\nParto e Allattamento\nLa maggior parte delle donne partorisce senza complicazioni legate alla stomia. È essenziale preparare scorte extra per l'ospedale e informare tutto il personale sanitario della presenza della stomia.\nDurante l'allattamento, sperimentare diverse posizioni aiuta a trovare la più comoda. Spesso la posizione sdraiata su un fianco evita pressioni sulla stomia mantenendo un buon attacco del bambino.\nAvere una stomia non è un ostacolo alla maternità. Con la giusta preparazione e supporto medico, ogni donna può vivere pienamente la gravidanza e la genitorialità, spesso scoprendo forza e resilienza inaspettate."
+          }
+        }
+      }
+    },
     "%lld/%lld" : {
       "localizations" : {
         "en" : {
@@ -57,6 +73,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld/%lld"
+          }
+        }
+      }
+    },
+    "A New Life Inside and Out" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una nueva vida por dentro y por fuera"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una vita tutta nuova"
+          }
+        }
+      }
+    },
+    "A stoma doesn't stop the rhythm of life — every woman can be a mother, strong and whole, just as she is." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un estoma no detiene el ritmo de la vida: cada mujer puede ser madre, fuerte y entera, tal como es."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una stomia non ferma il ritmo della vita — ogni donna può essere madre, forte e completa, esattamente come è"
           }
         }
       }
@@ -85,7 +133,7 @@
       }
     },
     "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive." : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -102,13 +150,27 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dopo l'intervento chirurgico, pensavo che la mia vita fosse finita. La sacca dello stoma mi sembrava una punizione. Ma poco a poco ho imparato dei trucchi—come indossare maglie larghe o pianificare prima di uscire. Un giorno, la mia sacca è scoppiata nel bel mezzo di un appuntamento. Sono andata nel panico, ma lui ha solo riso e mi ha aiutato a pulire. È stato allora che ho capito: questa cosa non mi definisce. Sono ancora me stessa—divertente, gentile e forte. E onestamente? Non mi sono mai sentita così viva."
+            "value" : "Dopo l’intervento chirurgico, pensavo che la mia vita fosse finita. La sacca dello stoma mi sembrava una punizione. Ma, poco a poco, ho imparato dei trucchi—come indossare maglie larghe o pianificare tutto prima di uscire. Un giorno, la mia sacca si è rotta nel bel mezzo di un appuntamento. Sono andata nel panico, ma lui ha semplicemente riso e mi ha aiutata a pulire. È stato in quel momento che ho capito: questa cosa non mi definisce. Sono ancora me stessa—divertente, gentile e forte. E, sinceramente? Non mi sono mai sentita così viva."
           }
         }
       }
     },
     "After the birth of his first child, Luca was told he needed a stoma. Shocked and overwhelmed, he feared life would never be the same. \"I thought everything I loved was over,\" he says.\n\nBut step by step, he adapted. With guidance from his stoma nurse and support from loved ones, Luca regained control.\n\n- Carry a small kit: bag, wipes, scissors  \n- Use gentle skin products  \n- Build a routine—practice brings confidence  \n- Stay active with medical approval  \n\nThree years later, he swam the English Channel—14 hours non-stop. \"That swim proved I'm not just my body,I’m my strength and will.\"\n\nToday, Luca runs a support network for others with stomas. His message is clear:\n\n\"We’re not broken. We’re rebuilt and stronger.\"\n\nFirst steps: Trust your stoma nurse. Inform loved ones. Don’t stop living." : {
-
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tras el nacimiento de su primer hijo, a Luca le dijeron que necesitaba un estoma. Conmocionado y abrumado, temió que su vida no volviera a ser la misma. “Pensé que todo lo que amaba se había acabado”, dice.\n\nPero paso a paso se fue adaptando. Con la ayuda de su enfermera estomaterapeuta y el apoyo de sus seres queridos, Luca recuperó el control.\n\n- Lleva un pequeño kit: bolsa, toallitas, tijeras\n- Utiliza productos suaves para la piel\n- Crea una rutina: la práctica aporta confianza\n- Mantente activo con autorización médica\n\nTres años después, nadó el Canal de la Mancha 14 horas sin parar. «Aquella travesía a nado demostró que no soy sólo mi cuerpo, sino mi fuerza y mi voluntad».\n\nHoy, Luca dirige una red de apoyo a otras personas con estomas. Su mensaje es claro:\n\n\"No estamos rotos. Estamos reconstruidos y somos más fuertes\".\n\nPrimeros pasos: Confía en tu enfermera estomaterapeuta. Informe a sus seres queridos. No dejes de vivir."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dopo la nascita del suo primo figlio, a Luca fu detto che avrebbe avuto bisogno della stomia. Scioccato e sopraffatto, temeva che la sua vita non sarebbe mai più stata la stessa.\n“Pensavo che tutto ciò che amavo fosse finito,” racconta.\n\nMa passo dopo passo, si è adattato. Con il supporto dell’infermiera specializzata in stomia e delle persone care, Luca ha ripreso in mano la sua vita.\n- Porta sempre con te un piccolo kit: sacca, salviette, forbicine\n- Usa prodotti delicati per la pelle\n- Crea una routine: la pratica porta fiducia\n- Rimani attivo, con l’approvazione del medico\n\nTre anni dopo, ha attraversato a nuoto il Canale della Manica—14 ore senza sosta.\n“Quella nuotata ha dimostrato che non sono solo il mio corpo, sono la mia forza e la mia volontà.”\n\nOggi Luca gestisce una rete di supporto per persone con stomia. Il suo messaggio è chiaro:\n\n“Non siamo rotti. Siamo ricostruiti. E più forti.”\n\nI primi passi: Fidati della tua infermiera stomaterapista. Informa le persone che ami. Non smettere di vivere."
+          }
+        }
+      }
     },
     "All" : {
       "localizations" : {
@@ -133,7 +195,7 @@
       }
     },
     "Anna Paola" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -150,10 +212,11 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Anna Paola"
+            "value" : "Annapaola"
           }
         }
-      }
+      },
+      "shouldTranslate" : false
     },
     "Are you sure you want to restart the tutorial? Your current progress will be lost." : {
       "localizations" : {
@@ -178,7 +241,7 @@
       }
     },
     "At first, no one looked me in the eye. I felt like I’d disappeared after getting my ileostomy. I stopped going out, even to the park. Then one day, I picked up a paintbrush and started painting how I felt—blurry, grey, hidden. But slowly, color returned to my canvas, and to me. A gallery offered to show my art. At the opening, someone said, “Your work made me feel seen.” That’s when I knew: I’m not invisible. I just had to find new ways to be visible." : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -224,6 +287,7 @@
       }
     },
     "BLADDER STOMA" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -396,7 +460,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Stomia del colon"
+            "value" : "Colostomia"
           }
         }
       }
@@ -424,8 +488,54 @@
         }
       }
     },
+    "Coming Soon" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próximamente"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prossimamente§!"
+          }
+        }
+      }
+    },
     "Coming Soon!" : {
-
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próximamente!"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prossimamente!"
+          }
+        }
+      }
+    },
+    "Confirm" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conferma"
+          }
+        }
+      }
     },
     "Congratulations!" : {
       "localizations" : {
@@ -466,7 +576,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Connetti con Storie"
+            "value" : "Esplora le Storie"
           }
         }
       }
@@ -494,8 +604,24 @@
         }
       }
     },
+    "Disclaimer & Citations" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Renuncia de responsabilidad y citas"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avvertenze e Fonti\n"
+          }
+        }
+      }
+    },
     "Dislexia Font" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -512,13 +638,27 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Carattere per dislessia"
+            "value" : "Carattere per dislessici"
           }
         }
       }
     },
     "Elena was 28 when she was diagnosed with inflammatory bowel disease that required an ileostomy. Two years later, she and her husband Marco decided to try for a baby. \"I was terrified at first,\" Elena says. \"I thought the stoma would keep me from being a normal mother.\"\n\n**The Discovery of Pregnancy**  \nWhen Elena found out she was pregnant, her first thought was about her stoma. \"I rushed to my stoma doctor,\" she recalls with a smile. \"I needed to know what to expect for the next nine months.\"\n\n**First Trimester: Adjustment and Nausea**  \nDuring the first few months, Elena had to deal with the classic morning sickness, complicated by the management of the stoma.\n\n*Practical advice from the first trimester:*\n- Always keep dry crackers and water on hand to manage nausea  \n- Switch your collection system in the evening, when nausea is less intense  \n- Use smaller bags during the day for greater comfort  \n- Check with your medical team regularly to monitor hydration\n\n**Second Trimester: Growth and Adjustments**  \nAs her belly grew, Elena began to notice changes in the position of her stoma. \"My stoma doctor explained to me that this was normal,\" she says. \"The skin was stretching and the stoma was moving slightly.\"\n\n*Practical advice from the second trimester:*\n- Use more flexible bases that adapt to the changes in the body  \n- Invest in support belts specifically for ostomates during pregnancy  \n- Apply barrier creams to protect more sensitive skin  \n- Document changes with photos to help your medical team\n\n**Third Trimester: Preparing for Birth**  \nIn the last few months, Elena prepared for birth with a focus on stoma care. \"I prepared a special hospital bag with all the necessary supplies,\" she explains.\n\n*Practical tips for the third trimester and birth:*\n- Prepare an extra supply of hospital supplies (pads, bags, accessories)  \n- Inform all hospital staff that you have a stoma  \n- Choose a hospital with experience in managing ostomy patients  \n- Position the bag so that it does not interfere with fetal monitoring\n\n**Birth and Beyond**  \nElena gave birth to little Sofia naturally without any complications. \"During labor, the stoma did not cause any problems,\" she says excitedly. \"On the contrary, the medical staff were very knowledgeable and made me feel completely at ease.\"\n\n**Breastfeeding and New Life**  \nAfter giving birth, Elena was able to breastfeed without difficulty. \"The best position for me was lying on my side,\" she explains. \"That way I avoided pressure on the stoma and Sofia was able to latch on well.\"\n\n*Practical breastfeeding tips:*\n- Experiment with different positions to find the most comfortable one  \n- Use support pillows to avoid pressure on the stoma  \n- Stay well hydrated to support milk production  \n- Do not hesitate to seek help from experienced lactation consultants\n\n**Final Thoughts**  \nToday Sofia is three years old and Elena is pregnant with her second child. \"My stoma has never stopped me from being the mother I wanted to be,\" Elena concludes. \"In fact, it has taught me to be stronger and more resilient. My children will grow up knowing that diversity is normal and that love knows no obstacles.\"" : {
-
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elena tenía 28 años cuando le diagnosticaron una enfermedad inflamatoria intestinal que requirió una ileostomía. Dos años después, ella y su marido Marco decidieron intentar tener un hijo. \"Al principio estaba aterrorizada\", dice Elena. \"Pensaba que el estoma me impediría ser una madre normal\".\n\n**El descubrimiento del embarazo** \nCuando Elena se enteró de que estaba embarazada, lo primero que pensó fue en su estoma. \"Fui corriendo a ver a mi médico especialista en estomas\", recuerda con una sonrisa. \"Necesitaba saber qué esperar de los próximos nueve meses\".\n\n**Primer trimestre: Adaptación y náuseas** \nDurante los primeros meses, Elena tuvo que lidiar con las clásicas náuseas matutinas, complicadas por el manejo del estoma.\n\n*Consejos prácticos del primer trimestre:*\n- Ten siempre a mano galletas secas y agua para controlar las náuseas  \n- Cambia tu sistema de recogida por la noche, cuando las náuseas son menos intensas  \n- Utilice bolsas más pequeñas durante el día para mayor comodidad  \n- Consulta regularmente con tu equipo médico para controlar la hidratación\n\n**Segundo trimestre: Crecimiento y ajustes** \nA medida que crecía su barriga, Elena empezó a notar cambios en la posición de su estoma. \"Mi estomatólogo me explicó que era normal\", dice. \"La piel se estiraba y el estoma se movía ligeramente\".\n\n*Consejos prácticos a partir del segundo trimestre:*\n- Utilizar bases más flexibles que se adapten a los cambios del cuerpo  \n- Invertir en cinturones de sujeción específicos para personas ostomizadas durante el embarazo  \n- Aplica cremas barrera para proteger la piel más sensible  \n- Documenta los cambios con fotos para ayudar a tu equipo médico\n\n**Tercer trimestre: Preparación para el parto** \nEn los últimos meses, Elena se preparó para el parto centrándose en el cuidado del estoma. \"Preparé una bolsa especial para el hospital con todo lo necesario\", explica.\n\n*Consejos prácticos para el tercer trimestre y el parto\n- Prepara una provisión extra de material hospitalario (compresas, bolsas, accesorios).  \n- Informa a todo el personal del hospital de que tienes un estoma.  \n- Elige un hospital con experiencia en el tratamiento de pacientes ostomizados  \n- Coloca la bolsa de forma que no interfiera con la monitorización fetal\n\n**El parto y más allá** \nElena dio a luz a la pequeña Sofía de forma natural y sin complicaciones. \"Durante el parto, el estoma no causó ningún problema\", dice emocionada. \"Al contrario, el personal médico estaba muy informado y me hizo sentir completamente tranquila\".\n\n**Lactancia y nueva vida** \nTras el parto, Elena pudo dar el pecho sin dificultad. \"La mejor posición para mí era tumbada de lado\", explica. \"Así evitaba la presión sobre el estoma y Sofía podía agarrarse bien al pecho\".\n\n*Consejos prácticos para la lactancia materna:*\n- Experimenta con diferentes posiciones para encontrar la más cómoda  \n- Utiliza almohadas de apoyo para evitar la presión sobre el estoma  \n- Mantente bien hidratada para favorecer la producción de leche  \n- No dudes en pedir ayuda a asesores de lactancia experimentados.\n\n**Pensamientos finales** \nHoy Sofía tiene tres años y Elena está embarazada de su segundo hijo. \"Mi estoma nunca me ha impedido ser la madre que quería ser\", concluye Elena. \"De hecho, me ha enseñado a ser más fuerte y resistente. Mis hijos crecerán sabiendo que la diversidad es normal y que el amor no conoce obstáculos.\""
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elena aveva 28 anni quando le fu diagnosticata una malattia infiammatoria intestinale che rese necessaria un’ileostomia.\nDue anni dopo, lei e suo marito Marco decisero di provare ad avere un bambino.\n“All’inizio ero terrorizzata,” racconta Elena. “Pensavo che la stomia mi avrebbe impedito di essere una madre.”\n\n**La scoperta della gravidanza**\nQuando Elena scoprì di essere incinta, il suo primo pensiero andò alla stomia.\n“Sono corsa dal mio stomaterapista,” ricorda con un sorriso. “Avevo bisogno di sapere cosa aspettarmi nei nove mesi successivi.”\n\n**Primo trimestre: adattamento e nausea**\nDurante i primi mesi, Elena affrontò la classica nausea mattutina, complicata dalla gestione della stomia.\n\n*Consigli pratici per il primo trimestre:*\n- Tieni sempre a portata di mano cracker secchi e acqua per gestire la nausea\n- Cambia il sistema di raccolta la sera, quando la nausea è meno intensa\n- Usa sacche più piccole durante il giorno per un maggiore comfort\n- Controlla regolarmente l’idratazione con il supporto del team medico\n\n**Secondo trimestre: crescita e adattamenti**\nCon la crescita del pancione, Elena iniziò a notare cambiamenti nella posizione della stomia.\n“Il mio stomaterapista mi ha spiegato che era del tutto normale,” racconta. “La pelle si stava tendendo e la stomia si spostava leggermente.”\n\n*Consigli pratici per il secondo trimestre:*\n- Usa basi più flessibili che si adattino ai cambiamenti del corpo\n- Investi in fasce di supporto specifiche per persone con stomia in gravidanza\n- Applica creme barriera per proteggere la pelle più sensibile\n- Documenta i cambiamenti con delle foto da mostrare al team medico\n\n**Terzo trimestre: prepararsi al parto**\nNegli ultimi mesi, Elena si preparò al parto concentrandosi sulla cura della stomia.\n«Ho preparato una borsa per l’ospedale con tutto il necessario,» spiega.\n\nConsigli pratici per il terzo trimestre e il parto:\n- Prepara una scorta extra di materiale ospedaliero (assorbenti, sacche, accessori)\n- Informa tutto il personale ospedaliero della presenza della stomia\n- Scegli un ospedale con esperienza nella gestione dei pazienti con stomia\n- Posiziona la sacca in modo che non interferisca con il monitoraggio fetale\n\n**Il parto e oltre**\nElena ha partorito naturalmente la piccola Sofia, senza alcuna complicazione.\n«Durante il travaglio, la stomia non ha causato problemi,» racconta con entusiasmo. «Anzi, il personale medico era molto preparato e mi ha fatta sentire completamente a mio agio.»\n\n**Allattamento e nuova vita**\nDopo il parto, Elena ha potuto allattare senza difficoltà.\n“La posizione migliore per me era sdraiata su un fianco,” spiega. “Così evitavo di fare pressione sulla stomia e Sofia riusciva ad attaccarsi bene.”\n\n*Consigli pratici per l’allattamento:*\n- Prova diverse posizioni per trovare quella più comoda\n- Usa cuscini di supporto per evitare pressioni sulla stomia\n- Mantieniti ben idratata per favorire la produzione di latte\n- Non esitare a chiedere supporto a consulenti esperti in allattamento\n\n\n**Pensieri finali**\nOggi Sofia ha tre anni ed Elena è incinta del suo secondo figlio. “La mia stomia non mi ha mai impedito di essere la madre che volevo essere,” conclude Elena. “Anzi, mi ha insegnato a essere più forte e resiliente. I miei figli cresceranno sapendo che la diversità è normale e che l’amore non conosce ostacoli.”"
+          }
+        }
+      }
     },
     "End" : {
       "localizations" : {
@@ -543,7 +683,20 @@
       }
     },
     "Everything You Need to Know About Getting Professional Support for Your Stoma Journey" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todo lo que necesita saber para obtener apoyo profesional en su viaje al estoma"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutto quello che devi sapere sul supporto professionale durante il tuo percorso per la cura della tua stomia"
+          }
+        }
+      }
     },
     "Explore & Learn" : {
       "localizations" : {
@@ -568,7 +721,7 @@
       }
     },
     "Feeling Invisible" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -591,10 +744,23 @@
       }
     },
     "First Dive Into Hope" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primera zambullida en la esperanza"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primo tuffo nella speranza"
+          }
+        }
+      }
     },
     "Francesco Pogliare" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -617,10 +783,52 @@
       }
     },
     "From Stoma Care to Clinics" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Del estoma a las clínicas"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dalla cura della stomia agli ambulatori dedicati"
+          }
+        }
+      }
+    },
+    "Gill Castle, a 44-year-old woman living with an ileostomy since 2011, developed a structured approach to overcome the challenges of swimming with a stoma. After years of leaks, she found success using convex bags, which offered better adhesion and security. She trained gradually in the North Sea, increasing exposure to tough conditions.\n\nOn September 12, 2023, Gill swam solo across the English Channel in 13 hours and 53 minutes, covering 21 nautical miles. Her stoma appliance remained perfectly sealed, proving it’s possible to swim at high levels with the right preparation.\n\n**Practical Tips for Swimming with a Stoma**\nUse high-adhesion convex pouches. Apply a barrier spray or protective film 30 minutes before entering water. Change the pouch no more than 2 hours before activity to ensure optimal adhesion. For extra security, use a stoma support belt, especially for long sessions. Always inspect the wafer seal and carry a spare kit.\n\n**Medical Guidelines and Cautions**\nWait at least 6–8 weeks post-surgery before swimming to allow full healing. Avoid highly chlorinated or dirty water that may irritate peristomal skin. Swimming is not advised during active skin infections, severe stenosis, or significant prolapse. Start with short 30-minute sessions, increasing gradually.\n\nA stoma is not a barrier to aquatic sports. With proper equipment, planning, and gradual reintroduction, swimming remains safe and empowering. Gill Castle’s example proves that strength is not the absence of change, but the courage to face it and swim through it." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gill Castle, una mujer de 44 años que vive con una ileostomía desde 2011, desarrolló un enfoque estructurado para superar los retos de nadar con un estoma. Tras años de fugas, encontró el éxito utilizando bolsas convexas, que ofrecían mejor adherencia y seguridad. Se entrenó gradualmente en el Mar del Norte, aumentando la exposición a condiciones duras.\n\nEl 12 de septiembre de 2023, Gill cruzó a nado en solitario el Canal de la Mancha en 13 horas y 53 minutos, recorriendo 21 millas náuticas. Su estoma permaneció perfectamente sellado, demostrando que es posible nadar a altos niveles con la preparación adecuada.\n\n**Consejos prácticos para nadar con un estoma**\nUtiliza bolsas convexas de alta adherencia. Aplica un spray barrera o una película protectora 30 minutos antes de entrar en el agua. Cambia la bolsa como máximo 2 horas antes de la actividad para garantizar una adherencia óptima. Para mayor seguridad, utilice un cinturón de sujeción del estoma, especialmente en sesiones largas. Inspeccione siempre el sello de la oblea y lleve un kit de repuesto.\n\n**Guías médicas y precauciones**\nEspere al menos 6-8 semanas después de la cirugía antes de nadar para permitir una cicatrización completa. Evite el agua muy clorada o sucia que pueda irritar la piel periestomal. Se desaconseja la natación en caso de infecciones cutáneas activas, estenosis grave o prolapso importante. Empiece con sesiones cortas de 30 minutos, aumentando gradualmente.\n\nUn estoma no es una barrera para los deportes acuáticos. Con el equipo adecuado, planificación y una reintroducción gradual, la natación sigue siendo segura y fortalecedora. El ejemplo de Gill Castle demuestra que la fuerza no es la ausencia de cambio, sino el valor para afrontarlo y nadar a través de él."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gill Castle: attraversare la Manica con una stomia\n\nGill Castle, una donna di 44 anni con un’ileostomia dal 2011, ha sviluppato un metodo efficace per affrontare le difficoltà legate al nuoto con una stomia. Dopo anni di tentativi e perdite, ha trovato la soluzione nell’uso di placche convesse ad alta adesione, che garantiscono maggiore sicurezza e stabilità. Si è allenata gradualmente nel Mare del Nord, esponendosi progressivamente a condizioni impegnative.\n\nIl 12 settembre 2023, Gill ha attraversato la Manica in solitaria, nuotando per 13 ore e 53 minuti e coprendo 21 miglia nautiche. Il suo presidio stomale è rimasto perfettamente sigillato per tutta la traversata, dimostrando che con la giusta preparazione è possibile praticare nuoto anche ad alti livelli.\n\n\n\nConsigli pratici per nuotare con una stomia\n\t•\tUsa dispositivi con placca convessa ad alta adesione per una maggiore tenuta.\n\t•\tApplica uno spray barriera o un film protettivo cutaneo almeno 30 minuti prima di entrare in acqua.\n\t•\tCambia il presidio al massimo due ore prima dell’attività per garantire una tenuta ottimale.\n\t•\tPer maggiore sicurezza, indossa una fascia di supporto per stomia, soprattutto durante sessioni prolungate.\n\t•\tControlla sempre il sigillo della placca prima di nuotare e porta con te un kit di emergenza.\n\n\n\nIndicazioni mediche e precauzioni\n\t•\tAttendere almeno 6–8 settimane dopo l’intervento prima di tornare in acqua, per garantire una guarigione completa.\n\t•\tEvitare acque molto clorate o sporche, che possono irritare la cute peristomale.\n\t•\tIl nuoto non è consigliato in presenza di infezioni cutanee attive, stenosi severe o prolasso marcato.\n\t•\tIniziare con sessioni brevi da circa 30 minuti, aumentando gradualmente il tempo in acqua.\n\n\n\nUna stomia non è un limite agli sport acquatici. Con l’equipaggiamento giusto, una pianificazione attenta e un rientro graduale, il nuoto può restare un’attività sicura e gratificante.\nL’esempio di Gill Castle dimostra che la forza non è l’assenza di cambiamento, ma il coraggio di affrontarlo… e nuotarci dentro."
+          }
+        }
+      }
     },
     "Giuseppe Fama, Stomatherapist" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giuseppe Fama, Estomaterapeuta"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dott. Giuseppe Fama "
+          }
+        }
+      }
     },
     "I couldn't let my urostomy change my love for sports and change who I am." : {
       "extractionState" : "stale",
@@ -640,13 +848,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Non potevo lasciare che la mia urostomia cambiasse il mio amore per lo sport e chi sono."
+            "value" : "Non potevo lasciare che la mia urostomia cambiasse il mio amore per lo sport "
           }
         }
       }
     },
     "I had difficulties everyday, but it seemed that for the rest of the world I was still the same." : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -664,6 +872,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avevo difficoltà ogni giorno, ma sembrava che per il resto del mondo fossi ancora la stessa."
+          }
+        }
+      }
+    },
+    "If you've just received a stoma, the specialized clinic becomes your primary ally. Here you'll find specialized nurses who guide you step by step toward independence. You're not alone in this journey: these centers exist specifically to support you in transitioning to normal life.\n\n**When to Access the Service**\nYou can contact the clinic immediately after surgery, during the critical first month when the stoma changes shape and size, and for life whenever you need help. The service is open to all stoma patients, regardless of where you had your surgery.\n\n**What You'll Learn**\nDuring visits you'll learn daily management: perfect hygiene to keep skin healthy, when and how to change baseplates and pouches, which collection system suits you best. You'll learn to recognize and prevent problems like skin irritation, leaks from poor adhesion, stoma changes, and bowel blockages.\n\n**The Support Team**\nThe stoma care nurse will be your main reference, but you can also access a gastroenterologist for digestive problems, nutritionist to adapt your diet, psychologist for free emotional support, and oncologist if needed.\n\n**Warning Signs**\nContact the clinic immediately if the stoma becomes dark or black, you have severe continuous pain, haven't had a bowel movement for over 24 hours, have high fever with chills, or surrounding skin is very red and painful. Call within 24 hours for significant color changes, frequent leaks, persistent irritations, or urgent questions.\nThe stoma care clinic is your most important ally. Don't hesitate to use this service: it's made specifically for you and will help you discover that your stoma isn't an obstacle, but a solution to continue living life fully." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si acabas de recibir un estoma, la clínica especializada se convierte en tu principal aliado. Aquí encontrarás enfermeras especializadas que te guiarán paso a paso hacia la independencia. No estás solo en este viaje: estos centros existen específicamente para apoyarte en la transición a la vida normal.\n\n**Cuándo acceder al servicio**\nPuedes ponerte en contacto con la clínica inmediatamente después de la cirugía, durante el crítico primer mes en el que el estoma cambia de forma y tamaño, y de por vida siempre que necesites ayuda. El servicio está abierto a todos los pacientes con estoma, independientemente del lugar en el que hayan sido operados.\n\n**Lo que aprenderás**\nDurante las visitas aprenderás el manejo diario: higiene perfecta para mantener la piel sana, cuándo y cómo cambiar las placas base y las bolsas, qué sistema de recogida te conviene más. Aprenderás a reconocer y prevenir problemas como la irritación de la piel, las fugas por mala adherencia, los cambios de estoma y las obstrucciones intestinales.\n\n**El equipo de apoyo**\nLa enfermera estomaterapeuta será tu principal referencia, pero también puedes acceder a un gastroenterólogo para problemas digestivos, nutricionista para adaptar tu dieta, psicólogo para apoyo emocional gratuito y oncólogo si lo necesitas.\n\n**Señales de advertencia**\nPóngase en contacto con la clínica inmediatamente si el estoma se oscurece o ennegrece, tiene dolor intenso continuo, no ha defecado durante más de 24 horas, tiene fiebre alta con escalofríos o la piel circundante está muy enrojecida y dolorida. Llame en un plazo de 24 horas en caso de cambios de color importantes, pérdidas frecuentes, irritaciones persistentes o preguntas urgentes.\nLa clínica de estomas es su aliado más importante. No dudes en utilizar este servicio: está hecho específicamente para ti y te ayudará a descubrir que tu estoma no es un obstáculo, sino una solución para seguir viviendo la vida plenamente."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se hai appena ricevuto una stomia, l'ambulatorio specializzato diventa il tuo punto di riferimento principale. Qui troverai infermieri specializzati che ti accompagneranno passo dopo passo verso l'autonomia. Non sei solo in questo percorso: questi centri esistono proprio per sostenerti nel ritorno alla vita normale.\nQuando Rivolgersi al Servizio\nPuoi contattare l'ambulatorio subito dopo l'intervento, durante il primo mese critico quando la stomia cambia forma e dimensioni, e per tutta la vita ogni volta che hai bisogno di aiuto. Il servizio è aperto a tutti i pazienti stomizzati, indipendentemente da dove hai fatto l'operazione.\nCosa Imparerai\nDurante le visite imparerai la gestione quotidiana: l'igiene perfetta per mantenere la pelle sana, quando e come cambiare placche e sacche, quale sistema di raccolta è più adatto a te. Imparerai a riconoscere e prevenire problemi come irritazioni cutanee, perdite da cattiva adesione, cambiamenti della stomia e blocchi intestinali.\nL'Équipe di Supporto\nL'infermiere stomista sarà il tuo riferimento principale, ma potrai accedere anche a gastroenterologo per problemi digestivi, nutrizionista per adattare la dieta, psicologo per supporto emotivo gratuito, e oncologo se necessario.\nSegnali d'Allarme\nContatta immediatamente l'ambulatorio se la stomia diventa scura o nera, hai dolore forte e continuo, non hai evacuazioni da oltre 24 ore, hai febbre alta con brividi, o la pelle circostante è molto rossa e dolorante. Chiama entro 24 ore per cambiamenti significativi di colore, perdite frequenti, irritazioni persistenti, o domande urgenti.\nL'ambulatorio stomia è il tuo alleato più importante. Non esitare a utilizzare questo servizio: è fatto apposta per te e ti aiuterà a scoprire che la tua stomia non è un ostacolo, ma una soluzione per continuare a vivere la vita pienamente."
           }
         }
       }
@@ -713,7 +937,40 @@
         }
       }
     },
+    "Important Notice" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aviso importante"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni importanti"
+          }
+        }
+      }
+    },
+    "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. \n\nA **colostomy** is a surgical opening on the abdomen, called a **stoma**, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. \n\nIt can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. \n\nNow that you have a basic understanding, you're ready to begin. \n\n**Let's start this journey together!**" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En esta sección aprenderás qué es una colostomía, cómo funciona y qué aspectos es importante conocer en la vida diaria.\n\nUna **colostomía** es una abertura quirúrgica en el abdomen, denominada **estoma**, que permite que las heces salgan del colon hacia el exterior del cuerpo, donde se recogen en una bolsa adhesiva especial.\n\nPuede ser temporal o permanente, dependiendo del estado clínico. Las heces ya no pasan por el ano, sino a través del estoma, a una bolsa.\n\nAhora que ya tienes nociones básicas, estás listo para empezar.\n\n**Comencemos este viaje juntos."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In questa sezione imparerai cos'è una colostomia, come funziona e quali aspetti sono importanti da conoscere nella vita quotidiana.\nUna colostomia è un'apertura chirurgica sull'addome, chiamata stomia, che permette alle feci di uscire dal colon verso l'esterno del corpo, dove vengono raccolte in una sacca adesiva speciale.\nPuò essere temporanea o definitiva, a seconda della situazione clinica. Le feci non passano più attraverso l'ano ma attraverso la stomia, finendo nella sacca.\nOra che hai le conoscenze di base, sei pronto per iniziare.\nIniziamo insieme questo percorso!"
+          }
+        }
+      }
+    },
     "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. \n\nA colostomy is a surgical opening on the abdomen, called a stoma, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. \n\nIt can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -730,13 +987,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "In questa sezione imparerai cos'è una colostomia, come funziona e quali aspetti sono importanti da conoscere nella vita quotidiana.\n\nLa colostomia è un’apertura chirurgica sull’addome, chiamata stomia, che permette alle feci di uscire dal colon verso l’esterno del corpo, dove vengono raccolte in una sacca adesiva \nspeciale.\n\nPuò essere temporanea o permanente, a seconda della condizione clinica. Le feci non passano più attraverso l’ano ma attraverso la stomia, in una sacca.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\nClicca sui pulsanti e iniziamo insieme questo percorso!\n"
+            "value" : "In questa sezione imparerai che cos’è una colostomia, come funziona e quali aspetti è importante conoscere nella vita quotidiana.\n\nLa colostomia è un’apertura chirurgica sull’addome, chiamata stomia, che permette alle feci di uscire dal colon verso l’esterno del corpo, dove vengono raccolte in una sacca adesiva speciale.\n\nPuò essere temporanea o permanente, a seconda della condizione clinica. Le feci non passano più attraverso l’ano, ma escono tramite la stomia in una sacca.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\n\nClicca sui pulsanti e iniziamo insieme questo percorso!"
           }
         }
       }
     },
     "In this section you will learn what a urostomy is, how it functions and what you need to know for managing it in your daily life. \n\nA urostomy is a surgically created opening in the abdomen, called a stoma, that redirects urine from the kidneys directly to the outside of the body, where it is collected in a specialized adhesive pouch system. \n\nThis procedure is usually permanent and is performed when the bladder cannot function properly or needs to be removed. The urine no longer flows through the bladder but exits continuously through the stoma into a collection bag. Since urine production is constant, urostomy bags typically need to be emptied more frequently and often include a drainage tap for easy emptying. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -753,13 +1010,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "In questa sezione imparerai cos'è una urostomia, come funziona e cosa devi sapere per gestirla nella vita quotidiana.\n\nL’ileostomia è un’apertura chirurgica creata sull’addome, chiamata stomia, che devia il flusso dei residui intestinali dall’intestino tenue direttamente all’esterno del corpo, dove vengono raccolti in una sacca adesiva speciale.\n\nQuesta procedura può essere temporanea o permanente, a seconda delle esigenze mediche specifiche. I residui non passano più attraverso l’intestino crasso e il retto, ma escono attraverso la stomia in una sacca di raccolta.\n\nPoiché i residui provengono dall’intestino tenue, tendono ad essere più liquidi e frequenti rispetto ad altri tipi di stomia.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\n\nClicca sui pulsanti e iniziamo insieme questo percorso!"
+            "value" : "In questa sezione imparerai che cos’è una urostomia, come funziona e cosa devi sapere per gestirla nella vita quotidiana.\n\nL’urostomia è un’apertura chirurgica creata sull’addome, chiamata stomia, che permette di deviare il flusso dell’urina dai reni direttamente all’esterno del corpo, dove viene raccolta in una sacca adesiva speciale.\n\nQuesta procedura può essere temporanea o permanente, a seconda delle esigenze mediche specifiche. L’urina non passa più attraverso la vescica e l’uretra, ma esce tramite la stomia in una sacca di raccolta.\n\nPoiché si tratta di urina, il flusso è generalmente continuo e richiede una gestione regolare per evitare perdite o infezioni.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\n\nClicca sui pulsanti e iniziamo insieme questo percorso!"
           }
         }
       }
     },
     "In this section you will learn what an ileostomy is, how it functions and what you need to know for your daily routine. \n\nAn ileostomy is a surgically created opening in the abdomen, called a stoma, that diverts the flow of intestinal waste from the small intestine directly to the outside of the body, where it is collected in a specialized adhesive pouch. \n\nThis procedure can be either temporary or permanent, based on your specific medical needs. The waste no longer travels through the large intestine and rectum but exits through the stoma into a collection bag. Because the output comes from the small intestine, it tends to be more liquid and frequent than other types of ostomies. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -776,7 +1033,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "In questa sezione imparerai cos'è un’ileostomia, come funziona e cosa devi sapere per la tua routine quotidiana.\n\nL’ileostomia è un’apertura chirurgica creata sull’addome, chiamata stomia, che devia il flusso dei residui intestinali dall’intestino tenue direttamente all’esterno del corpo, dove vengono raccolti in una sacca adesiva speciale.\n\nQuesta procedura può essere temporanea o permanente, a seconda delle esigenze mediche specifiche. I residui non passano più attraverso l’intestino crasso e il retto, ma escono attraverso la stomia in una sacca di raccolta.\n\nPoiché i residui provengono dall’intestino tenue, tendono ad essere più liquidi e frequenti rispetto ad altri tipi di stomia.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\n\nClicca sui pulsanti e iniziamo insieme questo percorso!"
+            "value" : "In questa sezione imparerai che cos’è un’ileostomia, come funziona e cosa devi sapere per la tua routine quotidiana.\n\nL’ileostomia è un’apertura chirurgica creata sull’addome, chiamata stomia, che devia il flusso dei residui intestinali dall’intestino tenue direttamente all’esterno del corpo, dove vengono raccolti in una sacca adesiva speciale.\n\nQuesta procedura può essere temporanea o permanente, a seconda delle esigenze mediche specifiche. I residui non passano più attraverso l’intestino crasso e il retto, ma escono attraverso la stomia in una sacca di raccolta.\n\nPoiché i residui provengono dall’intestino tenue, tendono ad essere più liquidi e frequenti rispetto ad altri tipi di stomia.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\n\nClicca sui pulsanti e iniziamo insieme questo percorso!"
           }
         }
       }
@@ -798,7 +1055,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Solleva delicatamente la placca dalla pelle senza dolore o danni. Particolarmente utile per la pelle sensibile o per cambi frequenti della sacca, questo spray previene traumi e rende la rimozione più facile e sicura."
+            "value" : "Solleva delicatamente la placca dalla pelle senza causare dolore o danni. Particolarmente utile per la pelle sensibile o per i cambi frequenti della sacca, questo spray previene traumi e rende la rimozione più facile e sicura."
           }
         }
       }
@@ -974,7 +1231,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Una placca o guida per la misurazione della stomia che aiuta a determinare la dimensione della stomia."
+            "value" : "Una placca o guida per la misurazione della stomia che aiuta a definirne la dimensione."
           }
         }
       }
@@ -996,7 +1253,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scheda di misurazione della stomia"
+            "value" : "Misuratore per la stomia"
           }
         }
       }
@@ -1018,7 +1275,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Progettati per eliminare in sicurezza i materiali usati per stomia come sacche, guanti, salviette o assorbenti. Questi sacchetti sono spesso resistenti agli odori, a prova di perdita e richiudibili per mantenere l’igiene."
+            "value" : "Progettati per smaltire in modo igienico e sicuro i materiali utilizzati nella gestione della stomia, come sacche, guanti, salviette o teli assorbenti. Questi sacchetti sono generalmente richiudibili, resistenti agli odori e a prova di perdita, per garantire discrezione e pulizia anche fuori casa."
           }
         }
       }
@@ -1062,7 +1319,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Posizionati intorno allo stoma o sotto l’area di lavoro per raccogliere eventuali perdite durante il cambio. Proteggono i vestiti, la pelle e le superfici garantendo una procedura pulita e confortevole."
+            "value" : "Vengono posizionati intorno alla stomia o sotto l’area in cui si effettua il cambio del dispositivo, per raccogliere eventuali perdite. Aiutano a proteggere la pelle, gli indumenti e le superfici, rendendo la procedura più igienica e confortevole."
           }
         }
       }
@@ -1090,7 +1347,7 @@
       }
     },
     "Keep Doing Sports" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1101,7 +1358,7 @@
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sigue practicando deportes"
+            "value" : "Sigue Practicando Deportes"
           }
         },
         "it" : {
@@ -1135,7 +1392,7 @@
       }
     },
     "Living with a Stoma" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1202,7 +1459,7 @@
       }
     },
     "Martha Mendoza" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1225,6 +1482,7 @@
       }
     },
     "My stoma is a constant reminder of what I’ve lost. But it’s also a symbol of my strength." : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1241,7 +1499,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Il mio stoma è un costante promemoria di ciò che ho perso. Ma è anche un simbolo della mia forza"
+            "value" : "Il mio stoma è un promemoria costante di ciò che hopassato. Ma è anche il simbolo della forza con cui ho saputo rialzarmi."
           }
         }
       }
@@ -1313,10 +1571,37 @@
       }
     },
     "One Stoma, Two Miracles" : {
-
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un estoma, Dos milagros"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una storia, due miracoli"
+          }
+        }
+      }
     },
     "Patrizia Nazzarro" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patrizia Nazzarro"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patrizia Nazzarro"
+          }
+        }
+      }
     },
     "Practice with Simulators" : {
       "localizations" : {
@@ -1335,7 +1620,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allenati con simulatori"
+            "value" : "Allenati con i simulatori"
           }
         }
       }
@@ -1452,6 +1737,7 @@
       }
     },
     "SMALL INTESTINE STOMA" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1474,7 +1760,7 @@
       }
     },
     "Soccer was my life, and after my urostomy, I thought it was gone. I was scared to move too much, to get tackled, to leak. But my coach said, “Come back. We’ll figure it out.” I trained slow. I tried different bags. The first match back, I was terrified. Then I scored. My team lifted me in the air, and I cried like a baby. I still have my urostomy, but now I also have my confidence, my team, and my game back." : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1491,7 +1777,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Il calcio era la mia vita, e dopo la mia urostomia pensavo fosse finita. Avevo paura di muovermi troppo, di subire un placcaggio, di perdere. Ma il mio allenatore ha detto: “Torna. Troveremo una soluzione.” Mi sono allenato piano. Ho provato sacche diverse. Alla prima partita, ero terrorizzato. Poi ho segnato. La mia squadra mi ha sollevato in aria e ho pianto come un bambino. Ho ancora la mia urostomia, ma ora ho anche la mia fiducia, la mia squadra e il mio gioco di ritorno."
+            "value" : "Il calcio era la mia vita, e dopo l’urostomia pensavo fosse finita. Avevo paura di muovermi troppo, di essere placcato, di avere perdite. Ma il mio allenatore ha detto: «Torna. Troveremo una soluzione.» Ho ripreso ad allenarmi con calma. Ho provato diverse sacche. Alla prima partita, ero terrorizzato. Poi ho segnato. La squadra mi ha sollevato in aria, e ho pianto come un bambino. Ho ancora l’urostomia, ma ora ho anche la mia fiducia, la mia squadra e il mio gioco di nuovo."
           }
         }
       }
@@ -1647,7 +1933,52 @@
       }
     },
     "The sea had not abandoned me… it was I who had to learn to return to it." : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El mar no me había abandonado... era yo quien tenía que aprender a volver a él."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il mare non mi aveva abbandonato… ero io che dovevo imparare a tornare da lui"
+          }
+        }
+      }
+    },
+    "This app is intended for educational and informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with any questions you may have regarding a medical condition. \n\nAll data, references, and methodologies used in the app are transparently documented. You can review the full list of citations and supporting materials down below." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta aplicación sólo tiene fines educativos e informativos y no sustituye al consejo, diagnóstico o tratamiento médico profesional. Consulte siempre a un profesional sanitario cualificado si tiene alguna duda sobre su estado de salud.\n\nTodos los datos, referencias y metodologías utilizados en la aplicación están documentados de forma transparente. Puede consultar la lista completa de citas y materiales de apoyo más abajo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa app è destinata esclusivamente a scopi educativi e informativi e non sostituisce il parere medico professionale, la diagnosi o il trattamento. Consulta sempre un medico qualificato per qualsiasi domanda riguardante una condizione medica.\nTutti i dati, i riferimenti e le metodologie utilizzate nell'app sono documentati in modo trasparente. Puoi consultare l'elenco completo delle citazioni e dei materiali di supporto qui sotto."
+          }
+        }
+      }
+    },
+    "This simulator is just a tool to learn, not a diagnosis. Consult your doctor." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este simulador es sólo una herramienta para aprender, no un diagnóstico. Consulte a su médico."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo simulatore ha solo scopo informativo ed educativo. Non sostituisce in alcun modo una diagnosi o un consulto medico."
+          }
+        }
+      }
     },
     "Tools" : {
       "localizations" : {
@@ -1694,7 +2025,7 @@
       }
     },
     "Urostomia" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1718,6 +2049,7 @@
       "shouldTranslate" : false
     },
     "Urostomy" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1757,7 +2089,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Un'urostomia è una procedura chirurgica che crea un'apertura per il sistema urinario per deviare l'urina da una vescica malata o danneggiata."
+            "value" : "Un’urostomia è una procedura chirurgica che crea un’apertura nel sistema urinario per deviare l’urina da una vescica malata o danneggiata."
           }
         }
       }
@@ -1780,7 +2112,23 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Stomia urinaria"
+            "value" : "Urostomia"
+          }
+        }
+      }
+    },
+    "View Disclamer & Citations" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver Divulgación y Citas"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consulta l’informativa completa e le fonti"
           }
         }
       }
@@ -1832,7 +2180,21 @@
       }
     },
     "When Luca discovered he had to live with a stoma, the world seemed to stop. He had just experienced one of the most intense moments of his life — the birth of his first child — and immediately afterwards he found himself facing a new, completely unexpected reality. A stoma. A difficult word, a radical change, a wound that seemed to be more of a wound to the soul than to the body.\n\n\"I thought my active life was over,\" he says today. And yet, what seemed like a limitation has turned into one of the greatest — and most beautiful — challenges of his life.\n\n**Accept, Understand, Start Over**  \nAt the beginning, like many, there were moments of fear and uncertainty:\n\n- How will I dress?  \n- Will I be able to swim, go to the beach?  \n- Will people notice?  \n- Will I be able to hug my son without fear?  \n\nOver time, Luca has learned that a stoma is not the end, but a new beginning. It is not a sign of weakness, but a demonstration of survival and adaptation. With the right medical support, good nursing guidance and a lot of inner strength, he has discovered that life can be lived to the fullest, even with a bag.\n\n**Technique, Routine and Freedom**  \nLuca has learned to manage his stoma day after day. Here are some of the tips he has made his own and that he shares with those who are starting this journey:\n\n-  Choose the right bag for you. There are different types: one-piece, two-piece, with filter, transparent or opaque. Your stoma nurse will help you find the one that best suits your lifestyle.  \n-  Prepare a kit to always carry with you. A small beauty case with a spare bag, wipes, plasters, scissors, and a bag for waste. It makes you feel more secure wherever you are.  \n-  Respect your skin. Use delicate products for cleaning and, if necessary, protective barriers to avoid irritation.  \n-  Be patient with yourself. The first changes may seem complicated, but with practice they will become routine.  \n-  Move. Live. Train. After talking to his doctor, Luca gradually returned to the pool. With a wetsuit and waterproof devices, he discovered that he could still swim, just like before. Better than before.  \n-  Face fears with words. Talk about them with those close to you. Often, fear is more in our heads than in the eyes of others.\n\n**The English Channel Feat**  \nThree years after his operation, Luca swam across the English Channel. Almost 14 hours in freezing water, without being able to stop.  \n\"Every stroke was a way of saying: I am not just my body. I am my strength, my will, my desire to live.\"  \nThat day, on the French coast, not just an athlete arrived. A new, rebuilt man arrived.\n\n**Support That Makes a Difference**  \nLuca has now founded an association that helps those who live with a stoma, offers advice, tells true stories, distributes guides and proposes group and sports meetings.  \nHe has created a network that unites those who have already done this journey with those who are starting now.\n\n_Remember: you are not alone._  \nEvery day, thousands of people live, work, love, travel, play sports, and enjoy life with a stoma.\n\n**Luca's Message**  \n\"We are not broken. We are rebuilt. And often, stronger than before.\"\n\n **First Steps for You**\n\n1. Trust your stoma therapist. He will guide you through the most delicate days and teach you specific techniques.  \n2. Inform those close to you. Even a little support can make a big difference.  \n3. Find your routine. After a few weeks, management will become automatic.  \n4. Don't give up on what you love. Ask how to adapt, but don't stop dreaming.  \n5. Join a patient network. Sharing experiences is the best medicine for the soul." : {
-
+      "extractionState" : "manual",
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuando Luca descubrió que tenía que vivir con un estoma, el mundo pareció detenerse. Acababa de vivir uno de los momentos más intensos de su vida -el nacimiento de su primer hijo- e inmediatamente después se encontró ante una nueva realidad totalmente inesperada. Un estoma. Una palabra difícil, un cambio radical, una herida que parecía serlo más en el alma que en el cuerpo.\n\n\"Pensé que mi vida activa había terminado\", dice hoy. Y, sin embargo, lo que parecía una limitación se ha convertido en uno de los mayores -y más hermosos- retos de su vida.\n\n**Aceptar, comprender, volver a empezar** \nAl principio, como muchos, hubo momentos de miedo e incertidumbre:\n\n- ¿Cómo me vestiré?  \n- ¿Podré nadar, ir a la playa?  \n- ¿Se fijará la gente?  \n- ¿Podré abrazar a mi hijo sin miedo?  \n\nCon el tiempo, Luca ha aprendido que un estoma no es el final, sino un nuevo comienzo. No es un signo de debilidad, sino una demostración de supervivencia y adaptación. Con el apoyo médico adecuado, una buena orientación de enfermería y mucha fuerza interior, ha descubierto que se puede vivir la vida al máximo, incluso con una bolsa.\n\n**Técnica, rutina y libertad** \nLuca ha aprendido a gestionar su estoma día a día. Estos son algunos de los consejos que ha hecho suyos y que comparte con quienes empiezan este camino:\n\n- Elige la bolsa adecuada para ti. Existen diferentes tipos: de una pieza, de dos piezas, con filtro, transparente u opaca. Tu enfermera estomaterapeuta te ayudará a encontrar la que mejor se adapte a tu estilo de vida.  \n- Prepara un kit para llevarlo siempre contigo. Un pequeño neceser con una bolsa de recambio, toallitas, tiritas, tijeras y una bolsa para los residuos. Te hará sentir más segura estés donde estés.  \n- Respeta tu piel. Utiliza productos delicados para la limpieza y, si es necesario, barreras protectoras para evitar irritaciones.  \n- Ten paciencia contigo mismo. Los primeros cambios pueden parecer complicados, pero con la práctica se convertirán en rutina.  \n- Muévete. Viva. Entrena. Tras hablar con su médico, Luca volvió poco a poco a la piscina. Con un traje de neopreno y dispositivos impermeables, descubrió que podía seguir nadando, como antes. Mejor que antes.  \n- Afronta los miedos con palabras. Háblalo con tus allegados. A menudo, el miedo está más en nuestra cabeza que en los ojos de los demás.\n\n**La hazaña del Canal de la Mancha** \nTres años después de su operación, Luca cruzó a nado el Canal de la Mancha. Casi 14 horas en aguas heladas, sin poder parar.  \n\"Cada brazada era una forma de decir: No soy sólo mi cuerpo. Soy mi fuerza, mi voluntad, mis ganas de vivir\".  \nAquel día, en la costa francesa, no llegó sólo un atleta. Llegó un hombre nuevo, reconstruido.\n\n**Un apoyo que marca la diferencia** \nLuca ha fundado ahora una asociación que ayuda a quienes viven con un estoma, ofrece consejos, cuenta historias reales, distribuye guías y propone encuentros de grupo y deportivos.  \nHa creado una red que une a los que ya han hecho este viaje con los que empiezan ahora.\n\n_Recuerda: no estás solo._ \nCada día, miles de personas viven, trabajan, aman, viajan, hacen deporte y disfrutan de la vida con un estoma.\n\n**Mensaje de Luca** \n\"No estamos rotos. Estamos reconstruidos. Y a menudo, más fuertes que antes\".\n\n **Primeros pasos para ti**\n\n1. Confía en tu estomaterapeuta. Él te guiará en los días más delicados y te enseñará técnicas específicas.  \n2. Informa a tus allegados. Incluso un poco de apoyo puede marcar una gran diferencia.  \n3. Encuentre su rutina. Al cabo de unas semanas, la gestión se volverá automática.  \n4. No renuncies a lo que te gusta. Pregunta cómo adaptarte, pero no dejes de soñar.  \n5. Únete a una red de pacientes. Compartir experiencias es la mejor medicina para el alma."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quando Luca ha scoperto di dover vivere con una stomia, il mondo gli è sembrato fermarsi. Aveva appena vissuto uno dei momenti più intensi della sua vita — la nascita del suo primo figlio — e subito dopo si è trovato ad affrontare una nuova realtà, del tutto inaspettata. Una stomia. Una parola difficile, un cambiamento radicale, una ferita che sembrava più ferita dell’anima che del corpo.\n\n“Pensavo che la mia vita attiva fosse finita,” dice oggi. Eppure, ciò che sembrava una limitazione si è trasformato in una delle sfide più grandi — e più belle — della sua vita.\n\n**Accettare, Capire, Ricominciare**\nAll’inizio, come per molti, ci sono stati momenti di paura e incertezza:\n- Come mi vestirò?\n- Potrò nuotare, andare in spiaggia?\n- La gente se ne accorgerà?\n- Potrò abbracciare mio figlio senza paura?\n\nCol tempo, Luca ha imparato che una stomia non è la fine, ma un nuovo inizio. Non è un segno di debolezza, ma una dimostrazione di sopravvivenza e adattamento. Con il giusto supporto medico, una buona guida infermieristica e tanta forza interiore, ha scoperto che la vita può essere vissuta appieno, anche con una sacca.\n\n**Tecnica, Routine e Libertà**\nLuca ha imparato a gestire la stomia giorno dopo giorno. Ecco alcuni consigli che ha fatto suoi e che condivide con chi sta iniziando questo percorso:\n-  Scegli la sacca giusta per te. Ce ne sono di diversi tipi: monopezzo, due pezzi, con filtro, trasparente o opaca. La tua stomaterapista ti aiuterà a trovare quella più adatta al tuo stile di vita.\n-  Prepara un kit da portare sempre con te. Un piccolo beauty case con una sacca di ricambio, salviette, cerotti, forbici e una busta per i rifiuti. Ti fa sentire più sicuro ovunque tu sia.\n-  Rispetta la tua pelle. Usa prodotti delicati per la pulizia e, se necessario, barriere protettive per evitare irritazioni.\n-  Sii paziente con te stesso. I primi cambi possono sembrare complicati, ma con la pratica diventeranno routine.\n-  Muoviti. Vivi. Allenati. Dopo aver parlato con il medico, Luca è tornato gradualmente in piscina. Con muta e dispositivi impermeabili ha scoperto che può ancora nuotare, come prima. Anzi, meglio di prima.\n-  Affronta le paure con le parole. Parlane con chi ti sta vicino. Spesso la paura è più nella nostra testa che negli occhi degli altri.\n\n**L’Impresa del Canale della Manica**\nTre anni dopo l’operazione, Luca ha attraversato a nuoto il Canale della Manica. Quasi 14 ore in acqua gelida, senza poter fermarsi.\n«Ogni bracciata era un modo per dire: non sono solo il mio corpo. Sono la mia forza, la mia volontà, il mio desiderio di vivere.»\nQuel giorno, sulla costa francese, non è arrivato solo un atleta. È arrivato un uomo nuovo, ricostruito.\n\n**Il Supporto che Fa la Differenza**\nOggi Luca ha fondato un’associazione che aiuta chi vive con una stomia, offre consigli, racconta storie vere, distribuisce guide e organizza incontri di gruppo e attività sportive.\nHa creato una rete che unisce chi ha già percorso questa strada con chi la sta iniziando adesso.\n\n_Ricorda: non sei solo._\nOgni giorno migliaia di persone vivono, lavorano, amano, viaggiano, fanno sport e si godono la vita con una stomia.\n\n**Il Messaggio di Luca**\n«Non siamo rotti. Siamo ricostruiti. E spesso, più forti di prima.»\n\n**I Primi Passi per Te**\n1. Fidati della tua stomaterapista. Ti guiderà nei giorni più delicati e ti insegnerà tecniche specifiche.\n2. Informa chi ti sta vicino. Anche un piccolo supporto fa la differenza.\n3. Trova la tua routine. Dopo qualche settimana la gestione diventerà automatica.\n4. Non rinunciare a ciò che ami. Chiedi come adattarti, ma non smettere di sognare.\n5. Unisciti a una rete di pazienti. Condividere le esperienze è la migliore medicina per l’anima."
+          }
+        }
+      }
     },
     "You have completed the colostomy tutorial." : {
       "localizations" : {
@@ -1851,7 +2213,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hai completato il colostomy tutorial!"
+            "value" : "Hai completato il tutorial sulla colostomia!"
           }
         }
       }
