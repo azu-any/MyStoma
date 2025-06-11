@@ -34,7 +34,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"C'è questa convinzione che se hai una stomia non potrai avere figli,\" racconta Holly Fleet, 28 anni, che ha affrontato la gravidanza dopo un'ileostomia d'urgenza nel 2021.\nLa realtà è molto diversa: la stragrande maggioranza delle donne con stomia può concepire e vivere gravidanze completamente normali. Le stomie non influenzano la fertilità, quindi il concepimento avviene senza problemi aggiuntivi.\nPrimo Trimestre: Gestire le Nausee\nDurante i primi mesi, le nausee mattutine richiedono strategie specifiche. Tieni sempre a portata di mano crackers secchi e acqua per gestire il fastidio.\nÈ preferibile cambiare il sistema di raccolta la sera quando le nausee sono meno intense, e usare sacche più piccole durante il giorno per maggiore comfort. Il controllo dell'idratazione diventa fondamentale e richiede un monitoraggio medico regolare.\nSecondo e Terzo Trimestre: Adattamenti Fisici\nMan mano che il pancione cresce, la dimensione della stomia può aumentare ma tornerà normale dopo il parto. Usa placche più flessibili che si adattano ai cambiamenti del corpo e investi in cinture di supporto specifiche per gestanti stomizzate. La stomia potrebbe scomparire dalla vista con la crescita del pancione, quindi usare uno specchio diventa utile. Applica creme barriera per proteggere la pelle più sensibile e documenta i cambiamenti con foto per aiutare l'équipe medica.\nParto e Allattamento\nLa maggior parte delle donne partorisce senza complicazioni legate alla stomia. È essenziale preparare scorte extra per l'ospedale e informare tutto il personale sanitario della presenza della stomia.\nDurante l'allattamento, sperimentare diverse posizioni aiuta a trovare la più comoda. Spesso la posizione sdraiata su un fianco evita pressioni sulla stomia mantenendo un buon attacco del bambino.\nAvere una stomia non è un ostacolo alla maternità. Con la giusta preparazione e supporto medico, ogni donna può vivere pienamente la gravidanza e la genitorialità, spesso scoprendo forza e resilienza inaspettate."
+            "value" : "\"C'è questa convinzione che se hai una stomia non potrai avere figli,\" racconta Holly Fleet, 28 anni, che ha affrontato la gravidanza dopo un'ileostomia d'urgenza nel 2021.\nLa realtà è molto diversa: la stragrande maggioranza delle donne con stomia può concepire e vivere gravidanze completamente normali. Le stomie non influenzano la fertilità, quindi il concepimento avviene senza problemi aggiuntivi.\n\n**Primo Trimestre: Gestire le Nausee**\nDurante i primi mesi, le nausee mattutine richiedono strategie specifiche. Tieni sempre a portata di mano crackers secchi e acqua per gestire il fastidio.\nÈ preferibile cambiare il sistema di raccolta la sera quando le nausee sono meno intense, e usare sacche più piccole durante il giorno per maggiore comfort. Il controllo dell'idratazione diventa fondamentale e richiede un monitoraggio medico regolare.\n\n**Secondo e Terzo Trimestre: Adattamenti Fisici**\nMan mano che il pancione cresce, la dimensione della stomia può aumentare ma tornerà normale dopo il parto. Usa placche più flessibili che si adattano ai cambiamenti del corpo e investi in cinture di supporto specifiche per gestanti stomizzate. La stomia potrebbe scomparire dalla vista con la crescita del pancione, quindi usare uno specchio diventa utile. Applica creme barriera per proteggere la pelle più sensibile e documenta i cambiamenti con foto per aiutare l'équipe medica.\n\n**Parto e Allattamento**\nLa maggior parte delle donne partorisce senza complicazioni legate alla stomia. È essenziale preparare scorte extra per l'ospedale e informare tutto il personale sanitario della presenza della stomia.\nDurante l'allattamento, sperimentare diverse posizioni aiuta a trovare la più comoda. Spesso la posizione sdraiata su un fianco evita pressioni sulla stomia mantenendo un buon attacco del bambino.\n\nAvere una stomia non è un ostacolo alla maternità. Con la giusta preparazione e supporto medico, ogni donna può vivere pienamente la gravidanza e la genitorialità, spesso scoprendo forza e resilienza inaspettate."
           }
         }
       }
@@ -122,7 +122,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A New Life Inside and Out"
+            "value" : "After my surgery, I thought my life was over. The stoma bag felt like a punishment. But little by little, I learned tricks—like how to wear loose tops, or plan ahead when going out. One day, my bag popped in the middle of a date. I panicked, but he just laughed and helped me clean up. That’s when I realized: this thing doesn’t define me. I’m still me—funny, kind, and strong. And honestly? I’ve never felt more alive."
           }
         },
         "es-419" : {
@@ -135,12 +135,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dopo l’intervento chirurgico, pensavo che la mia vita fosse finita. La sacca dello stoma mi sembrava una punizione. Ma, poco a poco, ho imparato dei trucchi—come indossare maglie larghe o pianificare tutto prima di uscire. Un giorno, la mia sacca si è rotta nel bel mezzo di un appuntamento. Sono andata nel panico, ma lui ha semplicemente riso e mi ha aiutata a pulire. È stato in quel momento che ho capito: questa cosa non mi definisce. Sono ancora me stessa—divertente, gentile e forte. E, sinceramente? Non mi sono mai sentita così viva."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Una vita tutta nuova"
           }
         }
       }
@@ -208,24 +202,24 @@
       },
       "shouldTranslate" : false
     },
-    "All" : {
+    "Are you sure you want to restart the tutorial? Your current progress will be lost." : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "All"
+            "value" : "Are you sure you want to restart the tutorial? Your current progress will be lost."
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Todo"
+            "value" : "¿Seguro que quieres reiniciar el tutorial? Se perderá tu progreso actual."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutto"
+            "value" : "Sei sicuro di voler riavviare il tutorial? I tuoi progressi attuali andranno persi."
           }
         }
       }
@@ -508,12 +502,6 @@
             "state" : "translated",
             "value" : "Prossimamente!"
           }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prossimamente!"
-          }
         }
       }
     },
@@ -653,12 +641,6 @@
             "state" : "translated",
             "value" : "Elena aveva 28 anni quando le fu diagnosticata una malattia infiammatoria intestinale che rese necessaria un’ileostomia.\nDue anni dopo, lei e suo marito Marco decisero di provare ad avere un bambino.\n“All’inizio ero terrorizzata,” racconta Elena. “Pensavo che la stomia mi avrebbe impedito di essere una madre.”\n\n**La scoperta della gravidanza**\nQuando Elena scoprì di essere incinta, il suo primo pensiero andò alla stomia.\n“Sono corsa dal mio stomaterapista,” ricorda con un sorriso. “Avevo bisogno di sapere cosa aspettarmi nei nove mesi successivi.”\n\n**Primo trimestre: adattamento e nausea**\nDurante i primi mesi, Elena affrontò la classica nausea mattutina, complicata dalla gestione della stomia.\n\n*Consigli pratici per il primo trimestre:*\n- Tieni sempre a portata di mano cracker secchi e acqua per gestire la nausea\n- Cambia il sistema di raccolta la sera, quando la nausea è meno intensa\n- Usa sacche più piccole durante il giorno per un maggiore comfort\n- Controlla regolarmente l’idratazione con il supporto del team medico\n\n**Secondo trimestre: crescita e adattamenti**\nCon la crescita del pancione, Elena iniziò a notare cambiamenti nella posizione della stomia.\n“Il mio stomaterapista mi ha spiegato che era del tutto normale,” racconta. “La pelle si stava tendendo e la stomia si spostava leggermente.”\n\n*Consigli pratici per il secondo trimestre:*\n- Usa basi più flessibili che si adattino ai cambiamenti del corpo\n- Investi in fasce di supporto specifiche per persone con stomia in gravidanza\n- Applica creme barriera per proteggere la pelle più sensibile\n- Documenta i cambiamenti con delle foto da mostrare al team medico\n\n**Terzo trimestre: prepararsi al parto**\nNegli ultimi mesi, Elena si preparò al parto concentrandosi sulla cura della stomia.\n«Ho preparato una borsa per l’ospedale con tutto il necessario,» spiega.\n\nConsigli pratici per il terzo trimestre e il parto:\n- Prepara una scorta extra di materiale ospedaliero (assorbenti, sacche, accessori)\n- Informa tutto il personale ospedaliero della presenza della stomia\n- Scegli un ospedale con esperienza nella gestione dei pazienti con stomia\n- Posiziona la sacca in modo che non interferisca con il monitoraggio fetale\n\n**Il parto e oltre**\nElena ha partorito naturalmente la piccola Sofia, senza alcuna complicazione.\n«Durante il travaglio, la stomia non ha causato problemi,» racconta con entusiasmo. «Anzi, il personale medico era molto preparato e mi ha fatta sentire completamente a mio agio.»\n\n**Allattamento e nuova vita**\nDopo il parto, Elena ha potuto allattare senza difficoltà.\n“La posizione migliore per me era sdraiata su un fianco,” spiega. “Così evitavo di fare pressione sulla stomia e Sofia riusciva ad attaccarsi bene.”\n\n*Consigli pratici per l’allattamento:*\n- Prova diverse posizioni per trovare quella più comoda\n- Usa cuscini di supporto per evitare pressioni sulla stomia\n- Mantieniti ben idratata per favorire la produzione di latte\n- Non esitare a chiedere supporto a consulenti esperti in allattamento\n\n\n**Pensieri finali**\nOggi Sofia ha tre anni ed Elena è incinta del suo secondo figlio. “La mia stomia non mi ha mai impedito di essere la madre che volevo essere,” conclude Elena. “Anzi, mi ha insegnato a essere più forte e resiliente. I miei figli cresceranno sapendo che la diversità è normale e che l’amore non conosce ostacoli.”"
           }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Avvertenze e Fonti"
-          }
         }
       }
     },
@@ -686,6 +668,12 @@
     },
     "Everything You Need to Know About Getting Professional Support for Your Stoma Journey" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Everything You Need to Know About Getting Professional Support for Your Stoma Journey"
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -705,19 +693,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Everything You Need to Know About Getting Professional Support for Your Stoma Journey"
+            "value" : "Explore & Learn"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Todo lo que necesita saber para obtener apoyo profesional sobre la vida con un estoma"
+            "value" : "Explorar y aprender"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutto quello che devi sapere sul supporto professionale durante il tuo percorso per la cura della tua stomia"
+            "value" : "Esplora & Impara"
           }
         }
       }
@@ -811,7 +799,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gill Castle: attraversare la Manica con una stomia\n\nGill Castle, una donna di 44 anni con un’ileostomia dal 2011, ha sviluppato un metodo efficace per affrontare le difficoltà legate al nuoto con una stomia. Dopo anni di tentativi e perdite, ha trovato la soluzione nell’uso di placche convesse ad alta adesione, che garantiscono maggiore sicurezza e stabilità. Si è allenata gradualmente nel Mare del Nord, esponendosi progressivamente a condizioni impegnative.\n\nIl 12 settembre 2023, Gill ha attraversato la Manica in solitaria, nuotando per 13 ore e 53 minuti e coprendo 21 miglia nautiche. Il suo presidio stomale è rimasto perfettamente sigillato per tutta la traversata, dimostrando che con la giusta preparazione è possibile praticare nuoto anche ad alti livelli.\n\n\n\nConsigli pratici per nuotare con una stomia\n\t•\tUsa dispositivi con placca convessa ad alta adesione per una maggiore tenuta.\n\t•\tApplica uno spray barriera o un film protettivo cutaneo almeno 30 minuti prima di entrare in acqua.\n\t•\tCambia il presidio al massimo due ore prima dell’attività per garantire una tenuta ottimale.\n\t•\tPer maggiore sicurezza, indossa una fascia di supporto per stomia, soprattutto durante sessioni prolungate.\n\t•\tControlla sempre il sigillo della placca prima di nuotare e porta con te un kit di emergenza.\n\n\n\nIndicazioni mediche e precauzioni\n\t•\tAttendere almeno 6–8 settimane dopo l’intervento prima di tornare in acqua, per garantire una guarigione completa.\n\t•\tEvitare acque molto clorate o sporche, che possono irritare la cute peristomale.\n\t•\tIl nuoto non è consigliato in presenza di infezioni cutanee attive, stenosi severe o prolasso marcato.\n\t•\tIniziare con sessioni brevi da circa 30 minuti, aumentando gradualmente il tempo in acqua.\n\n\n\nUna stomia non è un limite agli sport acquatici. Con l’equipaggiamento giusto, una pianificazione attenta e un rientro graduale, il nuoto può restare un’attività sicura e gratificante.\nL’esempio di Gill Castle dimostra che la forza non è l’assenza di cambiamento, ma il coraggio di affrontarlo… e nuotarci dentro."
+            "value" : "Gill Castle, una donna di 44 anni con un’ileostomia dal 2011, ha sviluppato un metodo efficace per affrontare le difficoltà legate al nuoto con una stomia. Dopo anni di tentativi e perdite, ha trovato la soluzione nell’uso di placche convesse ad alta adesione, che garantiscono maggiore sicurezza e stabilità. Si è allenata gradualmente nel Mare del Nord, esponendosi progressivamente a condizioni impegnative.\n\nIl 12 settembre 2023, Gill ha attraversato la Manica in solitaria, nuotando per 13 ore e 53 minuti e coprendo 21 miglia nautiche. Il suo presidio stomale è rimasto perfettamente sigillato per tutta la traversata, dimostrando che con la giusta preparazione è possibile praticare nuoto anche ad alti livelli.\n\n**Consigli pratici per nuotare con una stomia**\nUsa dispositivi con placca convessa ad alta adesione per una maggiore tenuta. Applica uno spray barriera o un film protettivo cutaneo almeno 30 minuti prima di entrare in acqua. Cambia il presidio al massimo due ore prima dell’attività per garantire una tenuta ottimale. Per maggiore sicurezza, indossa una fascia di supporto per stomia, soprattutto durante sessioni prolungate. Controlla sempre il sigillo della placca prima di nuotare e porta con te un kit di emergenza.\n\n**Indicazioni mediche e precauzioni**\nAttendere almeno 6–8 settimane dopo l’intervento prima di tornare in acqua, per garantire una guarigione completa. Evitare acque molto clorate o sporche, che possono irritare la cute peristomale. Il nuoto non è consigliato in presenza di infezioni cutanee attive, stenosi severe o prolasso marcato. Iniziare con sessioni brevi da circa 30 minuti, aumentando gradualmente il tempo in acqua.\n\nUna stomia non è un limite agli sport acquatici. Con l’equipaggiamento giusto, una pianificazione attenta e un rientro graduale, il nuoto può restare un’attività sicura e gratificante. L’esempio di Gill Castle dimostra che la forza non è l’assenza di cambiamento, ma il coraggio di affrontarlo… e nuotarci dentro."
           }
         }
       }
@@ -833,40 +821,24 @@
       }
     },
     "I couldn't let my urostomy change my love for sports and change who I am." : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "From Stoma Care to Clinics"
+            "value" : "I couldn't let my urostomy change my love for sports and change who I am."
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Del Cuidado del Estoma a las Clínicas"
+            "value" : "No podía permitir que mi urostomía cambiara mi amor por los deportes ni cambiara quién soy."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dalla cura della stomia agli ambulatori dedicati"
-          }
-        }
-      }
-    },
-    "Gill Castle, a 44-year-old woman living with an ileostomy since 2011, developed a structured approach to overcome the challenges of swimming with a stoma. After years of leaks, she found success using convex bags, which offered better adhesion and security. She trained gradually in the North Sea, increasing exposure to tough conditions.\n\nOn September 12, 2023, Gill swam solo across the English Channel in 13 hours and 53 minutes, covering 21 nautical miles. Her stoma appliance remained perfectly sealed, proving it’s possible to swim at high levels with the right preparation.\n\n**Practical Tips for Swimming with a Stoma**\nUse high-adhesion convex pouches. Apply a barrier spray or protective film 30 minutes before entering water. Change the pouch no more than 2 hours before activity to ensure optimal adhesion. For extra security, use a stoma support belt, especially for long sessions. Always inspect the wafer seal and carry a spare kit.\n\n**Medical Guidelines and Cautions**\nWait at least 6–8 weeks post-surgery before swimming to allow full healing. Avoid highly chlorinated or dirty water that may irritate peristomal skin. Swimming is not advised during active skin infections, severe stenosis, or significant prolapse. Start with short 30-minute sessions, increasing gradually.\n\nA stoma is not a barrier to aquatic sports. With proper equipment, planning, and gradual reintroduction, swimming remains safe and empowering. Gill Castle’s example proves that strength is not the absence of change, but the courage to face it and swim through it." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Non potevo lasciare che la mia urostomia cambiasse il mio amore per lo sport "
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gill Castle, una donna di 44 anni con un’ileostomia dal 2011, ha sviluppato un metodo efficace per affrontare le difficoltà legate al nuoto con una stomia. Dopo anni di tentativi e perdite, ha trovato la soluzione nell’uso di placche convesse ad alta adesione, che garantiscono maggiore sicurezza e stabilità. Si è allenata gradualmente nel Mare del Nord, esponendosi progressivamente a condizioni impegnative.\n\nIl 12 settembre 2023, Gill ha attraversato la Manica in solitaria, nuotando per 13 ore e 53 minuti e coprendo 21 miglia nautiche. Il suo presidio stomale è rimasto perfettamente sigillato per tutta la traversata, dimostrando che con la giusta preparazione è possibile praticare nuoto anche ad alti livelli.\n\n**Consigli pratici per nuotare con una stomia**\nUsa dispositivi con placca convessa ad alta adesione per una maggiore tenuta. Applica uno spray barriera o un film protettivo cutaneo almeno 30 minuti prima di entrare in acqua. Cambia il presidio al massimo due ore prima dell’attività per garantire una tenuta ottimale. Per maggiore sicurezza, indossa una fascia di supporto per stomia, soprattutto durante sessioni prolungate. Controlla sempre il sigillo della placca prima di nuotare e porta con te un kit di emergenza.\n\n**Indicazioni mediche e precauzioni Attendere** almeno 6–8 settimane dopo l’intervento prima di tornare in acqua, per garantire una guarigione completa. Evitare acque molto clorate o sporche, che possono irritare la cute peristomale. Il nuoto non è consigliato in presenza di infezioni cutanee attive, stenosi severe o prolasso marcato. Iniziare con sessioni brevi da circa 30 minuti, aumentando gradualmente il tempo in acqua.\n\nUna stomia non è un limite agli sport acquatici. Con l’equipaggiamento giusto, una pianificazione attenta e un rientro graduale, il nuoto può restare un’attività sicura e gratificante. L’esempio di Gill Castle dimostra che la forza non è l’assenza di cambiamento, ma il coraggio di affrontarlo… e nuotarci dentro."
+            "value" : "Non potevo lasciare che la mia urostomia cambiasse il mio amore per lo sport"
           }
         }
       }
@@ -891,12 +863,6 @@
             "state" : "translated",
             "value" : "Avevo difficoltà ogni giorno, ma sembrava che per il resto del mondo fossi ancora la stessa."
           }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dott. Giuseppe Fama "
-          }
         }
       }
     },
@@ -911,13 +877,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se hai appena ricevuto una stomia, l'ambulatorio specializzato diventa il tuo punto di riferimento principale. Qui troverai infermieri specializzati che ti accompagneranno passo dopo passo verso l'autonomia. Non sei solo in questo percorso: questi centri esistono proprio per sostenerti nel ritorno alla vita normale.\nQuando Rivolgersi al Servizio\nPuoi contattare l'ambulatorio subito dopo l'intervento, durante il primo mese critico quando la stomia cambia forma e dimensioni, e per tutta la vita ogni volta che hai bisogno di aiuto. Il servizio è aperto a tutti i pazienti stomizzati, indipendentemente da dove hai fatto l'operazione.\nCosa Imparerai\nDurante le visite imparerai la gestione quotidiana: l'igiene perfetta per mantenere la pelle sana, quando e come cambiare placche e sacche, quale sistema di raccolta è più adatto a te. Imparerai a riconoscere e prevenire problemi come irritazioni cutanee, perdite da cattiva adesione, cambiamenti della stomia e blocchi intestinali.\nL'Équipe di Supporto\nL'infermiere stomista sarà il tuo riferimento principale, ma potrai accedere anche a gastroenterologo per problemi digestivi, nutrizionista per adattare la dieta, psicologo per supporto emotivo gratuito, e oncologo se necessario.\nSegnali d'Allarme\nContatta immediatamente l'ambulatorio se la stomia diventa scura o nera, hai dolore forte e continuo, non hai evacuazioni da oltre 24 ore, hai febbre alta con brividi, o la pelle circostante è molto rossa e dolorante. Chiama entro 24 ore per cambiamenti significativi di colore, perdite frequenti, irritazioni persistenti, o domande urgenti.\nL'ambulatorio stomia è il tuo alleato più importante. Non esitare a utilizzare questo servizio: è fatto apposta per te e ti aiuterà a scoprire che la tua stomia non è un ostacolo, ma una soluzione per continuare a vivere la vita pienamente."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Se hai appena ricevuto una stomia, l'ambulatorio specializzato diventa il tuo punto di riferimento principale. Qui troverai infermieri specializzati che ti accompagneranno passo dopo passo verso l'autonomia. Non sei solo in questo percorso: questi centri esistono proprio per sostenerti nel ritorno alla vita normale.\n\n**Quando Rivolgersi al Servizio**\nPuoi contattare l'ambulatorio subito dopo l'intervento, durante il primo mese critico quando la stomia cambia forma e dimensioni, e per tutta la vita ogni volta che hai bisogno di aiuto. Il servizio è aperto a tutti i pazienti stomizzati, indipendentemente da dove hai fatto l'operazione.\n\n**Cosa Imparerai**\nDurante le visite imparerai la gestione quotidiana: l'igiene perfetta per mantenere la pelle sana, quando e come cambiare placche e sacche, quale sistema di raccolta è più adatto a te. Imparerai a riconoscere e prevenire problemi come irritazioni cutanee, perdite da cattiva adesione, cambiamenti della stomia e blocchi intestinali.\n\n**L’Équipe di Supporto**\nL'infermiere stomista sarà il tuo riferimento principale, ma potrai accedere anche a gastroenterologo per problemi digestivi, nutrizionista per adattare la dieta, psicologo per supporto emotivo gratuito, e oncologo se necessario.\n\n**Segnali d'Allarme**\nContatta immediatamente l'ambulatorio se la stomia diventa scura o nera, hai dolore forte e continuo, non hai evacuazioni da oltre 24 ore, hai febbre alta con brividi, o la pelle circostante è molto rossa e dolorante. Chiama entro 24 ore per cambiamenti significativi di colore, perdite frequenti, irritazioni persistenti, o domande urgenti. L'ambulatorio stomia è il tuo alleato più importante. Non esitare a utilizzare questo servizio: è fatto apposta per te e ti aiuterà a scoprire che la tua stomia non è un ostacolo, ma una soluzione per continuare a vivere la vita pienamente."
+            "value" : "Se hai appena ricevuto una stomia, l'ambulatorio specializzato diventa il tuo punto di riferimento principale. Qui troverai infermieri specializzati che ti accompagneranno passo dopo passo verso l'autonomia. Non sei solo in questo percorso: questi centri esistono proprio per sostenerti nel ritorno alla vita normale.\n\n**Quando Rivolgersi al Servizio**\nPuoi contattare l'ambulatorio subito dopo l'intervento, durante il primo mese critico quando la stomia cambia forma e dimensioni, e per tutta la vita ogni volta che hai bisogno di aiuto. Il servizio è aperto a tutti i pazienti stomizzati, indipendentemente da dove hai fatto l'operazione.\n\n**Cosa Imparerai**\nDurante le visite imparerai la gestione quotidiana: l'igiene perfetta per mantenere la pelle sana, quando e come cambiare placche e sacche, quale sistema di raccolta è più adatto a te. Imparerai a riconoscere e prevenire problemi come irritazioni cutanee, perdite da cattiva adesione, cambiamenti della stomia e blocchi intestinali.\n\n**L’Équipe di Supporto**\nL'infermiere stomista sarà il tuo riferimento principale, ma potrai accedere anche a gastroenterologo per problemi digestivi, nutrizionista per adattare la dieta, psicologo per supporto emotivo gratuito, e oncologo se necessario.\n\n**Segnali d'Allarme**\nContatta immediatamente l'ambulatorio se la stomia diventa scura o nera, hai dolore forte e continuo, non hai evacuazioni da oltre 24 ore, hai febbre alta con brividi, o la pelle circostante è molto rossa e dolorante. Chiama entro 24 ore per cambiamenti significativi di colore, perdite frequenti, irritazioni persistenti, o domande urgenti.\nL'ambulatorio stomia è il tuo alleato più importante. Non esitare a utilizzare questo servizio: è fatto apposta per te e ti aiuterà a scoprire che la tua stomia non è un ostacolo, ma una soluzione per continuare a vivere la vita pienamente."
           }
         }
       }
@@ -994,7 +954,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "In questa sezione imparerai cos'è una colostomia, come funziona e quali aspetti sono importanti da conoscere nella vita quotidiana.\nUna colostomia è un'apertura chirurgica sull'addome, chiamata stomia, che permette alle feci di uscire dal colon verso l'esterno del corpo, dove vengono raccolte in una sacca adesiva speciale.\nPuò essere temporanea o definitiva, a seconda della situazione clinica. Le feci non passano più attraverso l'ano ma attraverso la stomia, finendo nella sacca.\nOra che hai le conoscenze di base, sei pronto per iniziare.\nIniziamo insieme questo percorso!"
+            "value" : "In questa sezione imparerai cos'è una colostomia, come funziona e quali aspetti sono importanti da conoscere nella vita quotidiana.\n\nUna **colostomia** è un'apertura chirurgica sull'addome, chiamata **stomia**, che permette alle feci di uscire dal colon verso l'esterno del corpo, dove vengono raccolte in una sacca adesiva speciale.\n\nPuò essere temporanea o definitiva, a seconda della situazione clinica. Le feci non passano più attraverso l'ano ma attraverso la stomia, finendo nella sacca.\n\nOra che hai le conoscenze di base, sei pronto per iniziare.\n\n**Iniziamo insieme questo percorso!**"
           }
         }
       }
@@ -1005,7 +965,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Important Notice"
+            "value" : "In this section you will learn what a colostomy is, how it works and what aspects are important to know in daily life. \n\nA colostomy is a surgical opening on the abdomen, called a stoma, that allows feces to exit the colon to the outside of the body, where they are collected in a special adhesive bag. \n\nIt can be temporary or permanent, depending on the clinical condition. The feces no longer pass through the anus but through the stoma, into a bag. \n\nNow that you have a basic understanding, you're ready to begin. \n\nClick on the buttons and let's start this journey together!"
           }
         },
         "es-419" : {
@@ -1017,13 +977,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "In questa sezione imparerai che cos’è una colostomia, come funziona e quali aspetti è importante conoscere nella vita quotidiana.\n\nLa colostomia è un’apertura chirurgica sull’addome, chiamata stomia, che permette alle feci di uscire dal colon verso l’esterno del corpo, dove vengono raccolte in una sacca adesiva speciale.\n\nPuò essere temporanea o permanente, a seconda della condizione clinica. Le feci non passano più attraverso l’ano, ma escono tramite la stomia in una sacca.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\n\nClicca sui pulsanti e iniziamo insieme questo percorso!"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Informazioni importanti"
+            "value" : "In questa sezione imparerai cos'è una colostomia, come funziona e quali aspetti sono importanti da conoscere nella vita quotidiana.\n\nUna colostomia è un'apertura chirurgica sull'addome, chiamata stomia, che permette alle feci di uscire dal colon verso l'esterno del corpo, dove vengono raccolte in una sacca adesiva speciale.\n\nPuò essere temporanea o definitiva, a seconda della situazione clinica. Le feci non passano più attraverso l'ano ma attraverso la stomia, finendo nella sacca.\n\nOra che hai le conoscenze di base, sei pronto per iniziare.\n\nIniziamo insieme questo percorso!"
           }
         }
       }
@@ -1046,7 +1000,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "In questa sezione imparerai che cos’è una urostomia, come funziona e cosa devi sapere per gestirla nella vita quotidiana.\n\nL’urostomia è un’apertura chirurgica creata sull’addome, chiamata stomia, che permette di deviare il flusso dell’urina dai reni direttamente all’esterno del corpo, dove viene raccolta in una sacca adesiva speciale.\n\nQuesta procedura può essere temporanea o permanente, a seconda delle esigenze mediche specifiche. L’urina non passa più attraverso la vescica e l’uretra, ma esce tramite la stomia in una sacca di raccolta.\n\nPoiché si tratta di urina, il flusso è generalmente continuo e richiede una gestione regolare per evitare perdite o infezioni.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\n\nClicca sui pulsanti e iniziamo insieme questo percorso!"
+            "value" : "In questa sezione imparerai che cos’è una urostomia, come funziona e cosa devi sapere per gestirla nella vita quotidiana.\n\nL’**urostomia** è un’apertura chirurgica creata sull’addome, chiamata **stomia**, che permette di deviare il flusso dell’urina dai reni direttamente all’esterno del corpo, dove viene raccolta in una sacca adesiva speciale.\n\nQuesta procedura può essere temporanea o permanente, a seconda delle esigenze mediche specifiche. L’urina non passa più attraverso la vescica e l’uretra, ma esce tramite la stomia in una sacca di raccolta.\n\nPoiché si tratta di urina, il flusso è generalmente continuo e richiede una gestione regolare per evitare perdite o infezioni.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\n\n**Clicca sui pulsanti e iniziamo insieme questo percorso!**"
           }
         }
       }
@@ -1070,12 +1024,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "In questa sezione imparerai che cos’è un’ileostomia, come funziona e cosa devi sapere per la tua routine quotidiana.\n\nL’ileostomia è un’apertura chirurgica creata sull’addome, chiamata stomia, che devia il flusso dei residui intestinali dall’intestino tenue direttamente all’esterno del corpo, dove vengono raccolti in una sacca adesiva speciale.\n\nQuesta procedura può essere temporanea o permanente, a seconda delle esigenze mediche specifiche. I residui non passano più attraverso l’intestino crasso e il retto, ma escono attraverso la stomia in una sacca di raccolta.\n\nPoiché i residui provengono dall’intestino tenue, tendono ad essere più liquidi e frequenti rispetto ad altri tipi di stomia.\n\nOra che hai una comprensione di base, sei pronto per iniziare.\n\nClicca sui pulsanti e iniziamo insieme questo percorso!"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "In questa sezione imparerai cos'è una colostomia, come funziona e quali aspetti sono importanti da conoscere nella vita quotidiana.\n\nUna **colostomia** è un'apertura chirurgica sull'addome, chiamata **stomia**, che permette alle feci di uscire dal colon verso l'esterno del corpo, dove vengono raccolte in una sacca adesiva speciale.\n\nPuò essere temporanea o definitiva, a seconda della situazione clinica. Le feci non passano più attraverso l'ano ma attraverso la stomia, finendo nella sacca.\n\nOra che hai le conoscenze di base, sei pronto per iniziare.\n\n**Iniziamo insieme questo percorso!**"
           }
         }
       }
@@ -1642,12 +1590,6 @@
             "state" : "translated",
             "value" : "Patrizia Nazzarro"
           }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patrizia Nazzarro"
-          }
         }
       }
     },
@@ -2013,7 +1955,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Questa app è destinata esclusivamente a scopi educativi e informativi e non sostituisce il parere medico professionale, la diagnosi o il trattamento. Consulta sempre un medico qualificato per qualsiasi domanda riguardante una condizione medica.\nTutti i dati, i riferimenti e le metodologie utilizzate nell'app sono documentati in modo trasparente. Puoi consultare l'elenco completo delle citazioni e dei materiali di supporto qui sotto."
+            "value" : "Questa app è destinata esclusivamente a scopi educativi e informativi e non sostituisce il parere medico professionale, la diagnosi o il trattamento. Consulta sempre un medico qualificato per qualsiasi domanda riguardante una condizione medica.\n\nTutti i dati, i riferimenti e le metodologie utilizzate nell'app sono documentati in modo trasparente. Puoi consultare l'elenco completo delle citazioni e dei materiali di supporto qui sotto."
           }
         }
       }
@@ -2056,46 +1998,18 @@
         }
       }
     },
-    "This app is intended for educational and informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with any questions you may have regarding a medical condition. \n\nAll data, references, and methodologies used in the app are transparently documented. You can review the full list of citations and supporting materials down below." : {
+    "Ups, try again!" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This app is intended for educational and informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with any questions you may have regarding a medical condition. \n\nAll data, references, and methodologies used in the app are transparently documented. You can review the full list of citations and supporting materials down below."
-          }
-        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Esta aplicación tiene fines exclusivamente educativos e informativos y no sustituye el consejo, diagnóstico ni tratamiento médico profesional. Si tienes alguna pregunta sobre una afección médica, consulta siempre con un profesional de la salud cualificado.\n\nTodos los datos, referencias y metodologías utilizados en la aplicación están documentados de forma transparente. Puedes consultar la lista completa de citas y materiales de apoyo a continuación."
+            "value" : "Ups, vuelve a intentar!"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Questa app è destinata esclusivamente a scopi educativi e informativi e non sostituisce il parere medico professionale, la diagnosi o il trattamento. Consulta sempre un medico qualificato per qualsiasi domanda riguardante una condizione medica.\n\nTutti i dati, i riferimenti e le metodologie utilizzate nell'app sono documentati in modo trasparente. Puoi consultare l'elenco completo delle citazioni e dei materiali di supporto qui sotto."
-          }
-        }
-      }
-    },
-    "This simulator is just a tool to learn, not a diagnosis. Consult your doctor." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This simulator is just a tool to learn, not a diagnosis. Consult your doctor."
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Este simulador es solo una herramienta de aprendizaje, no es un diagnóstico. Consulta a tu médico."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Questo simulatore ha solo scopo informativo ed educativo. Non sostituisce in alcun modo una diagnosi o un consulto medico."
+            "value" : "Ups, riprova!"
           }
         }
       }
@@ -2199,12 +2113,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ver Divulgación y Citas"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Consulta l’informativa completa e le fonti"
           }
         },
         "it" : {
