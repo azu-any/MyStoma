@@ -11,24 +11,16 @@ struct ContentViewIpad: View {
     
     var body: some View {
         ZStack {
-            Button(action: {
+            Button {
                 animateTap = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                     showModal = true
                     animateTap = false
                 }
-            }) {
+            } label: {
                 ZStack {
 
                     VStack(alignment: .leading, spacing: 4) {
-                        /*Text(data.subtitle)
-                            .font(.title)
-                            .bold()
-                            .foregroundColor(.white)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.5)
-                            .padding(.bottom, 4)
-                            .padding(.top, 120)*/
 
                         Text(data.title)
                             .font(.title)
@@ -42,25 +34,17 @@ struct ContentViewIpad: View {
                     #if os(iOS)
                     .frame(maxWidth: UIScreen.main.bounds.width * 0.3, maxHeight: UIScreen.main.bounds.width * 0.17)
                     #endif
+                    #if os(visionOS)
+                    .frame(maxWidth: 375, maxHeight: 212.5)
+                    #endif
                     .background(
                         LinearGradient(
-                            /*gradient: Gradient(colors: [.bluePrimary, .bluePrimary.opacity(0.5)]),*/
                             gradient: Gradient(stops: [
                                 .init(color: .bluePrimary, location: 0.0),
                                 .init(color: .bluePrimary.opacity(0.6), location: 0.5),
                                 .init(color: .bluePrimary.opacity(0.2), location: 1.0)
                                 ]),
                             startPoint: .leading, endPoint: .trailing
-                            
-                            
-                            /*gradient: Gradient(stops: [
-                                //.init(color: Color.clear, location: 0.0),
-                                .init(color: Color.blueSecondary.opacity(0.6), location: 0.5),
-                                .init(color: Color.bluePrimaryColor.opacity(0.8), location: 1.0)
-                            ]),
-                            startPoint: .leading,
-                            endPoint: .topTrailing
-                             */
                         )
                     )
                     
@@ -72,30 +56,19 @@ struct ContentViewIpad: View {
                             #if os(iOS)
                             .frame(width: UIScreen.main.bounds.width * 0.3,
                                    height: UIScreen.main.bounds.width * 0.17)
-                            .clipped()
                             #endif
+                            #if os(visionOS)
+                            .frame(maxWidth: 375, maxHeight: 212.5)
+                            #endif
+                            .clipped()
                     }
                     
                 }
-                /*.background(
-                    LinearGradient(
-                        gradient: Gradient(stops: [
-                            .init(color: Color.blueSecondaryColor.opacity(0.8), location: 0.0),
-                            .init(color: Color.bluePrimaryColor.opacity(0.0), location: 0.5),
-                            .init(color: Color.bluePrimaryColor.opacity(0.0), location: 1.0)
-                        ]),
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                )*/
             }
-            /*.background(
-                LinearGradient(gradient: Gradient(colors: [.bluePrimary.opacity(0.6), .black.opacity(0)]),
-                               startPoint: .leading, endPoint: .trailing)
-            )*/
             .cornerRadius(20)
             .scaleEffect(animateTap ? 0.95 : 1.0)
             .animation(.spring(duration: 0.7), value: animateTap)
+            .buttonStyle(.plain)
         }
         .sheet(isPresented: $showModal) {
             CustomModalView(isPresented: $showModal, data: data)
@@ -103,11 +76,14 @@ struct ContentViewIpad: View {
                 .presentationDragIndicator(.hidden)
                 .presentationBackground(.clear)
         }
-        .padding()
         #if os(iOS)
+        .padding()
         .frame(maxWidth: UIScreen.main.bounds.width * 0.3, maxHeight: UIScreen.main.bounds.width * 0.17)
-        .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 0)
         #endif
+        #if os(visionOS)
+        .frame(maxWidth: 375, maxHeight: 212.5)
+        #endif
+        .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 0)
     }
 }
 

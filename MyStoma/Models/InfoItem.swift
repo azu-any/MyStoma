@@ -51,8 +51,8 @@ let items: [InfoItem] = [
         imageName: "Cleanstomabag",
         modelName: "Cleanstoma",
         categories: [.colostomy, .ileostomy],
-        modelPosition: [0, 0.5, 0],
-        modelScale: [1.9, 1.9, 1.9]
+        modelPosition: cleanstomabag_position,
+        modelScale: cleanstomabag_modelScale,
     ),
     InfoItem(
         title: "infoitem_stomasizer_title",

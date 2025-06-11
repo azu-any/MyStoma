@@ -1,8 +1,8 @@
 import SwiftUI
 
 enum Route: Hashable {
-    case play
     case colostomy
+    case colostomyVR
     case settings
 }
 
@@ -11,10 +11,10 @@ class NavigationRouter: ObservableObject {
 
     func destination(for route: Route) -> AnyView {
         switch route {
-        case .play:
-            AnyView(PlayView())
         case .colostomy:
             AnyView(ColostomyView())
+        case .colostomyVR:
+            AnyView(InfoVPView())
         case .settings:
             AnyView(AppSettingsView())
         }

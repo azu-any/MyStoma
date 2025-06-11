@@ -74,6 +74,9 @@ struct ContentView: View {
             .environmentObject(NavigationRouter())
             .environmentObject(viewModel)
         //#endif
+        #if os(visionOS)
+        #endif
+
     }
 }
 

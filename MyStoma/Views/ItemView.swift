@@ -7,12 +7,24 @@
 
 import SwiftUI
 import RealityKit
+import simd
+
 
 struct ItemView: View {
     
     var selectedItem: InfoItem
     @State private var modelEntity: Entity? = nil
     @State private var currentAngle: Float = 0.0
+    @State private var showReality = false
+    
+    @Environment(\.openWindow) private var openWindow
+    @Environment(\.openImmersiveSpace) private var openImmersiveSpace
+    @Environment(\.dismissImmersiveSpace)
+        private var dismissImmersiveSpace
+    
+    @EnvironmentObject var itemModel: ItemModel
+
+    @Environment(\.dismiss) var dismiss
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -27,6 +39,38 @@ struct ItemView: View {
 
             }
             .padding()
+            #if os(iOS)
+            .toolbar {
+                ToolbarItem {
+                    Button("Close", systemImage: "xmark.circle.fill") {
+                        dismiss()
+                    }
+                }
+            }
+            #endif
+            
+            #if os(visionOS)
+            .ornament(attachmentAnchor: .scene(.bottom)) {
+                Button("Close", systemImage: "xmark.circle.fill") {
+                    dismiss()
+                }
+                .glassBackgroundEffect()
+            }
+            .onAppear {
+                Task {
+                    itemModel.selectedItem = ItemDetail(item: selectedItem)
+
+                    print("loading")
+                    await openImmersiveSpace(id: "item-view")
+                }
+            }
+            .onDisappear {
+                Task {
+                    await dismissImmersiveSpace()
+                }
+            }
+            #endif
+            
             
             #if os(iOS)
             RealityView { content in

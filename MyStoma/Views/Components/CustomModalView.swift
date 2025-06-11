@@ -144,10 +144,18 @@ struct CustomModalView: View {
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 25))
             }
+            #if os(iOS)
             .frame(
                 width: min(UIScreen.main.bounds.width , 800),
                 height: min(UIScreen.main.bounds.height, 600)
             )
+            #endif
+            #if os(visionOS)
+            .frame(
+                width: 800,
+                height: 600
+            )
+            #endif
             .overlay(alignment: .topTrailing) {
                 // Close button with glassmorphism
                 Button(action: { dismiss() }) {
@@ -188,6 +196,7 @@ struct CustomModalView: View {
                                 )
                         )
                 }
+                .buttonStyle(.plain)
                 .padding(.bottom, 30)
                 .padding(.trailing, 30)
                 .disabled(data.disabledSection)
@@ -195,7 +204,13 @@ struct CustomModalView: View {
                     Button("Confirm", role: .destructive) {
                         dismiss()
                         if let destination = data.navView {
+                            
+                            #if os(iOS)
                             router.path.append(.colostomy) // Update to dynamic routing if needed
+                            #endif
+                            #if os(visionOS)
+                            router.path.append(.colostomyVR) // Update to dynamic routing if needed
+                            #endif
                         }
                     }
                     Button("Cancel", role: .cancel) { }

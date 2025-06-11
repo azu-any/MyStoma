@@ -11,30 +11,16 @@ struct MenuCaroussel: View {
                         if item.type == "content" {
                             ContentViewIpad(
                                 data: item
-                                /*title: item.title,
-                                subtitle: item.subtitle,
-                                imageName: item.imageName,
-                                imageModal: item.imageModal,
-                                description: item.description,
-                                navView: item.navView*/
                             )
 
                         } else if item.type == "story" {
                             StoryView(
                                 data: item
-                                /*title: item.title,
-                                subtitle: item.subtitle,
-                                imageName: item.imageName,
-                                imageModal: item.imageModal,
-                                description: item.description,
-                                quote: item.quote*/
                             )
 
                         }
                     }
                 }
-                //.padding(.top)
-                //.padding(.bottom)
                 .padding(.horizontal)
                 .padding(.vertical, 4) 
             }
