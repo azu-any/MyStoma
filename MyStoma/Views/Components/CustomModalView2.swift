@@ -1,18 +1,11 @@
-//
-//  CustomModalView.swift
-//  MyStoma
-//
-//  Created by Martha Mendoza Alfaro on 29/05/25.
-//
 
 import SwiftUI
 
-struct CustomModalView: View {
+struct CustomModalView2: View {
     @EnvironmentObject var router: NavigationRouter
     @Environment(\.dismiss) var dismiss
     @Binding var isPresented: Bool
     let data: CardData
-    @State private var showConfirmation = false
     
     var body: some View {
         ZStack {
@@ -86,22 +79,18 @@ struct CustomModalView: View {
                     // Image section
                     ZStack {
                         Rectangle()
-                            .fill(Color.bluePrimary)
-                            LinearGradient(  gradient: Gradient(colors: [Color.white.opacity(0.2), Color.clear]),
-                                             startPoint: .top,
-                                             endPoint: .bottom)
-//                            .fill(Color.blueSecondaryColor.opacity(0.2))
+                            .fill(Color.blueSecondaryColor.opacity(0.2))
                         
                         Image(data.imageModal)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .clipped()
                         
-//                        LinearGradient(
-//                            gradient: Gradient(colors: [Color.bluePrimary.opacity(0.4), Color.clear]),
-//                            startPoint: .bottom,
-//                            endPoint: .top
-//                        )
+                        LinearGradient(
+                            gradient: Gradient(colors: [Color.bluePrimary.opacity(0.4), Color.clear]),
+                            startPoint: .bottom,
+                            endPoint: .top
+                        )
                     }
                     #if os(iOS)
                     .frame(maxWidth: UIScreen.main.bounds.width * 0.28)
@@ -165,52 +154,14 @@ struct CustomModalView: View {
                 }
                 .padding(15)
             }
-            .overlay(alignment: .bottomTrailing) {
-                // Start button with glassmorphism
-                Button {
-                    showConfirmation = true
-                } label: {
-                    Text(data.disabledSection ? "Coming Soon" : "Start")
-                        .fontWeight(.semibold)
-                        .padding(.horizontal, 30)
-                        .padding(.vertical, 12)
-                        .foregroundColor(.white)
-                        .background(
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(.regularMaterial)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .fill(data.disabledSection ? Color.gray : Color.bluePrimaryColor)
-                                )
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .stroke(Color.white.opacity(0.3), lineWidth: 1)
-                                )
-                        )
-                }
-                .padding(.bottom, 30)
-                .padding(.trailing, 30)
-                .disabled(data.disabledSection)
-                .alert("Important Notice", isPresented: $showConfirmation) {
-                    Button("Confirm", role: .destructive) {
-                        dismiss()
-                        if let destination = data.navView {
-                            router.path.append(.colostomy) // Update to dynamic routing if needed
-                        }
-                    }
-                    Button("Cancel", role: .cancel) { }
-                } message: {
-                    Text("This simulator is just a tool to learn, not a diagnosis. Consult your doctor.")
-                }
-            }
         }
     }
 }
 
 
-struct CustomModalView_Previews: PreviewProvider {
+struct CustomModalView2_Previews: PreviewProvider {
     static var previews: some View {
-        CustomModalView(
+        CustomModalView2(
             isPresented: .constant(true),
             data: CardData(
                 type: "content",
@@ -222,6 +173,6 @@ struct CustomModalView_Previews: PreviewProvider {
                 navView: AnyView(Text("Next View"))
             )
         )
-        .environmentObject(NavigationRouter())
     }
 }
+
