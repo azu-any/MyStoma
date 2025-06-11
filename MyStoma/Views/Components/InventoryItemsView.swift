@@ -10,7 +10,7 @@ import RealityKit
 
 struct InventoryItemsView: View {
     @EnvironmentObject var ostomyViewModel: OstomyViewModel
-    var stomaSizerEntity: Entity?
+    var stomaSizerEntity: Entity? //lol
 
     var body: some View {
         VStack {
