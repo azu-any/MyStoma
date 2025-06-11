@@ -100,19 +100,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld/%lld"
+            "value" : "Adhesive Remover Spray"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld/%lld"
+            "value" : "Spray removedor de adhesivo"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld/%lld"
+            "value" : "Spray rimuovi-adesivo"
           }
         }
       }
@@ -361,7 +361,14 @@
       }
     },
     "Close" : {
-
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar"
+          }
+        }
+      }
     },
     "Cloth" : {
       "extractionState" : "manual",

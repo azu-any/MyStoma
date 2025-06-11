@@ -15,7 +15,7 @@ struct TextViewWithPopovers: View {
         var words = Set<String>()
         for key in keys {
             let components = key.split(separator: "_")
-            if components.count == 2 {
+            if components.count == 2 && components[0] == languageCode {
                 words.insert(String(components[1]))
             }
         }
