@@ -80,6 +80,12 @@
     },
     "A stoma doesn't stop the rhythm of life — every woman can be a mother, strong and whole, just as she is." : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A stoma doesn't stop the rhythm of life — every woman can be a mother, strong and whole, just as she is."
+          }
+        },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
@@ -162,19 +168,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A stoma doesn't stop the rhythm of life — every woman can be a mother, strong and whole, just as she is."
+            "value" : "All"
           }
         },
         "es-419" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Un estoma no detiene el ritmo de la vida: cada mujer puede ser madre, siendo fuerte y completa, tal y como es."
+            "value" : "Todo"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Una stomia non ferma il ritmo della vita — ogni donna può essere madre, forte e completa, esattamente come è"
+            "value" : "Tutto"
           }
         }
       }
