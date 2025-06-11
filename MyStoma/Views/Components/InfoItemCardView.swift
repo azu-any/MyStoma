@@ -13,16 +13,21 @@ struct InfoItemCardView: View {
 
     @State private var animateTap = false
     @State private var showModal = false
+    
+    @EnvironmentObject var itemModel: ItemModel
+    
+
+
 
     var body: some View {
         ZStack(alignment: .center) {
-            Button(action: {
+            Button {
                 animateTap = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                     showModal = true
                     animateTap = false
                 }
-            }) {
+            } label: {
                 ZStack(alignment: .center) {
                     Rectangle()
                         .fill(
@@ -52,22 +57,19 @@ struct InfoItemCardView: View {
                 .frame(width: UIScreen.main.bounds.width * 0.12,
                        height: UIScreen.main.bounds.width * 0.12)
                 #endif
+                #if os(visionOS)
+                .frame(width: 120, height: 120)
+                #endif
                 .scaleEffect(animateTap ? 0.95 : 1.0)
                 .animation(.spring(response: 0.4, dampingFraction: 0.6), value: animateTap)
             }
+            .buttonStyle(.plain)
 
         }
         .sheet(isPresented: $showModal) {
             ItemView(selectedItem: item)
-                #if os(iOS)
-                /*.frame(width: UIScreen.main.bounds.width * 2/3,
-                       height: UIScreen.main.bounds.height * 2/3)
-                .transition(.scale)*/
-                #endif
         }
-
         .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 0)
-        //.padding()
     }
 }
 

@@ -40,6 +40,7 @@
       }
     },
     "%lld/%lld" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -358,6 +359,9 @@
           }
         }
       }
+    },
+    "Close" : {
+
     },
     "Cloth" : {
       "extractionState" : "manual",
@@ -883,6 +887,7 @@
       }
     },
     "Ileostomy" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1427,6 +1432,7 @@
       }
     },
     "Make your selection" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1817,6 +1823,7 @@
       }
     },
     "Step %lld: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1977,6 +1984,7 @@
       }
     },
     "Tools" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

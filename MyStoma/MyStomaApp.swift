@@ -66,6 +66,8 @@ struct MyStomaApp: App {
     @StateObject var viewModel = OstomyViewModel(ostomy: loadOstomyFromBundle() ?? defaultOstomy)
     @StateObject var router = NavigationRouter()
     @AppStorage("useDyslexiaFont") var useDyslexiaFont: Bool = false
+    
+    @StateObject private var itemModel = ItemModel()
 
 
     var body: some Scene {
@@ -77,16 +79,21 @@ struct MyStomaApp: App {
                 .environmentObject(viewModel)
                 //.environment(\.font, Font.customAppFont(forTextStyle: .body))
                 .appFont(.body, useCustomFont: useDyslexiaFont)
+                .environmentObject(itemModel)
+
                 //.environment(\.font, useDyslexiaFont ? .custom("OpenDyslexic-Regular", size: 17) : .body)
 
             
 
         }
+        
         #if os(visionOS)
-        .defaultSize(width: 650, height: 500)
-        #endif
+        ImmersiveSpace(id: "item-view") {
+            ItemVRView()
+                .environmentObject(itemModel)
+        }
+        .immersionStyle(selection: .constant(.mixed), in: .mixed)
 
-        #if os(visionOS)
         ImmersiveSpace(id: ColostomySpace.first.id) {
             ColostomyFirstView()
                 .environment(appModel)
@@ -141,59 +148,6 @@ struct MyStomaApp: App {
         
         ImmersiveSpace(id: ColostomySpace.fifth.id) {
             ColostomyFifthView()
-                .environment(appModel)
-                .environmentObject(viewModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
-        }
-        .immersionStyle(selection: .constant(.mixed), in: .mixed)
-
-        ImmersiveSpace(id: ColostomySpace.sixth.id) {
-            ColostomySixthView()
-                .environment(appModel)
-                .environmentObject(viewModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
-        }
-        .immersionStyle(selection: .constant(.mixed), in: .mixed)
-
-    
-        ImmersiveSpace(id: ColostomySpace.seventh.id) {
-            ColostomySeventhView()
-                .environment(appModel)
-                .environmentObject(viewModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
-        }
-        .immersionStyle(selection: .constant(.mixed), in: .mixed)
-
-        ImmersiveSpace(id: ColostomySpace.eighth.id) {
-            ColostomyEighthView()
-                .environment(appModel)
-                .environmentObject(viewModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
-        }
-        .immersionStyle(selection: .constant(.mixed), in: .mixed)
-
-        ImmersiveSpace(id: ColostomySpace.ninth.id) {
-            ColostomyNinthView()
                 .environment(appModel)
                 .environmentObject(viewModel)
                 .onAppear {

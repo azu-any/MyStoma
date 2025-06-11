@@ -94,7 +94,12 @@ struct CustomModalView2: View {
                     }
                     #if os(iOS)
                     .frame(maxWidth: UIScreen.main.bounds.width * 0.28)
+                    #endif
                     .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 0)
+                    #if os(visionOS)
+                    .frame(
+                        maxWidth: 280
+                    )
                     #endif
                     //.frame(maxWidth: .infinity)
                     .clipShape(
@@ -133,10 +138,17 @@ struct CustomModalView2: View {
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 25))
             }
+            .ignoresSafeArea()
+            #if os(iOS)
             .frame(
                 width: min(UIScreen.main.bounds.width , 800),
                 height: min(UIScreen.main.bounds.height, 600)
             )
+            #endif
+            #if os(visionOS)
+            .frame( width: 800, height: 600 
+            )
+            #endif
             .overlay(alignment: .topTrailing) {
                 // Close button with glassmorphism
                 Button(action: { dismiss() }) {
@@ -155,6 +167,7 @@ struct CustomModalView2: View {
                 .padding(15)
             }
         }
+        .ignoresSafeArea()
     }
 }
 

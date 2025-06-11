@@ -27,13 +27,13 @@ struct StoryView: View {
             
 
             // Get Button
-            Button(action: {
+            Button {
                 animateTap = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                     showModal = true
                     animateTap = false
                 }
-            }) {
+            } label: {
                 
                 HStack(alignment: .center, spacing: 16) {
                     
@@ -44,6 +44,10 @@ struct StoryView: View {
                         #if os(iOS)
                         .frame(width: UIScreen.main.bounds.width * 0.1,
                                height: UIScreen.main.bounds.width * 0.1)
+                        #endif
+                        #if os(visionOS)
+                        .frame(width: 100,
+                               height: 100)
                         #endif
                         .cornerRadius(20)
                         
@@ -74,42 +78,32 @@ struct StoryView: View {
                     }
                 }
                 //.padding()
-                .background(
-                   .white
-                    /*LinearGradient(
-                        gradient: Gradient(colors: [Color.white.opacity(0.8), Color.white.opacity(0.8)]),
-                        startPoint: .leading, //top
-                        endPoint: .trailing //bottom
-                    )*/
-                )
+                .background(.white)
                 .cornerRadius(20)
                 /*.shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)*/
                 #if os(iOS)
                 .frame(width: UIScreen.main.bounds.width * 0.4,
                        height: UIScreen.main.bounds.width * 0.12)
                 #endif
+                #if os(visionOS)
+                .frame(width: 400,
+                       height: 120)
+                #endif
                 .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 0)
                 
             }
+            .buttonStyle(.plain)
             .scaleEffect(animateTap ? 0.95 : 1.0)
             .animation(.spring(), value: animateTap)
             #if os(iOS)
             .frame(width: UIScreen.main.bounds.width * 0.4,
                    height: UIScreen.main.bounds.width * 0.12)
             #endif
-        }
-        //.padding()
-        //.background(Color.white)
-        //.cornerRadius(20)
-        //.shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
-        /*.sheet(isPresented: $showModal) {
-            WindowView(isPresented: $showModal, data:data)
-            #if os(iOS)
-                .frame(width: UIScreen.main.bounds.width * 2/3,
-                       height: UIScreen.main.bounds.height * 2/3)
+            #if os(visionOS)
+            .frame(width: 400,
+                   height: 120)
             #endif
-                .transition(.scale)
-        }*/
+        }
         .sheet(isPresented: $showModal) {
             CustomModalView2(isPresented: $showModal, data: data)
                 .presentationDetents([.large])

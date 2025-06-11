@@ -14,14 +14,23 @@ let bottleTargetPosition = SIMD3<Float>(-0.25, 0.8, -1.5)
 
 let cleanBagPosition = SIMD3<Float>(0.25, 0.85, -1.6)
 
-
 let tablePosition = SIMD3<Float>(0, 0, -1.50)
 let tableBoundingBoxMin = SIMD3<Float>(-0.47335356, -0.075258516, -1.6806084)
 let tableBoundingBoxMax = SIMD3<Float>(0.41929293, 0.7959688, -1.319781)
 
 let threshold: Float = 0.15
 
+// Values for tools
+#if os(iOS)
+let cleanstomabag_modelScale = SIMD3<Float>(1.9, 1.9, 1.9)
+let cleanstomabag_position = SIMD3<Float>(0, 0.5, 0)
+#endif
+#if os(visionOS)
+let cleanstomabag_modelScale = SIMD3<Float>(0.2, 0.2, 0.2)
+let cleanstomabag_position = SIMD3<Float>(0, 0, 0)
+#endif
 
+// Colors
 let skinColors: [String: Color] = [
     "LighterColor": Color(red: 240/255, green: 205/255, blue: 186/255),
     "LightColor": Color(red: 153/255, green: 112/255, blue: 100/255),

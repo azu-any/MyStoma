@@ -11,7 +11,7 @@ import RealityKit
 
 struct InfoVPView: View {
     
-    @EnvironmentObject var viewModel: OstomyViewModel
+    @EnvironmentObject var ostomyViewModel: OstomyViewModel
     
     @Environment(AppModel.self) private var appModel
 
@@ -27,38 +27,67 @@ struct InfoVPView: View {
 
         VStack(alignment: .center, spacing: 25) {
             
-            HStack {
-                Text("Step \(viewModel.currentStepIndex + 1): \(viewModel.ostomy.steps[viewModel.currentStepIndex].name)")
-                    .font(.title)
+            VStack {
 
-                Spacer()
-                
-                Text("\(viewModel.currentStepIndex + 1)/\(viewModel.ostomy.steps.count)")
+                Text("Step \(ostomyViewModel.currentStepIndex + 1)")
+                    .bold()
                     .font(.title)
+                
+                Text(ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].name)
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .italic()
+                    .bold()
+                
             }
             
-            if showDialogue {
+            /*if showDialogue {
                 DialogueView(showDialogue: $showDialogue)
                 
             } else {
                 QuestionView(question: viewModel.ostomy.steps[viewModel.currentStepIndex].question, answers: viewModel.ostomy.steps[viewModel.currentStepIndex].answers
                 )
+            }*/
+            
+            ChartNurseView()
+                .edgesIgnoringSafeArea([.top])
+            
+            switch ostomyViewModel.viewState {
+            case .dialogue:
+                ChatBotOverlay()
+                    .environmentObject(ostomyViewModel)
+                
+                DialogueControlsView()
+                    .environmentObject(ostomyViewModel)
+                
+            case .question:
+                QuestionView(question: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].question, answers: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].answers)
+                    .environmentObject(ostomyViewModel)
+                    .padding()
+                
+            case .end:
+                Spacer()
+                Text("Congratulations!")
+                    .bold()
+                    .padding()
+                Text("You have completed the colostomy tutorial.")
+                Spacer()
             }
             
-            if viewModel.currentDialogueIndex == viewModel.ostomy.steps[viewModel.currentStepIndex].dialogues.count - 1 && viewModel.currentStepIndex < viewModel.ostomy.steps.count - 1 {
+            if ostomyViewModel.currentDialogueIndex == ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].dialogues.count - 1 && ostomyViewModel.currentStepIndex < ostomyViewModel.ostomy.steps.count - 1 {
                 
                 Button {
-                    viewModel.currentStepIndex += 1
-                    viewModel.currentDialogueIndex = 0
-                    viewModel.isDone = false
-                    viewModel.spaceID = ColostomySpaces[viewModel.currentStepIndex].id
+                    ostomyViewModel.currentStepIndex += 1
+                    ostomyViewModel.currentDialogueIndex = 0
+                    ostomyViewModel.isDone = false
+                    ostomyViewModel.spaceID = ColostomySpaces[ostomyViewModel.currentStepIndex].id
                     
                     #if os(visionOS)
                     Task { @MainActor in                        appModel.immersiveSpaceState = .inTransition
                         await dismissImmersiveSpace()
                         
                         appModel.immersiveSpaceState = .inTransition
-                        switch await openImmersiveSpace(id: viewModel.spaceID) {
+                        switch await openImmersiveSpace(id: ostomyViewModel.spaceID) {
                         case .opened:
                             break
                             
@@ -74,17 +103,18 @@ struct InfoVPView: View {
                 } label: {
                     Text("Next step")
                 }
-                .disabled(!viewModel.isDone)
+                .disabled(!ostomyViewModel.isDone)
             }
             
+            Spacer()
+            
         }
-        .frame(width: 500)
         .padding(50)
         .onAppear {
             #if os(visionOS)
             Task { @MainActor in
                 appModel.immersiveSpaceState = .inTransition
-                switch await openImmersiveSpace(id: viewModel.spaceID) {
+                switch await openImmersiveSpace(id: ostomyViewModel.spaceID) {
                 case .opened:
                     break
                     
