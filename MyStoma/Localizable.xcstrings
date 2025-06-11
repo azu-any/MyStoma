@@ -367,6 +367,12 @@
             "state" : "translated",
             "value" : "Cerrar"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiuso"
+          }
         }
       }
     },
