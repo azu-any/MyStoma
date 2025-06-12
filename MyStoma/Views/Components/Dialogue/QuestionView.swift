@@ -61,7 +61,9 @@ struct QuestionView: View {
                                     RoundedRectangle(cornerRadius: 20)
                                         .stroke(Color.black.opacity(0.4), lineWidth: 1)
                                 }
+                            #if os(iOS)
                                 .background(backgroundColor(for: answer))
+                            #endif
                                 .cornerRadius(20)
                                 .animation(.easeInOut(duration: 0.3), value: selectedAnswer)
 
