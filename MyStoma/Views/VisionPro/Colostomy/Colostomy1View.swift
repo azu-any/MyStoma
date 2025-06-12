@@ -146,8 +146,6 @@ struct ColostomyFirstView: View {
                         
                         if let bag = stomabagEntity {
                             bag.components.set(InputTargetComponent())
-                            
-                            print("hi")
                         }
                         
                         
@@ -261,7 +259,7 @@ struct ColostomyFirstView: View {
                         vertModelEntity.components.set(PhysicsBodyComponent(
                             massProperties: .default,
                             material: customMaterial,
-                            mode: .dynamic
+                            mode: .static
                         ))
                         
                         if var physics = vertModelEntity.components[PhysicsBodyComponent.self] {
@@ -277,7 +275,7 @@ struct ColostomyFirstView: View {
                     }
                 }
                 
-                wasteBag.components.set(InputTargetComponent())
+                //wasteBag.components.set(InputTargetComponent())
                 
                 wasteBagEntity = wasteBag
                 

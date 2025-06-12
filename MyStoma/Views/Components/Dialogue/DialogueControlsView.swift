@@ -24,11 +24,12 @@ struct DialogueControlsView: View {
                     .frame(width: 30, height: 30)
             }
             .disabled(!canGoBack(index: ostomyViewModel.currentDialogueIndex))
+            .buttonStyle(.plain)
             
             
             Spacer()
             
-            
+            #if os(iOS)
             // Next step or End
             if ostomyViewModel.isLastDialogueInStep {
                 Button {
@@ -41,6 +42,7 @@ struct DialogueControlsView: View {
                 Spacer()
 
             }
+            #endif
 
             
             // Next dialogue
@@ -54,6 +56,8 @@ struct DialogueControlsView: View {
                     .frame(width: 30, height: 30)
             }
             .disabled(!canGoForward(index: ostomyViewModel.currentDialogueIndex, count: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].dialogues.count))
+            .buttonStyle(.plain)
+
         }
     }
 }

@@ -53,6 +53,7 @@ struct QuestionView: View {
                             
                         } label: {
                             Text(answer)
+                                .foregroundColor(.black.opacity(0.8))
                                 .multilineTextAlignment(.center)
                                 .padding(5)
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)

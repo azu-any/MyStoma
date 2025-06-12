@@ -28,7 +28,6 @@ struct InfoVPView: View {
         VStack(alignment: .center, spacing: 25) {
             
             VStack {
-
                 Text("Step \(ostomyViewModel.currentStepIndex + 1)")
                     .bold()
                     .font(.title)
@@ -41,40 +40,72 @@ struct InfoVPView: View {
                 
             }
             
-            /*if showDialogue {
-                DialogueView(showDialogue: $showDialogue)
+            VStack () {
                 
-            } else {
-                QuestionView(question: viewModel.ostomy.steps[viewModel.currentStepIndex].question, answers: viewModel.ostomy.steps[viewModel.currentStepIndex].answers
-                )
-            }*/
+                switch ostomyViewModel.viewState {
+                case .dialogue:
+                    
+                    ChatBotOverlay()
+                        .environmentObject(ostomyViewModel)
+                    
+                    DialogueControlsView()
+                        .environmentObject(ostomyViewModel)
+                    
+                case .question:
+                    QuestionView(question: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].question, answers: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].answers)
+                        .environmentObject(ostomyViewModel)
+                        .padding()
+                    
+                case .end:
+                    Spacer()
+                    Text("Congratulations!")
+                        .bold()
+                        .padding()
+                    Text("You have completed the colostomy tutorial.")
+                    Spacer()
+                }
+            }
+            .frame(width: 600)
             
-            ChartNurseView()
-                .edgesIgnoringSafeArea([.top])
-            
-            switch ostomyViewModel.viewState {
-            case .dialogue:
-                ChatBotOverlay()
-                    .environmentObject(ostomyViewModel)
+            if ostomyViewModel.isLastDialogueInStep {
+                Button {
+                    if !ostomyViewModel.isLastStep {
+                        #if os(visionOS)
+                        ostomyViewModel.spaceID = ColostomySpaces[ostomyViewModel.currentStepIndex + 1].id
+                        print("\(ostomyViewModel.spaceID)")
+                        
+                        Task { @MainActor in
+                            appModel.immersiveSpaceState = .inTransition
+                            await dismissImmersiveSpace()
+                            
+                            appModel.immersiveSpaceState = .inTransition
+                            
+                            switch await openImmersiveSpace(id: ostomyViewModel.spaceID) {
+                            case .opened:
+                                break
+                                
+                            case .userCancelled, .error:
+                                fallthrough
+                                
+                            @unknown default:
+                                appModel.immersiveSpaceState = .closed
+                            }
+                        }
+                        
+                        #endif
+                    }
+                    ostomyViewModel.advanceOrFinish()
+                    
+                } label: {
+                    Text(ostomyViewModel.isLastStep ? "End" : "Next step")
+                }
+                .disabled(!ostomyViewModel.isDone)
                 
-                DialogueControlsView()
-                    .environmentObject(ostomyViewModel)
-                
-            case .question:
-                QuestionView(question: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].question, answers: ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].answers)
-                    .environmentObject(ostomyViewModel)
-                    .padding()
-                
-            case .end:
                 Spacer()
-                Text("Congratulations!")
-                    .bold()
-                    .padding()
-                Text("You have completed the colostomy tutorial.")
-                Spacer()
+
             }
             
-            if ostomyViewModel.currentDialogueIndex == ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].dialogues.count - 1 && ostomyViewModel.currentStepIndex < ostomyViewModel.ostomy.steps.count - 1 {
+            /*if ostomyViewModel.currentDialogueIndex == ostomyViewModel.ostomy.steps[ostomyViewModel.currentStepIndex].dialogues.count - 1 && ostomyViewModel.currentStepIndex < ostomyViewModel.ostomy.steps.count - 1 {
                 
                 Button {
                     ostomyViewModel.currentStepIndex += 1
@@ -104,7 +135,7 @@ struct InfoVPView: View {
                     Text("Next step")
                 }
                 .disabled(!ostomyViewModel.isDone)
-            }
+            }*/
             
             Spacer()
             

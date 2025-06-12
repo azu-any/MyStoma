@@ -6,10 +6,6 @@ enum ColostomySpace {
     case third
     case fourth
     case fifth
-    case sixth
-    case seventh
-    case eighth
-    case ninth
     
     var id: String {
         switch self {
@@ -18,10 +14,6 @@ enum ColostomySpace {
         case .third: "ColostomyThirdSpace"
         case .fourth: "ColostomyFourthSpace"
         case .fifth: "ColostomyFifthSpace"
-        case .sixth: "ColostomySixthSpace"
-        case .seventh: "ColostomySeventhSpace"
-        case .eighth: "ColostomyEighthSpace"
-        case .ninth: "ColostomyNinthSpace"
         }
     }
     
@@ -49,14 +41,10 @@ enum ColostomySpace {
             return [
                 InventoryItem(nameKey: "Cut Stoma Bag", imageName: "Cutstomabag")
             ]
-        case .sixth, .seventh, .eighth, .ninth:
-            return []
         }
     }
 }
 
 let ColostomySpaces = [
     ColostomySpace.first, ColostomySpace.second, ColostomySpace.third,
-    ColostomySpace.fourth, ColostomySpace.fifth, ColostomySpace.sixth,
-    ColostomySpace.seventh, ColostomySpace.eighth, ColostomySpace.ninth
-]
+    ColostomySpace.fourth, ColostomySpace.fifth]
