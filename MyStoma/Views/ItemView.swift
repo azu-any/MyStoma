@@ -16,12 +16,12 @@ struct ItemView: View {
     @State private var modelEntity: Entity? = nil
     @State private var currentAngle: Float = 0.0
     @State private var showReality = false
-    
-    @Environment(\.openWindow) private var openWindow
-#if os(visionOS)
+
+    #if os(visionOS)
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
-    @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
-#endif
+    @Environment(\.dismissImmersiveSpace)
+        private var dismissImmersiveSpace
+    #endif
     
     @EnvironmentObject var itemModel: ItemModel
 

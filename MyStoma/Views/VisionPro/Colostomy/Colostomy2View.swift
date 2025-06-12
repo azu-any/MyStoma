@@ -15,6 +15,9 @@ struct ColostomySecondView: View {
 
     @State var initialPosition: SIMD3<Float>? = nil
     @State var initialRotation: simd_quatf? = nil
+    @State var waterBottle: Entity?
+    @State var clothEntity: Entity?
+    
     
     /// The gesture checks whether there is a root component and adjusts the postion of the entity.
     var translationGesture: some Gesture {
@@ -33,10 +36,31 @@ struct ColostomySecondView: View {
 
                 let movement = value.convert(value.translation3D, from: .global, to: .scene)
                 
+                let currentPosition = draggedEntity.position(relativeTo: nil)
+                
                 draggedEntity.position = (initialPosition ?? .zero) + movement
                 
                 if let initialRotation = initialRotation {
                     draggedEntity.transform.rotation = initialRotation
+                }
+                
+                if let water = waterBottle, let cloth = clothEntity {
+                    
+                    let distance = simd_distance(water.position, cloth.position)
+                    
+                    if distance < 0.1 {
+                        water.isEnabled = false
+                        cloth.components.set(InputTargetComponent())
+                    }
+                }
+                
+                if let clothEntity = clothEntity {
+                    let distance = simd_distance(clothEntity.position, stomaTargetPosition)
+                    
+                    if distance < 0.1 {
+                        clothEntity.isEnabled = false
+                        viewModel.isDone = true
+                    }
                 }
 
             })
@@ -53,16 +77,6 @@ struct ColostomySecondView: View {
                     linearVelocity: .zero,
                     angularVelocity: .zero
                 ))
-                
-                if draggedEntity.name == "stomabag" {
-
-                    if simd_distance(currentPosition, stomaTargetPosition) < threshold {
-                        draggedEntity.position = stomaTargetPosition
-                        if let stoma = draggedEntity.parent?.findEntity(named: "stoma") {
-                            stoma.isEnabled = false
-                        }
-                    }
-                }
                 
             })
         #endif
@@ -96,9 +110,9 @@ struct ColostomySecondView: View {
                 
                 
                 // Stoma
-                let stoma = body.findEntity(named: "Human_Stomach")
+                /*let stoma = body.findEntity(named: "Human_Stomach")
                 stoma!.isEnabled = false
-                stoma!.name = "stoma"
+                stoma!.name = "stoma"*/
                 
                 
                 // Table
@@ -119,13 +133,56 @@ struct ColostomySecondView: View {
                 
                 
                 // Cloth
+                let cloth = try await ModelEntity(named: "Cloth")
+                cloth.name = "cloth"
+                cloth.position = clothTargetPosition
+                cloth.transform.scale = [0.04, 0.04, 0.04]
+                rotateEntity(cloth, xDegrees: 0, yDegrees: 0)
+
+                // Collision shape
+                cloth.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: cloth.model!.mesh)])
+
+                cloth.components.set(PhysicsBodyComponent(
+                    massProperties: .default,
+                    material: customMaterial,
+                    mode: .dynamic
+                ))
+                
+                if var physics = cloth.components[PhysicsBodyComponent.self] {
+                    physics.isAffectedByGravity = false
+                    cloth.components.set(physics)
+                }
+                clothEntity = cloth
+                
                 
                 // Water
+                let bottle = try await ModelEntity(named: "BottleWater")
+                bottle.name = "bottle"
+                bottle.position = bottleTargetPosition
+                bottle.transform.scale = [0.04, 0.04, 0.04]
+
+                // Collision shape
+                bottle.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: bottle.model!.mesh)])
+
+                bottle.components.set(PhysicsBodyComponent(
+                    massProperties: .default,
+                    material: customMaterial,
+                    mode: .dynamic
+                ))
                 
+                if var physics = bottle.components[PhysicsBodyComponent.self] {
+                    physics.isAffectedByGravity = false
+                    bottle.components.set(physics)
+                }
+                
+                bottle.components.set(InputTargetComponent())
+                waterBottle = bottle
                 
                 // Add models
                 content.add(body)
                 content.add(table)
+                content.add(bottle)
+                content.add(cloth)
 
             } catch {
                 print("Failed to load model: \(error)")
@@ -139,7 +196,7 @@ struct ColostomySecondView: View {
 }
 
 #if os(visionOS)
-#Preview(immersionStyle: .full) {
+#Preview(immersionStyle: .mixed) {
     ColostomySecondView()
         .environment(AppModel())
 }

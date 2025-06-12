@@ -15,6 +15,10 @@ struct ColostomyThirdView: View {
 
     @State var initialPosition: SIMD3<Float>? = nil
     @State var initialRotation: simd_quatf? = nil
+    @State var cleanbagEntity: Entity?
+    @State var scissorsEntity: Entity?
+    @State var stomasizerEntity: Entity?
+    
     
     /// The gesture checks whether there is a root component and adjusts the postion of the entity.
     var translationGesture: some Gesture {
@@ -94,13 +98,6 @@ struct ColostomyThirdView: View {
                     mode: .static
                 ))
                 
-                
-                // Stoma
-                let stoma = body.findEntity(named: "Human_Stomach")
-                stoma!.isEnabled = false
-                stoma!.name = "stoma"
-                
-                
                 // Table
                 let table = try await ModelEntity(named: "table")
                 table.name = "table"
@@ -118,14 +115,79 @@ struct ColostomyThirdView: View {
                 ))
                 
                 
-                // Cloth
+                // Scissors
+                let scissors = try await ModelEntity(named: "scissors")
+                scissors.position = scissorsTargetPosition
+                scissors.transform.scale = [0.05, 0.05, 0.05]
+
+                // Collision shape
+                scissors.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: scissors.model!.mesh)])
+
+                scissors.components.set(PhysicsBodyComponent(
+                    massProperties: .default,
+                    material: customMaterial,
+                    mode: .dynamic
+                ))
                 
-                // Water
+                if var physics = scissors.components[PhysicsBodyComponent.self] {
+                    physics.isAffectedByGravity = false
+                    scissors.components.set(physics)
+                }
+                
+                scissors.components.set(InputTargetComponent())
+                scissorsEntity = scissors
+                
+                // Measurement borad
+                let stomasizer = try await ModelEntity(named: "StomaSizer")
+                stomasizer.position = stomasizerTargetPosition
+                stomasizer.transform.scale = [0.08, 0.08, 0.08]
+
+                // Collision shape
+                stomasizer.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: stomasizer.model!.mesh)])
+
+                stomasizer.components.set(PhysicsBodyComponent(
+                    massProperties: .default,
+                    material: customMaterial,
+                    mode: .dynamic
+                ))
+                
+                if var physics = stomasizer.components[PhysicsBodyComponent.self] {
+                    physics.isAffectedByGravity = false
+                    stomasizer.components.set(physics)
+                }
+                
+                stomasizer.components.set(InputTargetComponent())
+                stomasizerEntity = stomasizer
+                
+                // New stoma bag
+                let cleanbag = try await ModelEntity(named: "Cleanstoma")
+                cleanbag.position = cleanbagTargetPosition
+                cleanbag.transform.scale = [0.2, 0.2, 0.2]
+
+                // Collision shape
+                cleanbag.components[CollisionComponent.self] = await CollisionComponent(shapes: [try ShapeResource.generateConvex(from: cleanbag.model!.mesh)])
+
+                cleanbag.components.set(PhysicsBodyComponent(
+                    massProperties: .default,
+                    material: customMaterial,
+                    mode: .dynamic
+                ))
+                
+                if var physics = cleanbag.components[PhysicsBodyComponent.self] {
+                    physics.isAffectedByGravity = false
+                    cleanbag.components.set(physics)
+                }
+                
+                cleanbag.components.set(InputTargetComponent())
+                cleanbagEntity = cleanbag
                 
                 
                 // Add models
                 content.add(body)
                 content.add(table)
+                content.add(scissors)
+                content.add(stomasizer)
+                content.add(cleanbag)
 
             } catch {
                 print("Failed to load model: \(error)")
@@ -139,7 +201,7 @@ struct ColostomyThirdView: View {
 }
 
 #if os(visionOS)
-#Preview(immersionStyle: .full) {
+#Preview(immersionStyle: .mixed) {
     ColostomyThirdView()
         .environment(AppModel())
 }

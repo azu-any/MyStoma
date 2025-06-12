@@ -139,6 +139,7 @@ class OstomyViewModel: ObservableObject {
                 viewState = .end
             } else {
                 goToNextStep()
+                
             }
         }
     }
